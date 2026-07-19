@@ -330,6 +330,39 @@ const mapViews = {
 
 // Initialize Application on DOM Ready
 window.addEventListener('DOMContentLoaded', () => {
+  // Inject regional helper markers
+  if (window.learningData && learningData.map && learningData.map.markers) {
+    learningData.map.markers.hispaniola = {
+      coords: [19.0, -70.5],
+      label: { en: 'Hispaniola (La Española)', tr: 'Hispanyola (La Española)' },
+      placement: 'top',
+      isRegion: true
+    };
+    learningData.map.markers.caribbean = {
+      coords: [15.0, -65.0],
+      label: { en: 'Caribbean Islands (West Indies)', tr: 'Karayip Adaları (Batı Hint Adaları)' },
+      placement: 'bottom',
+      isRegion: true
+    };
+  }
+
+  if (window.markerDetailsDescriptions) {
+    markerDetailsDescriptions.hispaniola = {
+      title: { en: "Hispaniola (La Española)", tr: "Hispanyola (La Española)" },
+      desc: {
+        en: "Historically named <strong>La Española</strong> by Christopher Columbus in 1492, it is the second-largest island in the Caribbean. Geographically divided into the French colony of <strong>Saint-Domingue</strong> (modern Haiti) in the west and the Spanish colony of <strong>Santo Domingo</strong> (modern Dominican Republic) in the east. It was the epicenter of the early sugar boom and the world's most successful slave rebellion.",
+        tr: "1492'de Kristof Kolomb tarafından <strong>La Española</strong> olarak adlandırılan, Karayipler'deki en büyük ikinci adadır. Batıda Fransız sömürgesi <strong>Saint-Domingue</strong> (bugünkü Haiti) ve doğuda İspanyol sömürgesi <strong>Santo Domingo</strong> (bugünkü Dominik Cumhuriyeti) olarak bölünmüştü. Erken şeker üretiminin ve dünya tarihindeki en başarılı köle isyanının merkez üssüdür."
+      }
+    };
+    markerDetailsDescriptions.caribbean = {
+      title: { en: "Caribbean Islands (West Indies)", tr: "Karayip Adaları (Batı Hint Adaları)" },
+      desc: {
+        en: "Also known historically as the <strong>West Indies</strong>, this is a vast archipelago separating the Caribbean Sea from the Atlantic Ocean. In the 17th and 18th centuries, these islands became highly prized possessions of European empires (Spain, Britain, France, Netherlands) due to their tropical climate, perfect for cash crops like sugar cane, coffee, and cotton. They were the destination for the vast majority of the transatlantic slave trade.",
+        tr: "Tarihsel olarak <strong>Batı Hint Adaları</strong> (West Indies) olarak da bilinir. Karayip Denizi'ni Atlantik Okyanusu'ndan ayıran geniş takımadalar topluluğudur. 17. ve 18. yüzyıllarda bu adalar; şeker kamışı, kahve ve pamuk gibi son derece kazançlı ürünlerin yetiştirilmesine uygun tropikal iklimi nedeniyle Avrupa imparatorluklarının (İspanya, İngiltere, Fransa, Hollanda) en değerli sömürgeleri haline geldi. Transatlantik köle ticaretinin büyük çoğunluğunun varış noktasıydı."
+      }
+    };
+  }
+
   // Defer initMap() by one animation frame so the browser performs a
   // layout pass first. Without this, flex containers may still report
   // 0×0 dimensions and Leaflet throws "Attempted to load an infinite
@@ -1060,6 +1093,12 @@ function renderMapMarkers(filterList = null) {
     }
   });
 
+  // Always show Caribbean and Hispaniola for relevant weeks
+  if (state.week === 2 || state.week === 3 || state.week === 6) {
+    if (!weekMarkers.includes('caribbean')) weekMarkers.push('caribbean');
+    if (!weekMarkers.includes('hispaniola')) weekMarkers.push('hispaniola');
+  }
+
   // Get active slide title and text to match context emojis
   const slideObj = learningData.weeks[state.week].slides[state.slideIndex];
   const slideTitle = slideObj ? slideObj.title[state.language] : '';
@@ -1068,9 +1107,11 @@ function renderMapMarkers(filterList = null) {
   markerKeys.forEach(key => {
     const marker = learningData.map.markers[key];
     
-    // In narrative tab, ONLY show markers that are explicitly discussed in the active slide
+    // In narrative tab, ONLY show markers that are explicitly discussed in the active slide (or regions of the active week)
     if (state.tab === 'narrative') {
-      if (!filterList || !filterList.includes(key)) {
+      if (marker.isRegion) {
+        if (!weekMarkers.includes(key)) return;
+      } else if (!filterList || !filterList.includes(key)) {
         return; // Hide completely
       }
     } else {
@@ -1106,7 +1147,32 @@ function renderMapMarkers(filterList = null) {
     let iconSize = [12, 12];
     let iconAnchor = [6, 6];
     
-    if (svgIcon) {
+    if (marker.isRegion) {
+      iconSize = [28, 28];
+      iconAnchor = [14, 14];
+      markerHtml = `
+        <div class="leaflet-custom-pin-wrapper show-label" style="transform: translate(-14px, -14px);">
+          <div class="leaflet-custom-svg-pin" style="border-color: var(--border-color) !important; border-style: dashed !important; background: transparent !important;" onclick="event.stopPropagation(); showMarkerDetails('${key}')">
+            <svg viewBox="0 0 100 100" width="18" height="18" style="opacity: 0.7;">
+              <circle cx="50" cy="50" r="28" fill="none" stroke="var(--text-secondary)" stroke-width="1.5" stroke-dasharray="3,3"/>
+              <path d="M 50,22 L 50,78 M 22,50 L 78,50" stroke="var(--text-secondary)" stroke-width="1" opacity="0.6"/>
+              <circle cx="50" cy="50" r="12" fill="none" stroke="var(--text-secondary)" stroke-width="1" opacity="0.6"/>
+            </svg>
+          </div>
+          <span class="leaflet-custom-pin-label placement-${placement}" style="
+            font-style: italic;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            font-size: 0.65rem;
+            color: var(--text-secondary);
+            background: var(--bg-surface);
+            border: 1px dashed var(--border-color);
+            opacity: 1 !important;
+            transform: scale(1) translateY(-50%) translateX(0) !important;
+          " onclick="event.stopPropagation(); showMarkerDetails('${key}')">${marker.label[state.language]}</span>
+        </div>
+      `;
+    } else if (svgIcon) {
       iconSize = [28, 28];
       iconAnchor = [14, 14];
       markerHtml = `
