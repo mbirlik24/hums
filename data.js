@@ -10,6 +10,13 @@ const learningData = {
         en: "The Columbian Exchange",
         tr: "Kolomb Değişimi"
       },
+      video: {
+        src: "https://drive.google.com/file/d/1y9JMjselukGWTnJiIqU-swfdMP06Y6Cr/view?usp=sharing",
+        desc: {
+          tr: "Kolomb Değişimi: Yeni Dünya ile Eski Dünya arasındaki biyolojik, ekolojik ve kültürel etkileşimler.",
+          en: "The Columbian Exchange: Biological, ecological, and cultural interactions between the New and Old Worlds."
+        }
+      },
       slides: [
         {
           title: {
@@ -1046,6 +1053,13 @@ const learningData = {
         en: "The Transatlantic Slave Trade",
         tr: "Transatlantik Köle Ticareti"
       },
+      video: {
+        src: "https://drive.google.com/file/d/12cfKUtTXkUVCEVur_yg3sVytlGqDtLZf/view?usp=sharing",
+        desc: {
+          tr: "Transatlantik Köle Ticareti: Afrika, Amerika ve Avrupa arasındaki ticaret üçgeni ve insani maliyetleri.",
+          en: "The Transatlantic Slave Trade: The trading triangle between Africa, the Americas, and Europe and its human costs."
+        }
+      },
       slides: [
         {
           title: {
@@ -2075,6 +2089,13 @@ const learningData = {
         en: "The American Revolution",
         tr: "Amerika Devrimi"
       },
+      video: {
+        src: "https://drive.google.com/file/d/1DjMm--JvW8uZ5269pBOXFUd1-46c6MoN/view?usp=sharing",
+        desc: {
+          tr: "Amerika Devrimi: 13 Koloninin bağımsızlık mücadelesi ve Amerika Birleşik Devletleri'nin kuruluşu.",
+          en: "The American Revolution: The struggle for independence of the 13 Colonies and the founding of the United States."
+        }
+      },
       slides: [
         {
           title: {
@@ -3091,6 +3112,13 @@ const learningData = {
       title: {
         en: "The French Revolution",
         tr: "Fransız Devrimi"
+      },
+      video: {
+        src: "https://drive.google.com/file/d/1btd1dlaQLlwdt52cIVsnf_w0eav2ojZq/view?usp=sharing",
+        desc: {
+          tr: "Fransız Devrimi: Monarşinin çöküşü, insan hakları bildirgesi ve devrimin küresel etkileri.",
+          en: "The French Revolution: The collapse of the monarchy, the declaration of human rights, and the global impacts of the revolution."
+        }
       },
       slides: [
         {
@@ -4127,6 +4155,13 @@ const learningData = {
       title: {
         en: "The Haitian Revolution",
         tr: "Haiti Devrimi"
+      },
+      video: {
+        src: "https://drive.google.com/file/d/1OdsOHZMM0mnb7I6w3EcWv62JwZT1riM1/view?usp=sharing",
+        desc: {
+          tr: "Haiti Devrimi: Tarihteki tek başarılı köle ayaklanması ve bağımsız ilk siyah cumhuriyetin kuruluşu.",
+          en: "The Haitian Revolution: The only successful slave revolt in history and the establishment of the first independent black republic."
+        }
       },
       slides: [
         {

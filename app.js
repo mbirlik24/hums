@@ -30,7 +30,8 @@ const uiTranslations = {
     completedWord: "Tamamlandı",
     scoreWord: "Skor",
     testWord: "Test",
-    showOnMapBtn: "Haritada Göster"
+    showOnMapBtn: "Haritada Göster",
+    tabVideo: "Video"
   },
   en: {
     appTitle: "Historical Atlas",
@@ -60,7 +61,8 @@ const uiTranslations = {
     completedWord: "Completed",
     scoreWord: "Score",
     testWord: "Test",
-    showOnMapBtn: "Show on Map"
+    showOnMapBtn: "Show on Map",
+    tabVideo: "Video"
   }
 };
 
@@ -433,6 +435,10 @@ function toggleLanguage() {
   renderMapExplorerFilters();
   renderInfographic();
   renderQuiz();
+  
+  if (state.tab === 'video') {
+    renderVideo();
+  }
 }
 
 function applyLanguage() {
@@ -459,6 +465,14 @@ function applyLanguage() {
   document.getElementById('tab-btn-explorer').innerHTML = `${svgMap} <span id="tab-txt-explorer">${trans.tabExplorer}</span>`;
   document.getElementById('tab-btn-graphics').innerHTML = `${svgChart} <span id="tab-txt-graphics">${trans.tabGraphics}</span>`;
   document.getElementById('tab-btn-quiz').innerHTML = `${svgQuiz} <span id="tab-txt-quiz">${trans.tabQuiz}</span>`;
+  
+  const svgVideo = `<svg class="tab-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>`;
+  document.getElementById('tab-btn-video').innerHTML = `${svgVideo} <span id="tab-txt-video">${trans.tabVideo}</span>`;
+  
+  const videoTitle = document.getElementById('video-title');
+  if (videoTitle) {
+    videoTitle.innerText = state.language === 'tr' ? 'Video Anlatım' : 'Video Lecture';
+  }
   
   // Module selector label
   const lblModuleSelect = document.getElementById('lbl-module-select');
@@ -518,6 +532,16 @@ function switchWeek(weekNum) {
   state.slideIndex = 0;
   state.selectedFilters = [];
   
+  // Pause video player on week switch
+  const videoPlayer = document.getElementById('module-video-player');
+  if (videoPlayer) {
+    videoPlayer.pause();
+  }
+  const videoContainer = document.querySelector('.video-container');
+  if (videoContainer) {
+    videoContainer.innerHTML = '';
+  }
+  
   // Update dropdown value to keep in sync
   const selectEl = document.getElementById('module-select');
   if (selectEl) {
@@ -553,6 +577,10 @@ function switchWeek(weekNum) {
   
   if (state.tab === 'quiz') {
     renderQuiz();
+  }
+  
+  if (state.tab === 'video') {
+    renderVideo();
   }
 }
 
@@ -779,17 +807,31 @@ function focusSlideMapState() {
   }
 }
 
-// Switch tabs: Narrative, Map Explorer, Charts, Quiz
+// Switch tabs: Narrative, Map Explorer, Charts, Quiz, Video
 function switchTab(tabId) {
   state.tab = tabId;
   
-  const tabs = ['narrative', 'explorer', 'graphics', 'quiz'];
+  // Pause video player if leaving video tab
+  if (tabId !== 'video') {
+    const videoPlayer = document.getElementById('module-video-player');
+    if (videoPlayer) {
+      videoPlayer.pause();
+    }
+    const videoContainer = document.querySelector('.video-container');
+    if (videoContainer) {
+      videoContainer.innerHTML = '';
+    }
+  }
+  
+  const tabs = ['narrative', 'explorer', 'graphics', 'quiz', 'video'];
   tabs.forEach(t => {
     const btn = document.getElementById(`tab-btn-${t}`);
-    if (t === (tabId === 'map-explorer' ? 'explorer' : tabId)) {
-      btn.classList.add('active');
-    } else {
-      btn.classList.remove('active');
+    if (btn) {
+      if (t === (tabId === 'map-explorer' ? 'explorer' : tabId)) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
     }
   });
   
@@ -797,6 +839,7 @@ function switchTab(tabId) {
   document.getElementById('card-map-explorer').style.display = 'none';
   document.getElementById('card-graphics').style.display = 'none';
   document.getElementById('card-quiz').style.display = 'none';
+  document.getElementById('card-video').style.display = 'none';
   
   if (tabId === 'narrative') {
     document.getElementById('card-narrative').style.display = 'flex';
@@ -815,6 +858,68 @@ function switchTab(tabId) {
   } else if (tabId === 'quiz') {
     document.getElementById('card-quiz').style.display = 'flex';
     renderQuiz();
+  } else if (tabId === 'video') {
+    document.getElementById('card-video').style.display = 'flex';
+    renderVideo();
+  }
+}
+
+// Render dynamic video contents (supports both local files and Google Drive embedded players)
+function renderVideo() {
+  const weekData = learningData.weeks[state.week];
+  const videoContainer = document.querySelector('.video-container');
+  const videoDesc = document.getElementById('video-desc');
+  
+  if (!weekData || !weekData.video) {
+    if (videoContainer) {
+      videoContainer.innerHTML = state.language === 'tr' ? 
+        '<div style="color:var(--text-secondary); font-size:0.85rem;">Bu modül için video bulunmamaktadır.</div>' : 
+        '<div style="color:var(--text-secondary); font-size:0.85rem;">No video is available for this module.</div>';
+    }
+    if (videoDesc) {
+      videoDesc.innerText = state.language === 'tr' ? 'Bu modül için video bulunmamaktadır.' : 'No video is available for this module.';
+    }
+    return;
+  }
+  
+  const src = weekData.video.src;
+  
+  if (videoContainer) {
+    if (src.includes('drive.google.com')) {
+      // Extract File ID from Google Drive share link
+      let fileId = '';
+      const match = src.match(/\/d\/([a-zA-Z0-9_-]+)/);
+      if (match) {
+        fileId = match[1];
+      }
+      
+      if (fileId) {
+        // Embed Google Drive Video Player inside iframe
+        videoContainer.innerHTML = `
+          <iframe id="module-video-iframe" src="https://drive.google.com/file/d/${fileId}/preview" style="width: 100%; height: 100%; border: none; border-radius: 12px;" allow="autoplay" allowfullscreen></iframe>
+        `;
+      } else {
+        videoContainer.innerHTML = `
+          <div style="color:var(--error); font-size:0.85rem;">Geçersiz Google Drive Linki / Invalid Google Drive URL</div>
+        `;
+      }
+    } else {
+      // Render standard local HTML5 video player
+      videoContainer.innerHTML = `
+        <video id="module-video-player" controls style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
+          <source id="module-video-source" src="${src}" type="video/mp4">
+          Tarayıcınız video oynatmayı desteklemiyor.
+        </video>
+      `;
+      const player = document.getElementById('module-video-player');
+      if (player) {
+        player.load();
+      }
+    }
+  }
+  
+  if (videoDesc) {
+    videoDesc.innerText = weekData.video.desc[state.language];
   }
 }
 
