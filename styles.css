@@ -1105,13 +1105,12 @@ header {
   font-size: 0.58rem;
   letter-spacing: 0.05em;
 }
-
 .quiz-submit-btn {
   margin-top: 0.3rem;
   align-self: flex-start;
-  padding: 0.35rem 1rem;
+  padding: 0.45rem 1.2rem;
   font-family: var(--font-display);
-  font-size: 0.7rem;
+  font-size: 0.82rem;
   font-weight: 700;
   background: var(--theme-accent);
   color: #fff;
