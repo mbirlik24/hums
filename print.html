@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>HUMS 131 - Akademik Ders Notu Baskı Ön İzleme</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+    
+    /* Screen Preview Banner Styling */
+    .print-banner {
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #1f2937;
+      color: #ffffff;
+      padding: 0.75rem 1.5rem;
+      z-index: 10000;
+      font-family: 'Outfit', sans-serif;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 3px solid var(--theme-accent, #10b981);
+    }
+    .print-banner-content {
+      max-width: 800px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+    .print-banner-text {
+      font-size: 0.9rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .loading-spinner {
+      width: 16px;
+      height: 16px;
+      border: 2.5px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      border-top-color: #ffffff;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    .print-btn {
+      background: #10b981;
+      color: #ffffff;
+      border: none;
+      padding: 0.5rem 1.2rem;
+      font-weight: 700;
+      font-size: 0.85rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: 'Outfit', sans-serif;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .print-btn:hover {
+      background: #059669;
+      transform: translateY(-1px);
+    }
+    .print-btn:active {
+      transform: translateY(0);
+    }
+    
+    /* Document Body Styling */
+    :root {
+      --text-primary: #111827;
+      --text-secondary: #4b5563;
+      --bg-surface: #ffffff;
+      --bg-card: #f9fafb;
+      --border-color: #e5e7eb;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #1f2937;
+      margin: 0;
+      padding: 0;
+      background: #f3f4f6;
+    }
+    .document-container {
+      max-width: 820px;
+      margin: 2rem auto;
+      background: #ffffff;
+      padding: 3rem;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+    .header-section {
+      border-bottom: 2px solid var(--theme-accent, #10b981);
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .course-code {
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--theme-accent, #10b981);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.8rem;
+      color: #111827;
+      margin: 0.25rem 0 0 0;
+    }
+    .meta-box {
+      font-size: 0.85rem;
+      color: #4b5563;
+      margin-top: 0.5rem;
+    }
+    h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.25rem;
+      margin-top: 2rem;
+      color: #111827;
+      border-left: 4px solid var(--theme-accent, #10b981);
+      padding-left: 0.6rem;
+    }
+    h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.1rem;
+      color: #111827;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+    p {
+      font-size: 0.92rem;
+      color: #374151;
+      margin-bottom: 1rem;
+      text-align: justify;
+      line-height: 1.6;
+    }
+    ul {
+      padding-left: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    li {
+      margin-bottom: 0.4rem;
+      font-size: 0.9rem;
+      color: #374151;
+    }
+    .page-break {
+      page-break-before: always;
+    }
+    .note-card {
+      background: #f9fafb;
+      border-left: 3px solid #6b7280;
+      padding: 0.8rem 1rem;
+      margin: 1rem 0;
+      border-radius: 4px;
+    }
+    .slide-print-map {
+      width: 100%;
+      height: 280px;
+      margin: 1rem 0;
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      z-index: 1;
+    }
+    .infographic-print-section {
+      margin-bottom: 3rem;
+      page-break-inside: avoid;
+    }
+    .infographic-print-box {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-top: 0.8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    }
+    .infographic-svg {
+      max-width: 100%;
+      height: auto;
+      max-height: 380px;
+      display: block;
+    }
+    
+    .leaflet-marker-custom-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .leaflet-custom-pin-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+    .leaflet-custom-pin {
+      width: 10px;
+      height: 10px;
+      background: var(--theme-accent, #10b981);
+      border: 2px solid #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    }
+    .leaflet-custom-pin.pulsing {
+      animation: pinPulse 1.5s ease-out infinite;
+    }
+    @keyframes pinPulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+      }
+      70% {
+        box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+      }
+    }
+    .leaflet-custom-pin-label {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.65rem;
+      font-weight: 700;
+      border: 1px solid #d1d5db;
+      margin-top: 4px;
+      white-space: nowrap;
+      color: #1f2937;
+    }
+    .leaflet-custom-emoji-badge {
+      position: absolute;
+      top: -22px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+      pointer-events: none;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25));
+      font-size: 1.35rem;
+      animation: emojiBob 1.6s ease-in-out infinite alternate;
+    }
+    @keyframes emojiBob {
+      0% {
+        transform: translateX(-50%) translateY(0) scale(1);
+      }
+      50% {
+        transform: translateX(-50%) translateY(-4px) scale(1.15);
+      }
+      100% {
+        transform: translateX(-50%) translateY(-8px) scale(1);
+      }
+    }
+    
+    @media print {
+      body {
+        background: #ffffff !important;
+      }
+      .print-banner {
+        display: none !important;
+      }
+      .document-container {
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+      }
+      .slide-print-map {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .leaflet-custom-pin {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .slide-section {
+        page-break-inside: avoid !important;
+      }
+      .infographic-print-section {
+        page-break-inside: avoid !important;
+      }
+    }
+  </style>
+  <script>
+    // Disable Leaflet 3D transforms globally for print compatibility
+    window.L_DISABLE_3D = true;
+  </script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+<body>
+
+  <div class="print-banner">
+    <div class="print-banner-content">
+      <div class="print-banner-text" id="status-text">
+        <div class="loading-spinner"></div>
+        <span id="status-message">Ders notu baskı için hazırlanıyor, haritalar kuruluyor...</span>
+      </div>
+      <button class="print-btn" onclick="window.print()" id="print-button" disabled style="opacity: 0.6; cursor: not-allowed;">
+        🖨️ Sayfayı Yazdır / PDF Kaydet
+      </button>
+    </div>
+  </div>
+
+  <div class="document-container" id="document-content">
+    <!-- Rendered dynamically -->
+  </div>
+
+  <script>
+    // Retrieve print configuration from localStorage
+    const weekNum = localStorage.getItem('print_weekNum');
+    const language = localStorage.getItem('print_language') || 'tr';
+    const diagramsData = JSON.parse(localStorage.getItem('print_diagrams') || '[]');
+    const themeColor = localStorage.getItem('print_themeColor') || '#10b981';
+    const weekTitle = localStorage.getItem('print_weekTitle') || '';
+    const slidesData = JSON.parse(localStorage.getItem('print_slides') || '[]');
+    const mapCenter = JSON.parse(localStorage.getItem('print_mapCenter') || '[15, -25]');
+    const mapZoom = parseFloat(localStorage.getItem('print_mapZoom') || '2');
+    const mapPresetData = JSON.parse(localStorage.getItem('print_mapPresetData') || '{}');
+    const detailedNotes = localStorage.getItem('print_detailedNotes') || '';
+    
+    // Set theme color CSS variable
+    document.documentElement.style.setProperty('--theme-accent', themeColor);
+    
+    // Build page HTML
+    const contentDiv = document.getElementById('document-content');
+    
+    let html = `
+      <div class="header-section">
+        <div class="course-code">HUMS 131</div>
+        <h1>${weekTitle}</h1>
+        <div class="meta-box">
+          <strong>${language === 'tr' ? 'Tarih:' : 'Date:'}</strong> ${new Date().toLocaleDateString()} | 
+          <strong>${language === 'tr' ? 'Konu:' : 'Topic:'}</strong> ${weekTitle}
+        </div>
+      </div>
+      
+      <h2>${language === 'tr' ? '1. Ders İçeriği ve Konu Başlık Haritaları' : '1. Lecture Content & Topic Maps'}</h2>
+    `;
+    
+    slidesData.forEach((slide, idx) => {
+      html += `
+        <div class="slide-section" style="margin-bottom: 2.5rem;">
+          <h3>${slide.title[language]}</h3>
+          <div class="slide-print-map" id="print-map-slide-${idx}"></div>
+          <p>${slide.text[language]}</p>
+        </div>
+      `;
+    });
+    
+    html += `
+      <div class="page-break"></div>
+      <h2>${language === 'tr' ? '2. Sınıf İçi Grafik ve 3D Şemalar' : '2. Classroom Graphics & 3D Diagrams'}</h2>
+    `;
+    
+    diagramsData.forEach((diag, idx) => {
+      html += `
+        <div class="infographic-print-section">
+          <h3>[${idx + 1}] ${diag.title}</h3>
+          <div class="infographic-print-box">
+            ${diag.html}
+          </div>
+        </div>
+      `;
+    });
+    
+    html += `
+      <div class="page-break"></div>
+      <h2>${language === 'tr' ? '3. Genişletilmiş Akademik Analiz' : '3. Extended Academic Analysis'}</h2>
+      ${detailedNotes}
+    `;
+    
+    contentDiv.innerHTML = html;
+    
+    // Initialize maps
+    const mapsList = [];
+    let tilesLoadedCount = 0;
+    let printTriggered = false;
+    
+    function updateMapsLayout() {
+      mapsList.forEach(m => {
+        try {
+          m.invalidateSize();
+          if (m.fitCoords && m.fitCoords.length > 1) {
+            const bounds = L.latLngBounds(m.fitCoords);
+            m.fitBounds(bounds, {
+              padding: [45, 45],
+              maxZoom: m.maxZoomLimit || 5.0,
+              animate: false
+            });
+          } else if (m.fitCoords && m.fitCoords.length === 1) {
+            m.setView(m.fitCoords[0], (m.defaultZoom || mapZoom) + 1.5);
+          } else {
+            m.setView(m.defaultCenter || mapCenter, m.defaultZoom || mapZoom);
+          }
+        } catch (e) {
+          console.error(e);
+        }
+      });
+    }
+    
+    function triggerPrint() {
+      if (printTriggered) return;
+      printTriggered = true;
+      
+      // Update banner UI to show ready status
+      const statusText = document.getElementById('status-text');
+      const printBtn = document.getElementById('print-button');
+      
+      statusText.innerHTML = '✅ <span>Ders notu hazır. Yazdırmak veya PDF kaydetmek için butona basın.</span>';
+      printBtn.disabled = false;
+      printBtn.style.opacity = '1';
+      printBtn.style.cursor = 'pointer';
+      
+      // Force map layouts to calculate properly for the screen dimensions
+      updateMapsLayout();
+      
+      // Prompt printing automatically once loaded
+      setTimeout(() => {
+        window.print();
+      }, 500);
+    }
+    
+    // Invalidate map sizes right before printing dialog renders to adjust to page width
+    window.addEventListener('beforeprint', updateMapsLayout);
+    window.addEventListener('afterprint', updateMapsLayout);
+    
+    if (slidesData.length === 0) {
+      triggerPrint();
+    } else {
+      slidesData.forEach((slide, idx) => {
+        try {
+          const mapState = slide.mapState || {};
+          const slideMapDiv = document.getElementById('print-map-slide-' + idx);
+          if (!slideMapDiv) return;
+          
+          // Collect coordinates of all markers and routes in this slide to fit them exactly
+          const coords = [];
+          
+          if (mapState.markerDetails) {
+            mapState.markerDetails.forEach(m => {
+              if (m.coords) coords.push(L.latLng(m.coords));
+            });
+          }
+          
+          if (mapState.routeDetails) {
+            mapState.routeDetails.forEach(r => {
+              if (r.coords) {
+                r.coords.forEach(c => coords.push(L.latLng(c)));
+              }
+            });
+          }
+          
+          const slideMap = L.map('print-map-slide-' + idx, {
+            zoomControl: false,
+            attributionControl: false,
+            trackResize: false,
+            minZoom: 1
+          });
+          
+          // Save parameters to map instance for recalculating on print layout change
+          slideMap.fitCoords = coords;
+          slideMap.maxZoomLimit = mapZoom + 2.2;
+          slideMap.defaultCenter = mapCenter;
+          slideMap.defaultZoom = mapZoom;
+          
+          const tileLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            subdomains: 'abcd',
+            maxZoom: 20
+          });
+          
+          tileLayer.on('load', () => {
+            tilesLoadedCount++;
+            if (tilesLoadedCount === slidesData.length) {
+              triggerPrint();
+            }
+          });
+          
+          tileLayer.addTo(slideMap);
+          mapsList.push(slideMap);
+          
+          // Force Leaflet to read the container dimension before fitBounds
+          slideMap.invalidateSize();
+          
+          // Set initial view bounds/center
+          if (coords.length === 0) {
+            slideMap.setView(mapCenter, mapZoom);
+          } else if (coords.length === 1) {
+            slideMap.setView(coords[0], mapZoom + 1.5);
+          } else {
+            const bounds = L.latLngBounds(coords);
+            slideMap.fitBounds(bounds, {
+              padding: [45, 45],
+              maxZoom: mapZoom + 2.2,
+              animate: false
+            });
+          }
+          
+          // Draw slide-specific markers
+          if (mapState.markerDetails) {
+            mapState.markerDetails.forEach(marker => {
+              const placement = marker.placement || 'right';
+              const showEmoji = !!marker.emoji;
+              const emojiHtml = marker.emoji ? `<span class="leaflet-custom-emoji-badge active">${marker.emoji}</span>` : '';
+              
+              const customIcon = L.divIcon({
+                className: 'leaflet-marker-custom-icon',
+                html: `
+                  <div class="leaflet-custom-pin-wrapper ${showEmoji ? 'show-emoji' : 'show-label'}">
+                     ${emojiHtml}
+                     <div class="leaflet-custom-pin pulsing"></div>
+                     <span class="leaflet-custom-pin-label placement-${placement}">${marker.label[language]}</span>
+                  </div>
+                `,
+                iconSize: [12, 12],
+                iconAnchor: [6, 6]
+              });
+              L.marker(marker.coords, { icon: customIcon }).addTo(slideMap);
+            });
+          }
+          
+          // Draw slide-specific routes
+          if (mapState.routeDetails) {
+            mapState.routeDetails.forEach(route => {
+              if (route.coords) {
+                L.polyline(route.coords, {
+                  color: themeColor,
+                  weight: 3.5,
+                  opacity: 0.85,
+                  lineJoin: 'round'
+                }).addTo(slideMap);
+              }
+            });
+          }
+          
+          slideMap.invalidateSize();
+          
+        } catch (err) {
+          console.error(err);
+          tilesLoadedCount++;
+          if (tilesLoadedCount === slidesData.length) {
+            triggerPrint();
+          }
+        }
+      });
+      
+      // Safety print trigger after 5 seconds in case some tiles hang
+      setTimeout(() => {
+        triggerPrint();
+      }, 5000);
+    }
+  </script>
+</body>
+</html>
