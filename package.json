@@ -1,0 +1,25 @@
+{
+  "name": "hums",
+  "version": "1.0.0",
+  "description": "Historical Atlas: Columbian Exchange and Age of Revolutions",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"No tests specified\"",
+    "dev": "npx serve .",
+    "build": "echo \"Static HTML site - no build required\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbirlik24/hums.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbirlik24/hums/issues"
+  },
+  "homepage": "https://github.com/mbirlik24/hums#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
