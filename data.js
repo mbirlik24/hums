@@ -1105,17 +1105,17 @@ const learningData = {
             tr: "Transatlantik Köle Ticareti (1519–1867)"
           },
           text: {
-            en: `<p><strong>Historical Scope:</strong> Operating between 1519 (first voyage to Hispaniola) and 1867 (last voyage to Cuba), the transatlantic slave trade shipped millions of African slaves to American colonies (Eltis, 2001).</p>
-                 <p><strong>Unprecedented Demographic Shift:</strong> The forced migration of millions of Africans fundamentally reshaped the demographic outlook of the Americas, making Africans the dominant population group in several colonial areas (Thornton, 1999).</p>
-                 <p><strong>Merchant Capital & Permanent Slavery:</strong> This lucrative commerce enriched European merchants—the same class that would later drive political revolutions. Unlike ancient forms of slavery, African slavery in the Americas became a permanent, hereditary condition from which slaves could never escape.</p>
+            en: `<p><strong>The Scale of Human Movement:</strong> Operating across more than three centuries between 1519 (the first recorded voyage to Hispaniola) and 1867 (the final vessel to Cuba), the transatlantic slave trade shipped millions of African human beings across the ocean to American colonies (Eltis, 2001).</p>
+                 <p><strong>A Fundamental Demographic Shift:</strong> This forced migration fundamentally transformed the demographic landscape of the Western Hemisphere. In many plantation regions, African populations quickly became the dominating demographic group, forever shaping American cultures (Thornton, 1999).</p>
+                 <p><strong>Merchant Wealth & Permanent Servitude:</strong> Beyond demographics, this lucrative commerce enriched European merchants—the very class that would later fund political revolutions. Unlike ancient forms of servitude in Roman or Ottoman history, African slavery in the New World became a permanent, hereditary condition from which captives could never hope to escape.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Key Distinction:</strong> While slavery existed in Roman and Ottoman times, New World slavery was unique in its permanent, racialized, and hereditary structure.
+                   <strong>Key Distinction:</strong> New World slavery was unique in human history because it turned human beings into permanent, hereditary chattel property based on race.
                  </div>`,
-            tr: `<p><strong>Tarihsel Kapsam:</strong> 1519 (Hispaniola'ya ilk sefer) ile 1867 (Küba'ya son sefer) yılları arasında yürütülen transatlantik köle ticareti, milyonlarca Afrikalıyı Amerika kolonilerine taşıdı (Eltis, 2001).</p>
-                 <p><strong>Emsalsiz Demografik Dönüşüm:</strong> Milyonlarca Afrikalının zorla göç ettirilmesi Amerika'nın nüfus yapısını değiştirdi ve birçok sömürge bölgesinde Afrikalılar baskın grup haline geldi (Thornton, 1999).</p>
-                 <p><strong>Tüccar Sermayesi ve Kalıcı Kölelik:</strong> Bu kazançlı ticaret, ileride siyasi devrimleri yapacak olan Avrupalı burjuvaziyi güçlendirdi. Antik kölelik biçimlerinin aksine, Amerika'daki Afrikalı köleliği insanların asla kurtulamayacağı kalıcı ve irsi bir statüye dönüştü.</p>
+            tr: `<p><strong>İnsan Göçünün Devasa Boyutu:</strong> 1519 yılında Hispaniola'ya yapılan ilk kayıttan 1867'de Küba'ya ulaşan son gemiye kadar üç asrı aşkın süre işleyen transatlantik köle ticareti, milyonlarca Afrikalı insanı Okyanus ötesindeki Amerika kolonilerine taşıdı (Eltis, 2001).</p>
+                 <p><strong>Köklü Bir Demografik Dönüşüm:</strong> Bu zorunlu göç, Batı Yarımküre'nin nüfus haritasını baştan aşağı değiştirdi. Birçok plantasyon bölgesinde Afrikalılar kısa sürede baskın demografik grup haline gelerek Amerika kültürlerini derinden etkiledi (Thornton, 1999).</p>
+                 <p><strong>Tüccar Serveti ve Kalıcı Kölelik:</strong> Bu kazançlı ticaret, ileride siyasi devrimleri yapacak olan Avrupalı tüccar sınıfını zenginleştirdi. Roma veya Osmanlı tarihindeki antik kölelik biçimlerinin aksine, Yeni Dünya'daki Afrikalı köleliği insanların asla kurtulamayacağı kalıcı ve irsi bir statüye dönüştü.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Temel Ayırım:</strong> Roma veya Osmanlı'daki köleliğin aksine Yeni Dünya köleliği irsi, ırksal ve kalıcı yapısıyla tarihte özgündür.
+                   <strong>Temel Ayırım:</strong> Yeni Dünya köleliği insanları ırka dayalı irsi ve kalıcı mülk haline getirmesiyle insanlık tarihinde tekil ve özgündür.
                  </div>`
           },
           mapState: {
@@ -1131,25 +1131,17 @@ const learningData = {
             tr: "Köle Ticaretinin Temel Soruları"
           },
           text: {
-            en: `<p><strong>Core Inquiries:</strong> To understand the Transatlantic Slave Trade as a driver of modernization, we examine four pivotal questions:</p>
-                 <p><ul>
-                   <li><strong>When and how did the slave trade begin?</strong> Tracing its origins from Atlantic island colonization.</li>
-                   <li><strong>How was this trade organized?</strong> Analyzing the commercial mechanisms between European merchants and African states.</li>
-                   <li><strong>Who controlled it?</strong> Mapping imperial rivalries and national monopolies (Portugal, Britain, France).</li>
-                   <li><strong>What kind of societies did it create?</strong> Examining the rise of slave societies, focusing on North America (Virginia).</li>
-                 </ul></p>
+            en: `<p><strong>Framing the Historical Inquiry:</strong> To grasp how the transatlantic slave trade acted as a primary engine of Atlantic modernization, historians examine four central questions.</p>
+                 <p><strong>Origins, Organization & Control:</strong> We first trace how the trade gradually emerged from early Atlantic exploration, how commerce was organized between European companies and African states, and how imperial powers like Britain and Portugal fought for dominance over trade routes.</p>
+                 <p><strong>Building Slave-Made Societies:</strong> Finally, we investigate what kind of societies this trade constructed in the Americas, taking North America—and specifically Virginia—as a primary case study of how race became the axial line of colonial social order.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Analytical Focus:</strong> Slavery was not an accidental byproduct; it was the central labor mechanism fueling Atlantic capitalism.
+                   <strong>Core Focus:</strong> Slavery was not an accidental side-effect of expansion; it was the essential labor foundation of early modern Atlantic capitalism.
                  </div>`,
-            tr: `<p><strong>Temel Sorular:</strong> Transatlantik Köle Ticaretini modernleşmenin motoru olarak anlamak için dört ana soruyu inceliyoruz:</p>
-                 <p><ul>
-                   <li><strong>Köle ticareti ne zaman ve nasıl başladı?</strong> Atlantik adalarının sömürgeleştirilmesinden itibaren iz sürülmesi.</li>
-                   <li><strong>Bu ticaret nasıl organize edildi?</strong> Avrupalı tüccarlar ile Afrika devletleri arasındaki ticari mekanizmalar.</li>
-                   <li><strong>Ticareti kim kontrol ediyordu?</strong> Portekiz, İngiltere ve Fransa arasındaki rekabet ve tekel mücadeleleri.</li>
-                   <li><strong>Nasıl toplumlar yarattı?</strong> Köle toplumlarının doğuşu ve Virginia örneği.</li>
-                 </ul></p>
+            tr: `<p><strong>Tarihsel Sorgulamanın Çerçevesi:</strong> Transatlantik köle ticaretinin Atlantik modernleşmesinin ana motoru olarak nasıl işlediğini kavramak için tarihçiler dört temel soruyu inceler.</p>
+                 <p><strong>Kökenler, Organizasyon ve Kontrol:</strong> İlk olarak ticaretin Atlantik adalarının keşfinden nasıl doğduğunu, Avrupalı şirketler ile Afrika devletleri arasındaki ticaretin nasıl örgütlendiğini ve İngiltere ile Portekiz gibi güçlerin yolları nasıl kontrol ettiğini takip ediyoruz.</p>
+                 <p><strong>Kölelerin İnşa Ettiği Toplumlar:</strong> Son olarak bu ticaretin Amerika'da nasıl bir toplum yapısı yarattığını; özellikle Kuzey Amerika ve Virginia örneği üzerinden ırkın kolonilerde nasıl ana toplumsal eksen haline geldiğini inceliyoruz.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Analitik Odak:</strong> Kölelik tesadüfi bir unsur değil, Atlantik kapitalizmini besleyen ana işgücü mekanizmasıydı.
+                   <strong>Temel Odak:</strong> Kölelik tesadüfi bir unsur değil, erken modern Atlantik kapitalizminin temel işgücü sütunudur.
                  </div>`
           },
           mapState: {
@@ -1165,15 +1157,17 @@ const learningData = {
             tr: "Atlantik Adaları ve Ticaretin Başlangıcı"
           },
           text: {
-            en: `<p><strong>Gradual Development:</strong> The African slave trade did not start fully formed; it evolved gradually over decades of maritime expansion.</p>
-                 <p><strong>The Atlantic Islands Stepping Stone:</strong> Its initial phase was tied to Portuguese and Spanish takeover of Atlantic islands (Madeira, Canaries, São Tomé). Here, Europeans first established prototype plantation systems using forced labor before expanding across the ocean.</p>
+            en: `<p><strong>A Gradual Evolution:</strong> The transatlantic slave trade did not arrive as a ready-made system. It developed gradually through decades of European maritime trial and error across the Atlantic.</p>
+                 <p><strong>The Atlantic Island Prototypes:</strong> Its critical initial phase occurred when Portuguese and Spanish navigators seized Atlantic islands—Madeira, the Canaries, and São Tomé. On these islands, Europeans established prototype sugar plantations powered by forced African labor long before crossing the open ocean.</p>
+                 <p><strong>Testing the System:</strong> The success of sugar production on São Tomé proved that forced African labor could generate enormous profits, serving as the direct structural model for later American plantation economies.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Prototype Era:</strong> Sugar production on São Tomé served as the structural testing ground for the massive plantation economies later built in Brazil and the Caribbean.
+                   <strong>São Tomé Model:</strong> The Portuguese island of São Tomé served as the structural testing ground for the massive plantation labor systems later deployed in Brazil and the Caribbean.
                  </div>`,
-            tr: `<p><strong>Kademeli Gelişim:</strong> Afrikalı köle ticareti aniden ortaya çıkmadı; denizci genişlemenin yıllar süren kademeli bir süreci olarak evrildi.</p>
-                 <p><strong>Atlantik Adaları Deneyimi:</strong> İlk adım, Portekiz ve İspanyolların Atlantik adalarını (Madeira, Kanarya Adaları, São Tomé) ele geçirmesiydi. Avrupalılar, Okyanus ötesine geçmeden önce köle gücüne dayalı prototip plantasyon sistemlerini ilk kez bu adalarda denediler.</p>
+            tr: `<p><strong>Kademeli Bir Evrim:</strong> Transatlantik köle ticareti aniden hazır bir sistem olarak doğmadı. Avrupalı denizcilerin Atlantik'teki onlarca yıllık deneme-yanılma süreçleriyle kademeli olarak gelişti.</p>
+                 <p><strong>Atlantik Adaları Prototipi:</strong> İlk kritik aşama, Portekizli ve İspanyol denizcilerin Atlantik adalarını—Madeira, Kanarya Adaları ve São Tomé—ele geçirmesiydi. Avrupalılar, Okyanus ötesine geçmeden önce köle gücüne dayalı şeker plantasyonu modelini ilk kez bu adalarda denediler.</p>
+                 <p><strong>Sistemin Test Edilmesi:</strong> São Tomé'deki şeker üretiminin başarısı, Afrikalı köle emeğinin devasa kârlar getirebileceğini kanıtlayarak Amerika'da kurulacak plantasyon ekonomilerinin doğrudan modeli oldu.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Prototip Dönemi:</strong> São Tomé'deki şeker üretimi, daha sonra Brezilya ve Karayipler'de kurulacak devasa plantasyon ekonomilerinin deneme sahası olmuştur.
+                   <strong>São Tomé Modeli:</strong> Portekiz adası São Tomé, daha sonra Brezilya ve Karayipler'de kurulacak devasa plantasyon sistemlerinin deneme sahası olmuştur.
                  </div>`
           },
           mapState: {
@@ -1189,17 +1183,17 @@ const learningData = {
             tr: "Encomienda'dan Sürekli Zorunlu İşgücüne Geçiş"
           },
           text: {
-            en: `<p><strong>Spanish Labor Demands:</strong> Spanish settlers needed labor for mining, European crop cultivation (wheat), and livestock raising. The Crown initially granted <em>encomiendas</em>—giving settlers rights to Native American labor.</p>
-                 <p><strong>Widespread Compulsion:</strong> Slavery was part of a broader spectrum of forced labor in 18th-century economies, alongside indentured servants, bound peasants, apprenticeships, and convict workers (Fernandez-Armesto, 2007).</p>
-                 <p><strong>Legal Barriers to Native Labor:</strong> Spanish colonial laws (requiring just wages, separate residences, and restricted service durations) prevented full-time exploitation of Native Americans, prompting settlers to turn to African slavery for permanent labor (Thornton, 1999).</p>
+            en: `<p><strong>Spanish Colonial Labor Demands:</strong> Spanish settlers needed workers for gold mines, European grain crops, and livestock estates. The Crown initially instituted the <em>encomienda</em> system, granting settlers control over Native American labor.</p>
+                 <p><strong>The Spectrum of Compulsion:</strong> Slavery operated within a wider spectrum of coerced labor in early modern economies, alongside indentured servants, bound peasants, apprenticeships, and convict laborers (Fernandez-Armesto, 2007).</p>
+                 <p><strong>Legal Barriers to Native Labor:</strong> Crown regulations protecting Native Americans—requiring just wages, separate residences, and restricted service durations—prevented settlers from enjoying full-time labor, prompting them to adopt African slavery for permanent labor (Thornton, 1999).</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Legal Impact:</strong> Protectionist laws for Native Americans paradoxically accelerated the demand for unprotected African slaves.
+                   <strong>Legal Paradox:</strong> Crown laws protecting Native Americans inadvertently accelerated the demand for unprotected African slaves.
                  </div>`,
-            tr: `<p><strong>İspanyol İşgücü Talebi:</strong> İspanyol yerleşimciler madencilik, buğday tarımı ve hayvancılık için işgücüne muhtaçtı. İspanyol Tacı başlangıçta yerli halkın emeğini yerleşimcilere tahsis eden <em>encomienda</em> sistemini kurdu.</p>
-                 <p><strong>Zorunlu Emek Yelpazesi:</strong> Kölelik; sözleşmeli işçiler, toprağa bağlı köylüler ve hükümlü işçiler gibi 18. yüzyıl ekonomilerindeki geniş zorunlu emek tayfının bir parçasıydı (Fernandez-Armesto, 2007).</p>
-                 <p><strong>Yerli Emek Sınırlamaları:</strong> İspanyol yasalarının yerliler için getirdiği adil ücret ve çalışma süresi kısıtlamaları tam zamanlı sömürüyü engellemiş; yerleşimciler sürekli işgücü için Afrikalı köleliğine yönelmiştir (Thornton, 1999).</p>
+            tr: `<p><strong>İspanyol Sömürge Emek Talebi:</strong> İspanyol yerleşimciler madenler, buğday tarımı ve hayvancılık için işgücüne muhtaçtı. İspanyol Tacı başlangıçta yerli halkın emeğini yerleşimcilere devreden <em>encomienda</em> sistemini kurdu.</p>
+                 <p><strong>Zorunlu Emek Tayfı:</strong> Kölelik; sözleşmeli işçiler, toprağa bağlı köylüler ve hükümlü işçiler gibi dönemin geniş zorunlu emek yelpazesinin bir parçası olarak işliyordu (Fernandez-Armesto, 2007).</p>
+                 <p><strong>Hukuki Engeller ve Çözüm:</strong> İspanyol yasalarının yerliler için getirdiği adil ücret ve çalışma süresi sınırlamaları tam zamanlı sömürüyü engellemiş; yerleşimciler sürekli işgücü için Afrikalı köleliğine yönelmiştir (Thornton, 1999).</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Hukuki Etki:</strong> Yerli nüfusu koruma yasaları, çelişkili şekilde hukuki korumadan yoksun Afrikalı kölelere olan talebi patlatmıştır.
+                   <strong>Hukuki Çelişki:</strong> Yerli nüfusu koruma yasaları, çelişkili şekilde hukuki korumadan yoksun Afrikalı kölelere olan talebi patlatmıştır.
                  </div>`
           },
           mapState: {
@@ -1215,17 +1209,17 @@ const learningData = {
             tr: "Yerli İşgücünün Afrikalı Kölelerle Değiştirilmesi"
           },
           text: {
-            en: `<p><strong>Demographic Collapse:</strong> European diseases decimated sparse native populations outside core Andean/Mesoamerican zones, rendering native labor quantitatively insufficient.</p>
-                 <p><strong>Specialized Pastoral Skills:</strong> Native Americans had no large domesticated animals and lacked cattle-herding skills. In contrast, slaves imported from Wolof, Fula, and Mandinga regions of West Africa brought essential horse-riding and cattle-raising expertise to mid-16th century Hispaniola estates.</p>
-                 <p><strong>Ideological & Political Factors:</strong> Importing slaves from afar eliminated local community ties, preventing local resistance. Bartolomé de Las Casas and the Valladolid Controversy (1550–1551) defended Native Americans against slavery while permitting African labor (Thornton, 1999).</p>
+            en: `<p><strong>Demographic Collapse & Skill Disparity:</strong> Beyond demographic collapse from Old World diseases, Native Americans had no history of large domesticated animals. In contrast, slaves brought from Wolof, Fula, and Mandinga regions of West Africa brought centuries of cattle-raising and horsemanship skills to early American estates.</p>
+                 <p><strong>Political Isolation:</strong> Importing slaves from across the ocean removed captives from their native communities, preventing local ties and organizing resistance.</p>
+                 <p><strong>The Ideological Shift:</strong> Bartolomé de Las Casas and the Valladolid Controversy (1550–1551) successfully argued that Native Americans possessed rational souls to be converted, inadvertently shifting the full burden of plantation labor onto African slaves (Thornton, 1999).</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Valladolid Controversy:</strong> Las Casas argued Native Americans were rational souls to be converted, inadvertently shifting the burden of forced labor onto Africans.
+                   <strong>Pastoral Skills:</strong> All the vaqueros (cowboys) of 16th-century Hispaniola were West Africans from cattle-herding traditions.
                  </div>`,
-            tr: `<p><strong>Demografik Kırılma:</strong> Avrupalı mikroplar yerli nüfusu kırdığı için yerli işgücü niceliksel olarak yetersiz hale geldi.</p>
-                 <p><strong>Uzmanlık ve Beceriler:</strong> Amerika yerlileri büyük evcil hayvanlara yabancıydı. Buna karşılık Wolof, Fula ve Mandinga bölgelerinden getirilen Afrikalı köleler, sığır ve at yetiştiriciliği konusunda büyük bir uzmanlığa sahipti.</p>
-                 <p><strong>Siyasi ve İdeolojik Nedenler:</strong> Dışarıdan getirilen kölelerin yerel bağları yoktu. Bartolomé de Las Casas ve Valladolid Münazarası (1550–1551), yerlilerin köleleştirilmesine karşı çıkarken Afrikalı köle ithalatını meşrulaştırdı (Thornton, 1999).</p>
+            tr: `<p><strong>Demografik Kırılma ve Beceri Üstünlüğü:</strong> Hastalıkların yarattığı yıkımın ötesinde, Amerika yerlileri büyük evcil hayvan kültürüne yabancıydı. Buna karşılık Batı Afrika'nın Wolof, Fula ve Mandinga bölgelerinden getirilen köleler, Amerika çiftliklerine sığır yetiştiriciliği ve at biniciliği uzmanlığını taşıdılar.</p>
+                 <p><strong>Siyasi İzolasyon:</strong> Kölelerin Okyanus ötesinden getirilmesi yerel toplumsal bağları kopardı ve yerel direniş imkanlarını yok etti.</p>
+                 <p><strong>İdeolojik Dönüşüm:</strong> Bartolomé de Las Casas ve Valladolid Münazarası (1550–1551), yerlilerin Hristiyanlaştırılacak ruhlar olduğunu kabul ettirirken, zorunlu emek yükünü farkında olmadan Afrikalıların üzerine yıkmıştır (Thornton, 1999).</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Valladolid Münazarası:</strong> Las Casas yerlilerin Hristiyanlaştırılacak ruhlar olduğunu savunurken, zorunlu emek yükünü farkında olmadan Afrikalıların üzerine yıkmıştır.
+                   <strong>Hayvancılık Uzmanlığı:</strong> 16. yüzyıl Hispaniola çiftliklerindeki tüm kovboylar (vaqueros), Afrika'nın sığır kültüründen gelen Afrikalılardı.
                  </div>`
           },
           mapState: {
@@ -1241,17 +1235,17 @@ const learningData = {
             tr: "Şeker Üretiminin Merkezi Rolü"
           },
           text: {
-            en: `<p><strong>90% Driven by Sugar:</strong> Between the late 16th century and 1820, a staggering 90% of all enslaved Africans brought across the Atlantic were imported specifically for sugar production or economies sustained by sugar exports (Eltis, 2001).</p>
-                 <p><strong>Secondary Demand Sectors:</strong> Secondary markets included tobacco (Chesapeake & Bahia), coffee (1/3 of sugar value in 1770), rice (Carolina), and gold/silver mining (Minas Gerais, Brazil after 1695).</p>
-                 <p><strong>Cotton Came Late:</strong> Cotton only became a primary driver of slavery in the United States as the transatlantic traffic itself was coming to an end.</p>
+            en: `<p><strong>The Monarch of Commodities:</strong> Between the late 16th century and 1820, a stunning 90% of all enslaved Africans brought across the Atlantic were imported specifically for sugar production or economies built around sugar exports (Eltis, 2001).</p>
+                 <p><strong>Secondary Demand Sectors:</strong> Secondary sectors included tobacco in Virginia and Bahia, coffee (accounting for 1/3 of sugar export value by 1770), rice in Carolina, and gold and silver mining in Minas Gerais, Brazil after 1695.</p>
+                 <p><strong>The Late Arrival of Cotton:</strong> Cotton, often associated with American slavery, only became a dominant crop as the transatlantic slave traffic itself was drawing to a close in the 19th century.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Economic Engine:</strong> Sugar was the undisputed monarch of Atlantic plantation commodities, driving capital accumulation across Europe.
+                   <strong>Sugar Dominance:</strong> Sugar was the undisputed economic king of Atlantic commodities, generating capital accumulation across European port cities.
                  </div>`,
-            tr: `<p><strong>%90 Şeker Odaklı:</strong> 16. yüzyıl sonu ile 1820 arasında Atlantik'i geçen Afrikalı kölelerin %90'ı doğrudan şeker üretimi veya şekere dayalı ekonomiler için ithal edilmiştir (Eltis, 2001).</p>
-                 <p><strong>İkincil Sektörler:</strong> Tütün (Chesapeake ve Bahia), kahve (1770'te şekerin 1/3'ü değerindeydi), pirinç (Carolina) ve madencilik (Minas Gerais, 1695) ikincil köle pazarlarıydı.</p>
-                 <p><strong>Pamuk Sonradan Geldi:</strong> Pamuk, ancak transatlantik köle ticareti sona ererken ABD'de ana kölelik motoru haline gelmiştir.</p>
+            tr: `<p><strong>Emtiaların Hükümdarı (Şeker):</strong> 16. yüzyıl sonu ile 1820 arasında Atlantik'i geçen Afrikalı kölelerin %90'ı doğrudan şeker üretimi veya şekere dayalı ekonomiler için ithal edilmiştir (Eltis, 2001).</p>
+                 <p><strong>İkincil Sektörler:</strong> Tütün (Virginia ve Bahia), kahve (1770'te şekerin 1/3'ü değerindeydi), pirinç (Carolina) ve madencilik (Minas Gerais, 1695) ikincil köle pazarlarını oluşturuyordu.</p>
+                 <p><strong>Pamuğun Geç Gelişi:</strong> Kölelikle sıkça anılan pamuk, ancak transatlantik köle ticareti sona ererken 19. yüzyılda ABD'de ana ürün haline gelmiştir.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Ekonomik Motor:</strong> Şeker, Avrupa'daki sermaye birikimini besleyen Atlantik plantasyon emtialarının tartışmasız lideriydi.
+                   <strong>Şeker Hakimiyeti:</strong> Şeker, Atlantik ticaretinin tartışmasız lideri olarak Avrupa liman kentlerinde devasa sermaye birikimi yaratmıştır.
                  </div>`
           },
           mapState: {
@@ -1267,15 +1261,15 @@ const learningData = {
             tr: "Afrika'da Ticaretin Organizasyonu ve Devlet İlişkileri"
           },
           text: {
-            en: `<p><strong>Voluntary Exchange Mechanism:</strong> The trade relied on voluntary commercial exchanges between European merchant companies and powerful African states.</p>
-                 <p><strong>European Inability to Occupy Africa:</strong> Europeans could not occupy Africa at this time due to high mortality from tropical malaria and fierce African military resistance—exemplified by Queen Nzinga's formidable resistance against Portuguese expansion in Angola.</p>
-                 <p><strong>Trade Goods:</strong> Before 1650, Europeans exported non-essential goods to Africa: textiles, iron/copper metals, knives, cowrie shells (currency), jewelry, mechanical toys, and alcohol (Thornton, 1999).</p>
+            en: `<p><strong>Voluntary Commercial Exchanges:</strong> The slave trade relied on voluntary commercial agreements between European trading companies and sovereign African states. Europeans did not possess the military capacity to occupy interior Africa at this time.</p>
+                 <p><strong>Malaria & African Resistance:</strong> High European mortality from tropical malaria combined with formidable African military resistance—epitomized by Queen Nzinga of Ndongo adroitly resisting Portuguese forces—kept Europeans restricted to coastal footholds.</p>
+                 <p><strong>Imported Goods:</strong> Before 1650, European merchants traded manufactured commodities: textiles, metals (raw iron and copper, knives, swords), cowrie shell currency, mechanical toys, and alcohol (Thornton, 1999).</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
                    <strong>Queen Nzinga:</strong> Queen Nzinga of Ndongo and Matamba adroitly resisted Portuguese military encroachment for decades through military tactics and diplomacy.
                  </div>`,
-            tr: `<p><strong>Gönüllü Ticari Mübadele:</strong> Köle ticareti, Avrupalı şirketler ile güçlü Afrika devletleri arasındaki gönüllü ticari anlaşmalara dayanıyordu.</p>
-                 <p><strong>Avrupalıların İşgal Edememesi:</strong> Avrupalılar yüksek sıtma ölümleri ve Afrikalıların sert askeri direnişi nedeniyle Afrika içlerini işgal edemiyordu—Kraliçe Nzinga'nın Portekizlilere karşı gösterdiği tarihi direniş buna örnektir.</p>
-                 <p><strong>İhraç Edilen Mallar:</strong> 1650 öncesinde Avrupalılar Afrika'ya kumaş, demir/bakır metaller, bıçaklar, deniz kabukları (para birimi), takılar ve alkol satıyorlardı (Thornton, 1999).</p>
+            tr: `<p><strong>Gönüllü Ticari Mübadele:</strong> Köle ticareti, Avrupalı şirketler ile egemen Afrika devletleri arasındaki gönüllü ticari anlaşmalara dayanıyordu. Avrupalıların o dönemde Afrika içlerini işgal edecek askeri gücü yoktu.</p>
+                 <p><strong>Sıtma ve Afrikalı Direnişi:</strong> Tropik sıtma ölümleri ve Afrikalıların sert askeri direnişi—Kraliçe Nzinga'nın Portekizlilere karşı gösterdiği tarihi direniş gibi—Avrupalıları kıyı kalelerine hapsetmiştir.</p>
+                 <p><strong>Afrika'ya Satılan Mallar:</strong> 1650 öncesinde Avrupalılar Afrika'ya kumaş, demir ve bakır eşyalar, bıçaklar, kılıçlar, deniz kabukları (para birimi) ve alkol satıyorlardı (Thornton, 1999).</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
                    <strong>Kraliçe Nzinga:</strong> Ndongo Kraliçesi Nzinga, zeki diplomasisi ve askeri taktikleriyle Portekiz işgaline onlarca yıl geçit vermemiştir.
                  </div>`
@@ -1293,14 +1287,14 @@ const learningData = {
             tr: "Köle Avı ve Kıyı Kalesi Depoları"
           },
           text: {
-            en: `<p><strong>Inland Captures & Long Marches:</strong> Slaves were captured deep within the interior by African armies during warfare and marched for months to the coast. Olaudah Equiano recorded learning six different languages during his long forced march to the sea (Fernandez-Armesto, 2007).</p>
-                 <p><strong>Coastal Forts & Branding:</strong> By the late 17th century, 64 European-controlled coastal forts operated along West Africa (Gold Coast, Bight of Benin/Biafra, Luanda/Benguela). Slaves were branded with hot irons prior to embarkation.</p>
-                 <p><strong>Cultural Retention:</strong> Slave owners resisted Christianizing slaves out of fear that the Bible would spark ideas of human equality, allowing African cultural practices to persist.</p>
+            en: `<p><strong>Inland Captures & Forced Marches:</strong> Slaves were captured deep within the interior during wars waged between African states and marched for months to the coast. Olaudah Equiano recorded learning six different languages during his forced march to the sea (Fernandez-Armesto, 2007).</p>
+                 <p><strong>Coastal Forts & Branding:</strong> By the late 17th century, 64 European coastal forts lined West Africa (Gold Coast, Bight of Benin/Biafra, Luanda). Captives were branded with hot irons prior to embarkation.</p>
+                 <p><strong>Preserving African Culture:</strong> Planters resisted Christianizing slaves out of fear that the Bible would spark subversive ideas of human equality, allowing traditional African cultural beliefs to survive.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
                    <strong>Olaudah Equiano:</strong> Equiano's famous autobiography exposed the horrific journey from inland capture to the Middle Passage.
                  </div>`,
-            tr: `<p><strong>İç Bölgelerde Avlanma ve Yürüyüşler:</strong> Köleler iç bölgelerdeki savaşlarda yakalanıyor ve kıyıya doğru aylarca yürütülüyordu. Olaudah Equiano, kıyıya ulaşana kadar 6 farklı dil öğrendiğini kaydetmiştir (Fernandez-Armesto, 2007).</p>
-                 <p><strong>Kıyı Kaleleri ve Dağlama:</strong> 17. yüzyıl sonuna kadar Batı Afrika kıyılarında 64 Avrupalı kalesi kuruldu (Altın Kıyısı, Benin/Biafra Körfezi, Luanda). Köleler gemilere bindirilmeden önce kızgın demirle dağlanıyordu.</p>
+            tr: `<p><strong>İç Bölgelerde Avlanma ve Yürüyüşler:</strong> Köleler iç bölgelerdeki savaşlarda yakalanıyor ve kıyıya doğru aylarca yürütülüyordu. Olaudah Equiano, deniz kıyısına ulaşana kadar 6 farklı dil öğrendiğini kaydetmiştir (Fernandez-Armesto, 2007).</p>
+                 <p><strong>Kıyı Kaleleri ve Dağlama:</strong> 17. yüzyıl sonuna kadar Batı Afrika kıyılarında 64 Avrupalı kalesi kuruldu (Altın Kıyısı, Benin Körfezi, Luanda). Köleler gemilere bindirilmeden önce kızgın demirle dağlanıyordu.</p>
                  <p><strong>Kültürel Korunma:</strong> Köle sahipleri, İncil'in eşitlik fikirleri aşılamasından korkarak köleleri Hristiyanlaştırmaya direndi; bu da Afrika kültürünün yaşamasına imkan tanıdı.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
                    <strong>Olaudah Equiano:</strong> Equiano'nun otobiyografisi, iç bölgelerdeki esaretten Orta Geçit'e uzanan dehşeti tüm dünyaya duyurmuştur.
@@ -1319,15 +1313,15 @@ const learningData = {
             tr: "Orta Geçit ve Silah-Köle Döngüsü"
           },
           text: {
-            en: `<p><strong>Middle Passage Horrors:</strong> To suppress revolts, traders mixed captives from different regions. Ships like the British slave vessel <em>Brooks</em> packed over 300 slaves into suffocating holds for a 30-member crew (Fernandez-Armesto, 2007).</p>
-                 <p><strong>Value Disparity:</strong> In the late 18th century, British slave exports from West Africa were worth 10 times the value of all other African commodities combined.</p>
-                 <p><strong>The Gun-Slave Cycle Theory:</strong> African states traded slaves to obtain European firearms necessary for self-defense. Possessing guns enhanced their ability to capture more slaves, generating an ongoing cycle of militarized slaving (Thornton, 1999).</p>
+            en: `<p><strong>Middle Passage Horrors:</strong> To prevent onboard revolts, slave traders mixed captives from different linguistic regions. Ships like the British slave vessel <em>Brooks</em> packed over 300 slaves into tight, suffocating holds watched by a 30-member crew (Fernandez-Armesto, 2007).</p>
+                 <p><strong>Commercial Monopoly Value:</strong> In the second half of the 18th century, British slave exports from West Africa were worth ten times the value of all other African exports combined.</p>
+                 <p><strong>The Gun-Slave Cycle Debate:</strong> The <em>gun-slave cycle</em> theory suggests African states were forced into slaving because European firearms were essential for self-defense. Debate continues over whether wars were fought for economic slave capture or political expansion (Thornton, 1999).</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
                    <strong>Brooks Diagram:</strong> The famous 1788 print of the Brooks ship became an iconic symbol used by abolitionists to demonstrate human overcrowding.
                  </div>`,
-            tr: `<p><strong>Orta Geçit Dehşeti:</strong> İsyanları önlemek için farklı dil konuşan köleler karıştırılıyordu. İngiliz <em>Brooks</em> gemisi gibi yapılarda 30 kişilik mürettebata karşı 300'den fazla köle havasız ambarlara istifleniyordu (Fernandez-Armesto, 2007).</p>
+            tr: `<p><strong>Orta Geçit Dehşeti:</strong> İsyanları önlemek için farklı dilleri konuşan köleler aynı ambarlara konuyordu. İngiliz <em>Brooks</em> gemisi gibi yapılarda 30 kişilik mürettebata karşı 300'den fazla köle havasız ambarlara istifleniyordu (Fernandez-Armesto, 2007).</p>
                  <p><strong>Ticari Değer Uçurumu:</strong> 18. yüzyılın ikinci yarısında İngilizlerin Afrika'dan ihraç ettiği kölelerin değeri, tüm diğer Afrika ürünlerinin 10 katına ulaşmıştı.</p>
-                 <p><strong>Silah-Köle Döngüsü Teorisi:</strong> Afrika devletleri kendilerini korumak üzere ateşli silah almak için köle satmak zorunda kalıyor; silah sahibi olmak daha fazla köle avlamayı kolaylaştırarak kısırdöngü yaratıyordu (Thornton, 1999).</p>
+                 <p><strong>Silah-Köle Döngüsü Tartışması:</strong> <em>Silah-köle döngüsü</em> teorisi, Afrika devletlerinin kendilerini korumak için silah almaya zorlandığını savunur. Savaşların köle avlamak için mi (ekonomik model) yoksa siyasi genişleme için mi (siyasi model) yapıldığı halen tartışılmaktadır (Thornton, 1999).</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
                    <strong>Brooks Çizimi:</strong> 1788 tarihli Brooks gemisi kesiti, köle ticaretinin vahşetini sergilemek üzere kaldırılma yanlılarınca simgeleştirilmiştir.
                  </div>`
@@ -1345,14 +1339,14 @@ const learningData = {
             tr: "Ticaretin Kontrolü ve Güç Dengeleri"
           },
           text: {
-            en: `<p><strong>British & Portuguese Dominance:</strong> Britain and Portugal accounted for 7/10 transatlantic slaving voyages and carried nearly 3/4 of all embarked slaves (Eltis, 2001).</p>
-                 <p><strong>Timeline Shifts:</strong> Portugal dominated before 1640; Britain displaced Portugal between 1647 and 1807 (carrying 5 slaves for every 4 on Portuguese ships); Portuguese dominance returned after Britain's 1807 Abolition Act.</p>
-                 <p><strong>Major British Ports:</strong> British slaving was concentrated in key port cities: Liverpool, Bristol, London, Whitehaven, and Lancashire (Eltis, 2001).</p>
+            en: `<p><strong>Dominance of Portugal and Britain:</strong> Britain and Portugal dominated the transatlantic slave trade, accounting for 7 out of 10 voyages and carrying nearly 3/4 of all enslaved Africans across the ocean (Eltis, 2001).</p>
+                 <p><strong>Historical Shifts in Control:</strong> Portugal dominated before 1640; Britain displaced Portugal between 1647 and 1807 (carrying five slaves for every four on Portuguese vessels); Portuguese dominance returned after Britain's 1807 Abolition Act.</p>
+                 <p><strong>Major British Port Cities:</strong> British slaving concentrated in key Atlantic ports: Liverpool, Bristol, London, Whitehaven, and Lancashire (Eltis, 2001).</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
                    <strong>Liverpool's Rise:</strong> Liverpool grew into the world's premier slaving port, building specialized ships and banking networks centered on slave capital.
                  </div>`,
             tr: `<p><strong>İngiliz ve Portekiz Hakimiyeti:</strong> Portekiz ve İngiltere, tüm transatlantik seferlerinin 10'da 7'sini gerçekleştirmiş ve kölelerin 4'te 3'ünü taşımıştır (Eltis, 2001).</p>
-                 <p><strong>Zaman Çizelgesi Değişimleri:</strong> Portekiz 1640 öncesine; İngiltere 1647–1807 arasına hükmetti; İngiltere'nin 1807 İptal Yasası sonrası Portekiz tekrar liderliğe geçti.</p>
+                 <p><strong>Hükümranlık Değişimleri:</strong> Portekiz 1640 öncesine; İngiltere 1647–1807 arasına hükmetti; İngiltere'nin 1807 İptal Yasası sonrası Portekiz tekrar liderliğe geçti.</p>
                  <p><strong>İngiliz Liman Kentleri:</strong> İngiliz ticareti Liverpool, Bristol, Londra ve Whitehaven gibi liman kentlerinde yoğunlaştı (Eltis, 2001).</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
                    <strong>Liverpool'un Yükselişi:</strong> Liverpool, köle sermayesine dayalı bankacılık ve gemi inşa ağlarıyla dünyanın en büyük köle limanına dönüşmüştür.
@@ -1371,14 +1365,14 @@ const learningData = {
             tr: "Köle Toplumları ve Maron Direnişi"
           },
           text: {
-            en: `<p><strong>The World the Slaves Made:</strong> Atlantic America became demographically more African than European. Import totals: 3 million to Brazil, 1 million to Caribbean, 1 million to Spanish colonies, 400,000 to English North America (Fernandez-Armesto, 2007).</p>
-                 <p><strong>Cultural Autonomy:</strong> Slaves created original languages (creoles), retained religious traditions, and built household patterns to bridge diverse African origins.</p>
-                 <p><strong>Maroon Communities:</strong> Runaway slaves formed independent <em>Maroon</em> communities in remote areas, often aided by Native Americans. The Maroon Kingdom of Esmeraldas (Colombia) signed a formal peace treaty with Spain in 1599 (Fernandez-Armesto, 2007).</p>
+            en: `<p><strong>The World the Slaves Made:</strong> Atlantic America became demographically more African than European. Import totals: 3 million to Brazil, 1 million to the Caribbean, 1 million to Spanish colonies, and 400,000 to English North America (Fernandez-Armesto, 2007).</p>
+                 <p><strong>Cultural Autonomy & Languages:</strong> Slaves created original languages (creoles), retained religious traditions, and built family structures to bridge diverse African origins.</p>
+                 <p><strong>Maroon Communities & Esmeraldas:</strong> Runaway slaves formed independent <em>Maroon</em> communities in remote areas, often aided by Native Americans. The Maroon Kingdom of Esmeraldas (Colombia) signed a formal peace treaty with the Spanish Crown in 1599 (Fernandez-Armesto, 2007).</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
                    <strong>Esmeraldas Treaty:</strong> The 1599 treaty recognized Maroon autonomy in Colombia, proving that runaway slave societies could force recognition from imperial crowns.
                  </div>`,
             tr: `<p><strong>Kölelerin Yarattığı Dünya:</strong> Atlantik Amerika demografik olarak Avrupa'dan çok Afrika karakteri kazandı: Brezilya'ya 3 milyon, Karayipler'e 1 milyon, İspanyol bölgelerine 1 milyon, Kuzey Amerika'ya 400.000 köle getirildi (Fernandez-Armesto, 2007).</p>
-                 <p><strong>Kültürel Özerklik:</strong> Köleler kreyol diller geliştirdi, dini inançlarını sürdürdü ve Afrika kökenlerini harmanlayan aile yapıları kurdular.</p>
+                 <p><strong>Kültürel Özerklik ve Diller:</strong> Köleler kreyol diller geliştirdi, dini inançlarını sürdürdü ve Afrika kökenlerini harmanlayan aile yapıları kurdular.</p>
                  <p><strong>Maron Toplulukları:</strong> Kaçak köleler dağlarda bağımsız <em>Maron</em> toplulukları kurdular. Kolombiya'daki Esmeraldas Maron Krallığı 1599'da İspanyol Tacı ile resmi antlaşma imzaladı (Fernandez-Armesto, 2007).</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
                    <strong>Esmeraldas Antlaşması:</strong> 1599 antlaşması Maron özerkliğini tanıyarak kaçak toplulukların imparatorluklara iradelerini kabul ettirebileceğini kanıtlamıştır.
@@ -1397,9 +1391,9 @@ const learningData = {
             tr: "Virginia ve Irksal Köleliğe Geçiş"
           },
           text: {
-            en: `<p><strong>Class over Race initially:</strong> In early 17th-century Virginia, status was defined by property, not race. Indentured workers (white and black) worked off contracts. Black individuals like Anthony Johnson acquired freedom, land, and their own indentured servants.</p>
+            en: `<p><strong>Class over Race Initially:</strong> In early 17th-century Virginia, social status was defined by property, not race. Indentured workers (white and black) worked off contracts. Black individuals like Anthony Johnson acquired freedom, land, and their own indentured servants.</p>
                  <p><strong>Bacon's Rebellion (1676):</strong> A violent uprising of landless freed indentured workers, servants, and slaves attacked Virginia plantations. Terrified planter elites responded by dismantling class solidarity.</p>
-                 <p><strong>The Racial & Hereditary Turn:</strong> Elite planters replaced indentured servitude with lifetime, hereditary African slavery. Laws (1691, 1705, 1708) barred freeing slaves and codified race as the sole divider (Royal African Company chartered 1672, co-owned by John Locke).</p>
+                 <p><strong>The Racial & Hereditary Shift:</strong> Elite planters replaced indentured servitude with lifetime, hereditary African slavery. Colonial laws (1691, 1705, 1708) barred freeing slaves and codified race as the sole legal divider (Royal African Company chartered 1672, co-owned by John Locke).</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
                    <strong>Paradox of Liberty:</strong> As European thinkers like John Locke wrote about human liberty, they simultaneously invested in slaving companies and codified racial slavery.
                  </div>`,
@@ -2242,17 +2236,17 @@ const learningData = {
             tr: "İngiliz Uyruğundan Devrimciye Geçiş"
           },
           text: {
-            en: `<p><strong>Transformation of Identity:</strong> While slavery expanded, a wave of revolutions swept the Western world, overthrowing royalist regimes in the name of liberty and popular rights against royal arbitrariness.</p>
-                 <p><strong>Shift in Political Philosophy:</strong> Influenced by Enlightenment thought, political theory shifted from viewing governments as tools to please kings toward viewing them as institutions created to ensure the welfare of rights-bearing citizens.</p>
-                 <p><strong>Focus of the Study:</strong> This evolution is observed through two key case studies: the American Revolutionary War and, subsequently, the French Revolution. In America, loyal British subjects transformed into angry revolutionaries and ultimately into Americans.</p>
+            en: `<p><strong>A World of Revolutions:</strong> While slavery reached its historical peak across the Atlantic, a wave of revolutions swept the Western world, overthrowing royalist regimes in the name of liberty and popular rights against royal arbitrariness.</p>
+                 <p><strong>A Redefinition of Political Power:</strong> Largely driven by Enlightenment thought, political theory transformed the idea of government. Governments were no longer seen as institutions to please kings, but as mechanisms established to guarantee the welfare of rights-bearing citizens.</p>
+                 <p><strong>The American Transformation:</strong> This historical evolution unfolded through two key case studies: the American Revolutionary War and the French Revolution. In North America, this process turned loyal British colonists into angry revolutionaries and ultimately into Americans.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Context:</strong> The 13 North American colonies were inhabited by subjects of His Majesty the King of England established across the 17th and 18th centuries.
+                   <strong>Context:</strong> The 13 Atlantic colonies were settled across the 17th and 18th centuries by subjects of the King of England seeking economic betterment and religious freedom.
                  </div>`,
-            tr: `<p><strong>Kimlik Dönüşümü:</strong> Kölelik zirveye ulaşırken, Batı dünyasında krallık rejimlerini deviren ve halkın özgürlük haklarını savunan bir devrimler dalgası başladı.</p>
-                 <p><strong>Siyaset Felsefesinde Kayma:</strong> Aydınlanma'nın etkisiyle hükümetlerin amacı, kralı memnun etmek ve uyrukların güvenliğini sağlamaktan; hak sahibi yurttaşların refahını güvenceye almaya dönüştü.</p>
-                 <p><strong>İnceleme Odağı:</strong> Bu süreç iki temel vaka üzerinden incelenmektedir: Amerikan Bağımsızlık Savaşı ve Fransız Devrimi. Amerikan kolonilerinde sadık İngiliz uyrukları, öfkeli devrimcilere ve nihayetinde Amerikalılara dönüştü.</p>
+            tr: `<p><strong>Devrimler Çağının Doğuşu:</strong> Kölelik Atlantik dünyasında zirveye ulaşırken, Batı dünyasını sarsan bir devrimler dalgası başladı. Krallık rejimlerini deviren bu hareketler, kraliyet keyfiliğine karşı halkın özgürlük haklarını savunuyordu.</p>
+                 <p><strong>Siyasi İktidarın Yeniden Tanımı:</strong> Aydınlanma düşüncesinin etkisiyle hükümet kavramı kökten değişti. Yönetimlerin amacı artık kralları memnun etmek değil, hak sahibi yurttaşların refahını ve güvencesini sağlamak olarak tanımlandı.</p>
+                 <p><strong>Amerikan Kimliğinin Dönüşümü:</strong> Bu tarihsel süreç iki temel vaka üzerinden incelenmektedir: Amerikan Bağımsızlık Savaşı ve Fransız Devrimi. Amerikan kolonilerinde sadık İngiliz uyrukları, öfkeli devrimcilere ve nihayetinde Amerikalılara dönüştü.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Bağlam:</strong> 13 Kuzey Amerika kolonisi, 17. ve 18. yüzyıllarda İngiltere Kralı Majestelerinin uyrukları tarafından kurulmuş ve yerleşilmiştir.
+                   <strong>Bağlam:</strong> 13 Atlantik koloni, 17. ve 18. yüzyıllarda dinsel özgürlük ve ekonomik iyileşme arayan İngiltere Kralı uyrukları tarafından kurulmuştu.
                  </div>`
           },
           mapState: {
@@ -2268,23 +2262,23 @@ const learningData = {
             tr: "Koloni Tipleri ve Coğrafyası"
           },
           text: {
-            en: `<p><strong>Three Colonial Structures:</strong> The 13 colonies on the Atlantic seaboard fell into three political categories:</p>
+            en: `<p><strong>Diversity of Colonial Charters:</strong> Scattered along the Atlantic seaboard, the 13 colonies developed under three distinct political models:</p>
                  <p><ul>
                    <li><strong>Corporate Colonies:</strong> Connecticut and Rhode Island, incorporated by Puritans leaving Massachusetts with self-governing constitutions ratified by the Crown.</li>
-                   <li><strong>Proprietary Colonies:</strong> Pennsylvania (founded by Quaker proprietor William Penn) and Maryland (founded by Catholic proprietor Lord Baltimore).</li>
-                   <li><strong>Royal Colonies:</strong> Directly owned and governed under the King (New York, Massachusetts, North/South Carolina, Georgia).</li>
+                   <li><strong>Proprietary Colonies:</strong> Pennsylvania (granted to Quaker proprietor William Penn) and Maryland (granted to Catholic proprietor Lord Baltimore).</li>
+                   <li><strong>Royal Colonies:</strong> Directly owned and governed under the Crown (New York, Massachusetts, North/South Carolina, Georgia).</li>
                  </ul></p>
-                 <p><strong>Seaboard Settlement:</strong> Colonists concentrated along the Atlantic coast, heavily reliant on shipping, trade, and direct communication with Britain.</p>
+                 <p><strong>Seaboard Orientation:</strong> Colonists concentrated along the Atlantic coast, heavily reliant on shipping, trade, and direct communication with Britain.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
                    <strong>Quaker & Catholic Havens:</strong> Proprietary charters permitted religious dissidents like Quakers in Pennsylvania and Catholics in Maryland to establish havens of religious tolerance.
                  </div>`,
-            tr: `<p><strong>Üç Koloni Yapısı:</strong> Atlantik kıyısındaki 13 koloni üç idari kategoriye ayrılıyordu:</p>
+            tr: `<p><strong>Koloni Modellerinin Çeşitliliği:</strong> Atlantik kıyı şeridinde uzanan 13 koloni üç farklı siyasi model altında gelişti:</p>
                  <p><ul>
                    <li><strong>Şirket/Kurum Kolonileri (Corporate):</strong> Massachusetts'ten ayrılan Püritenlerin kendi anayasalarıyla kurduğu Connecticut ve Rhode Island.</li>
                    <li><strong>Mülk Kolonileri (Proprietary):</strong> Kralın mülkiyetini şahıslara devrettiği Pennsylvania (Kvakır William Penn) ve Maryland (Katolik Lord Baltimore).</li>
                    <li><strong>Kraliyet Kolonileri (Royal):</strong> Doğrudan Krala bağlı olan New York, Massachusetts, Kuzey/Güney Carolina ve Georgia.</li>
                  </ul></p>
-                 <p><strong>Deniz Kıyısı Yerleşimi:</strong> Koloniler Atlantik kıyı şeridinde yoğunlaşmıştı; deniz ticareti ve İngiltere ile iletişim hayati önem taşıyordu.</p>
+                 <p><strong>Kıyı Şeridi Yerleşimi:</strong> Koloniler Atlantik kıyı şeridinde yoğunlaşmıştı; deniz ticareti ve İngiltere ile iletişim hayati önem taşıyordu.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
                    <strong>Dini Sığınaklar:</strong> Mülkiyet beratları, Pennsylvania'da Kvakırlar ve Maryland'de Katolikler gibi dini azınlıkların hoşgörü sığınakları kurmasına izin vermiştir.
                  </div>`
@@ -2302,13 +2296,13 @@ const learningData = {
             tr: "Demografi ve Toplumsal Yapı"
           },
           text: {
-            en: `<p><strong>Demographics & Identity:</strong> By the 18th century, 2 million colonists (free and enslaved) lived in North America. Colonists felt undeniably British, proudly fighting alongside British troops against France in the French and Indian War (1754–1763).</p>
+            en: `<p><strong>British Identity in North America:</strong> By the 18th century, 2 million colonists (free and enslaved) lived in North America. Colonists felt undeniably British, proudly fighting alongside British troops against France in the French and Indian War (1754–1763).</p>
                  <p><strong>Absence of Rigid Castes:</strong> Unlike feudal England, American colonial society lacked both an entrenched landed aristocracy and a traditional peasantry. Society was dominated by risk-taking migrants and younger sons of gentry aiming to build independent estates.</p>
-                 <p><strong>Pluralism & Space:</strong> Vast geographic space and diverse religious migrations (Quakers, Puritans, Catholics) fostered practical tolerance and individual initiative.</p>
+                 <p><strong>Pluralism & Mobility:</strong> Vast geographic space and diverse religious migrations (Quakers, Puritans, Catholics) fostered practical tolerance, social mobility, and individual initiative.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
                    <strong>Social Mobility:</strong> Broad access to land ownership created a uniquely large middle class of independent property owners.
                  </div>`,
-            tr: `<p><strong>Demografi ve Kimlik:</strong> 18. yüzyılda Kuzey Amerika'da 2 milyon kolonyal nüfus yaşıyordu. Kolonistler kendilerini gururla İngiliz hissediyor, 1750'lerdeki Fransız ve Yerli Savaşları'nda İngiliz ordusuyla yan yana savaşıyorlardı.</p>
+            tr: `<p><strong>Kuzey Amerika'da İngiliz Kimliği:</strong> 18. yüzyılda Kuzey Amerika'da 2 milyon kolonyal nüfus yaşıyordu. Kolonistler kendilerini gururla İngiliz hissediyor, 1750'lerdeki Fransız ve Yerli Savaşları'nda İngiliz ordusuyla yan yana savaşıyorlardı.</p>
                  <p><strong>Esnek Toplumsal Yapı:</strong> İngiltere'nin aksine Amerika'da kökleşmiş bir aristokrasi veya feodal köylü sınıfı yoktu. Toplum, hayatını iyileştirmek isteyen risk alıcı göçmenlerden oluşuyordu.</p>
                  <p><strong>Çoğulculuk ve Coğrafya:</strong> Geniş coğrafi alan ve farklı dini göçler (Kvakırlar, Püritenler, Katolikler), pratik hoşgörüyü ve bireysel özerkliği teşvik etti.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
@@ -4566,7 +4560,7 @@ const learningData = {
             zoom: "caribbean",
             highlightRegions: ["americas"],
             activeRoutes: [],
-            markers: ["cap_francais", "gonaivers", "santo_domingo"]
+            markers: ["cap_francais", "gonaives", "santo_domingo"]
           }
         },
         {
