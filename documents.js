@@ -1,4 +1,4 @@
-// documents.js - High-End Embedded Primary Source Viewer
+// documents.js - Robust Async Text Fetching & Document Viewer
 let activeDocLang = 'tr';
 let activeTopicFilter = 'all';
 let activeSearchQuery = '';
@@ -10,18 +10,16 @@ const i18n = {
     searchPlaceholder: "Belgelerde veya Konularda Ara...",
     all: "Tüm Konular",
     authorLabel: "Tarihsel Müellif: ",
-    openTxt: "📄 Metin Dosyasını Sayfada Aç",
-    downloadDocx: "📥 Orijinal DOCX Dosyasını İndir",
-    rawEmbedTitle: "Orijinal Belge Görünümü"
+    openTxt: "📄 Metin Dosyasını İndir / Aç",
+    downloadDocx: "📥 Orijinal DOCX İndir"
   },
   en: {
     back: "Back to Atlas",
     searchPlaceholder: "Search Documents or Topics...",
     all: "All Topics",
     authorLabel: "Historical Author: ",
-    openTxt: "📄 Open TXT File in Page",
-    downloadDocx: "📥 Download Original DOCX File",
-    rawEmbedTitle: "Original Document Viewer"
+    openTxt: "📄 Download / Open TXT",
+    downloadDocx: "📥 Download Original DOCX"
   }
 };
 
@@ -133,7 +131,11 @@ function selectDoc(docId) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-function renderReader(docId) {
+function escapeHtml(str) {
+  return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+async function renderReader(docId) {
   const canvas = document.getElementById('doc-reader-canvas');
   if (!canvas || !learningData.primarySources) return;
   const t = i18n[activeDocLang];
@@ -164,10 +166,32 @@ function renderReader(docId) {
       ${docxFile ? `<a class="btn-action" href="${encodeURI(docxFile)}" download>${t.downloadDocx}</a>` : ''}
     </div>
 
-    <div class="embed-container">
-      <iframe class="embed-iframe" src="${encodeURI(txtFile)}"></iframe>
+    <div id="doc-content-body" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.5rem; min-height: 400px;">
+      <div style="text-align: center; padding: 2rem; color: var(--text-secondary);">Belge yükleniyor...</div>
     </div>
   `;
+
+  if (txtFile) {
+    try {
+      const resp = await fetch(txtFile);
+      if (resp.ok) {
+        const text = await resp.text();
+        const bodyEl = document.getElementById('doc-content-body');
+        if (bodyEl) {
+          bodyEl.innerHTML = `<pre style="white-space: pre-wrap; font-family: var(--font-sans); font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin:0;">${escapeHtml(text)}</pre>`;
+        }
+        return;
+      }
+    } catch (err) {
+      console.warn("Fetch failed, using iframe fallback:", err);
+    }
+
+    // Fallback if fetch is blocked by local CORS
+    const bodyEl = document.getElementById('doc-content-body');
+    if (bodyEl) {
+      bodyEl.innerHTML = `<iframe style="width:100%; height:650px; border:none;" src="${encodeURI(txtFile)}"></iframe>`;
+    }
+  }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
