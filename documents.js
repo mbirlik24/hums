@@ -1,4 +1,4 @@
-// documents.js - Topic-Based Primary Sources Reader
+// documents.js - High-End Embedded Primary Source Viewer
 let activeDocLang = 'tr';
 let activeTopicFilter = 'all';
 let activeSearchQuery = '';
@@ -9,13 +9,19 @@ const i18n = {
     back: "Atlas'a Dön",
     searchPlaceholder: "Belgelerde veya Konularda Ara...",
     all: "Tüm Konular",
-    authorLabel: "Tarihsel Müellif: "
+    authorLabel: "Tarihsel Müellif: ",
+    openTxt: "📄 Metin Dosyasını Sayfada Aç",
+    downloadDocx: "📥 Orijinal DOCX Dosyasını İndir",
+    rawEmbedTitle: "Orijinal Belge Görünümü"
   },
   en: {
     back: "Back to Atlas",
     searchPlaceholder: "Search Documents or Topics...",
     all: "All Topics",
-    authorLabel: "Historical Author: "
+    authorLabel: "Historical Author: ",
+    openTxt: "📄 Open TXT File in Page",
+    downloadDocx: "📥 Download Original DOCX File",
+    rawEmbedTitle: "Original Document Viewer"
   }
 };
 
@@ -25,8 +31,9 @@ function initPage() {
   renderReader(activeSelectedDocId);
 }
 
-function toggleDocLanguage() {
-  activeDocLang = activeDocLang === 'tr' ? 'en' : 'tr';
+function toggleDocLanguage(lang) {
+  if (lang) activeDocLang = lang;
+  else activeDocLang = activeDocLang === 'tr' ? 'en' : 'tr';
   
   const trBtn = document.getElementById('doc-lang-btn-tr');
   const enBtn = document.getElementById('doc-lang-btn-en');
@@ -36,8 +43,10 @@ function toggleDocLanguage() {
   }
 
   const t = i18n[activeDocLang];
-  document.getElementById('txt-back').textContent = t.back;
-  document.getElementById('doc-search-input').placeholder = t.searchPlaceholder;
+  const backEl = document.getElementById('txt-back');
+  const searchEl = document.getElementById('doc-search-input');
+  if (backEl) backEl.textContent = t.back;
+  if (searchEl) searchEl.placeholder = t.searchPlaceholder;
 
   renderFilterPills();
   renderDocList();
@@ -47,7 +56,6 @@ function toggleDocLanguage() {
 function renderFilterPills() {
   const container = document.getElementById('filter-pills-container');
   if (!container || !learningData.primarySources) return;
-  const t = i18n[activeDocLang];
 
   const categories = [
     { key: 'all', label: { tr: 'Tüm Konular', en: 'All Topics' } },
@@ -72,7 +80,7 @@ function setTopicFilter(catKey) {
 }
 
 function onSearchInput(query) {
-  activeSearchQuery = query.toLowerCase().strip ? query.toLowerCase().strip() : query.toLowerCase();
+  activeSearchQuery = (query || '').toLowerCase().trim();
   renderDocList();
 }
 
@@ -137,7 +145,8 @@ function renderReader(docId) {
   const author = doc.author[activeDocLang] || doc.author['tr'];
   const summary = doc.summary[activeDocLang] || doc.summary['tr'];
   const topicTag = doc.topic ? (doc.topic[activeDocLang] || doc.topic['tr']) : `Hafta ${doc.week}`;
-  const proseHtml = (typeof doc.formattedHtml === "object" ? (doc.formattedHtml[activeDocLang] || doc.formattedHtml["tr"]) : doc.formattedHtml) || `<p>${doc.fullText}</p>`;
+  const txtFile = doc.fileUrls ? doc.fileUrls.txt : '';
+  const docxFile = doc.fileUrls ? doc.fileUrls.docx : '';
 
   canvas.innerHTML = `
     <header class="doc-meta-header">
@@ -146,12 +155,17 @@ function renderReader(docId) {
       <div class="author-info">${t.authorLabel}${author}</div>
     </header>
 
-    <div style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; border-left: 3px solid var(--theme-accent); padding-left: 1rem; margin: 0.5rem 0 1rem 0;">
+    <div style="font-size: 0.96rem; color: var(--text-secondary); line-height: 1.65; border-left: 3px solid var(--theme-accent); padding-left: 1rem; margin-bottom: 1.5rem;">
       ${summary}
     </div>
 
-    <div class="doc-prose">
-      ${proseHtml}
+    <div class="action-toolbar">
+      ${txtFile ? `<a class="btn-action" href="${encodeURI(txtFile)}" target="_blank">${t.openTxt}</a>` : ''}
+      ${docxFile ? `<a class="btn-action" href="${encodeURI(docxFile)}" download>${t.downloadDocx}</a>` : ''}
+    </div>
+
+    <div class="embed-container">
+      <iframe class="embed-iframe" src="${encodeURI(txtFile)}"></iframe>
     </div>
   `;
 }
