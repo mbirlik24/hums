@@ -1,43 +1,40 @@
-// documents.js - Standalone Primary Sources Archive Reader
+// documents.js - Clean, Efficient Primary Sources Reader
 let activeDocLang = 'tr';
-let activeDocWeekFilter = 'all';
+let activeWeekFilter = 'all';
+let activeSearchQuery = '';
 let activeSelectedDocId = 'cortes_1520';
 
-const docTranslations = {
+const i18n = {
   tr: {
-    backTxt: "Atlas'a Dön",
-    heroTitle: "📜 Birincil Tarihsel Kaynaklar Arşivi",
-    heroSubtitle: "1492–1867 Dönemine Ait Orijinal Tarihi Belgeler, Bildirgeler, Mektuplar ve Anayasalar",
-    lblFilterWeek: "Modül Filtresi:",
-    filterAll: "Tümü",
-    weekPrefix: "Hafta",
-    docBadgePrefix: "📜 Hafta",
-    docBadgeSuffix: "— Orijinal Belge",
-    authorPrefix: "✍️ Tarihsel Müellif: ",
-    quoteTitle: "📜 Belgeden Vurucu Tarihi Alıntı: ",
-    textTitle: "📄 Orijinal Dönem Metni (Arşiv Kaydı):"
+    back: "Atlas'a Dön",
+    searchPlaceholder: "Belgelerde veya Müelliflerde Ara...",
+    all: "Tümü",
+    week: "Hafta",
+    docBadge: "Hafta",
+    origDoc: "Orijinal Tarihi Belge",
+    authorLabel: "Tarihsel Müellif / Aktör: ",
+    summaryLabel: "Tarihsel Bağlam ve Önem:",
+    quoteLabel: "Belgeden Vurucu Alıntı:",
+    textLabel: "Orijinal Belge Metni:"
   },
   en: {
-    backTxt: "Back to Atlas",
-    heroTitle: "📜 Primary Historical Source Archive",
-    heroSubtitle: "Original Historical Texts, Declarations, Letters, and Constitutions (1492–1867)",
-    lblFilterWeek: "Module Filter:",
-    filterAll: "All",
-    weekPrefix: "Week",
-    docBadgePrefix: "📜 Week",
-    docBadgeSuffix: "— Primary Document",
-    authorPrefix: "✍️ Historical Author: ",
-    quoteTitle: "📜 Key Historical Quote: ",
-    textTitle: "📄 Original Document Text (Full Archive):"
+    back: "Back to Atlas",
+    searchPlaceholder: "Search Documents or Authors...",
+    all: "All",
+    week: "Week",
+    docBadge: "Week",
+    origDoc: "Primary Historical Document",
+    authorLabel: "Historical Author: ",
+    summaryLabel: "Historical Context & Significance:",
+    quoteLabel: "Key Historical Quote:",
+    textLabel: "Original Document Text:"
   }
 };
 
-function initDocumentsPage() {
-  renderFilterButtons();
-  renderDocsList();
-  if (learningData.primarySources && learningData.primarySources.length > 0) {
-    renderReaderView(activeSelectedDocId);
-  }
+function initPage() {
+  renderFilterPills();
+  renderDocList();
+  renderReader(activeSelectedDocId);
 }
 
 function toggleDocLanguage() {
@@ -46,81 +43,88 @@ function toggleDocLanguage() {
   const trBtn = document.getElementById('doc-lang-btn-tr');
   const enBtn = document.getElementById('doc-lang-btn-en');
   if (trBtn && enBtn) {
-    if (activeDocLang === 'tr') {
-      trBtn.classList.add('active');
-      enBtn.classList.remove('active');
-    } else {
-      enBtn.classList.add('active');
-      trBtn.classList.remove('active');
-    }
+    trBtn.classList.toggle('active', activeDocLang === 'tr');
+    enBtn.classList.toggle('active', activeDocLang === 'en');
   }
 
-  // Update static texts
-  const t = docTranslations[activeDocLang];
-  document.getElementById('back-txt').textContent = t.backTxt;
-  document.getElementById('docs-hero-title').textContent = t.heroTitle;
-  document.getElementById('docs-hero-subtitle').textContent = t.heroSubtitle;
-  document.getElementById('lbl-filter-week').textContent = t.lblFilterWeek;
+  const t = i18n[activeDocLang];
+  document.getElementById('txt-back').textContent = t.back;
+  document.getElementById('doc-search-input').placeholder = t.searchPlaceholder;
 
-  renderFilterButtons();
-  renderDocsList();
-  renderReaderView(activeSelectedDocId);
+  renderFilterPills();
+  renderDocList();
+  renderReader(activeSelectedDocId);
 }
 
-function renderFilterButtons() {
-  const container = document.getElementById('docs-filter-bar');
+function renderFilterPills() {
+  const container = document.getElementById('filter-pills-container');
   if (!container) return;
-  const t = docTranslations[activeDocLang];
-  
+  const t = i18n[activeDocLang];
+
   const weeks = ['all', 2, 3, 4, 5, 6];
   container.innerHTML = weeks.map(w => {
-    const label = w === 'all' ? t.filterAll : `${t.weekPrefix} ${w}`;
-    const isActive = activeDocWeekFilter === w ? 'active' : '';
-    return `<button class="docs-filter-btn ${isActive}" onclick="filterDocs('${w}')">${label}</button>`;
+    const label = w === 'all' ? t.all : `${t.week} ${w}`;
+    const active = activeWeekFilter === w ? 'active' : '';
+    return `<button class="pill-btn ${active}" onclick="setFilter('${w}')">${label}</button>`;
   }).join('');
 }
 
-function filterDocs(week) {
-  activeDocWeekFilter = week === 'all' ? 'all' : parseInt(week);
-  renderFilterButtons();
-  renderDocsList();
+function setFilter(week) {
+  activeWeekFilter = week === 'all' ? 'all' : parseInt(week);
+  renderFilterPills();
+  renderDocList();
 }
 
-function renderDocsList() {
-  const container = document.getElementById('docs-list-container');
+function onSearchInput(query) {
+  activeSearchQuery = query.toLowerCase().strip ? query.toLowerCase().strip() : query.toLowerCase();
+  renderDocList();
+}
+
+function renderDocList() {
+  const container = document.getElementById('doc-list-container');
   if (!container || !learningData.primarySources) return;
-  const t = docTranslations[activeDocLang];
+  const t = i18n[activeDocLang];
 
   let docs = learningData.primarySources;
-  if (activeDocWeekFilter !== 'all') {
-    docs = docs.filter(d => d.week === activeDocWeekFilter);
+  
+  if (activeWeekFilter !== 'all') {
+    docs = docs.filter(d => d.week === activeWeekFilter);
+  }
+
+  if (activeSearchQuery) {
+    docs = docs.filter(d => {
+      const title = (d.title[activeDocLang] || d.title['tr']).toLowerCase();
+      const author = (d.author[activeDocLang] || d.author['tr']).toLowerCase();
+      const summary = (d.summary[activeDocLang] || d.summary['tr']).toLowerCase();
+      return title.includes(activeSearchQuery) || author.includes(activeSearchQuery) || summary.includes(activeSearchQuery);
+    });
   }
 
   container.innerHTML = docs.map(doc => {
     const title = doc.title[activeDocLang] || doc.title['tr'];
     const author = doc.author[activeDocLang] || doc.author['tr'];
-    const isActive = doc.id === activeSelectedDocId ? 'active' : '';
-    
+    const active = doc.id === activeSelectedDocId ? 'active' : '';
+
     return `
-      <div class="doc-card-item ${isActive}" onclick="selectDocument('${doc.id}')">
-        <div class="item-badge">${t.docBadgePrefix} ${doc.week} (${doc.date})</div>
-        <h4 class="item-title">${title}</h4>
-        <div class="item-author">${author}</div>
+      <div class="doc-card ${active}" onclick="selectDoc('${doc.id}')">
+        <div class="badge">📜 ${t.docBadge} ${doc.week} (${doc.date})</div>
+        <div class="title">${title}</div>
+        <div class="author">${author}</div>
       </div>
     `;
   }).join('');
 }
 
-function selectDocument(docId) {
+function selectDoc(docId) {
   activeSelectedDocId = docId;
-  renderDocsList();
-  renderReaderView(docId);
+  renderDocList();
+  renderReader(docId);
 }
 
-function renderReaderView(docId) {
-  const container = document.getElementById('docs-reader-container');
-  if (!container || !learningData.primarySources) return;
-  const t = docTranslations[activeDocLang];
+function renderReader(docId) {
+  const panel = document.getElementById('doc-reader-panel');
+  if (!panel || !learningData.primarySources) return;
+  const t = i18n[activeDocLang];
 
   const doc = learningData.primarySources.find(d => d.id === docId) || learningData.primarySources[0];
   if (!doc) return;
@@ -129,33 +133,41 @@ function renderReaderView(docId) {
   const author = doc.author[activeDocLang] || doc.author['tr'];
   const summary = doc.summary[activeDocLang] || doc.summary['tr'];
   const quote = doc.quote[activeDocLang] || doc.quote['tr'];
+  const proseHtml = doc.formattedHtml || `<p>${doc.fullText}</p>`;
 
-  container.innerHTML = `
-    <div class="reader-header">
-      <div class="reader-badge">${t.docBadgePrefix} ${doc.week} ${t.docBadgeSuffix} (${doc.date})</div>
-      <h2 class="reader-title">${title}</h2>
-      <div class="reader-author">${t.authorPrefix}${author}</div>
+  panel.innerHTML = `
+    <div class="doc-header">
+      <span class="tag">📜 ${t.docBadge} ${doc.week} — ${t.origDoc} (${doc.date})</span>
+      <h2>${title}</h2>
+      <div class="author-line">${t.authorLabel}${author}</div>
     </div>
 
-    <div class="reader-summary">
-      ${summary}
+    <div class="section-box">
+      <div style="font-weight: 700; font-size: 0.85rem; color: var(--theme-accent); margin-bottom: 0.35rem;">
+        ${t.summaryLabel}
+      </div>
+      <div style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.55;">
+        ${summary}
+      </div>
     </div>
 
-    <div class="reader-quote-box">
-      <div style="font-weight: 700; font-family: 'Outfit', sans-serif; margin-bottom: 0.35rem; color: var(--theme-accent);">
-        ${t.quoteTitle}
+    <div class="quote-callout">
+      <div style="font-weight: 700; margin-bottom: 0.3rem; color: var(--theme-accent);">
+        ${t.quoteLabel}
       </div>
       <div>${quote}</div>
     </div>
 
-    <div style="font-weight: 800; font-size: 0.95rem; color: var(--text-primary); margin-top: 0.5rem;">
-      ${t.textTitle}
+    <div style="font-weight: 800; font-size: 0.95rem; color: var(--text-primary); margin-top: 0.4rem;">
+      ${t.textLabel}
     </div>
 
-    <div class="reader-text-container">${doc.fullText}</div>
+    <div class="prose-container">
+      ${proseHtml}
+    </div>
   `;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  initDocumentsPage();
+  initPage();
 });
