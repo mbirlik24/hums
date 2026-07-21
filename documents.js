@@ -127,7 +127,7 @@ function renderPortalGrid() {
     const targetUrl = doc.sourceUrl || doc.localTxt || '#';
 
     return `
-      <div class="portal-card">
+      <div class="portal-card" onclick="window.open('${targetUrl}', '_blank')" style="cursor: pointer;">
         <div class="card-top">
           <span class="card-badge">${topicTag}</span>
           <h3 class="card-title">${title}</h3>
@@ -138,12 +138,12 @@ function renderPortalGrid() {
           <p class="card-summary">${summary}</p>
         </div>
 
-        <div class="card-actions">
-          <a class="btn-redirect" href="${encodeURI(targetUrl)}" target="_blank" rel="noopener">
+        <div class="card-actions" onclick="event.stopPropagation();">
+          <a class="btn-redirect" href="${targetUrl}" target="_blank" rel="noopener noreferrer">
             ${t.gotoSource}
           </a>
-          ${doc.localTxt ? `<a class="btn-secondary" href="${encodeURI(doc.localTxt)}" target="_blank">${t.openTxt}</a>` : ''}
-          ${doc.localDocx ? `<a class="btn-secondary" href="${encodeURI(doc.localDocx)}" download>${t.downloadDocx}</a>` : ''}
+          ${doc.localTxt ? `<a class="btn-secondary" href="${doc.localTxt}" target="_blank" rel="noopener noreferrer">${t.openTxt}</a>` : ''}
+          ${doc.localDocx ? `<a class="btn-secondary" href="${doc.localDocx}" download>${t.downloadDocx}</a>` : ''}
         </div>
       </div>
     `;

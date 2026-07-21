@@ -2,6 +2,7 @@ const learningData = {
   "primarySources": [
   {
     "id": "cortes_1520",
+    "sourceUrl": "https://sourcebooks.fordham.edu/mod/1520cortes.asp",
     "week": 2,
     "title": {
       "tr": "Hernán Cortés — V. Charles'a 2. Mektup (1520)",
@@ -27,6 +28,7 @@ const learningData = {
   },
   {
     "id": "east_india_1600",
+    "sourceUrl": "https://archive.org/details/in.ernet.dli.2015.501596/page/n17/mode/2up",
     "week": 3,
     "title": {
       "tr": "Kraliçe I. Elizabeth — Doğu Hindistan Şirketi Kraliyet Beratı (1600)",
@@ -52,6 +54,7 @@ const learningData = {
   },
   {
     "id": "falconbridge_1788",
+    "sourceUrl": "https://www.gutenberg.org/cache/epub/69178/pg69178-images.html",
     "week": 3,
     "title": {
       "tr": "Alexander Falconbridge — Afrika Köle Ticareti Tanıklığı (1788)",
@@ -77,6 +80,7 @@ const learningData = {
   },
   {
     "id": "declaration_1776",
+    "sourceUrl": "https://www.archives.gov/founding-docs/declaration-transcript",
     "week": 4,
     "title": {
       "tr": "Amerikan Bağımsızlık Bildirgesi (1776)",
@@ -102,6 +106,7 @@ const learningData = {
   },
   {
     "id": "constitution_1787",
+    "sourceUrl": "https://www.archives.gov/founding-docs/constitution-transcript",
     "week": 4,
     "title": {
       "tr": "Amerika Birleşik Devletleri Anayasası (1787)",
@@ -127,6 +132,7 @@ const learningData = {
   },
   {
     "id": "rights_of_man_1789",
+    "sourceUrl": "https://avalon.law.yale.edu/18th_century/rightsof.asp",
     "week": 5,
     "title": {
       "tr": "Fransız İnsan ve Yurttaş Hakları Bildirisi (1789)",
@@ -152,6 +158,7 @@ const learningData = {
   },
   {
     "id": "robespierre_1794",
+    "sourceUrl": "https://revolution.chnm.org/d/413",
     "week": 5,
     "title": {
       "tr": "Maximilien Robespierre — Siyasi Ahlak Üzerine Söylev (1794)",
@@ -177,6 +184,7 @@ const learningData = {
   },
   {
     "id": "friends_blacks_1790",
+    "sourceUrl": "https://revolution.chnm.org/d/290",
     "week": 6,
     "title": {
       "tr": "Siyahların Dostları Derneği — Ulusal Meclis Bildirisi (1790)",
