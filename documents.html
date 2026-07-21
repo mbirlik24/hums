@@ -51,17 +51,18 @@
 
     .main-grid {
       flex: 1;
-      max-width: 1400px;
+      max-width: 1300px;
       width: 100%;
       margin: 0 auto;
       padding: 1.5rem;
       display: grid;
-      grid-template-columns: 360px 1fr;
-      gap: 1.5rem;
+      grid-template-columns: 320px 1fr;
+      gap: 2rem;
       box-sizing: border-box;
+      align-items: start;
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 850px) {
       .main-grid {
         grid-template-columns: 1fr;
         padding: 1rem;
@@ -72,6 +73,8 @@
       display: flex;
       flex-direction: column;
       gap: 0.85rem;
+      position: sticky;
+      top: 4.5rem;
     }
 
     .search-box {
@@ -112,33 +115,31 @@
     .doc-list {
       display: flex;
       flex-direction: column;
-      gap: 0.65rem;
-      max-height: calc(100vh - 200px);
+      gap: 0.5rem;
+      max-height: calc(100vh - 220px);
       overflow-y: auto;
       padding-right: 4px;
     }
 
     .doc-card {
-      padding: 0.85rem;
+      padding: 0.8rem;
       background: var(--bg-card);
       border: 1px solid var(--border-color);
-      border-radius: 10px;
+      border-radius: 8px;
       cursor: pointer;
       transition: all 0.2s ease;
       display: flex;
       flex-direction: column;
-      gap: 0.3rem;
+      gap: 0.25rem;
     }
 
     .doc-card:hover {
       border-color: var(--theme-accent);
-      transform: translateX(2px);
     }
 
     .doc-card.active {
       border-color: var(--theme-accent);
       background: var(--bg-surface);
-      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.1);
     }
 
     .doc-card .badge {
@@ -160,72 +161,48 @@
       color: var(--text-secondary);
     }
 
-    .reader-panel {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: 12px;
-      padding: 1.75rem;
+    /* Direct Page Reader Canvas - No Scroll Boxes */
+    .reader-canvas {
       display: flex;
       flex-direction: column;
       gap: 1.25rem;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.03);
     }
 
-    .doc-header {
+    .doc-meta-header {
       border-bottom: 1px solid var(--border-color);
       padding-bottom: 1rem;
     }
 
-    .doc-header .tag {
-      display: inline-block;
-      padding: 0.25rem 0.6rem;
-      border-radius: 6px;
-      background: rgba(16, 185, 129, 0.1);
-      color: var(--theme-accent);
-      font-size: 0.78rem;
+    .doc-meta-header .badge-tag {
+      font-size: 0.8rem;
       font-weight: 700;
-      margin-bottom: 0.4rem;
+      color: var(--theme-accent);
+      margin-bottom: 0.3rem;
+      display: block;
     }
 
-    .doc-header h2 {
+    .doc-meta-header h2 {
       margin: 0.2rem 0 0.4rem 0;
       font-family: 'Outfit', sans-serif;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       font-weight: 800;
       color: var(--text-primary);
+      line-height: 1.25;
     }
 
-    .doc-header .author-line {
-      font-size: 0.88rem;
-      color: var(--theme-accent);
-      font-weight: 600;
+    .doc-meta-header .author-info {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
     }
 
-    .section-box {
-      background: var(--bg-surface);
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      padding: 1rem 1.25rem;
-    }
-
-    .quote-callout {
-      border-left: 4px solid var(--theme-accent);
-      background: var(--bg-surface);
-      padding: 1rem 1.25rem;
-      border-radius: 0 8px 8px 0;
-      font-style: italic;
-      font-size: 0.92rem;
-      line-height: 1.6;
+    .doc-prose {
+      font-size: 0.95rem;
+      line-height: 1.8;
       color: var(--text-primary);
     }
 
-    .prose-container {
-      background: var(--bg-surface);
-      border: 1px solid var(--border-color);
-      border-radius: 10px;
-      padding: 1.5rem;
-      max-height: 650px;
-      overflow-y: auto;
+    .doc-prose p {
+      margin: 0 0 1rem 0;
     }
   </style>
 </head>
@@ -237,7 +214,7 @@
       <a href="index.html" class="btn-back" id="btn-back">
         ← <span id="txt-back">Atlas'a Dön</span>
       </a>
-      <h1 style="font-family: 'Outfit', sans-serif; font-size: 1.2rem; font-weight: 800; margin: 0; color: var(--text-primary);">HUMS 131: Tarihi Belgeler Arşivi</h1>
+      <h1 style="font-family: 'Outfit', sans-serif; font-size: 1.15rem; font-weight: 800; margin: 0; color: var(--text-primary);">HUMS 131: Tarihi Belgeler Arşivi</h1>
     </div>
 
     <!-- Language Selector -->
@@ -263,10 +240,10 @@
       </div>
     </aside>
 
-    <!-- Main Reader View -->
-    <section class="reader-panel" id="doc-reader-panel">
-      <!-- Active document prose rendered by JS -->
-    </section>
+    <!-- Direct Reader Canvas (Flows directly on page) -->
+    <article class="reader-canvas" id="doc-reader-canvas">
+      <!-- Document text flows directly here -->
+    </article>
 
   </main>
 

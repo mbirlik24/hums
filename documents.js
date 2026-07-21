@@ -1,4 +1,4 @@
-// documents.js - Clean, Efficient Primary Sources Reader
+// documents.js - Direct Page Reader (No inner scroll boxes, no forced labels)
 let activeDocLang = 'tr';
 let activeWeekFilter = 'all';
 let activeSearchQuery = '';
@@ -7,27 +7,17 @@ let activeSelectedDocId = 'cortes_1520';
 const i18n = {
   tr: {
     back: "Atlas'a Dön",
-    searchPlaceholder: "Belgelerde veya Müelliflerde Ara...",
+    searchPlaceholder: "Belgelerde Ara...",
     all: "Tümü",
     week: "Hafta",
-    docBadge: "Hafta",
-    origDoc: "Orijinal Tarihi Belge",
-    authorLabel: "Tarihsel Müellif / Aktör: ",
-    summaryLabel: "Tarihsel Bağlam ve Önem:",
-    quoteLabel: "Belgeden Vurucu Alıntı:",
-    textLabel: "Orijinal Belge Metni:"
+    docBadge: "Hafta"
   },
   en: {
     back: "Back to Atlas",
-    searchPlaceholder: "Search Documents or Authors...",
+    searchPlaceholder: "Search Documents...",
     all: "All",
     week: "Week",
-    docBadge: "Week",
-    origDoc: "Primary Historical Document",
-    authorLabel: "Historical Author: ",
-    summaryLabel: "Historical Context & Significance:",
-    quoteLabel: "Key Historical Quote:",
-    textLabel: "Original Document Text:"
+    docBadge: "Week"
   }
 };
 
@@ -107,7 +97,7 @@ function renderDocList() {
 
     return `
       <div class="doc-card ${active}" onclick="selectDoc('${doc.id}')">
-        <div class="badge">📜 ${t.docBadge} ${doc.week} (${doc.date})</div>
+        <div class="badge">${t.docBadge} ${doc.week} (${doc.date})</div>
         <div class="title">${title}</div>
         <div class="author">${author}</div>
       </div>
@@ -119,11 +109,12 @@ function selectDoc(docId) {
   activeSelectedDocId = docId;
   renderDocList();
   renderReader(docId);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function renderReader(docId) {
-  const panel = document.getElementById('doc-reader-panel');
-  if (!panel || !learningData.primarySources) return;
+  const canvas = document.getElementById('doc-reader-canvas');
+  if (!canvas || !learningData.primarySources) return;
   const t = i18n[activeDocLang];
 
   const doc = learningData.primarySources.find(d => d.id === docId) || learningData.primarySources[0];
@@ -132,37 +123,20 @@ function renderReader(docId) {
   const title = doc.title[activeDocLang] || doc.title['tr'];
   const author = doc.author[activeDocLang] || doc.author['tr'];
   const summary = doc.summary[activeDocLang] || doc.summary['tr'];
-  const quote = doc.quote[activeDocLang] || doc.quote['tr'];
   const proseHtml = doc.formattedHtml || `<p>${doc.fullText}</p>`;
 
-  panel.innerHTML = `
-    <div class="doc-header">
-      <span class="tag">📜 ${t.docBadge} ${doc.week} — ${t.origDoc} (${doc.date})</span>
+  canvas.innerHTML = `
+    <header class="doc-meta-header">
+      <span class="badge-tag">Hafta ${doc.week} • Tarihi Belge (${doc.date})</span>
       <h2>${title}</h2>
-      <div class="author-line">${t.authorLabel}${author}</div>
+      <div class="author-info">${author}</div>
+    </header>
+
+    <div style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; border-left: 3px solid var(--theme-accent); padding-left: 1rem; margin: 0.5rem 0 1rem 0;">
+      ${summary}
     </div>
 
-    <div class="section-box">
-      <div style="font-weight: 700; font-size: 0.85rem; color: var(--theme-accent); margin-bottom: 0.35rem;">
-        ${t.summaryLabel}
-      </div>
-      <div style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.55;">
-        ${summary}
-      </div>
-    </div>
-
-    <div class="quote-callout">
-      <div style="font-weight: 700; margin-bottom: 0.3rem; color: var(--theme-accent);">
-        ${t.quoteLabel}
-      </div>
-      <div>${quote}</div>
-    </div>
-
-    <div style="font-weight: 800; font-size: 0.95rem; color: var(--text-primary); margin-top: 0.4rem;">
-      ${t.textLabel}
-    </div>
-
-    <div class="prose-container">
+    <div class="doc-prose">
       ${proseHtml}
     </div>
   `;
