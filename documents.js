@@ -1,4 +1,4 @@
-// documents.js - Robust Async Text Fetching & Document Viewer
+// documents.js - Clean Instant Rendering & Elegant Layout
 let activeDocLang = 'tr';
 let activeTopicFilter = 'all';
 let activeSearchQuery = '';
@@ -9,7 +9,9 @@ const i18n = {
     back: "Atlas'a Dön",
     searchPlaceholder: "Belgelerde veya Konularda Ara...",
     all: "Tüm Konular",
-    authorLabel: "Tarihsel Müellif: ",
+    dateLabel: "Tarih: ",
+    authorLabel: "Müellif: ",
+    topicLabel: "Konu: ",
     openTxt: "📄 Metin Dosyasını İndir / Aç",
     downloadDocx: "📥 Orijinal DOCX İndir"
   },
@@ -17,7 +19,9 @@ const i18n = {
     back: "Back to Atlas",
     searchPlaceholder: "Search Documents or Topics...",
     all: "All Topics",
-    authorLabel: "Historical Author: ",
+    dateLabel: "Date: ",
+    authorLabel: "Author: ",
+    topicLabel: "Topic: ",
     openTxt: "📄 Download / Open TXT",
     downloadDocx: "📥 Download Original DOCX"
   }
@@ -116,7 +120,7 @@ function renderDocList() {
 
     return `
       <div class="doc-card ${active}" onclick="selectDoc('${doc.id}')">
-        <div class="badge">🏷️ ${topicTag} (${doc.date})</div>
+        <div class="badge">${topicTag} (${doc.date})</div>
         <div class="title">${title}</div>
         <div class="author">${author}</div>
       </div>
@@ -131,11 +135,7 @@ function selectDoc(docId) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-function escapeHtml(str) {
-  return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-}
-
-async function renderReader(docId) {
+function renderReader(docId) {
   const canvas = document.getElementById('doc-reader-canvas');
   if (!canvas || !learningData.primarySources) return;
   const t = i18n[activeDocLang];
@@ -150,48 +150,36 @@ async function renderReader(docId) {
   const txtFile = doc.fileUrls ? doc.fileUrls.txt : '';
   const docxFile = doc.fileUrls ? doc.fileUrls.docx : '';
 
+  // Get pre-formatted HTML text directly from data.js
+  const proseHtml = (typeof doc.formattedHtml === "object" ? (doc.formattedHtml[activeDocLang] || doc.formattedHtml["tr"]) : doc.formattedHtml) || `<p>${doc.fullText || ''}</p>`;
+
   canvas.innerHTML = `
-    <header class="doc-meta-header">
-      <span class="badge-tag">🏷️ ${topicTag} • Tarihi Belge (${doc.date})</span>
-      <h2>${title}</h2>
-      <div class="author-info">${t.authorLabel}${author}</div>
+    <header class="doc-meta-header" style="border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; margin-bottom: 1.2rem;">
+      <h2 style="font-family: 'Outfit', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--text-primary); margin: 0 0 0.6rem 0; line-height: 1.3;">${title}</h2>
+      <div style="font-size: 0.88rem; color: var(--text-secondary); display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center;">
+        <span><strong>${t.dateLabel}</strong>${doc.date}</span>
+        <span>•</span>
+        <span><strong>${t.authorLabel}</strong>${author}</span>
+        <span>•</span>
+        <span><strong>${t.topicLabel}</strong>${topicTag}</span>
+      </div>
     </header>
 
-    <div style="font-size: 0.96rem; color: var(--text-secondary); line-height: 1.65; border-left: 3px solid var(--theme-accent); padding-left: 1rem; margin-bottom: 1.5rem;">
+    <div style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; border-left: 3px solid var(--theme-accent); padding-left: 1rem; margin-bottom: 1.4rem;">
       ${summary}
     </div>
 
-    <div class="action-toolbar">
-      ${txtFile ? `<a class="btn-action" href="${encodeURI(txtFile)}" target="_blank">${t.openTxt}</a>` : ''}
-      ${docxFile ? `<a class="btn-action" href="${encodeURI(docxFile)}" download>${t.downloadDocx}</a>` : ''}
-    </div>
+    ${(txtFile || docxFile) ? `
+      <div class="action-toolbar" style="margin-bottom: 1.4rem; display:flex; gap:0.8rem; flex-wrap:wrap;">
+        ${txtFile ? `<a class="btn-action" href="${encodeURI(txtFile)}" target="_blank">${t.openTxt}</a>` : ''}
+        ${docxFile ? `<a class="btn-action" href="${encodeURI(docxFile)}" download>${t.downloadDocx}</a>` : ''}
+      </div>
+    ` : ''}
 
-    <div id="doc-content-body" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.5rem; min-height: 400px;">
-      <div style="text-align: center; padding: 2rem; color: var(--text-secondary);">Belge yükleniyor...</div>
+    <div class="doc-prose" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.8rem; font-size: 0.96rem; line-height: 1.8; color: var(--text-primary);">
+      ${proseHtml}
     </div>
   `;
-
-  if (txtFile) {
-    try {
-      const resp = await fetch(txtFile);
-      if (resp.ok) {
-        const text = await resp.text();
-        const bodyEl = document.getElementById('doc-content-body');
-        if (bodyEl) {
-          bodyEl.innerHTML = `<pre style="white-space: pre-wrap; font-family: var(--font-sans); font-size: 0.95rem; line-height: 1.8; color: var(--text-primary); margin:0;">${escapeHtml(text)}</pre>`;
-        }
-        return;
-      }
-    } catch (err) {
-      console.warn("Fetch failed, using iframe fallback:", err);
-    }
-
-    // Fallback if fetch is blocked by local CORS
-    const bodyEl = document.getElementById('doc-content-body');
-    if (bodyEl) {
-      bodyEl.innerHTML = `<iframe style="width:100%; height:650px; border:none;" src="${encodeURI(txtFile)}"></iframe>`;
-    }
-  }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
