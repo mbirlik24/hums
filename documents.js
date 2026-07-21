@@ -1,36 +1,38 @@
-// documents.js - Clean Instant Rendering & Elegant Layout
+// documents.js - Direct Document Redirect Portal
 let activeDocLang = 'tr';
 let activeTopicFilter = 'all';
 let activeSearchQuery = '';
-let activeSelectedDocId = 'cortes_1520';
 
 const i18n = {
   tr: {
     back: "Atlas'a Dön",
+    portalTitle: "Tarihi Birincil Belgeler Arşivi",
+    portalSubtitle: "Ders kapsamında incelenen tüm tarihi metinlerin orijinallerine, akademik arşivlerine ve kaynak kütüphanelerine doğrudan erişin.",
     searchPlaceholder: "Belgelerde veya Konularda Ara...",
     all: "Tüm Konular",
-    dateLabel: "Tarih: ",
     authorLabel: "Müellif: ",
-    topicLabel: "Konu: ",
-    openTxt: "📄 Metin Dosyasını İndir / Aç",
-    downloadDocx: "📥 Orijinal DOCX İndir"
+    dateLabel: "Tarih: ",
+    gotoSource: "🔗 Belgenin Orijinal Kaynağına Git ↗",
+    openTxt: "📄 Metin Dosyasını Aç (.txt)",
+    downloadDocx: "📥 Orijinal Dersi Veren Hoca Belgesi (.docx)"
   },
   en: {
     back: "Back to Atlas",
+    portalTitle: "Historical Primary Sources Archive",
+    portalSubtitle: "Directly access original manuscripts, academic repositories, and primary source archives studied in class.",
     searchPlaceholder: "Search Documents or Topics...",
     all: "All Topics",
-    dateLabel: "Date: ",
     authorLabel: "Author: ",
-    topicLabel: "Topic: ",
-    openTxt: "📄 Download / Open TXT",
-    downloadDocx: "📥 Download Original DOCX"
+    dateLabel: "Date: ",
+    gotoSource: "🔗 Open Original Source ↗",
+    openTxt: "📄 Open TXT File (.txt)",
+    downloadDocx: "📥 Download Original DOCX (.docx)"
   }
 };
 
 function initPage() {
   renderFilterPills();
-  renderDocList();
-  renderReader(activeSelectedDocId);
+  renderPortalGrid();
 }
 
 function toggleDocLanguage(lang) {
@@ -47,12 +49,16 @@ function toggleDocLanguage(lang) {
   const t = i18n[activeDocLang];
   const backEl = document.getElementById('txt-back');
   const searchEl = document.getElementById('doc-search-input');
+  const titleEl = document.getElementById('portal-title');
+  const subEl = document.getElementById('portal-subtitle');
+
   if (backEl) backEl.textContent = t.back;
   if (searchEl) searchEl.placeholder = t.searchPlaceholder;
+  if (titleEl) titleEl.textContent = t.portalTitle;
+  if (subEl) subEl.textContent = t.portalSubtitle;
 
   renderFilterPills();
-  renderDocList();
-  renderReader(activeSelectedDocId);
+  renderPortalGrid();
 }
 
 function renderFilterPills() {
@@ -78,17 +84,18 @@ function renderFilterPills() {
 function setTopicFilter(catKey) {
   activeTopicFilter = catKey;
   renderFilterPills();
-  renderDocList();
+  renderPortalGrid();
 }
 
 function onSearchInput(query) {
   activeSearchQuery = (query || '').toLowerCase().trim();
-  renderDocList();
+  renderPortalGrid();
 }
 
-function renderDocList() {
-  const container = document.getElementById('doc-list-container');
-  if (!container || !learningData.primarySources) return;
+function renderPortalGrid() {
+  const grid = document.getElementById('portal-cards-grid');
+  if (!grid || !learningData.primarySources) return;
+  const t = i18n[activeDocLang];
 
   let docs = learningData.primarySources;
   
@@ -112,74 +119,35 @@ function renderDocList() {
     });
   }
 
-  container.innerHTML = docs.map(doc => {
+  grid.innerHTML = docs.map(doc => {
     const title = doc.title[activeDocLang] || doc.title['tr'];
     const author = doc.author[activeDocLang] || doc.author['tr'];
+    const summary = doc.summary[activeDocLang] || doc.summary['tr'];
     const topicTag = doc.topic ? (doc.topic[activeDocLang] || doc.topic['tr']) : `Hafta ${doc.week}`;
-    const active = doc.id === activeSelectedDocId ? 'active' : '';
+    const targetUrl = doc.sourceUrl || doc.localTxt || '#';
 
     return `
-      <div class="doc-card ${active}" onclick="selectDoc('${doc.id}')">
-        <div class="badge">${topicTag} (${doc.date})</div>
-        <div class="title">${title}</div>
-        <div class="author">${author}</div>
+      <div class="portal-card">
+        <div class="card-top">
+          <span class="card-badge">${topicTag}</span>
+          <h3 class="card-title">${title}</h3>
+          <div class="card-meta">
+            <span><strong>${t.dateLabel}</strong>${doc.date}</span> • 
+            <span><strong>${t.authorLabel}</strong>${author}</span>
+          </div>
+          <p class="card-summary">${summary}</p>
+        </div>
+
+        <div class="card-actions">
+          <a class="btn-redirect" href="${encodeURI(targetUrl)}" target="_blank" rel="noopener">
+            ${t.gotoSource}
+          </a>
+          ${doc.localTxt ? `<a class="btn-secondary" href="${encodeURI(doc.localTxt)}" target="_blank">${t.openTxt}</a>` : ''}
+          ${doc.localDocx ? `<a class="btn-secondary" href="${encodeURI(doc.localDocx)}" download>${t.downloadDocx}</a>` : ''}
+        </div>
       </div>
     `;
   }).join('');
-}
-
-function selectDoc(docId) {
-  activeSelectedDocId = docId;
-  renderDocList();
-  renderReader(docId);
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-function renderReader(docId) {
-  const canvas = document.getElementById('doc-reader-canvas');
-  if (!canvas || !learningData.primarySources) return;
-  const t = i18n[activeDocLang];
-
-  const doc = learningData.primarySources.find(d => d.id === docId) || learningData.primarySources[0];
-  if (!doc) return;
-
-  const title = doc.title[activeDocLang] || doc.title['tr'];
-  const author = doc.author[activeDocLang] || doc.author['tr'];
-  const summary = doc.summary[activeDocLang] || doc.summary['tr'];
-  const topicTag = doc.topic ? (doc.topic[activeDocLang] || doc.topic['tr']) : `Hafta ${doc.week}`;
-  const txtFile = doc.fileUrls ? doc.fileUrls.txt : '';
-  const docxFile = doc.fileUrls ? doc.fileUrls.docx : '';
-
-  // Get pre-formatted HTML text directly from data.js
-  const proseHtml = (typeof doc.formattedHtml === "object" ? (doc.formattedHtml[activeDocLang] || doc.formattedHtml["tr"]) : doc.formattedHtml) || `<p>${doc.fullText || ''}</p>`;
-
-  canvas.innerHTML = `
-    <header class="doc-meta-header" style="border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; margin-bottom: 1.2rem;">
-      <h2 style="font-family: 'Outfit', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--text-primary); margin: 0 0 0.6rem 0; line-height: 1.3;">${title}</h2>
-      <div style="font-size: 0.88rem; color: var(--text-secondary); display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center;">
-        <span><strong>${t.dateLabel}</strong>${doc.date}</span>
-        <span>•</span>
-        <span><strong>${t.authorLabel}</strong>${author}</span>
-        <span>•</span>
-        <span><strong>${t.topicLabel}</strong>${topicTag}</span>
-      </div>
-    </header>
-
-    <div style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; border-left: 3px solid var(--theme-accent); padding-left: 1rem; margin-bottom: 1.4rem;">
-      ${summary}
-    </div>
-
-    ${(txtFile || docxFile) ? `
-      <div class="action-toolbar" style="margin-bottom: 1.4rem; display:flex; gap:0.8rem; flex-wrap:wrap;">
-        ${txtFile ? `<a class="btn-action" href="${encodeURI(txtFile)}" target="_blank">${t.openTxt}</a>` : ''}
-        ${docxFile ? `<a class="btn-action" href="${encodeURI(docxFile)}" download>${t.downloadDocx}</a>` : ''}
-      </div>
-    ` : ''}
-
-    <div class="doc-prose" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 1.8rem; font-size: 0.96rem; line-height: 1.8; color: var(--text-primary);">
-      ${proseHtml}
-    </div>
-  `;
 }
 
 document.addEventListener('DOMContentLoaded', () => {

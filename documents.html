@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tarihi Belgeler Arşivi | HUMS 131</title>
+  <title>Tarihi Belgeler Yönlendirme Portalı | HUMS 131</title>
   <link rel="stylesheet" href="styles.css">
   <style>
     html, body {
@@ -15,7 +15,7 @@
     }
 
     .header-bar {
-      padding: 0.9rem 1.8rem;
+      padding: 1rem 2rem;
       background: var(--bg-surface);
       border-bottom: 1px solid var(--border-color);
       display: flex;
@@ -49,49 +49,77 @@
       border-color: var(--theme-accent);
     }
 
-    .main-grid {
-      max-width: 1350px;
-      width: 100%;
-      margin: 0 auto;
-      padding: 1.8rem;
-      display: grid;
-      grid-template-columns: 340px 1fr;
-      gap: 2rem;
+    .hero-banner {
+      max-width: 1200px;
+      margin: 2rem auto 1rem auto;
+      padding: 2rem;
+      background: linear-gradient(135deg, var(--bg-surface) 0%, var(--bg-card) 100%);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
     }
 
-    .sidebar {
+    .hero-banner h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 0.6rem;
+    }
+
+    .hero-banner p {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      max-width: 750px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .portal-container {
+      max-width: 1200px;
+      margin: 0 auto 4rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .toolbar-section {
       display: flex;
-      flex-direction: column;
-      gap: 1.2rem;
-      position: sticky;
-      top: 80px;
-      height: fit-content;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .search-box {
+      flex: 1;
+      max-width: 400px;
     }
 
     .search-box input {
       width: 100%;
-      padding: 0.65rem 0.9rem;
-      border-radius: 8px;
+      padding: 0.75rem 1.1rem;
+      border-radius: 10px;
       border: 1px solid var(--border-color);
       background: var(--bg-surface);
       color: var(--text-primary);
-      font-size: 0.85rem;
-      box-shadow: inset 0 1px 2px rgba(0,0,0,0.03);
+      font-size: 0.9rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
     }
 
     .filter-pills {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.35rem;
+      gap: 0.5rem;
     }
 
     .pill-btn {
-      padding: 0.35rem 0.65rem;
-      border-radius: 6px;
+      padding: 0.45rem 0.85rem;
+      border-radius: 8px;
       border: 1px solid var(--border-color);
       background: var(--bg-surface);
       color: var(--text-secondary);
-      font-size: 0.78rem;
+      font-size: 0.82rem;
       font-weight: 600;
       cursor: pointer;
       transition: all 0.2s ease;
@@ -103,147 +131,116 @@
       border-color: var(--theme-accent);
     }
 
-    .doc-list {
-      display: flex;
-      flex-direction: column;
-      gap: 0.6rem;
-      max-height: calc(100vh - 240px);
-      overflow-y: auto;
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 1.8rem;
     }
 
-    .doc-card {
-      padding: 0.9rem 1rem;
-      background: var(--bg-surface);
-      border: 1px solid var(--border-color);
-      border-radius: 10px;
-      cursor: pointer;
-      transition: all 0.25 ease;
-      display: flex;
-      flex-direction: column;
-      gap: 0.3rem;
-    }
-
-    .doc-card:hover {
-      border-color: var(--theme-accent);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-
-    .doc-card.active {
-      border-color: var(--theme-accent);
-      background: rgba(var(--theme-accent-rgb), 0.04);
-      box-shadow: 0 0 0 2px var(--theme-accent-glow);
-    }
-
-    .doc-card .badge {
-      font-size: 0.73rem;
-      font-weight: 700;
-      color: var(--theme-accent);
-    }
-
-    .doc-card .title {
-      font-weight: 700;
-      font-size: 0.92rem;
-      color: var(--text-primary);
-    }
-
-    .doc-card .author {
-      font-size: 0.78rem;
-      color: var(--text-secondary);
-    }
-
-    .reader-canvas {
+    .portal-card {
       background: var(--bg-surface);
       border: 1px solid var(--border-color);
       border-radius: 14px;
-      padding: 2.2rem;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+      padding: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.2rem;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+      position: relative;
+      overflow: hidden;
     }
 
-    .doc-meta-header {
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 1.2rem;
-      margin-bottom: 1.5rem;
+    .portal-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--theme-accent);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.08);
     }
 
-    .doc-meta-header .badge-tag {
-      display: inline-block;
+    .card-top {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .card-badge {
+      align-self: flex-start;
+      font-size: 0.75rem;
       font-weight: 700;
-      font-size: 0.8rem;
       color: var(--theme-accent);
       background: rgba(var(--theme-accent-rgb), 0.08);
-      padding: 0.25rem 0.65rem;
+      padding: 0.3rem 0.75rem;
       border-radius: 6px;
-      margin-bottom: 0.6rem;
     }
 
-    .doc-meta-header h2 {
+    .card-title {
       font-family: 'Outfit', sans-serif;
-      font-size: 1.6rem;
+      font-size: 1.2rem;
       font-weight: 800;
       color: var(--text-primary);
-      margin-bottom: 0.4rem;
-      line-height: 1.3;
+      line-height: 1.35;
     }
 
-    .doc-meta-header .author-info {
-      font-size: 0.9rem;
+    .card-meta {
+      font-size: 0.82rem;
       color: var(--text-secondary);
       font-weight: 500;
     }
 
-    .action-toolbar {
-      display: flex;
-      align-items: center;
-      gap: 0.8rem;
-      margin-bottom: 1.5rem;
-      flex-wrap: wrap;
+    .card-summary {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
     }
 
-    .btn-action {
-      display: inline-flex;
+    .card-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-top: 0.5rem;
+    }
+
+    .btn-redirect {
+      display: flex;
       align-items: center;
+      justify-content: center;
       gap: 0.5rem;
-      padding: 0.55rem 1.1rem;
-      border-radius: 8px;
-      border: 1px solid var(--border-color);
+      padding: 0.75rem 1.2rem;
+      background: var(--theme-accent);
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.9rem;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 10px rgba(var(--theme-accent-rgb), 0.25);
+    }
+
+    .btn-redirect:hover {
+      filter: brightness(1.1);
+      transform: scale(1.01);
+    }
+
+    .btn-secondary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.5rem 1rem;
       background: var(--bg-card);
+      border: 1px solid var(--border-color);
       color: var(--text-primary);
       font-weight: 600;
-      font-size: 0.85rem;
+      font-size: 0.8rem;
+      border-radius: 8px;
       text-decoration: none;
-      cursor: pointer;
       transition: all 0.2s ease;
     }
 
-    .btn-action:hover {
+    .btn-secondary:hover {
       border-color: var(--theme-accent);
-      background: var(--theme-accent);
-      color: #ffffff;
-    }
-
-    .embed-container {
-      width: 100%;
-      height: 750px;
-      border: 1px solid var(--border-color);
-      border-radius: 10px;
-      overflow: hidden;
-      background: #ffffff;
-    }
-
-    .embed-iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-
-    @media (max-width: 900px) {
-      .main-grid {
-        grid-template-columns: 1fr;
-      }
-      .sidebar {
-        position: static;
-      }
+      color: var(--theme-accent);
     }
   </style>
 </head>
@@ -256,7 +253,7 @@
         <span id="txt-back">Atlas'a Dön</span>
       </a>
       <h1 style="font-size: 1.15rem; font-family: 'Outfit', sans-serif; font-weight:700; color:var(--text-primary); margin:0;">
-        📜 Tarihi Birincil Belgeler Arşivi
+        🌐 Tarihi Belgeler Yönlendirme Portalı
       </h1>
     </div>
 
@@ -266,24 +263,25 @@
     </div>
   </header>
 
-  <div class="main-grid">
-    <aside class="sidebar">
+  <div class="hero-banner">
+    <h1 id="portal-title">Tarihi Birincil Belgeler Arşivi</h1>
+    <p id="portal-subtitle">Ders kapsamında incelenen tüm tarihi metinlerin orijinallerine, akademik arşivlerine ve kaynak kütüphanelerine doğrudan erişin.</p>
+  </div>
+
+  <div class="portal-container">
+    <div class="toolbar-section">
       <div class="search-box">
         <input type="text" id="doc-search-input" placeholder="Belgelerde veya Konularda Ara..." oninput="onSearchInput(this.value)">
       </div>
 
       <div class="filter-pills" id="filter-pills-container">
-        <!-- JS filled pills -->
+        <!-- JS Filled Pills -->
       </div>
+    </div>
 
-      <div class="doc-list" id="doc-list-container">
-        <!-- JS filled doc cards -->
-      </div>
-    </aside>
-
-    <main class="reader-canvas" id="doc-reader-canvas">
-      <!-- JS renders embedded view -->
-    </main>
+    <div class="cards-grid" id="portal-cards-grid">
+      <!-- JS Filled Cards -->
+    </div>
   </div>
 
   <script src="data.js"></script>
