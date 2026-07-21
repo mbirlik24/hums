@@ -123,7 +123,7 @@ function renderReader(docId) {
   const title = doc.title[activeDocLang] || doc.title['tr'];
   const author = doc.author[activeDocLang] || doc.author['tr'];
   const summary = doc.summary[activeDocLang] || doc.summary['tr'];
-  const proseHtml = doc.formattedHtml || `<p>${doc.fullText}</p>`;
+  const proseHtml = (typeof doc.formattedHtml === "object" ? (doc.formattedHtml[activeDocLang] || doc.formattedHtml["tr"]) : doc.formattedHtml) || `<p>${doc.fullText}</p>`;
 
   canvas.innerHTML = `
     <header class="doc-meta-header">
