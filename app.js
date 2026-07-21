@@ -3061,22 +3061,10 @@ function renderQuiz() {
   const currentQ = quizData[qIndex];
   
   if (currentQ.type === 'essay') {
-    const essayBadge = document.createElement('div');
-    essayBadge.style.cssText = 'display:inline-block; padding: 0.25rem 0.6rem; border-radius: 4px; background: rgba(139, 92, 246, 0.15); color: #8b5cf6; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.5rem;';
-    essayBadge.innerText = state.language === 'tr' ? '✍️ Açık Uçlu Analitik Essay Sorusu' : '✍️ Open-Ended Analytical Essay Question';
-    body.appendChild(essayBadge);
-
     const questionDiv = document.createElement('div');
     questionDiv.className = 'quiz-question fade-in';
     questionDiv.innerText = `${qIndex + 1}. ${currentQ.question[state.language]}`;
     body.appendChild(questionDiv);
-
-    const hintDiv = document.createElement('p');
-    hintDiv.style.cssText = 'font-size: 0.75rem; color: var(--text-secondary); margin-bottom: 0.75rem; line-height: 1.4;';
-    hintDiv.innerText = state.language === 'tr' 
-      ? 'Bu açık uçlu soru otomatik doğru/yanlış olarak puanlanmaz. Tarihsel mantık, amaç ve özgün düşüncelerinizi sınar. Yanıtınızı aşağıya yazıp model tarihsel analizi inceleyebilirsiniz.'
-      : 'This open-ended question is not auto-graded as right/wrong. It evaluates historical logic, purpose, and critical reflection. Type your answer below and review the model analysis.';
-    body.appendChild(hintDiv);
 
     const textarea = document.createElement('textarea');
     textarea.className = 'quiz-essay-textarea fade-in';

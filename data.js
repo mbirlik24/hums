@@ -385,8 +385,8 @@ const learningData = {
         {
           "type": "essay",
           "question": {
-            "en": "Analytical Reflection: Evaluate how the ecological convergence of the Columbian Exchange transformed European economic power relative to Asian empires. What structural factors allowed Western Europe to leverage American resources into global hegemony?",
-            "tr": "Analitik Düşünce & Essay: Kolomb Değişimi'nin yarattığı ekolojik ve biyolojik birleşmenin, Asya imparatorlukları karşısında Avrupa'nın ekonomik gücünü nasıl dönüştürdüğünü değerlendiriniz. Avrupalıların Amerika kaynaklarını küresel bir hegemonyaya dönüştürmesini sağlayan yapısal faktörler nelerdir?"
+            "en": "Evaluate how the ecological convergence of the Columbian Exchange transformed European economic power relative to Asian empires. What structural factors allowed Western Europe to leverage American resources into global hegemony?",
+            "tr": "Kolomb Değişimi'nin yarattığı ekolojik ve biyolojik birleşmenin, Asya imparatorlukları karşısında Avrupa'nın ekonomik gücünü nasıl dönüştürdüğünü değerlendiriniz. Avrupalıların Amerika kaynaklarını küresel bir hegemonyaya dönüştürmesini sağlayan yapısal faktörler nelerdir?"
           },
           "explanation": {
             "en": "Model Analysis & Key Themes:\n1. Sovereign Wealth Injection: Silver from Potosí and Zacatecas injected liquidity into European markets, facilitating trade with Asia.\n2. Primary Ecological Assets: American land bonanza provided high-value cash crops (sugar, tobacco, cotton, coffee), creating massive surplus value.\n3. The Great Divergence: As Pomeranz and Crosby note, access to American land and resources freed European land for industrialization, enabling Europe to surpass Asian economic powerhouses like Qing China and Mughal India.",
@@ -756,8 +756,8 @@ const learningData = {
         {
           "type": "essay",
           "question": {
-            "en": "Analytical Reflection: Analyze the relationship between the microbiological and demographic collapse of Native American populations and the biological asymmetry between the Old and New Worlds. How did this demographic crash impact European labor needs and the transatlantic slave trade?",
-            "tr": "Analitik Düşünce & Essay: Amerika'da yerli nüfusun mikrobiyolojik ve demografik yıkımının, Eski Dünya ile Yeni Dünya arasındaki biyolojik asimetri ile ilişkisini analiz ediniz. Bu demografik çöküş, Avrupalıların işgücü ihtiyacını ve transatlantik köle ticaretini nasıl etkilemiştir?"
+            "en": "Analyze the relationship between the microbiological and demographic collapse of Native American populations and the biological asymmetry between the Old and New Worlds. How did this demographic crash impact European labor needs and the transatlantic slave trade?",
+            "tr": "Amerika'da yerli nüfusun mikrobiyolojik ve demografik yıkımının, Eski Dünya ile Yeni Dünya arasındaki biyolojik asimetri ile ilişkisini analiz ediniz. Bu demografik çöküş, Avrupalıların işgücü ihtiyacını ve transatlantik köle ticaretini nasıl etkilemiştir?"
           },
           "explanation": {
             "en": "Model Analysis & Key Themes:\n1. Biological Asymmetry: Eurasian populations developed immunity due to centuries of living with domesticated herd animals; Native Americans lacked exposure.\n2. Demographic Crash: Old World pathogens (smallpox, measles) wiped out 80-95% of the indigenous population within a century.\n3. Structural Shift to Slave Trade: The collapse of Native labor forced colonizers to seek an alternative workforce, directly accelerating the transatlantic African slave trade.",
@@ -1549,8 +1549,8 @@ const learningData = {
         {
           "type": "essay",
           "question": {
-            "en": "Analytical Reflection: Discuss the historical causes behind the shift in social hierarchy in 17th-century Virginia from class/property to racial hereditary lifetime slavery following Bacon's Rebellion (1676). What was the primary purpose of planter elites in executing this legal transformation?",
-            "tr": "Analitik Düşünce & Essay: 17. yüzyıl Virginia'sında Bacon İsyanı (1676) sonrasında toplumsal hiyerarşinin mülkiyet ve sınıf temelinden ırksal ve irsi kölelik temeline kaymasını tartışınız. Elitlerin bu hukuki ve toplumsal dönüşümü gerçekleştirmesindeki temel amaç neydi?"
+            "en": "Discuss the historical causes behind the shift in social hierarchy in 17th-century Virginia from class/property to racial hereditary lifetime slavery following Bacon's Rebellion (1676). What was the primary purpose of planter elites in executing this legal transformation?",
+            "tr": "17. yüzyıl Virginia'sında Bacon İsyanı (1676) sonrasında toplumsal hiyerarşinin mülkiyet ve sınıf temelinden ırksal ve irsi kölelik temeline kaymasını tartışınız. Elitlerin bu hukuki ve toplumsal dönüşümü gerçekleştirmesindeki temel amaç neydi?"
           },
           "explanation": {
             "en": "Model Analysis & Key Themes:\n1. Class Solidarity Threat: Bacon's Rebellion united landless white indentured servants and black workers against planter elites.\n2. Strategic Division: Terrified elites used race to destroy working-class solidarity by granting social privileges to poor whites.\n3. Codification of Racial Slavery: Virginia Slave Codes (1691-1708) permanently tied slavery to African race and maternal line, making it a hereditary condition.",
@@ -1880,8 +1880,8 @@ const learningData = {
         {
           "type": "essay",
           "question": {
-            "en": "Analytical Reflection: Evaluate the 'Gun-Slave Cycle' theory and the commercial relationship between African sovereign states and European merchants. What were the economic and political dynamics driving African kingdoms' participation in the slave trade?",
-            "tr": "Analitik Düşünce & Essay: Transatlantik köle ticaretinde 'Silah-Köle Döngüsü' teorisini ve Afrika devletleri ile Avrupalı tüccarlar arasındaki ticari ilişkiyi değerlendiriniz. Afrikalı krallıkların bu ticarete katılımındaki ekonomik ve siyasi dinamikler nelerdi?"
+            "en": "Evaluate the 'Gun-Slave Cycle' theory and the commercial relationship between African sovereign states and European merchants. What were the economic and political dynamics driving African kingdoms' participation in the slave trade?",
+            "tr": "Transatlantik köle ticaretinde 'Silah-Köle Döngüsü' teorisini ve Afrika devletleri ile Avrupalı tüccarlar arasındaki ticari ilişkiyi değerlendiriniz. Afrikalı krallıkların bu ticarete katılımındaki ekonomik ve siyasi dinamikler nelerdi?"
           },
           "explanation": {
             "en": "Model Analysis & Key Themes:\n1. Commercial Parity: Early trade was based on voluntary commercial agreements; Europeans lacked military capacity to conquer inland Africa.\n2. Gun-Slave Cycle: African states needed European firearms for self-defense against rivals, forcing them to capture prisoners of war to buy guns.\n3. Economic vs Political Motivation: Debate continues between historians (Thornton) on whether wars were waged for slave capture or state expansion.",
@@ -2355,8 +2355,8 @@ const learningData = {
         {
           "type": "essay",
           "question": {
-            "en": "Analytical Reflection: Analyze the concept of British liberty and property rights underlying the slogan 'No taxation without representation' in the American colonies. Why was the colonists' tax opposition not merely a financial reaction, but a constitutional and philosophical resistance?",
-            "tr": "Analitik Düşünce & Essay: Amerikan kolonilerindeki 'Temsilsiz Vergilendirme Olmaz' (No taxation without representation) sloganının arkasındaki İngiliz özgürlük anlayışını ve mülkiyet ilişkisini çözümleyiniz. Kolonistlerin vergi itirazı neden sıradan bir mali tepki değil, anayasal ve felsefi bir direnişti?"
+            "en": "Analyze the concept of British liberty and property rights underlying the slogan 'No taxation without representation' in the American colonies. Why was the colonists' tax opposition not merely a financial reaction, but a constitutional and philosophical resistance?",
+            "tr": "Amerikan kolonilerindeki 'Temsilsiz Vergilendirme Olmaz' (No taxation without representation) sloganının arkasındaki İngiliz özgürlük anlayışını ve mülkiyet ilişkisini çözümleyiniz. Kolonistlerin vergi itirazı neden sıradan bir mali tepki değil, anayasal ve felsefi bir direnişti?"
           },
           "explanation": {
             "en": "Model Analysis & Key Themes:\n1. Heritage of 1688: Colonists believed in English constitutional rights established during the Glorious Revolution.\n2. Property as Freedom: In Lockean political theory, personal freedom required security of property; unconsented taxation was viewed as confiscation of property.\n3. Constitutional Crisis: Taxing without elected representation was seen as reducing free English subjects to propertyless dependence.",
@@ -2686,8 +2686,8 @@ const learningData = {
         {
           "type": "essay",
           "question": {
-            "en": "Analytical Reflection: Discuss the political purposes of the Founding Fathers and the long-term consequences for US national unity regarding the Great Compromise (Connecticut Compromise) and the temporary shelving of the slavery question during the 1787 Constitutional Convention.",
-            "tr": "Analitik Düşünce & Essay: 1787 ABD Anayasası hazırlanırken kabul edilen Büyük Uzlaşı (Connecticut Compromise) ve kölelik meselesinin ertelenmesinin kurucu babaların siyasi amaçları ve ABD'nin gelecekteki iç birliği açısından doğurduğu sonuçları tartışınız."
+            "en": "Discuss the political purposes of the Founding Fathers and the long-term consequences for US national unity regarding the Great Compromise (Connecticut Compromise) and the temporary shelving of the slavery question during the 1787 Constitutional Convention.",
+            "tr": "1787 ABD Anayasası hazırlanırken kabul edilen Büyük Uzlaşı (Connecticut Compromise) ve kölelik meselesinin ertelenmesinin kurucu babaların siyasi amaçları ve ABD'nin gelecekteki iç birliği açısından doğurduğu sonuçları tartışınız."
           },
           "explanation": {
             "en": "Model Analysis & Key Themes:\n1. Representation Balance: The Great Compromise balanced large vs small states (House by population, Senate by equal vote).\n2. Pragmatic Union: Shelving slavery avoided immediate Southern secession during constitution drafting.\n3. Structural Fuse: Failing to address slavery in 1787 laid the structural fuse that exploded into the American Civil War in 1861.",
@@ -3533,8 +3533,8 @@ const learningData = {
         {
           "type": "essay",
           "question": {
-            "en": "Analytical Reflection: Evaluate the conflict between the rising economic power of the French merchant bourgeoisie (fueled by maritime colonial trade) and the political blockade of the Ancien Régime based on noble privilege. What role did Enlightenment ideas play in this confrontation?",
-            "tr": "Analitik Düşünce & Essay: 18. yüzyıl Fransız toplumunda burjuvazinin deniz sömürge ticaretiyle artan ekonomik gücü ile Ancien Régime'in soyluluk ayrıcalıklarına dayalı siyasi tıkanıklığı arasındaki çatışmayı değerlendiriniz. Aydınlanma fikirleri bu çatışmada nasıl bir rol oynamıştır?"
+            "en": "Evaluate the conflict between the rising economic power of the French merchant bourgeoisie (fueled by maritime colonial trade) and the political blockade of the Ancien Régime based on noble privilege. What role did Enlightenment ideas play in this confrontation?",
+            "tr": "18. yüzyıl Fransız toplumunda burjuvazinin deniz sömürge ticaretiyle artan ekonomik gücü ile Ancien Régime'in soyluluk ayrıcalıklarına dayalı siyasi tıkanıklığı arasındaki çatışmayı değerlendiriniz. Aydınlanma fikirleri bu çatışmada nasıl bir rol oynamıştır?"
           },
           "explanation": {
             "en": "Model Analysis & Key Themes:\n1. Colonial Wealth: Merchant bourgeoisie in Bordeaux, Nantes, and Marseille grew wealthy from sugar and slave trade.\n2. Legal Blockade: Despite wealth, the bourgeoisie were excluded from high state offices reserved for titled nobility.\n3. Enlightenment Weapon: Enlightenment principles of reason and equality provided the intellectual framework to challenge noble privilege.",
@@ -3904,8 +3904,8 @@ const learningData = {
         {
           "type": "essay",
           "question": {
-            "en": "Analytical Reflection: Analyze the historical purposes and contradictions between the universal equality proclaimed in the 1789 Declaration of the Rights of Man and the Citizen and the 'active/passive citizen' distinction codified in the French Constitution of 1791.",
-            "tr": "Analitik Düşünce & Essay: Fransız Devrimi sırasında 1789 İnsan ve Yurttaş Hakları Bildirisi'nin ilan ettiği evrensel eşitlik ilkesi ile 1791 Anayasası'nda getirilen 'aktif/pasif yurttaş' ayrımı arasındaki çelişkiyi tarihsel amaçları açısından analiz ediniz."
+            "en": "Analyze the historical purposes and contradictions between the universal equality proclaimed in the 1789 Declaration of the Rights of Man and the Citizen and the 'active/passive citizen' distinction codified in the French Constitution of 1791.",
+            "tr": "Fransız Devrimi sırasında 1789 İnsan ve Yurttaş Hakları Bildirisi'nin ilan ettiği evrensel eşitlik ilkesi ile 1791 Anayasası'nda getirilen 'aktif/pasif yurttaş' ayrımı arasındaki çelişkiyi tarihsel amaçları açısından analiz ediniz."
           },
           "explanation": {
             "en": "Model Analysis & Key Themes:\n1. Universal Ideals: The 1789 Declaration asserted natural rights to liberty and equality for all men.\n2. Bourgeois Order: The 1791 Constitution restricted voting to property-owning 'active citizens' to protect bourgeois stability.\n3. Social Exclusion: Women, working classes, and non-property owners were excluded, highlighting the gap between abstract human rights and class governance.",
@@ -4402,8 +4402,8 @@ const learningData = {
         {
           "type": "essay",
           "question": {
-            "en": "Analytical Reflection: Discuss the fundamental contradictions that emerged when the French Revolution's universal 'Rights of Man' principles were exported to the colonial slave society of San Domingo (Haiti). How did the French bourgeoisie's property rights clash with the slaves' demand for human emancipation?",
-            "tr": "Analitik Düşünce & Essay: Fransız Devrimi'nin evrensel 'İnsan Hakları' ilkeleri San Domingo (Haiti) köle toplumuna ihraç edildiğinde ortaya çıkan temel çelişkileri tartışınız. Fransız burjuvazisinin mülkiyet hakları ile kölelerin insani özgürlük talebi nasıl çatışmıştır?"
+            "en": "Discuss the fundamental contradictions that emerged when the French Revolution's universal 'Rights of Man' principles were exported to the colonial slave society of San Domingo (Haiti). How did the French bourgeoisie's property rights clash with the slaves' demand for human emancipation?",
+            "tr": "Fransız Devrimi'nin evrensel 'İnsan Hakları' ilkeleri San Domingo (Haiti) köle toplumuna ihraç edildiğinde ortaya çıkan temel çelişkileri tartışınız. Fransız burjuvazisinin mülkiyet hakları ile kölelerin insani özgürlük talebi nasıl çatışmıştır?"
           },
           "explanation": {
             "en": "Model Analysis & Key Themes:\n1. Property vs Liberty: Article 17 protected property rights, but slaves were legally defined as property, creating a direct clash with human liberty.\n2. Colonial Revenues: French ports relied on slave-produced sugar profits to fund the revolutionary state.\n3. Inevitable Explosion: The refusal to extend full rights to slaves and free mulattoes ignited the 1791 Haitian revolution under Boukman and Toussaint.",
@@ -4693,8 +4693,8 @@ const learningData = {
         {
           "type": "essay",
           "question": {
-            "en": "Analytical Reflection: Evaluate the historical causes behind the transition from Toussaint Louverture's politics of autonomy and 1801 Constitution to Jean-Jacques Dessalines's campaign for total independence and anti-colonial race war. How did Napoleon Bonaparte's Leclerc expedition drive this transformation?",
-            "tr": "Analitik Düşünce & Essay: Toussaint Louverture'in özerklik ve 1801 Anayasası siyasetinden Jean-Jacques Dessalines'in tam bağımsızlık ve Fransız karşıtı ırk savaşına geçişindeki tarihsel nedenleri değerlendiriniz. Napolyon Bonapart'ın Leclerc seferi ve köleliği geri getirme kararı bu dönüşümü nasıl etkilemiştir?"
+            "en": "Evaluate the historical causes behind the transition from Toussaint Louverture's politics of autonomy and 1801 Constitution to Jean-Jacques Dessalines's campaign for total independence and anti-colonial race war. How did Napoleon Bonaparte's Leclerc expedition drive this transformation?",
+            "tr": "Toussaint Louverture'in özerklik ve 1801 Anayasası siyasetinden Jean-Jacques Dessalines'in tam bağımsızlık ve Fransız karşıtı ırk savaşına geçişindeki tarihsel nedenleri değerlendiriniz. Napolyon Bonapart'ın Leclerc seferi ve köleliği geri getirme kararı bu dönüşümü nasıl etkilemiştir?"
           },
           "explanation": {
             "en": "Model Analysis & Key Themes:\n1. Toussaint's Autonomy: Toussaint sought self-governance under nominal French sovereignty with his 1801 Constitution.\n2. Napoleonic Betrayal: Napoleon sent 20,000 troops in 1801 and reinstated slavery in May 1802, arresting Toussaint.\n3. Dessalines' Radical Turn: Seeing Napoleon's betrayal, Dessalines launched an uncompromising war of total independence, proclaiming Haiti in 1804.",
