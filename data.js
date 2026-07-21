@@ -6005,5 +6005,3 @@ const learningData = {
     }
   }
 };
-
-const map = undefined;
