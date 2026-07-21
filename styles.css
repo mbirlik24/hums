@@ -1584,3 +1584,84 @@ header {
   max-height: 400px;
   overflow-y: auto;
 }
+
+/* Historical Parchment Archive Modal & Reader Styling */
+.parchment-modal {
+  width: 92%;
+  max-width: 950px;
+  max-height: 88vh;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: modalSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.parchment-header {
+  padding: 1.1rem 1.5rem;
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.parchment-body {
+  padding: 1.5rem;
+  overflow-y: auto;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--text-primary);
+}
+
+.parchment-quote-box {
+  background: var(--bg-surface);
+  border-left: 4px solid var(--theme-accent);
+  padding: 1rem 1.25rem;
+  border-radius: 0 10px 10px 0;
+  margin: 1rem 0 1.25rem 0;
+  font-style: italic;
+  color: var(--text-primary);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+.parchment-text-area {
+  white-space: pre-wrap;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.88rem;
+  line-height: 1.75;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  padding: 1.25rem;
+  border-radius: 10px;
+  color: var(--text-primary);
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.ps-read-full-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background: var(--theme-accent);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
+  width: fit-content;
+}
+
+.ps-read-full-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}

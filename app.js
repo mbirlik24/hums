@@ -4780,21 +4780,122 @@ window.addEventListener('keydown', (e) => {
 });
 
 
-// Render Primary Source Documents in Reader Tab
+// Render Primary Source Documents in Reader Tab (Strict Language Isolation)
 function populatePrimarySourceOptions() {
   const selectEl = document.getElementById('primary-source-select');
-  if (!selectEl || !learningData.primarySources) return;
+  const titleEl = document.getElementById('sources-title');
+  if (!learningData.primarySources) return;
   const lang = learningData.activeLanguage || 'tr';
   
-  selectEl.innerHTML = learningData.primarySources.map(doc => {
-    const title = doc.title[lang] || doc.title['tr'];
-    return `<option value="${doc.id}">Week ${doc.week}: ${title}</option>`;
-  }).join('');
+  if (titleEl) {
+    titleEl.textContent = lang === 'tr' ? '📜 Birincil Tarihsel Kaynaklar Arşivi' : '📜 Primary Historical Source Archive';
+  }
   
-  if (learningData.primarySources.length > 0) {
-    renderSelectedPrimarySource(learningData.primarySources[0].id);
+  if (selectEl) {
+    selectEl.innerHTML = learningData.primarySources.map(doc => {
+      const title = doc.title[lang] || doc.title['tr'];
+      const weekWord = lang === 'tr' ? 'Hafta' : 'Week';
+      return `<option value="${doc.id}">${weekWord} ${doc.week}: ${title}</option>`;
+    }).join('');
+    
+    if (learningData.primarySources.length > 0) {
+      renderSelectedPrimarySource(learningData.primarySources[0].id);
+    }
   }
 }
+
+function renderSelectedPrimarySource(docId) {
+  const displayEl = document.getElementById('primary-source-display');
+  if (!displayEl || !learningData.primarySources) return;
+  const lang = learningData.activeLanguage || 'tr';
+  const doc = learningData.primarySources.find(d => d.id === docId) || learningData.primarySources[0];
+  if (!doc) return;
+  
+  const title = doc.title[lang] || doc.title['tr'];
+  const author = doc.author[lang] || doc.author['tr'];
+  const summary = doc.summary[lang] || doc.summary['tr'];
+  const quote = doc.quote[lang] || doc.quote['tr'];
+  
+  const isTr = lang === 'tr';
+  const badgeText = isTr ? `📜 Hafta ${doc.week} — Orijinal Tarihi Belge (${doc.date})` : `📜 Week ${doc.week} — Primary Historical Document (${doc.date})`;
+  const authorText = isTr ? `✍️ Tarihsel Müellif: ${author}` : `✍️ Historical Author: ${author}`;
+  const quoteHeader = isTr ? `📜 Belgeden Vurucu Alıntı (${doc.date}):` : `📜 Key Historical Quote (${doc.date}):`;
+  const textHeader = isTr ? `📄 Orijinal Dönem Metni (Arşiv Önizleme):` : `📄 Original Document Text (Archive Preview):`;
+  const readFullBtnText = isTr ? `📖 Tam Ekran Belgeyi Oku (Arşiv Görünümü)` : `📖 Read Full Document (Full Archive View)`;
+  
+  displayEl.innerHTML = `
+    <div style="display: flex; flex-direction: column; gap: 0.4rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border-color);">
+      <span class="ps-doc-badge">${badgeText}</span>
+      <h3 style="margin: 0.3rem 0; font-size: 1.15rem; font-weight: 800; color: var(--text-primary);">${title}</h3>
+      <div style="font-size: 0.85rem; color: var(--theme-accent); font-weight: 600;">${authorText}</div>
+      <p style="margin: 0.3rem 0 0 0; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">${summary}</p>
+    </div>
+    
+    <div class="primary-source-quote" style="margin: 0;">
+      <div class="quote-header">${quoteHeader}</div>
+      <div class="quote-body">${quote}</div>
+    </div>
+    
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 0.4rem; flex-wrap: wrap; gap: 0.5rem;">
+      <div style="font-weight: 700; font-size: 0.85rem; color: var(--text-primary);">${textHeader}</div>
+      <button class="ps-read-full-btn" onclick="openPrimarySourceModal('${doc.id}')">
+        ${readFullBtnText}
+      </button>
+    </div>
+    
+    <div class="ps-doc-text" style="max-height: 220px; overflow-y: auto;">${doc.fullText}</div>
+  `;
+}
+
+function openPrimarySourceModal(docId) {
+  const modalContainer = document.getElementById('ps-modal-container');
+  const modalBadge = document.getElementById('ps-modal-badge');
+  const modalTitle = document.getElementById('ps-modal-title');
+  const modalBody = document.getElementById('ps-modal-body');
+  
+  if (!modalContainer || !learningData.primarySources) return;
+  const lang = learningData.activeLanguage || 'tr';
+  const doc = learningData.primarySources.find(d => d.id === docId) || learningData.primarySources[0];
+  if (!doc) return;
+  
+  const isTr = lang === 'tr';
+  const title = doc.title[lang] || doc.title['tr'];
+  const author = doc.author[lang] || doc.author['tr'];
+  const summary = doc.summary[lang] || doc.summary['tr'];
+  const quote = doc.quote[lang] || doc.quote['tr'];
+  
+  modalBadge.textContent = isTr ? `📜 Hafta ${doc.week} — Orijinal Tarihi Belge (${doc.date})` : `📜 Week ${doc.week} — Primary Historical Document (${doc.date})`;
+  modalTitle.textContent = title;
+  
+  const authorText = isTr ? `✍️ Tarihsel Müellif: ${author}` : `✍️ Historical Author: ${author}`;
+  const quoteHeader = isTr ? `📜 Belgeden Vurucu Tarihi Alıntı (${doc.date}):` : `📜 Key Historical Quote (${doc.date}):`;
+  const textHeader = isTr ? `📜 Orijinal Dönem Metni (Tam Belge Arşivi):` : `📜 Original Historical Document Text (Full Archive):`;
+  
+  modalBody.innerHTML = `
+    <div style="margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border-color);">
+      <div style="font-size: 0.9rem; color: var(--theme-accent); font-weight: 700; margin-bottom: 0.4rem;">${authorText}</div>
+      <p style="margin: 0; font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6;">${summary}</p>
+    </div>
+    
+    <div class="parchment-quote-box">
+      <div style="font-weight: 700; margin-bottom: 0.4rem; font-family: 'Outfit', sans-serif;">${quoteHeader}</div>
+      <div>${quote}</div>
+    </div>
+    
+    <div style="font-weight: 800; font-size: 0.95rem; color: var(--text-primary); margin: 1.2rem 0 0.6rem 0;">${textHeader}</div>
+    <div class="parchment-text-area">${doc.fullText}</div>
+  `;
+  
+  modalContainer.style.display = 'flex';
+}
+
+function closePrimarySourceModal() {
+  const modalContainer = document.getElementById('ps-modal-container');
+  if (modalContainer) {
+    modalContainer.style.display = 'none';
+  }
+}
+
 
 function renderSelectedPrimarySource(docId) {
   const displayEl = document.getElementById('primary-source-display');
