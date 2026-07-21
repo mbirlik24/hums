@@ -1020,24 +1020,22 @@ const learningData = {
           "en": "The Transatlantic Slave Trade: The trading triangle between Africa, the Americas, and Europe and its human costs."
         }
       },
-      "slides":  [
+      "slides":    [
         {
           title: {
             en: "1. The Transatlantic Slave Trade (1519–1867)",
             tr: "1. Transatlantik Köle Ticareti (1519–1867)"
           },
           text: {
-            en: `<p><strong>Why Did It Happen? (Economic Demand):</strong> European colonization of the Americas created massive landholdings for export crops (sugar, tobacco, coffee), but indigenous demographic collapse created an acute labor famine that European indentured servitude could not fill.</p>
-                 <p><strong>What Did It Cause? (Demographic & Capitalist Shift):</strong> Over 12.5 million enslaved Africans were forcibly shipped across the Atlantic. This forced migration enriched European merchants and banking networks while creating African-majority plantation zones across Brazil and the Caribbean.</p>
-                 <p><strong>Core Historical Thesis:</strong> New World African slavery was unique in human history: unlike ancient Roman or Ottoman slavery, it turned human beings into permanent, hereditary chattel property based strictly on racial demarcation.</p>
+            en: `<p><strong>The Massive Scale of Forced Migration:</strong> Operating over more than three centuries between 1519 (the first recorded voyage directly to Hispaniola) and 1867 (the final arrival in Cuba), the transatlantic slave trade forcibly shipped over 12.5 million African human beings across the ocean to American colonies. The rapid expansion of New World export agriculture—sugar, tobacco, and coffee—created massive landholdings requiring vast labor forces. Because the indigenous population had collapsed from Eurasian epidemics and European indentured servitude proved quantitatively insufficient, European merchants turned to West Africa to fuel their colonial plantation economies.</p>
+                 <p><strong>A Unique Form of Slavery:</strong> This forced demographic shift fundamentally altered the Western Hemisphere, creating African-majority population zones across Brazil and the Caribbean that permanently shaped American cultures. Beyond demographics, this commerce enriched European merchant elites and banking networks—the very capital that would later finance the Industrial Revolution. Transatlantic slavery was unique in human history: unlike ancient Roman or Ottoman servitude, it turned human beings into permanent, hereditary chattel property based strictly on racial demarcation.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Transatlantic slavery was not a primitive anomaly; it was the essential labor foundation of early modern Atlantic capitalism.
+                   <strong>Key Insight:</strong> Transatlantic slavery was not a primitive anomaly; it was the essential labor foundation of early modern Atlantic capitalism.
                  </div>`,
-            tr: `<p><strong>Neden Oldu? (Ekonomik Talep):</strong> Amerika'nın kolonileştirilmesi devasa ihraç tarlaları (şeker, tütün, kahve) yarattı; ancak yerli nüfusun kırılması ve Avrupa sözleşmeli işçiliğinin yetersizliği akut bir işgücü kıtlığı doğurdu.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Demografik ve Sermaye Kayması):</strong> 12,5 milyondan fazla Afrikalı köle zorla Amerika'ya taşındı. Bu zorunlu göç Avrupa liman kentlerini ve bankalarını zenginleştirirken Karayipler ve Brezilya'da Afrika kökenli baskın nüfuslar yarattı.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Yeni Dünya köleliği insanlık tarihinde tekildir: Roma veya Osmanlı köleliğinin aksine, insanları sırf ırksal ayrıma dayanarak irsi ve ömür boyu mülk (chattel) haline getirmiştir.</p>
+            tr: `<p><strong>Zorunlu Göçün Devasa Boyutu:</strong> 1519 yılında Hispaniola'ya yapılan ilk kayıttan 1867'de Küba'ya ulaşan son gemiye kadar üç asrı aşkın süre işleyen transatlantik köle ticareti, 12,5 milyondan fazla Afrikalı insanı zorla Amerika kolonilerine taşıdı. Şeker, tütün ve kahve üretimi için kurulan devasa tarlalar geniş bir işgücü gerektiriyordu. Salgın hastalıkların yerli nüfusu yok etmesi ve Avrupa sözleşmeli işçiliğinin yetersizliği nedeniyle Avrupalı tüccarlar sömürge ekonomilerini beslemek için Batı Afrika'ya yöneldiler.</p>
+                 <p><strong>Köleliğin Benzersiz Ve Irksal Niteliği:</strong> Bu zorunlu göç Batı Yarımküre'nin demografisini baştan aşağı değiştirdi; Brezilya ve Karayipler'de Afrika kültürünü taşıyan nüfuslar yarattı. Bu kazançlı ticaret, ileride Sanayi Devrimi'ni finanse edecek Avrupalı tüccarları ve bankacılık ağlarını zenginleştirdi. Yeni Dünya köleliği insanlık tarihinde tekildir: Roma veya Osmanlı köleliğinin aksine, insanları sırf ırklarına dayanarak irsi ve ömür boyu mülk (chattel) haline getirmiştir.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Transatlantik köleliği ilkel bir istisna değil, erken modern Atlantik kapitalizminin ana işgücü sütunudur.
+                   <strong>Ana Fikir:</strong> Transatlantik köleliği ilkel bir istisna değil, erken modern Atlantik kapitalizminin temel işgücü sütunudur.
                  </div>`
           },
           mapState: {
@@ -1053,17 +1051,15 @@ const learningData = {
             tr: "2. Köle Ticaretinin Temel Analitik Soruları"
           },
           text: {
-            en: `<p><strong>Why Ask Analytical Questions? (Historiographical Rigor):</strong> To understand how slave labor drove Atlantic modernization, historians analyze structural mechanisms rather than viewing the trade as a mere tragedy.</p>
-                 <p><strong>What Does It Explain? (Institutional Development):</strong> Tracing commercial organization reveals how sovereign African kingdoms negotiated with European chartered monopolies, and how colonial legal systems codified race to prevent working-class rebellions.</p>
-                 <p><strong>Core Historical Thesis:</strong> Analyzing North America—specifically 17th-century Virginia—demonstrates how colonial elites deliberately constructed racial caste systems to preserve class dominance.</p>
+            en: `<p><strong>Framing Historical Inquiry:</strong> To grasp how slave labor acted as the primary engine of Atlantic modernization, historians analyze structural mechanisms rather than viewing the trade merely as a tragic moral failure. Scholars examine four central questions: how the trade gradually emerged from early Atlantic maritime exploration; how commerce was organized between European chartered monopolies and sovereign African states; how imperial powers fought for control over trade routes; and how this trade constructed colonial slave societies.</p>
+                 <p><strong>The Construction of Race:</strong> Investigating North America—specifically 17th-century Virginia—demonstrates how colonial elites deliberately constructed racial caste systems. Race was not a natural pre-existing divider; it was legally codified by planter elites following working-class rebellions to fracture labor solidarity and secure permanent plantation labor.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Race was not a natural pre-existing divider; it was legally constructed to secure plantation labor and break working-class unity.
+                   <strong>Key Insight:</strong> Race was not a natural pre-existing divider; it was legally constructed to secure plantation labor and break working-class unity.
                  </div>`,
-            tr: `<p><strong>Neden Analitik Sorular Sorulur? (Tarihsel Yöntem):</strong> Köle emeğinin Atlantik modernleşmesini nasıl yönlendirdiğini anlamak için tarihçiler ticareti sadece bir trajedi olarak değil, yapısal bir sistem olarak inceler.</p>
-                 <p><strong>Ne Açıklıyor? (Kurumsal Gelişim):</strong> Ticari organizasyonu takip etmek, egemen Afrika krallıklarının Avrupalı şirketlerle nasıl pazarlık yaptığını ve sömürge hukukunun sınıf isyanlarını önlemek için ırkı nasıl yasallaştırdığını gösterir.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Virginia örneğini incelemek, sömürgeci elitlerin mülkiyet ve sınıf düzenini korumak amacıyla ırksal kast sistemini nasıl bilinçli olarak inşa ettiklerini kanıtlar.</p>
+            tr: `<p><strong>Tarihsel Sorgulamanın Çerçevesi:</strong> Köle emeğinin Atlantik modernleşmesini nasıl yönlendirdiğini anlamak için tarihçiler ticareti sadece ahlaki bir trajedi olarak değil, yapısal bir sistem olarak inceler. Dört temel soru araştırılır: ticaretin Atlantik keşiflerinden nasıl doğduğu; Avrupalı şirketler ile egemen Afrika devletleri arasındaki ticaretin nasıl örgütlendiği; imparatorlukların yolları nasıl kontrol ettiği; ve bu ticaretin Amerika'da nasıl bir toplum yapısı yarattığı.</p>
+                 <p><strong>Irkın Hukuken İnşa Edilmesi:</strong> Virginia örneğini incelemek, sömürgeci elitlerin ırksal kast sistemini nasıl bilinçli olarak inşa ettiklerini gösterir. Irk doğal bir ayrım değildir; elitler sınıf isyanlarını önlemek, yoksul beyazlar ile siyahların dayanışmasını kırmak ve ömür boyu bedava işgücünü garantiye almak için ırkı kanunlaştırmışlardır.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Irk doğal bir ayrım değildir; plantasyon düzenini korumak ve sınıf dayanışmasını kırmak için hukuk yoluyla icat edilmiştir.
+                   <strong>Ana Fikir:</strong> Irk doğal bir ayrım değildir; plantasyon düzenini korumak ve sınıf dayanışmasını kırmak için hukuk yoluyla icat edilmiştir.
                  </div>`
           },
           mapState: {
@@ -1079,17 +1075,15 @@ const learningData = {
             tr: "3. Atlantik Adaları Prototipi ve Şeker Kökleri"
           },
           text: {
-            en: `<p><strong>Why Atlantic Islands? (Trial & Error):</strong> In the 15th century, Portuguese and Spanish navigators conquered Atlantic islands (Madeira, Canaries, São Tomé) to test cash-crop agriculture outside continental Europe.</p>
-                 <p><strong>What Did It Cause? (The Plantation Model):</strong> On São Tomé, the Portuguese combined forced African labor with intensive sugar refining. This proved that sugar monoculture powered by unfree labor produced unprecedented profit margins.</p>
-                 <p><strong>Core Historical Thesis:</strong> São Tomé served as the direct structural testing ground for the massive plantation economies deployed in Brazil and the West Indies.</p>
+            en: `<p><strong>Testing Cash-Crop Agriculture:</strong> The transatlantic slave trade did not arrive as a sudden ready-made system. During the 15th century, Portuguese and Spanish navigators conquered Atlantic islands—Madeira, the Canaries, and São Tomé—to test cash-crop agriculture outside continental Europe. On these islands, Europeans established prototype sugar plantations powered by forced African labor long before crossing the open Atlantic Ocean.</p>
+                 <p><strong>The São Tomé Labor Model:</strong> The success of sugar production on São Tomé proved that pairing unfree African labor with intensive sugar monoculture generated enormous, unprecedented profit margins. The island served as the direct structural testing ground for the massive plantation labor systems later deployed in Brazil and the Caribbean.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> The island sugar plantation model established the economic template that later dominated the New World.
+                   <strong>Key Insight:</strong> The island sugar plantation model established the economic template that later dominated the New World.
                  </div>`,
-            tr: `<p><strong>Neden Atlantik Adaları? (Deneme-Yanılma):</strong> 15. yüzyılda Portekizli ve İspanyol denizciler, Avrupa dışında ihraç ürünleri yetiştirmeyi test etmek için Atlantik adalarını (Madeira, Kanarya, São Tomé) ele geçirdi.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Plantasyon Modeli):</strong> Portekizliler São Tomé'de zorunlu Afrika emeğini şeker üretimiyle birleştirdi. Bu deneme, köle gücüne dayalı monokültür şekerin devasa kârlar getirdiğini kanıtladı.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> São Tomé adası, daha sonra Brezilya ve Karayipler'de kurulacak devasa plantasyon sistemlerinin doğrudan deneme sahası olmuştur.</p>
+            tr: `<p><strong>Nakit Ürün Tarımının Test Edilmesi:</strong> Transatlantik köle ticareti aniden hazır bir sistem olarak doğmadı. 15. yüzyılda Portekizli ve İspanyol denizciler, Avrupa dışında ihraç ürünleri yetiştirmeyi denemek için Atlantik adalarını (Madeira, Kanarya, São Tomé) ele geçirdiler. Avrupalılar, Okyanus ötesine geçmeden önce köle gücüne dayalı şeker plantasyonu modelini ilk kez bu adalarda denediler.</p>
+                 <p><strong>São Tomé İşgücü Modeli:</strong> São Tomé'deki şeker üretiminin başarısı, Afrikalı köle emeğinin monokültür şeker üretimiyle birleştiğinde devasa kârlar getirebileceğini kanıtladı. Bu ada, daha sonra Brezilya ve Karayipler'de kurulacak devasa plantasyon sistemlerinin doğrudan deneme sahası olmuştur.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Adalardaki şeker tarlası modeli, Amerika'yı fethedecek ekonomik şablonu yaratmıştır.
+                   <strong>Ana Fikir:</strong> Adalardaki şeker tarlası modeli, Amerika'yı fethedecek ekonomik şablonu yaratmıştır.
                  </div>`
           },
           mapState: {
@@ -1101,21 +1095,19 @@ const learningData = {
         },
         {
           title: {
-            en: "4. Spanish Encomienda & Legal Protection Paradox",
+            en: "4. Spanish Encomienda & The Legal Protection Paradox",
             tr: "4. Encomienda ve Hukuki Koruma Çelişkisi"
           },
           text: {
-            en: `<p><strong>Why Did Spanish Colonialism Shift? (Labor Failure):</strong> Spanish settlers initially used the <em>encomienda</em> system to extract forced labor from Native Americans for gold mines and wheat fields.</p>
-                 <p><strong>What Did It Cause? (Shift to African Slavery):</strong> Severe Native population decline and Spanish Crown laws protecting Native Americans (requiring wages and limiting service) prevented total exploitation, prompting settlers to import unprotected African captives.</p>
-                 <p><strong>Core Historical Thesis:</strong> Crown regulations protecting Native Americans inadvertently accelerated the demand for unprotected African slaves, demonstrating the unintended consequences of imperial labor laws.</p>
+            en: `<p><strong>The Limits of Native Coercion:</strong> Spanish conquistadors needed workers for gold mines, grain crops, and livestock estates. The Spanish Crown initially instituted the <em>encomienda</em> system, granting settlers control over Native American labor. However, catastrophic Native mortality from Old World diseases and Crown regulations protecting Native populations—requiring wages and limiting service durations—prevented settlers from enjoying full-time unfree labor.</p>
+                 <p><strong>Unintended Acceleration of African Slavery:</strong> Debate led by Bartolomé de Las Casas during the Valladolid Controversy (1550–1551) successfully established that Native Americans possessed rational souls to be converted, inadvertently shifting the full burden of unprotected plantation labor onto African slaves. Crown laws protecting Native Americans inadvertently accelerated the demand for unprotected African captives.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Native legal protections inadvertantly funneled colonial labor demand directly into the African slave market.
+                   <strong>Key Insight:</strong> Native legal protections inadvertently funneled colonial labor demand directly into the African slave market.
                  </div>`,
-            tr: `<p><strong>İspanyol Sömürgeciliği Neden Kaydı? (İşgücü Başarısızlığı):</strong> İspanyol yerleşimciler başlangıçta madenler ve tarlalar için yerlileri <em>encomienda</em> sistemiyle zorla çalıştırdı.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Afrika Köleliğine Geçiş):</strong> Yerli nüfusun kırılması ve İspanyol Tacı'nın yerlileri koruyan yasaları (ücret zorunluluğu, süre sınırı) tam sömürüyü engellemiş; yerleşimcileri korumasız Afrikalı kölelere yöneltmiştir.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Yerlileri koruma yasaları, çelişkili şekilde hukuki korumadan yoksun Afrikalı kölelere olan talebi patlatmıştır.</p>
+            tr: `<p><strong>Yerli Sömürüsünün Sınırları:</strong> İspanyol fatihler madenler, tarım ve hayvancılık için işgücüne muhtaçtı. İspanyol Tacı başlangıçta yerlilerin emeğini yerleşimcilere devreden *encomienda* sistemini kurdu. Ancak yerli nüfusun hastalıktan kırılması ve Tacın yerlileri koruyan yasaları (ücret zorunluluğu, çalışma süresi sınırı) tam zamanlı sömürüyü engelledi.</p>
+                 <p><strong>Afrikalı Köleliğine Yöneliş:</strong> Valladolid Münazarası'nda (1550–1551) Bartolomé de Las Casas yerlilerin Hristiyanlaştırılacak ruhlar olduğunu kabul ettirirken, zorunlu emek yükünü farkında olmadan Afrikalıların üzerine yıkmıştır. Yerlileri koruyan yasalar, çelişkili şekilde hukuki korumadan yoksun Afrikalı kölelere olan talebi patlatmıştır.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Yerlilere verilen hukuki koruma, sömürgeci sömürü hırsını doğrudan Afrika köle pazarına yönlendirmiştir.
+                   <strong>Ana Fikir:</strong> Yerlilere verilen hukuki koruma, sömürgeci sömürü hırsını doğrudan Afrika köle pazarına yönlendirmiştir.
                  </div>`
           },
           mapState: {
@@ -1127,21 +1119,19 @@ const learningData = {
         },
         {
           title: {
-            en: "5. Replacement of Native Labor & Pastoral Skills",
+            en: "5. Replacement of Native Labor & Pastoral Expertise",
             tr: "5. Yerli İşgücünün Değişimi ve Hayvancılık Uzmanlığı"
           },
           text: {
-            en: `<p><strong>Why Were Africans Preferred? (Skill Disparity & Isolation):</strong> Native Americans had no experience with large domesticated animals or immunities. In contrast, captives imported from West Africa brought centuries of cattle-herding, blacksmithing, and equestrian expertise.</p>
-                 <p><strong>What Did It Cause? (Economic Viability & Political Control):</strong> Transatlantic transport removed captives from local networks, preventing escapes and local alliances, while their agricultural skills made colonial ranches and plantations highly profitable.</p>
-                 <p><strong>Core Historical Thesis:</strong> African captives were enslaved not merely for brute labor, but for their advanced pastoral and agricultural expertise essential for New World economies.</p>
+            en: `<p><strong>Skill Superiority & Political Isolation:</strong> Beyond disease mortality, Native Americans had no historical experience with large domesticated animals. In contrast, enslaved West Africans imported from Wolof, Fula, and Mandinga regions brought centuries of cattle-herding, blacksmithing, and equestrian skills. All 16th-century cowboys (*vaqueros*) in Hispaniola were West Africans who built early American ranching economies.</p>
+                 <p><strong>Preventing Local Alliances:</strong> Importing captives from across the ocean removed enslaved individuals from their native communities, preventing local escapes and alliances with Native Americans. Their specialized agricultural skills made colonial plantations and ranches highly profitable.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> West African herding and agricultural knowledge built the foundational ranches and plantations of early America.
+                   <strong>Key Insight:</strong> West African herding and agricultural knowledge built the foundational ranches and plantations of early America.
                  </div>`,
-            tr: `<p><strong>Afrikalılar Neden Tercih Edildi? (Beceri Üstünlüğü ve İzolasyon):</strong> Amerika yerlileri büyükbaş hayvan kültürüne yabancıydı. Batı Afrika'dan getirilen köleler ise yüzyıllık sığır hayvancılığı, demircilik ve binicilik uzmanlığına sahipti.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Ekonomik Kazanç ve Siyasi Kontrol):</strong> Okyanus ötesinden getirilme yerel kaçış imkanlarını yok ederken, Afrikalıların tarım ve hayvancılık becerileri sömürge çiftliklerini devasa kârlı hale getirdi.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Afrikalılar sadece kaba kollar olarak değil; Yeni Dünya ekonomilerini kuracak üstün tarım ve hayvancılık uzmanlıkları nedeniyle ithal edilmişlerdir.</p>
+            tr: `<p><strong>Beceri Üstünlüğü ve Siyasi İzolasyon:</strong> Hastalıkların ötesinde, Amerika yerlileri büyükbaş hayvan kültürüne yabancıydı. Buna karşılık Batı Afrika'nın Wolof, Fula ve Mandinga bölgelerinden getirilen köleler, Amerika çiftliklerine sığır yetiştiriciliği, demircilik ve binicilik uzmanlığını taşıdılar. 16. yüzyıl Hispaniola çiftliklerindeki tüm kovboylar (*vaqueros*) Afrikalı kölelerdi.</p>
+                 <p><strong>Yerel İttifakları Önlemek:</strong> Kölelerin Okyanus ötesinden getirilmesi yerel kaçış imkanlarını ve yerlilerle ittifak ihtimalini yok etti. Afrikalıların üstün tarım ve hayvancılık becerileri sömürge çiftliklerini devasa kârlı hale getirdi.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Batı Afrika'nın hayvancılık ve tarım bilgisi, Erken Amerika çiftliklerinin başarı sütunu olmuştur.
+                   <strong>Ana Fikir:</strong> Batı Afrika'nın hayvancılık ve tarım bilgisi, Erken Amerika çiftliklerinin başarı sütunu olmuştur.
                  </div>`
           },
           mapState: {
@@ -1157,17 +1147,15 @@ const learningData = {
             tr: "6. Şeker Üretiminin Merkezi Rolü ve Pazarlar"
           },
           text: {
-            en: `<p><strong>Why Sugar Dominance? (Consumer Demand):</strong> European consumer demand for sugar skyrocketed during the 17th and 18th centuries, turning a luxury medicine into an everyday energetic commodity for European industrial workers.</p>
-                 <p><strong>What Did It Cause? (Massive Slave Imports):</strong> Between 1519 and 1820, 90% of all enslaved Africans were brought across the Atlantic specifically for sugar production in Brazil and the Caribbean.</p>
-                 <p><strong>Core Historical Thesis:</strong> Sugar was the undisputed monarch of Atlantic trade; its immense profit margins funded European port cities and banking capital.</p>
+            en: `<p><strong>Sugar as the Monarch of Commodities:</strong> Between the late 16th century and 1820, a stunning 90% of all enslaved Africans brought across the Atlantic were imported specifically for sugar production or economies built around sugar exports. European consumer demand for sugar transformed a luxury medicine into an everyday energetic commodity for European industrial workers.</p>
+                 <p><strong>Secondary Labor Sectors:</strong> Secondary sectors included tobacco in Virginia and Bahia, coffee in Saint-Domingue, rice in South Carolina, and gold/silver mining in Minas Gerais, Brazil. Cotton only became a dominant crop in the 19th century as the transatlantic trade itself was drawing to a close.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> European appetite for sugar drove the brutal expansion of the transatlantic slave trade.
+                   <strong>Key Insight:</strong> European appetite for sugar drove the brutal expansion of the transatlantic slave trade.
                  </div>`,
-            tr: `<p><strong>Şeker Neden Hakim Oldu? (Tüketim Talebi):</strong> 17. ve 18. yüzyıllarda Avrupa'da şekere olan talep patladı; lüks bir ilaçtan işçi sınıfının günlük gıda ihtiyacına dönüştü.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Devasa Köle İthalatı):</strong> 1519-1820 arasında Atlantik'i geçen Afrikalı kölelerin %90'ı doğrudan Brezilya ve Karayipler'deki şeker tarlaları için taşındı.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Şeker, Atlantik ticaretinin tartışmasız kralıdır; yarattığı kâr marjları Avrupa liman kentlerini ve bankacılık sermayesini beslemiştir.</p>
+            tr: `<p><strong>Emtiaların Hükümdarı (Şeker):</strong> 16. yüzyıl sonu ile 1820 arasında Atlantik'i geçen Afrikalı kölelerin %90'ı doğrudan şeker üretimi veya şekere dayalı ekonomiler için ithal edilmiştir. Avrupa'nın şeker iştahı, bu ürünü lüks bir ilaçtan işçi sınıfının günlük gıdasına dönüştürmüştür.</p>
+                 <p><strong>İkincil Sektörler:</strong> Tütün (Virginia ve Bahia), kahve (Saint-Domingue), pirinç (Carolina) ve madencilik (Minas Gerais, Brezilya) ikincil köle pazarlarını oluşturuyordu. Pamuk ise ancak 19. yüzyılda köle ticareti sona ererken ana ürün olmuştur.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Avrupa'nın şeker iştahı, transatlantik köle ticaretinin dehşet verici genişlemesini tetiklemiştir.
+                   <strong>Ana Fikir:</strong> Avrupa'nın şeker iştahı, transatlantik köle ticaretinin dehşet verici genişlemesini tetiklemiştir.
                  </div>`
           },
           mapState: {
@@ -1179,21 +1167,19 @@ const learningData = {
         },
         {
           title: {
-            en: "7. Commercial Exchange & African State Relations",
+            en: "7. Commercial Parity & African State Relations",
             tr: "7. Ticari Mübadele ve Afrika Devlet İlişkileri"
           },
           text: {
-            en: `<p><strong>Why Coastal Commerce? (Equilibrium of Power):</strong> European traders could not military conquer interior Africa due to tropical malaria mortality and formidable African state armies (such as Queen Nzinga's Ndongo forces).</p>
-                 <p><strong>What Did It Cause? (Voluntary Trade Treaties):</strong> Commerce relied on voluntary agreements between European chartered monopolies and sovereign African rulers, trading European manufactures (textiles, metals, alcohol) for captives.</p>
-                 <p><strong>Core Historical Thesis:</strong> Prior to 19th-century imperialism, the slave trade was conducted through sovereign commercial parity rather than European military conquest.</p>
+            en: `<p><strong>Equilibrium of Power on the Coast:</strong> The slave trade relied on voluntary commercial agreements between European trading companies and sovereign African states. European traders did not possess the military capacity to occupy interior Africa due to high mortality from tropical malaria and formidable African military resistance—epitomized by Queen Nzinga of Ndongo adroitly resisting Portuguese forces.</p>
+                 <p><strong>Manufactured Imports:</strong> Before 1650, European merchants exchanged manufactured commodities—textiles, metals (raw iron and copper, knives, swords), cowrie shell currency, and alcohol—for captives. Trade was conducted through sovereign commercial parity rather than European military conquest.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Tropical disease and African military strength restricted Europeans to commercial coastal footholds.
+                   <strong>Key Insight:</strong> Tropical disease and African military strength restricted Europeans to commercial coastal footholds.
                  </div>`,
-            tr: `<p><strong>Neden Kıyı Ticareti? (Güç Dengesi):</strong> Avrupalılar, tropik sıtma ölümleri ve Afrikalı devletlerin güçlü orduları (Kraliçe Nzinga'nın direnişi gibi) nedeniyle Afrika içlerini işgal edemedi.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Gönüllü Ticari Antlaşmalar):</strong> Ticaret, Avrupalı şirketler ile egemen Afrika krallıkları arasındaki ticari anlaşmalara dayandı; köleler karşılığında kumaş, demir ve alkol satıldı.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> 19. yüzyıl sömürgeciliği öncesinde köle ticareti, askeri işgalle değil, kıyılardaki ticari denkliğe dayalı anlaşmalarla yürütülmüştür.</p>
+            tr: `<p><strong>Kıyılarda Güç Dengesi:</strong> Köle ticareti, Avrupalı şirketler ile egemen Afrika devletleri arasındaki gönüllü ticari anlaşmalara dayanıyordu. Avrupalılar, tropik sıtma ölümleri ve Afrikalıların sert askeri direnişi—Kraliçe Nzinga'nın Portekiz işgaline geçit vermemesi gibi—nedeniyle Afrika içlerini işgal edemedi.</p>
+                 <p><strong>Afrika'ya Satılan Ürünler:</strong> 1650 öncesinde Avrupalılar Afrika'ya kumaş, demir ve bakır eşyalar, kılıçlar, deniz kabukları ve alkol sattılar. 19. yüzyıl sömürgeciliği öncesinde ticaret, askeri işgalle değil, kıyılardaki ticari denkliğe dayalı anlaşmalarla yürütüldü.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Tropik hastalıklar ve Afrika askeri gücü Avrupalıları kıyı kalelerinde pazarlık yapmaya mecbur etmiştir.
+                   <strong>Ana Fikir:</strong> Tropik hastalıklar ve Afrika askeri gücü Avrupalıları kıyı kalelerinde pazarlık yapmaya mecbur etmiştir.
                  </div>`
           },
           mapState: {
@@ -1205,21 +1191,19 @@ const learningData = {
         },
         {
           title: {
-            en: "8. The Gun-Slave Cycle & Interior Captures",
-            tr: "8. Silah-Köle Döngüsü ve İç Bölge Avları"
+            en: "8. The Gun-Slave Cycle & Coastal Slave Forts",
+            tr: "8. Silah-Köle Döngüsü ve Kıyı Kaleleri"
           },
           text: {
-            en: `<p><strong>Why Did Slavery Expand Inland? (The Gun-Slave Cycle):</strong> European merchants introduced firearms to coastal African states. To defend against armed rivals, African kingdoms were forced to acquire guns by trading war captives.</p>
-                 <p><strong>What Did It Cause? (Perpetual Warfare & Human Depletion):</strong> This cycle fueled regional wars, marched millions to coastal slave forts (Elmina, Whydah), and severely depleted West Africa's reproductive-age population.</p>
-                 <p><strong>Core Historical Thesis:</strong> The gun-slave cycle trapped African states in a security dilemma, forcing participation in slaving to ensure political survival.</p>
+            en: `<p><strong>Security Dilemmas & Inland Captures:</strong> Slaves were captured deep within the interior during wars waged between African states and marched for months to the coast. European merchants introduced firearms to coastal African states; to defend against armed rivals, African kingdoms were forced to acquire guns by trading war captives, trapping African states in a security dilemma.</p>
+                 <p><strong>Coastal Forts & Middle Passage Horrors:</strong> By the late 17th century, 64 European coastal forts lined West Africa (Elmina, Whydah, Luanda). Captives were branded with hot irons prior to embarkation. To prevent onboard revolts, slave traders mixed captives from different linguistic regions into crowded ship holds like the British vessel *Brooks*.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Firearms imports created an arms race that compelled African kingdoms to capture war prisoners for survival.
+                   <strong>Key Insight:</strong> Firearms imports created an arms race that compelled African kingdoms to capture war prisoners for survival.
                  </div>`,
-            tr: `<p><strong>İç Bölgelerde Neden Yayıldı? (Silah-Köle Döngüsü):</strong> Avrupalılar kıyı devletlerine silah sattı. Rakiplerine karşı korunmak isteyen Afrika krallıkları, silah almak için savaş esirlerini köle olarak satmaya zorlandı.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Sürekli Savaş ve Nüfus Kaybı):</strong> Bu döngü bölgesel savaşları kışkırttı, milyonları kıyı kalelerine yürüttü ve Batı Afrika'nın genç nüfusunu kuruttu.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Silah-köle döngüsü Afrika devletlerini bir güvenlik ikilemine hapsetmiş, hayatta kalmak için ticarete katılmaya mecbur bırakmıştır.</p>
+            tr: `<p><strong>Güvenlik İkilemi ve İç Bölge Avları:</strong> Köleler iç bölgelerdeki savaşlarda yakalanıyor ve kıyıya aylarca yürütülüyordu. Avrupalılar kıyı devletlerine silah satınca, rakiplerine karşı korunmak isteyen Afrika krallıkları silah almak için savaş esirlerini köle olarak satmaya zorlandı.</p>
+                 <p><strong>Kıyı Kaleleri ve Orta Geçit Dehşeti:</strong> 17. yüzyıl sonuna kadar Batı Afrika kıyılarında 64 Avrupalı kalesi kuruldu (Elmina, Luanda). Köleler dağlanıp gemilere bindirildi. İsyanları önlemek için farklı dilleri konuşan köleler *Brooks* gemisi gibi havasız ambarlara istiflendi.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Silah ithalatı bir silahlanma yarışı doğurmuş, Afrika devletlerini varlıklarını korumak için köle avına yöneltmiştir.
+                   <strong>Ana Fikir:</strong> Silah ithalatı bir silahlanma yarışı doğurmuş, Afrika devletlerini varlıklarını korumak için köle avına yöneltmiştir.
                  </div>`
           },
           mapState: {
@@ -1231,21 +1215,19 @@ const learningData = {
         },
         {
           title: {
-            en: "9. British & Portuguese Monopoly Control",
-            tr: "9. İngiliz ve Portekiz Ticaret Tekeli"
+            en: "9. Imperial Rivalries & Rise of Slaving Port Cities",
+            tr: "9. Güç Dengeleri ve Köle Limanlarının Yükselişi"
           },
           text: {
-            en: `<p><strong>Why Imperial Dominance? (Naval Power & Capital):</strong> Portugal and Britain dominated the slave trade, carrying nearly 75% of all enslaved Africans due to their superior merchant fleets and plantation holdings.</p>
-                 <p><strong>What Did It Cause? (Rise of Slaving Port Cities):</strong> British ports like Liverpool and Bristol grew into world economic hubs, building specialized slave ships and establishing banking institutions built on slave capital.</p>
-                 <p><strong>Core Historical Thesis:</strong> Profits from the slave trade provided the financial liquidity that fueled Britain's Commercial and Industrial Revolutions.</p>
+            en: `<p><strong>British & Portuguese Monopoly Control:</strong> Britain and Portugal dominated the transatlantic slave trade, accounting for 7 out of 10 voyages and carrying nearly 75% of all enslaved Africans across the ocean. Portugal dominated before 1640; Britain displaced Portugal between 1647 and 1807, carrying five slaves for every four on Portuguese vessels.</p>
+                 <p><strong>Enriching British Port Infrastructure:</strong> British slaving concentrated in key Atlantic ports: Liverpool, Bristol, London, and Whitehaven. Liverpool grew into the world's premier slaving port, building specialized ships and establishing banking institutions built on slave capital that directly funded early industrialization.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Slave trade profits flowed directly into British banking networks, helping finance early industrialization.
+                   <strong>Key Insight:</strong> Slave trade profits flowed directly into British banking networks, helping finance early industrialization.
                  </div>`,
-            tr: `<p><strong>Neden Bu İki Güç Hakim Oldu? (Deniz Gücü ve Sermaye):</strong> Portekiz ve İngiltere, gelişmiş ticaret filoları ve plantasyonları sayesinde tüm kölelerin %75'ini taşıyarak ticarete hükmetti.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Köle Limanlarının Yükselişi):</strong> Liverpool ve Bristol gibi İngiliz limanları küresel finans merkezlerine dönüştü; köle sermayesine dayalı bankalar kuruldu.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Köle ticaretinden elde edilen devasa kârlar, İngiltere'nin Ticari ve Sanayi Devrimi'ni finanse eden ana likiditeyi sağlamıştır.</p>
+            tr: `<p><strong>İngiliz ve Portekiz Ticaret Tekeli:</strong> Portekiz ve İngiltere, tüm transatlantik seferlerinin 10'da 7'sini gerçekleştirmiş ve kölelerin %75'ini taşımıştır. Portekiz 1640 öncesine; İngiltere 1647–1807 arasına hükmetti.</p>
+                 <p><strong>İngiliz Liman Kentlerinin Zenginleşmesi:</strong> İngiliz ticareti Liverpool, Bristol ve Londra'da yoğunlaştı. Liverpool, köle sermayesine dayalı bankacılık ve gemi inşa ağlarıyla dünyanın en büyük köle limanına dönüştü ve Sanayi Devrimi'ni finanse etti.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Köle sermayesi doğrudan İngiliz bankacılık sistemine akarak erken sanayileşmeyi finanse etmiştir.
+                   <strong>Ana Fikir:</strong> Köle sermayesi doğrudan İngiliz bankacılık sistemine akarak erken sanayileşmeyi finanse etmiştir.
                  </div>`
           },
           mapState: {
@@ -1261,17 +1243,15 @@ const learningData = {
             tr: "10. Köle Toplumları ve Maron Direnişi"
           },
           text: {
-            en: `<p><strong>Why Did Resistance Flourish? (Human Agency):</strong> Enslaved Africans refused total dehumanization, creating creole languages, Vodou/Candomblé religious traditions, and escape networks.</p>
-                 <p><strong>What Did It Cause? (Autonomous Maroon Kingdoms):</strong> Runaway slaves formed independent <em>Maroon</em> communities in remote mountain regions. The Maroon Kingdom of Esmeraldas in Colombia forced the Spanish Crown to sign a formal peace treaty in 1599 recognizing their freedom.</p>
-                 <p><strong>Core Historical Thesis:</strong> Slaves were not passive victims; their cultural synthesis and armed Maroon resistance forced imperial crowns to recognize their autonomy.</p>
+            en: `<p><strong>Cultural Autonomy & African Synthesis:</strong> Atlantic America became demographically more African than European (3 million imported to Brazil, 1 million to the Caribbean, 1 million to Spanish colonies, 400,000 to North America). Enslaved Africans refused total dehumanization, creating creole languages, Vodou/Candomblé religious traditions, and family structures to bridge diverse African origins.</p>
+                 <p><strong>Autonomous Maroon Kingdoms:</strong> Runaway slaves formed independent *Maroon* communities in remote mountain regions. The Maroon Kingdom of Esmeraldas in Colombia forced the Spanish Crown to sign a formal peace treaty in 1599 recognizing their autonomy, proving enslaved people could defeat imperial armies.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Maroon communities proved that enslaved people could defeat imperial armies and establish autonomous sovereign enclaves.
+                   <strong>Key Insight:</strong> Maroon communities proved that enslaved people could defeat imperial armies and establish autonomous sovereign enclaves.
                  </div>`,
-            tr: `<p><strong>Direniş Neden Gelişti? (İnsani İrade):</strong> Afrikalılar nesneleştirmeyi reddetti; kreyol diller, Vodou/Candomblé inançları ve kaçış ağları kurarak kültürlerini yaşattılar.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Özerk Maron Krallıkları):</strong> Kaçak köleler dağlarda bağımsız <em>Maron</em> toplulukları kurdular. Kolombiya'daki Esmeraldas Maron Krallığı, 1599'da İspanyol Tacı'na resmi barış antlaşması imzalatarak özerkliğini kabul ettirdi.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Köleler pasif kurbanlar değildir; kültürel sentezleri ve silahlı Maron direnişleri imparatorluklara iradelerini kabul ettirmiştir.</p>
+            tr: `<p><strong>Kültürel Özerklik ve Afrika Sentezi:</strong> Atlantik Amerika demografik olarak Afrika karakteri kazandı (Brezilya'ya 3 milyon, Karayipler'e 1 milyon, İspanyol bölgelerine 1 milyon, Kuzey Amerika'ya 400.000 köle). Afrikalılar kreyol diller, Vodou/Candomblé inançları ve aile yapıları kurarak kültürlerini korudular.</p>
+                 <p><strong>Özerk Maron Krallıkları:</strong> Kaçak köleler dağlarda bağımsız *Maron* toplulukları kurdular. Kolombiya'daki Esmeraldas Maron Krallığı 1599'da İspanyol Tacı'na antlaşma imzalatarak özerkliğini kabul ettirdi.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Maron toplulukları, kölelerin imparatorluk ordularını yenerek özerk yönetimler kurabileceğini kanıtlamıştır.
+                   <strong>Ana Fikir:</strong> Maron toplulukları, kölelerin imparatorluk ordularını yenerek özerk yönetimler kurabileceğini kanıtlamıştır.
                  </div>`
           },
           mapState: {
@@ -1287,17 +1267,15 @@ const learningData = {
             tr: "11. Virginia Örneği: Başlangıçta Sınıf Öncelikliydi"
           },
           text: {
-            en: `<p><strong>Why Class Over Race? (Early Colonial Reality):</strong> In early 17th-century Virginia, social status was defined by land ownership rather than skin color. Both white and black unfree laborers worked under temporary indentured contracts.</p>
-                 <p><strong>What Did It Cause? (Black Property Owners):</strong> Freed Africans like Anthony Johnson acquired property, tobacco plantations, and their own indentured servants, demonstrating that racial caste was not initially established.</p>
-                 <p><strong>Core Historical Thesis:</strong> Virginia's early social order proves that racial division was not an inevitable outcome, but a deliberate legal construction enacted later by elites.</p>
+            en: `<p><strong>Class-Based Social Hierarchy:</strong> In early 17th-century Virginia, social status was defined by property ownership rather than skin color. Both white and black unfree laborers worked under temporary indentured contracts.</p>
+                 <p><strong>Black Property Owners:</strong> Freed Africans like Anthony Johnson acquired property, tobacco plantations, and their own indentured servants, proving that rigid racial caste was not initially present in the English colonies.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Social status in early Virginia was based on land ownership, not racial caste.
+                   <strong>Key Insight:</strong> Social status in early Virginia was based on land ownership, not racial caste.
                  </div>`,
-            tr: `<p><strong>Neden Sınıf Öncelikliydi? (Erken Sömürge Gerçeği):</strong> 17. yüzyıl başı Virginia'sında statü deri rengine değil toprak mülkiyetine dayanıyordu. Hem beyaz hem siyah sözleşmeli işçiler aynı şartlarda çalışıyordu.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Siyah Mülk Sahipleri):</strong> Anthony Johnson gibi azatlı Afrikalılar toprak, tütün tarlası ve kendi sözleşmeli işçilerine sahip olabildiler; bu durum ırkçı hiyerarşinin henüz kurulmadığını gösterir.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Virginia'nın ilk yılları, ırk ayrımının kaçınılmaz olmadığını; daha sonra elitler tarafından bilinçli olarak inşa edildiğini kanıtlar.</p>
+            tr: `<p><strong>Sınıfa Dayalı Toplumsal Düzen:</strong> 17. yüzyıl başı Virginia'sında statü deri rengine değil toprak mülkiyetine dayanıyordu. Hem beyaz hem siyah sözleşmeli işçiler aynı şartlarda çalışıyordu.</p>
+                 <p><strong>Siyah Mülk Sahipleri:</strong> Anthony Johnson gibi azatlı Afrikalılar toprak, tütün tarlası ve kendi sözleşmeli işçilerine sahip olabildiler; bu durum ırkçı hiyerarşinin başlangıçta olmadığını gösterir.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Erken Virginia'da toplumsal statü ırksal kast sistemine değil mülkiyet sahipliğine dayanıyordu.
+                   <strong>Ana Fikir:</strong> Erken Virginia'da toplumsal statü ırksal kast sistemine değil mülkiyet sahipliğine dayanıyordu.
                  </div>`
           },
           mapState: {
@@ -1313,17 +1291,15 @@ const learningData = {
             tr: "12. Bacon İsyanı (1676) ve Irkın İcadı"
           },
           text: {
-            en: `<p><strong>Why Did Elites Panic? (Bacon's Rebellion):</strong> In 1676, Nathaniel Bacon led an armed rebellion of poor white indentured servants and black slaves who burned Jamestown to demand land rights from planter elites.</p>
-                 <p><strong>What Did It Cause? (The Racial Turn):</strong> Terrified planter elites systematically dismantled working-class solidarity by granting legal privileges to poor whites while codifying lifetime, hereditary African slavery (Virginia Slave Codes 1691–1708).</p>
-                 <p><strong>Core Historical Thesis:</strong> Race was legal and social technology invented by planter elites to divide the working class and secure permanent plantation labor.</p>
+            en: `<p><strong>Cross-Racial Rebellion:</strong> In 1676, Nathaniel Bacon led an armed uprising of landless poor white indentured servants and black slaves who burned Jamestown to demand land rights from planter elites.</p>
+                 <p><strong>The Strategic Construction of Race:</strong> Terrified planter elites systematically shattered working-class solidarity by granting legal privileges to poor whites while codifying lifetime, hereditary African slavery (Virginia Slave Codes 1691–1708). Race was a social technology invented to secure permanent plantation labor.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Elites invented racial slave codes to shatter cross-racial working-class unity following Bacon's Rebellion.
+                   <strong>Key Insight:</strong> Elites invented racial slave codes to shatter cross-racial working-class unity following Bacon's Rebellion.
                  </div>`,
-            tr: `<p><strong>Elitler Neden Dehşete Düştü? (Bacon İsyanı):</strong> 1676'da Nathaniel Bacon önderliğindeki yoksul beyaz ve siyah sözleşmeli işçiler birleşip Jamestown'ı yaktı ve mülkiyet hakları talep etti.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Irksal Kırılma):</strong> Dehşete düşen elitler, yoksul beyazlara hukuki üstünlük verip Afrikalıları ömür boyu irsi köleleştirerek (1691-1708 Virginia Köle Yasaları) sınıf dayanışmasını parçaladılar.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Irk, plantasyon sahiplerinin alt sınıfları bölmek ve ömür boyu bedava işgücünü garantiye almak için icat ettiği toplumsal bir mühendisliktir.</p>
+            tr: `<p><strong>Irklar Arası Sınıf İsyanı:</strong> 1676'da Nathaniel Bacon önderliğindeki yoksul beyaz ve siyah sözleşmeli işçiler birleşip Jamestown'ı yaktı ve mülkiyet hakları talep etti.</p>
+                 <p><strong>Irkın Stratejik İnşası:</strong> Dehşete düşen elitler, yoksul beyazlara hukuki üstünlük verip Afrikalıları ömür boyu irsi köleleştirerek (1691-1708 Virginia Köle Yasaları) sınıf dayanışmasını parçaladılar. Irk, bedava işgücünü garantiye almak için icat edilmiş toplumsal bir mühendisliktir.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Elitler, Bacon İsyanı sonrası siyah-beyaz dayanışmasını kırmak için ırkçı köle yasalarını yürürlüğe koymuştur.
+                   <strong>Ana Fikir:</strong> Elitler, Bacon İsyanı sonrası siyah-beyaz dayanışmasını kırmak için ırkçı köle yasalarını yürürlüğe koymuştur.
                  </div>`
           },
           mapState: {
@@ -2093,24 +2069,22 @@ const learningData = {
           "en": "The American Revolution: The struggle for independence of the 13 Colonies and the founding of the United States."
         }
       },
-      "slides":  [
+      "slides":    [
         {
           title: {
             en: "1. Age of Revolutions & Popular Sovereignty",
             tr: "1. Devrimler Çağı ve Halk Egemenliği"
           },
           text: {
-            en: `<p><strong>Why Did Revolutions Erupt? (Anti-Absolutism):</strong> Across the 18th century, expanding Atlantic trade empowered educated merchant classes who rejected royal arbitrariness and divine-right monarchy in favor of Enlightenment constitutionalism.</p>
-                 <p><strong>What Did It Cause? (Popular Sovereignty):</strong> Government was redefined: no longer an instrument to serve kings, but a social contract created by citizens to protect natural rights (life, liberty, property).</p>
-                 <p><strong>Core Historical Thesis:</strong> The American Revolution transformed loyal British colonists into revolutionaries, pioneering modern constitutional republicanism.</p>
+            en: `<p><strong>The Transatlantic Revolutionary Surge:</strong> Across the 18th century, expanding Atlantic trade empowered educated merchant classes who rejected royal arbitrariness and divine-right monarchy in favor of Enlightenment constitutionalism. A wave of revolutions swept the Western world, overthrowing royalist regimes in the name of popular liberty.</p>
+                 <p><strong>Redefining State Legitimacy:</strong> Government was fundamentally redefined: no longer an instrument to serve absolute kings, but a social contract established by citizens to protect natural rights—life, liberty, and property. The American Revolution transformed loyal British colonists into revolutionaries, pioneering modern constitutional republicanism.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> The Enlightenment redefined state legitimacy around consent of the governed rather than royal inheritance.
+                   <strong>Key Insight:</strong> The Enlightenment redefined state legitimacy around consent of the governed rather than royal inheritance.
                  </div>`,
-            tr: `<p><strong>Devrimler Neden Patladı? (Mutlakiyet Karşıtlığı):</strong> 18. yüzyılda gelişen Atlantik ticareti, kralların keyfi yönetimini ve ilahi hak anlayışını reddeden tüccar ve aydın sınıfları güçlendirdi.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Halk Egemenliği):</strong> Yönetim kavramı değişti: Krallara hizmet eden bir yapı olmaktan çıkıp, doğal hakları (yaşam, özgürlük, mülkiyet) koruyan toplumsal bir sözleşmeye dönüştü.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Amerikan Devrimi, sadık İngiliz uyruklarını devrimcilere dönüştürerek modern anayasal cumhuriyetçiliğin öncüsü olmuştur.</p>
+            tr: `<p><strong>Transatlantik Devrimler Dalgalanması:</strong> 18. yüzyılda gelişen Atlantik ticareti, kralların keyfi yönetimini ve ilahi hak anlayışını reddeden tüccar ve aydın sınıfları güçlendirdi. Batı dünyasını sarsan devrimler dalgası, krallık rejimlerini halkın özgürlük hakları adına devirdi.</p>
+                 <p><strong>Devletin Meşruiyetini Yeniden Tanımlamak:</strong> Yönetim kavramı kökten değişti: Krallara hizmet eden bir yapı olmaktan çıkıp, doğal hakları (yaşam, özgürlük, mülkiyet) koruyan toplumsal bir sözleşmeye dönüştü. Amerikan Devrimi, sadık İngiliz uyruklarını devrimcilere dönüştürerek anayasal cumhuriyetçiliğin öncüsü oldu.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Aydınlanma, devletin meşruiyetini kralların soyuna değil, yönetilenlerin rızasına bağlamıştır.
+                   <strong>Ana Fikir:</strong> Aydınlanma, devletin meşruiyetini kralların soyuna değil, yönetilenlerin rızasına bağlamıştır.
                  </div>`
           },
           mapState: {
@@ -2126,17 +2100,15 @@ const learningData = {
             tr: "2. Koloni Tipleri ve Bölgesel Ayrışma"
           },
           text: {
-            en: `<p><strong>Why Different Charters? (Migration Motives):</strong> The 13 colonies developed under corporate, proprietary, and royal charters established by distinct groups seeking religious havens (Puritans, Quakers, Catholics) or land wealth.</p>
-                 <p><strong>What Did It Cause? (Northern vs Southern Economies):</strong> Northern colonies developed maritime commerce and smallholder farming, while Southern colonies built slave-based plantation monocultures (tobacco, rice).</p>
-                 <p><strong>Core Historical Thesis:</strong> Geographic and economic divergence created distinct colonial societies that nevertheless united against British imperial overreach.</p>
+            en: `<p><strong>Diversity of Colonial Charters:</strong> The 13 colonies developed under corporate, proprietary, and royal charters established by distinct groups seeking religious havens (Puritans in Connecticut, Quakers in Pennsylvania, Catholics in Maryland) or economic advancement.</p>
+                 <p><strong>Regional Economic Systems:</strong> Northern colonies developed maritime commerce, shipbuilding, and smallholder farming, while Southern colonies built slave-based plantation monocultures (tobacco, rice). Despite these regional economic differences, the colonies united around shared constitutional rights against British imperial overreach.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Diverse colonial models created distinct regional economies that later clashed over federal power and slavery.
+                   <strong>Key Insight:</strong> Diverse colonial models created distinct regional economies that later clashed over federal power and slavery.
                  </div>`,
-            tr: `<p><strong>Neden Farklı Modeller Kuruldu? (Göç Nedenleri):</strong> 13 koloni; dini sığınak arayanlar (Püritenler, Kvakırlar, Katolikler) ve mülk isteyenler tarafından şirket, mülkiyet ve kraliyet beratlarıyla kuruldu.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Kuzey-Güney Ekonomik Ayrışması):</strong> Kuzey kolonileri deniz ticareti ve küçük çiftçilikle gelişirken, Güney kolonileri köleci plantasyon ekonomilerine (tütün, pirinç) dönüştü.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Coğrafi ve ekonomik farklılıklara rağmen, koloniler İngiliz müdahalesine karşı ortak anayasal haklar etrafında birleşmişlerdir.</p>
+            tr: `<p><strong>Koloni Modellerinin Çeşitliliği:</strong> 13 koloni; dini sığınak arayanlar (Connecticut'ta Püritenler, Pennsylvania'da Kvakırlar, Maryland'de Katolikler) ve mülk isteyenler tarafından şirket, mülkiyet ve kraliyet beratlarıyla kuruldu.</p>
+                 <p><strong>Bölgesel Ekonomik Yapılar:</strong> Kuzey kolonileri deniz ticareti ve küçük çiftçilikle gelişirken, Güney kolonileri köleci plantasyon ekonomilerine (tütün, pirinç) dönüştü. Bölgesel farklara rağmen, koloniler İngiliz müdahalesine karşı ortak anayasal haklar etrafında birleştiler.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Koloni tipleri ileride kölelik ve eyalet hakları konusunda çatışacak farklı bölgesel kimlikler yaratmıştır.
+                   <strong>Ana Fikir:</strong> Koloni tipleri ileride kölelik ve eyalet hakları konusunda çatışacak farklı bölgesel kimlikler yaratmıştır.
                  </div>`
           },
           mapState: {
@@ -2152,17 +2124,15 @@ const learningData = {
             tr: "3. Toplumsal Hareketlilik ve Feodalizmin Yokluğu"
           },
           text: {
-            en: `<p><strong>Why Broad Land Ownership? (Frontier Land):</strong> Unlike Europe, North America lacked an entrenched landed aristocracy and feudal peasantry. Vast land availability allowed 60%–80% of white men to own land.</p>
-                 <p><strong>What Did It Cause? (Democratic Franchise):</strong> Broad land ownership expanded voting eligibility far beyond Britain (where only 20% voted), fostering an independent middle class accustomed to local political power.</p>
-                 <p><strong>Core Historical Thesis:</strong> Wide property distribution nurtured an egalitarian political culture that fiercely resisted external imperial subordination.</p>
+            en: `<p><strong>Widespread Land Ownership:</strong> Unlike feudal Europe, North America lacked an entrenched landed aristocracy and feudal peasantry. Vast frontier land availability allowed 60% to 80% of white adult males to own land.</p>
+                 <p><strong>Egalitarian Franchise:</strong> Broad land ownership expanded voting eligibility far beyond Britain (where only 20% voted), fostering an independent middle class accustomed to local political power and hostile to unconsented taxation.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Widespread property ownership created a democracy of independent landowners hostile to unconsented taxation.
+                   <strong>Key Insight:</strong> Widespread property ownership created a democracy of independent landowners hostile to unconsented taxation.
                  </div>`,
-            tr: `<p><strong>Neden Toprak Mülkiyeti Yaygındı? (Sınır Boyu Coğrafyası):</strong> Avrupa'nın aksine Amerika'da feodal aristokrasi yoktu. Geniş topraklar beyaz erkeklerin %60-80'inin mülk sahibi olmasını sağladı.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Geniş Seçme Hakkı):</strong> Mülkiyetin yaygınlığı oy hakkını İngiltere'nin çok ötesine taşıdı (%20'ye karşı %60-80), kendi kendini yönetmeye alışkın bağımsız bir orta sınıf doğurdu.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Geniş mülkiyet dağılımı, dışarıdan gelebilecek her türlü imparatorluk müdahalesine sert tepki verecek eşitlikçi bir siyasi kültür yaratmıştır.</p>
+            tr: `<p><strong>Yaygın Toprak Mülkiyeti:</strong> Avrupa'nın aksine Amerika'da feodal aristokrasi yoktu. Geniş topraklar beyaz erkeklerin %60-80'inin mülk sahibi olmasını sağladı.</p>
+                 <p><strong>Eşitlikçi Seçme Hakkı:</strong> Mülkiyetin yaygınlığı oy hakkını İngiltere'nin çok ötesine taşıdı (%20'ye karşı %60-80), kendi kendini yönetmeye alışkın bağımsız bir orta sınıf doğurdu.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Mülkiyetin yaygınlığı, rızaya dayanmayan vergilere karşı direnç gösteren bağımsız bir seçmen tabanı oluşturmuştur.
+                   <strong>Ana Fikir:</strong> Mülkiyetin yaygınlığı, rızaya dayanmayan vergilere karşı direnç gösteren bağımsız bir seçmen tabanı oluşturmuştur.
                  </div>`
           },
           mapState: {
@@ -2178,17 +2148,15 @@ const learningData = {
             tr: "4. Göz Yumma Politikası ve Meclis Özerkliği"
           },
           text: {
-            en: `<p><strong>Why Salutary Neglect? (Distance & Governance):</strong> For over a century, Britain exercised minimal interference ("salutary neglect") while colonies managed local taxation and defense through elected assemblies.</p>
-                 <p><strong>What Did It Cause? (De Facto Independence):</strong> Colonial assemblies controlled the purse strings, paying royal governors' salaries. Colonists came to view their elected legislatures as sovereign constitutional bodies.</p>
-                 <p><strong>Core Historical Thesis:</strong> Decades of self-taxation made subsequent Parliamentary attempts to tax colonies feel like an illegal coup against established constitutional rights.</p>
+            en: `<p><strong>Decades of Hands-Off Governance:</strong> For over a century, Britain exercised minimal direct interference ("salutary neglect") while colonies managed local taxation, militia defense, and internal laws through elected assemblies.</p>
+                 <p><strong>De Facto Parliamentary Sovereignty:</strong> Colonial assemblies controlled the purse strings, paying royal governors' salaries. Colonists came to view their elected legislatures as de facto sovereign constitutional parliaments.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Long neglect allowed colonial assemblies to become de facto sovereign parliaments.
+                   <strong>Key Insight:</strong> Long neglect allowed colonial assemblies to become de facto sovereign parliaments.
                  </div>`,
-            tr: `<p><strong>Neden Göz Yumma Politikası? (Mesafe ve Yönetim):</strong> İngiltere yüzyılı aşkın süre kolonilere müdahale etmedi ("Salutary Neglect"); koloniler kendi meclisleriyle vergilerini topladı.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Fiili Bağımsızlık):</strong> Koloni meclisleri bütçeyi ve vali maaşlarını kontrol etti. Kolonistler kendi meclislerini tek meşru anayasal güç olarak görmeye başladı.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Onlarca yıllık vergi özerkliği, İngiliz Parlamentosu'nun sonradan vergi koyma girişimlerini anayasal haklara yapılmış kanunsuz bir darbe gibi hissettirmiştir.</p>
+            tr: `<p><strong>Müdahalesiz Yönetim Yılları:</strong> İngiltere yüzyılı aşkın süre kolonilere müdahale etmedi ("Salutary Neglect"); koloniler kendi meclisleriyle vergilerini topladı ve yerel yasalarını çıkardı.</p>
+                 <p><strong>Fiili Meclis Egemenliği:</strong> Koloni meclisleri bütçeyi ve vali maaşlarını kontrol etti. Kolonistler kendi meclislerini tek meşru anayasal güç olarak görmeye başladı.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> İngiltere'nin mesafeli duruşu, koloni meclislerinin fiilen egemen parlamentolara dönüşmesini sağlamıştır.
+                   <strong>Ana Fikir:</strong> İngiltere'nin mesafeli duruşu, koloni meclislerinin fiilen egemen parlamentolara dönüşmesini sağlamıştır.
                  </div>`
           },
           mapState: {
@@ -2200,21 +2168,19 @@ const learningData = {
         },
         {
           title: {
-            en: "5. Seven Years' War & The Imperial Fiscal Crisis",
-            tr: "5. Yedi Yıl Savaşı ve İmpatorluk Mali Krizi"
+            en: "5. Seven Years' War & Imperial Fiscal Crisis",
+            tr: "5. Yedi Yıl Savaşı ve İmparatorluk Mali Krizi"
           },
           text: {
-            en: `<p><strong>Why Fiscal Reorientation? (War Debt):</strong> The Seven Years' War (1756–1763) ended in British victory over France, but doubled Britain's national debt and required troops to secure new frontier territories.</p>
-                 <p><strong>What Did It Cause? (End of Neglect):</strong> The British Parliament decided American colonists should pay for their defense, ending salutary neglect and enacting direct Parliamentary taxation (Sugar Act 1764, Stamp Act 1765).</p>
-                 <p><strong>Core Historical Thesis:</strong> Victory over France removed the threat that made colonies dependent on British military protection, enabling them to resist British taxation.</p>
+            en: `<p><strong>The Burden of Global Victory:</strong> The Seven Years' War (1756–1763) ended in British victory over France, but doubled Britain's national debt and required standing garrisons to defend newly acquired frontier territories.</p>
+                 <p><strong>Ending Neglect & Taxing Colonies:</strong> The British Parliament decided American colonists should contribute to imperial defense, ending salutary neglect and enacting direct Parliamentary taxation (Stamp Act 1765). Victory over France removed the foreign threat that had made colonies dependent on British protection.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Imperial war debt compelled Britain to centralize control, sparking the revolutionary crisis.
+                   <strong>Key Insight:</strong> Imperial war debt compelled Britain to centralize control, sparking the revolutionary crisis.
                  </div>`,
-            tr: `<p><strong>Mali Politika Neden Değişti? (Savaş Borçları):</strong> Yedi Yıl Savaşı (1756–1763) Fransız mağlubiyetiyle bitti ancak İngiliz borçlarını ikiye katladı ve sınırları korumak için ordu gerektirdi.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Göz Yummanın Sonu):</strong> İngiliz Parlamentosu savunma masraflarını kolonilere ödetmeye karar vererek göz yumma dönemini bitirdi ve doğrudan vergiler (1765 Pul Yasası) çıkardı.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Fransa'nın yenilmesi kolonilerin İngiliz askeri korumasına olan muhtaçlığını kaldırmış; İngiliz vergilerine direnme cesaretini vermiştir.</p>
+            tr: `<p><strong>Zaferin Mali Yükü:</strong> Yedi Yıl Savaşı (1756–1763) Fransız mağlubiyetiyle bitti ancak İngiliz borçlarını ikiye katladı ve sınırları korumak için ordu gerektirdi.</p>
+                 <p><strong>Göz Yummanın Sonu ve Doğrudan Vergi:</strong> İngiliz Parlamentosu savunma masraflarını kolonilere ödetmeye karar vererek göz yumma dönemini bitirdi ve vergiler (1765 Pul Yasası) çıkardı. Fransa'nın yenilmesi kolonilerin İngiliz korumasına olan ihtiyacını kaldırdı.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Savaş borçları İngiltere'yi yönetimi merkezileştirmeye zorlamış, bu da devrimci krizi tetiklemiştir.
+                   <strong>Ana Fikir:</strong> Savaş borçları İngiltere'yi yönetimi merkezileştirmeye zorlamış, bu da devrimci krizi tetiklemiştir.
                  </div>`
           },
           mapState: {
@@ -2230,17 +2196,15 @@ const learningData = {
             tr: "6. Pul Yasası ve Locke'un Mülkiyet Anlayışı"
           },
           text: {
-            en: `<p><strong>Why Did Stamp Act Spark Rage? (Targeting Elites):</strong> The 1765 Stamp Act taxed printed items (legal contracts, newspapers, diplomas), hitting articulate lawyers, printers, and merchants.</p>
-                 <p><strong>What Did It Cause? (Ideological Mobilization):</strong> Colonists rallied under <em>"No taxation without representation."</em> In John Locke's political philosophy, property security was the foundation of freedom; unconsented taxes reduced free citizens to slaves.</p>
-                 <p><strong>Core Historical Thesis:</strong> Colonial resistance was not a greedy refusal to pay money, but a principled constitutional defense of property and liberty.</p>
+            en: `<p><strong>Targeting Vocal Elites:</strong> The 1765 Stamp Act taxed legal contracts, newspapers, and diplomas, directly hitting articulate lawyers, printers, and merchants capable of organizing resistance.</p>
+                 <p><strong>No Taxation Without Representation:</strong> Colonists rallied behind Lockean philosophy: personal freedom required security of property; unconsented taxation by an un-elected Parliament was viewed as confiscation of property reducing free men to slaves.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Unconsented taxation violated the Lockean social contract, transforming fiscal dispute into constitutional resistance.
+                   <strong>Key Insight:</strong> Unconsented taxation violated the Lockean social contract, transforming fiscal dispute into constitutional resistance.
                  </div>`,
-            tr: `<p><strong>Pul Yasası Neden Öfke Yarattı? (Elitlerin Vurulması):</strong> 1765 Yasası gazeteler, sözleşmeler ve diplomaları vergilendirerek doğrudan kamuoyu oluşturan avukat ve matbaacıları vurdu.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (İdeolojik Direniş):</strong> Kolonistler <em>"Temsilsiz vergilendirme olamaz"</em> sloganında birleşti. Locke'un felsefesinde mülkiyet güvencesi özgürlüğün temeliydi; rızasız vergi köleleştirmek demekti.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Koloni direnişi basit bir para verme reddi değil; mülkiyet ve özgürlük haklarının anayasal ilkelere dayalı savunmasıdır.</p>
+            tr: `<p><strong>Okumuş Elitlerin Vurulması:</strong> 1765 Yasası gazeteler, sözleşmeler ve diplomaları vergilendirerek doğrudan kamuoyu oluşturan avukat ve matbaacıları vurdu.</p>
+                 <p><strong>Temsilsiz Vergilendirme Olmaz:</strong> Kolonistler Locke'un felsefesinde birleşti: özgürlük mülkiyet güvencesine bağlıdır; rızasız vergi mülke el koymaktır ve özgür insanı köleleştirir.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Rızasız vergi Locke'un toplumsal sözleşmesini ihlal etmiş, mali anlaşmazlığı anayasal direnişe çevirmiştir.
+                   <strong>Ana Fikir:</strong> Rızasız vergi Locke'un toplumsal sözleşmesini ihlal etmiş, mali anlaşmazlığı anayasal direnişe çevirmiştir.
                  </div>`
           },
           mapState: {
@@ -2256,17 +2220,15 @@ const learningData = {
             tr: "7. Tırmanma, Boston Çay Partisi ve Askeri Çatışma"
           },
           text: {
-            en: `<p><strong>Why Did Conflict Escalate? (Coercive Acts):</strong> Protests by the <em>Sons of Liberty</em> culminated in the 1773 Boston Tea Party. Britain responded with the punitive Coercive Acts, closing Boston harbor and dissolving Massachusetts Assembly.</p>
-                 <p><strong>What Did It Cause? (Outbreak of Armed War):</strong> Military occupation united colonies in solidarity. Skirmishes at Lexington & Concord (1775) transformed a legal debate into armed revolutionary war.</p>
-                 <p><strong>Core Historical Thesis:</strong> British military heavy-handedness closed all avenues for constitutional reconciliation, driving colonists to fight for full independence.</p>
+            en: `<p><strong>Coercive Acts & Military Occupation:</strong> Protests by the *Sons of Liberty* culminated in the 1773 Boston Tea Party. Britain responded with the punitive Coercive Acts, closing Boston harbor and dissolving the Massachusetts Assembly.</p>
+                 <p><strong>Outbreak of Armed War:</strong> Military occupation united the 13 colonies in common defense. Skirmishes at Lexington & Concord (1775) transformed a legal debate into open revolutionary war.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Imperial military coercion destroyed possibilities of compromise, making armed revolution inevitable.
+                   <strong>Key Insight:</strong> Imperial military coercion destroyed possibilities of compromise, making armed revolution inevitable.
                  </div>`,
-            tr: `<p><strong>Gerilim Neden Tırmandı? (Cezalandırıcı Yasalar):</strong> <em>Hürriyet Evlatları</em> protestoları 1773 Boston Çay Partisi ile zirveye ulaştı. İngiltere Boston limanını kapatan ve meclisi lağveden sert cezalandırıcı yasalar çıkardı.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Silahlı Savaşın Patlaması):</strong> Askeri işgal kolonileri birleştirdi. Lexington-Concord (1775) çatışmaları hukuki tartışmayı silahlı bağımsızlık savaşına dönüştürdü.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> İngiliz askeri baskısı tüm uzlaşma kapılarını kapatmış, kolonistleri tam bağımsızlık için savaşmaya zorlamıştır.</p>
+            tr: `<p><strong>Cezalandırıcı Yasalar ve İşgal:</strong> *Hürriyet Evlatları* protestoları 1773 Boston Çay Partisi ile zirveye ulaştı. İngiltere Boston limanını kapatan ve meclisi lağveden sert cezalandırıcı yasalar çıkardı.</p>
+                 <p><strong>Silahlı Savaşın Patlaması:</strong> Askeri işgal 13 koloniyi birleştirdi. Lexington-Concord (1775) çatışmaları hukuki tartışmayı silahlı bağımsızlık savaşına dönüştürdü.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Askeri zorbalık uzlaşma zeminini yok etmiş, silahlı devrimi kaçınılmaz kılmıştır.
+                   <strong>Ana Fikir:</strong> Askeri zorbalık uzlaşma zeminini yok etmiş, silahlı devrimi kaçınılmaz kılmıştır.
                  </div>`
           },
           mapState: {
@@ -2282,17 +2244,15 @@ const learningData = {
             tr: "8. Bağımsızlık Bildirgesi ve Vazgeçilemez Haklar"
           },
           text: {
-            en: `<p><strong>Why Declare Independence? (Point of No Return):</strong> King George III's 1775 Prohibitory Act declared colonies in open rebellion and banned all colonial trade, severing allegiance to the Crown.</p>
-                 <p><strong>What Did It Cause? (Enshrining Human Rights):</strong> On July 4, 1776, Thomas Jefferson's Declaration of Independence articulated Enlightenment ideals: life, liberty, and the pursuit of happiness as unalienable human rights.</p>
-                 <p><strong>Core Historical Thesis:</strong> The Declaration transformed a colonial rebellion into a universal manifesto for human liberty and popular self-governance.</p>
+            en: `<p><strong>The Point of No Return:</strong> King George III's 1775 Prohibitory Act declared colonies in open rebellion and banned all colonial trade, severing remaining allegiance to the Crown.</p>
+                 <p><strong>Enshrining Natural Rights:</strong> On July 4, 1776, Thomas Jefferson's Declaration of Independence articulated Enlightenment ideals: life, liberty, and the pursuit of happiness as unalienable human rights, declaring that governments derive legitimacy solely from the consent of the governed.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> The Declaration codified the principle that governments derive legitimacy solely from the consent of the governed.
+                   <strong>Key Insight:</strong> The Declaration codified the principle that governments derive legitimacy solely from the consent of the governed.
                  </div>`,
-            tr: `<p><strong>Bağımsızlık Neden İlan Edildi? (Geri Dönüşsüz Nokta):</strong> Kral III. George'un 1775 Yasaklama Yasası kolonileri asi ilan edip ticareti yasaklayınca Krallığa sadakat bağları koptu.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (İnsan Haklarının İlanı):</strong> 4 Temmuz 1776'da Jefferson'ın Bağımsızlık Bildirgesi; yaşam, özgürlük ve mutluluğa erişim gibi vazgeçilemez doğal hakları evrensel ilke yaptı.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Bildirge, yerel bir ayaklanmayı insan özgürlüğü ve halk egemenliği adına yazılmış evrensel bir manifestoya dönüştürmüştür.</p>
+            tr: `<p><strong>Geri Dönüşsüz Nokta:</strong> Kral III. George'un 1775 Yasaklama Yasası kolonileri asi ilan edip ticareti yasaklayınca Krallığa sadakat bağları tamamen koptu.</p>
+                 <p><strong>Doğal Hakların İlanı:</strong> 4 Temmuz 1776'da Jefferson'ın Bağımsızlık Bildirgesi; yaşam, özgürlük ve mutluluğa erişim gibi vazgeçilemez doğal hakları ilke yaptı ve hükümetlerin meşruiyetini yönetilenlerin rızasına bağladı.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Bildirge, hükümetlerin meşruiyetini sadece yönetilenlerin rızasından aldığı ilkesini anayasal kural yapmıştır.
+                   <strong>Ana Fikir:</strong> Bildirge, hükümetlerin meşruiyetini sadece yönetilenlerin rızasından aldığı ilkesini anayasal kural yapmıştır.
                  </div>`
           },
           mapState: {
@@ -2308,17 +2268,15 @@ const learningData = {
             tr: "9. Fransız İttifakı ve 1787 Anayasal Düzeni"
           },
           text: {
-            en: `<p><strong>Why Did Colonists Win? (French Alliance):</strong> French naval, military, and financial aid—brokered by Benjamin Franklin—was decisive in securing victory at Yorktown (1781) and international recognition in 1783.</p>
-                 <p><strong>What Did It Cause? (The 1787 Constitution):</strong> Delegates met in Philadelphia to draft a Constitution balancing federal power and state sovereignty via checks and balances and the Connecticut Compromise.</p>
-                 <p><strong>Core Historical Thesis:</strong> Pragmatic compromises to preserve union—specifically shelving the slavery issue—built a durable republic but planted structural seeds for the American Civil War.</p>
+            en: `<p><strong>Decisive French Military Aid:</strong> French naval, military, and financial aid—brokered by Benjamin Franklin—was decisive in securing victory at Yorktown (1781) and international recognition in 1783.</p>
+                 <p><strong>The 1787 Constitutional Compromises:</strong> Delegates met in Philadelphia to draft a Constitution balancing federal power and state sovereignty via checks and balances and the Connecticut Compromise. Shelving the slavery issue preserved immediate union but planted structural seeds for the American Civil War.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Shelving slavery preserved immediate constitutional union but laid the structural fuse for future Civil War.
+                   <strong>Key Insight:</strong> Shelving slavery preserved immediate constitutional union but laid the structural fuse for future Civil War.
                  </div>`,
-            tr: `<p><strong>Koloniler Nasıl Kazandı? (Fransız İttifakı):</strong> Benjamin Franklin'in sağladığı Fransız donanması ve askeri desteği, 1781 Yorktown zaferini ve 1783 bağımsızlık antlaşmasını sağladı.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (1787 Anayasası):</strong> Philadelphia'da toplanan temsilciler, eyalet hakları ile federal otoriteyi dengeleyen güçler ayrılığına dayalı anayasayı yaptılar.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Birliği korumak için kölelik meselesinin ertelenmesi, güçlü bir cumhuriyet kurmuş ancak Amerikan İç Savaşı'nın tarihsel fitilini ateşlemiştir.</p>
+            tr: `<p><strong>Fransız Askeri Desteği:</strong> Benjamin Franklin'in sağladığı Fransız donanması ve desteği, 1781 Yorktown zaferini ve 1783 bağımsızlık antlaşmasını sağladı.</p>
+                 <p><strong>1787 Anayasal Uzlaşıları:</strong> Philadelphia'da toplanan temsilciler, eyalet hakları ile federal otoriteyi dengeleyen anayasayı yaptılar. Birliği korumak için köleliğin ertelenmesi, güçlü bir cumhuriyet kurmuş ancak İç Savaş'ın fitilini ateşlemiştir.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Köleliğin ertelenmesi anayasal birliği kurtarmış ancak gelecekteki İç Savaş'ın tohumlarını ekmiştir.
+                   <strong>Ana Fikir:</strong> Köleliğin ertelenmesi anayasal birliği kurtarmış ancak gelecekteki İç Savaş'ın tohumlarını ekmiştir.
                  </div>`
           },
           mapState: {
@@ -3088,24 +3046,22 @@ const learningData = {
           "en": "The French Revolution: The collapse of the monarchy, the declaration of human rights, and the global impacts of the revolution."
         }
       },
-      "slides":  [
+      "slides":    [
         {
           title: {
             en: "1. Transatlantic Connections & Core Principles",
             tr: "1. Transatlantik Bağlantılar ve Temel İlkeler"
           },
           text: {
-            en: `<p><strong>Why Were Revolutions Linked? (Intellectual Transmission):</strong> American independence acted as a direct catalyst for France. French officers like Lafayette returned home filled with revolutionary ideals, while French war debt created acute fiscal crisis.</p>
-                 <p><strong>What Did It Cause? (Universal Rights Architecture):</strong> Both revolutions framed governance around unalienable rights, popular sovereignty, and constitutional social contracts binding rulers to citizens.</p>
-                 <p><strong>Core Historical Thesis:</strong> The transatlantic revolutionary wave demonstrated that Enlightenment political theory could successfully overthrow traditional monarchical structures.</p>
+            en: `<p><strong>Transatlantic Revolutionary Transmission:</strong> The American and French revolutions were deeply connected; American independence acted as a direct catalyst for France. French officers like Lafayette returned home filled with revolutionary ideals, while French war debt created acute fiscal crisis.</p>
+                 <p><strong>Universal Rights Architecture:</strong> Both revolutions framed governance around unalienable rights, popular sovereignty, and constitutional social contracts binding rulers to citizens, proving Enlightenment political theory could overthrow traditional monarchies.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Transatlantic intellectual networks turned American revolutionary theory into European political action.
+                   <strong>Key Insight:</strong> Transatlantic intellectual networks turned American revolutionary theory into European political action.
                  </div>`,
-            tr: `<p><strong>Devrimler Neden Bağlantılıydı? (Düşünsel Aktarım):</strong> Amerikan bağımsızlığı Fransa için kıvılcım oldu. Lafayette gibi Fransız subayları devrimci fikirlerle ülkeye döndü; Amerikan Savaşı borçları ise mali krizi patlattı.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Evrensel Haklar Mimarisi):</strong> Her iki devrim de yönetimi vazgeçilemez haklar, halk egemenliği ve anayasal toplumsal sözleşme ilkeleri üzerine oturttu.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Transatlantik devrimler dalgası, Aydınlanma siyaset teorisinin krallık rejimlerini devirebileceğini kanıtlamıştır.</p>
+            tr: `<p><strong>Transatlantik Devrimci Etkileşim:</strong> Amerikan ve Fransız devrimleri birbirine derinden bağlıydı; Amerikan bağımsızlığı Fransa için kıvılcım oldu. Lafayette gibi Fransız subayları devrimci fikirlerle ülkeye döndü; Amerikan Savaşı borçları ise mali krizi patlattı.</p>
+                 <p><strong>Evrensel Haklar Mimarisi:</strong> Her iki devrim de yönetimi vazgeçilemez haklar, halk egemenliği ve anayasal toplumsal sözleşme ilkeleri üzerine oturtarak krallık rejimlerinin devrilebileceğini kanıtladı.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Transatlantik entelektüel ağlar, Amerikan devrim teorisini Avrupa siyasi eylemine dönüştürmüştür.
+                   <strong>Ana Fikir:</strong> Transatlantik entelektüel ağlar, Amerikan devrim teorisini Avrupa siyasi eylemine dönüştürmüştür.
                  </div>`
           },
           mapState: {
@@ -3121,17 +3077,15 @@ const learningData = {
             tr: "2. Mektup Cumhuriyeti ve Modern Siyaset Sözlüğü"
           },
           text: {
-            en: `<p><strong>Why Did Ideas Spread Rapidly? (Transatlantic Intellectuals):</strong> Franklin and Jefferson in Paris nurtured a vibrant <em>Republic of Letters</em>, exchanging ideas with French philosophes and revolutionaries.</p>
-                 <p><strong>What Did It Cause? (Vocabulary of Democracy):</strong> The French Revolution created the institutional concepts, vocabulary (Left vs Right), and democratic nationalism defining modern global politics.</p>
-                 <p><strong>Core Historical Thesis:</strong> The French Revolution provided the universal political vocabulary and institutional models for modern nation-state democracy.</p>
+            en: `<p><strong>Intellectual Exchange in Paris:</strong> Franklin and Jefferson in Paris nurtured a vibrant *Republic of Letters*, exchanging ideas with French philosophes and revolutionaries.</p>
+                 <p><strong>Inventing Democratic Vocabulary:</strong> The French Revolution created the institutional concepts, vocabulary (Left vs Right), and democratic nationalism defining modern global nation-state politics.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> French revolutionary debates forged the modern global vocabulary of political ideology.
+                   <strong>Key Insight:</strong> French revolutionary debates forged the modern global vocabulary of political ideology.
                  </div>`,
-            tr: `<p><strong>Fikirler Neden Hızla Yayıldı? (Transatlantik Aydınlar):</strong> Franklin ve Jefferson, Paris'te Fransız düşünürleriyle yakın bir <em>Mektup Cumhuriyeti (Republic of Letters)</em> kurdular.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Demokrasi Sözlüğü):</strong> Fransız Devrimi; modern küresel siyasetin kurumlarını, Sağ/Sol kavramlarını ve ulus-devlet milliyetçiliği sözlüğünü icat etti.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Fransız Devrimi, modern ulus-devlet demokrasilerinin evrensel siyasi kelime dağarcığını ve kurumsal şablonlarını sağlamıştır.</p>
+            tr: `<p><strong>Paris'te Fikir Alışverişi:</strong> Franklin ve Jefferson, Paris'te Fransız düşünürleriyle yakın bir *Mektup Cumhuriyeti (Republic of Letters)* kurdular.</p>
+                 <p><strong>Demokrasi Sözlüğünün İcadı:</strong> Fransız Devrimi; modern küresel siyasetin kurumlarını, Sağ/Sol kavramlarını ve ulus-devlet milliyetçiliği sözlüğünü icat etti.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Fransız devrimci tartışmaları, günümüz küresel siyaset ideolojilerinin temellerini atmıştır.
+                   <strong>Ana Fikir:</strong> Fransız devrimci tartışmaları, günümüz küresel siyaset ideolojilerinin temellerini atmıştır.
                  </div>`
           },
           mapState: {
@@ -3147,17 +3101,15 @@ const learningData = {
             tr: "3. Ancien Régime ve Üç Katman Sistemi"
           },
           text: {
-            en: `<p><strong>Why Ancien Régime Injustice? (Feudal Privilege):</strong> Absolute France legally divided society into Three Estates: Clergy (First), Nobility (Second), and the Third Estate (98% of population, carrying the entire tax burden).</p>
-                 <p><strong>What Did It Cause? (Deep Social Resentment):</strong> Exempting wealthy nobles and clergy from taxation forced peasants and the bourgeoisie to finance the state, creating explosive class antagonism.</p>
-                 <p><strong>Core Historical Thesis:</strong> Legalized class privilege under absolutism created structural inequities that made peaceful reform impossible.</p>
+            en: `<p><strong>Structural Feudal Injustice:</strong> Absolute France legally divided society into Three Estates: Clergy (First), Nobility (Second), and the Third Estate (98% of population, carrying the entire tax burden).</p>
+                 <p><strong>Explosive Class Antagonism:</strong> Exempting wealthy nobles and clergy from taxation forced peasants and the bourgeoisie to finance the state, creating explosive class antagonism that made peaceful reform impossible.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Unjust tax exemptions for nobles and clergy forced the Third Estate to finance the absolute monarchy.
+                   <strong>Key Insight:</strong> Unjust tax exemptions for nobles and clergy forced the Third Estate to finance the absolute monarchy.
                  </div>`,
-            tr: `<p><strong>Ancien Régime Adaletsizliği Neden Doğdu? (Feodal Ayrıcalık):</strong> Mutlak Fransa toplumu kanunen Üç Katmana ayırmıştı: Ruhban (1.), Aristokrasi (2.) ve tüm vergi yükünü çeken %98'lik Üçüncü Katman.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Derin Sınıf Öfkesi):</strong> Zengin soyluların ve din adamlarının vergiden muaf tutulması, tüm mali yükü halka ve burjuvaziye yıkarak patlamaya hazır sınıf nefreti yarattı.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Mutlakiyetçilik altındaki kanuni soyluluk ayrıcalıkları, barışçıl reformu imkansız kılan yapısal adaletsizlikler doğurmuştur.</p>
+            tr: `<p><strong>Feodal Yapısal Adaletsizlik:</strong> Mutlak Fransa toplumu kanunen Üç Katmana ayırmıştı: Ruhban (1.), Aristokrasi (2.) ve tüm vergi yükünü çeken %98'lik Üçüncü Katman.</p>
+                 <p><strong>Patlamaya Hazır Sınıf Nefreti:</strong> Zengin soyluların ve din adamlarının vergiden muaf tutulması, tüm mali yükü halka ve burjuvaziye yıkarak barışçıl reformu imkansız kılan bir sınıf nefreti yarattı.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Soyluların vergi muafiyeti, devleti finanse etmek zorunda kalan Üçüncü Katman'ı devrime zorlamıştır.
+                   <strong>Ana Fikir:</strong> Soyluların vergi muafiyeti, devleti finanse etmek zorunda kalan Üçüncü Katman'ı devrime zorlamıştır.
                  </div>`
           },
           mapState: {
@@ -3173,17 +3125,15 @@ const learningData = {
             tr: "4. Burjuvazinin Yükselişi ve Siyasi Engellenmişliği"
           },
           text: {
-            en: `<p><strong>Why Did Bourgeoisie Revolt? (Economic vs Political Power):</strong> 18th-century maritime sugar and slave trade (Bordeaux, Nantes) enriched French merchants, but Ancien Régime laws blocked them from political power and high offices.</p>
-                 <p><strong>What Did It Cause? (Revolutionary Vanguard):</strong> Frustrated by noble exclusivity, the wealthy bourgeoisie adopted radical Enlightenment critique to dismantle feudal privilege.</p>
-                 <p><strong>Core Historical Thesis:</strong> The French Revolution was led by a rising merchant class whose economic power was blocked by outdated feudal privileges.</p>
+            en: `<p><strong>Economic Wealth vs Legal Blockade:</strong> 18th-century maritime sugar and slave trade (Bordeaux, Nantes) enriched French merchants, but Ancien Régime laws blocked them from political power and high offices reserved for nobility.</p>
+                 <p><strong>The Revolutionary Vanguard:</strong> Frustrated by noble exclusivity, the wealthy bourgeoisie adopted radical Enlightenment critique to dismantle feudal privilege and claim political governance.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Colonial trade wealth empowered a merchant class that demanded political rights matching its economic clout.
+                   <strong>Key Insight:</strong> Colonial trade wealth empowered a merchant class that demanded political rights matching its economic clout.
                  </div>`,
-            tr: `<p><strong>Burjuvazi Neden İsyan Etti? (Ekonomik vs. Siyasi Güç):</strong> Sömürge ticareti (Bordeaux, Nantes) tüccarları zenginleştirdi; ancak Ancien Régime kanunları onları siyasi makamlardan dışladı.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Devrimci Öncü Sınıf):</strong> Soylu ayrıcalıklarından bunalan zengin burjuvazi, feodal engelleri yıkmak için radikal Aydınlanma fikirlerinin ana taşıyıcısı oldu.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Fransız Devrimi, ekonomik gücü artan ancak feodal ayrıcalıklarla siyaseten engellenen yükselen tüccar sınıfı tarafından yönlendirilmiştir.</p>
+            tr: `<p><strong>Ekonomik Zenginlik ve Hukuki Engel:</strong> Sömürge ticareti (Bordeaux, Nantes) tüccarları zenginleştirdi; ancak Ancien Régime kanunları onları soylulara ayrılan siyasi makamlardan dışladı.</p>
+                 <p><strong>Devrimci Öncü Sınıf:</strong> Soylu ayrıcalıklarından bunalan zengin burjuvazi, feodal engelleri yıkmak ve siyasi yönetimi almak için Aydınlanma fikirlerinin ana taşıyıcısı oldu.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Sömürge ticareti serveti, ekonomik gücüne denk siyasi haklar talep eden tüccar sınıfını doğurmuştur.
+                   <strong>Ana Fikir:</strong> Sömürge ticareti serveti, ekonomik gücüne denk siyasi haklar talep eden tüccar sınıfını doğurmuştur.
                  </div>`
           },
           mapState: {
@@ -3199,17 +3149,15 @@ const learningData = {
             tr: "5. Aydınlanma İdealleri ve Krallığın Kutsalsızlaştırılması"
           },
           text: {
-            en: `<p><strong>Why Did Authority Collapse? (Desacralization):</strong> Enlightenment philosophes promoted secular reason. Lowbrow underground pamphlets (*libelles*) exposed royal corruption, stripping monarchy of sacred divine right.</p>
-                 <p><strong>What Did It Cause? (Public Sphere & Critical Spirit):</strong> Salons and coffeehouses created a public sphere where citizens imagined a kingdom without a King and an egalitarian society governed by law.</p>
-                 <p><strong>Core Historical Thesis:</strong> Underground literature desacralized monarchy, destroying popular reverence for the Crown long before barricades were built in 1789.</p>
+            en: `<p><strong>Desacralizing the Monarchy:</strong> Enlightenment philosophes promoted secular reason, while lowbrow underground pamphlets (*libelles*) exposed royal corruption, stripping monarchy of sacred divine right long before barricades were built.</p>
+                 <p><strong>The Emerging Public Sphere:</strong> Salons and coffeehouses created an educated public sphere where citizens imagined a kingdom without a King and an egalitarian society governed by law.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Underground pamphlets destroyed sacred royal authority before physical revolution began.
+                   <strong>Key Insight:</strong> Underground pamphlets destroyed sacred royal authority before physical revolution began.
                  </div>`,
-            tr: `<p><strong>Otorite Neden Çöktü? (Desacralization):</strong> Aydınlanma filozofları seküler aklı savundu. Yeraltı broşürleri saray skandallarını yayarak krallığın ilahi kutsallığını sıyırdı.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Kamusal Alan ve Eleştirel Ruh):</strong> Salonlar ve kahvehaneler, kralsız ve kanun önünde eşit bir toplumu düşünebilen eğitimli bir kamuoyu yarattı.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Yeraltı edebiyatı monarşinin kutsallığını yıkarak, 1789 barikatları kurulmadan önce halkın saraya olan hürmetini yok etmiştir.</p>
+            tr: `<p><strong>Monarşinin Kutsallığını Yıkmak:</strong> Aydınlanma filozofları seküler aklı savundu; yeraltı basını ise saray skandallarını yayarak krallığın ilahi kutsallığını barikatlar kurulmadan çok önce yıktı.</p>
+                 <p><strong>Doğan Kamusal Alan:</strong> Salonlar ve kahvehaneler, kralsız ve kanun önünde eşit bir toplumu düşünebilen eğitimli bir kamuoyu yarattı.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Yeraltı basını, fiziki devrim başlamadan önce kraliyet otoritesinin meşruiyetini çökertmiştir.
+                   <strong>Ana Fikir:</strong> Yeraltı basını, fiziki devrim başlamadan önce kraliyet otoritesinin meşruiyetini çökertmiştir.
                  </div>`
           },
           mapState: {
@@ -3225,17 +3173,15 @@ const learningData = {
             tr: "6. Mali İflas ve Etats-Généraux'nun Toplanması"
           },
           text: {
-            en: `<p><strong>Why Convoke Estates-General? (Financial Crisis):</strong> Funding the American Revolution pushed France into near-bankruptcy. Needing new taxes, King Louis XVI was forced to convoke the Estates-General in Spring 1789.</p>
-                 <p><strong>What Did It Cause? (Constitutional Crisis):</strong> The Third Estate refused voting by Estate (which gave Clergy/Nobility a 2-to-1 veto), demanding individual voting representing the majority nation.</p>
-                 <p><strong>Core Historical Thesis:</strong> Imperial war debts forced Louis XVI to surrender absolute power and open the door to constitutional transformation.</p>
+            en: `<p><strong>Sovereign Bankruptcy:</strong> Funding the American Revolution pushed France into near-bankruptcy. Needing new taxes, King Louis XVI was forced to convoke the Estates-General in Spring 1789.</p>
+                 <p><strong>The Constitutional Deadlock:</strong> The Third Estate refused voting by Estate (which gave Clergy/Nobility a 2-to-1 veto), demanding individual voting representing the majority nation.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Sovereign bankruptcy forced the King to surrender absolute tax authority.
+                   <strong>Key Insight:</strong> Sovereign bankruptcy forced the King to surrender absolute tax authority.
                  </div>`,
-            tr: `<p><strong>Etats-Généraux Neden Çağrıldı? (Mali Kriz):</strong> Amerikan Savaşı'nın borçları Fransa'yı iflasa getirdi. Yeni vergilere muhtaç kalan XVI. Louis, 1789 İlkbaharı'nda assembly'i çağırdı.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Anayasal Kriz):</strong> Üçüncü Katman, soylulara 2'ye 1 üstünlük veren katman başı oylamayı reddedip kişi başı eşit oy istedi.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Amerikan Savaşı borçları XVI. Louis'yi mutlak yetkilerini teslim etmeye ve anayasal dönüşümün kapısını açmaya mecbur kalmıştır.</p>
+            tr: `<p><strong>Devletin İflas Noktası:</strong> Amerikan Savaşı'nın borçları Fransa'yı iflasa getirdi. Yeni vergilere muhtaç kalan XVI. Louis, 1789 İlkbaharı'nda meclisi çağırmak zorunda kaldı.</p>
+                 <p><strong>Anayasal Kilitlenme:</strong> Üçüncü Katman, soylulara 2'ye 1 üstünlük veren katman başı oylamayı reddedip kişi başı eşit oy istedi.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Devlet iflası, Kralı mutlak vergi yetkisinden vazgeçmeye zorlamıştır.
+                   <strong>Ana Fikir:</strong> Devlet iflası, Kralı mutlak vergi yetkisinden vazgeçmeye zorlamıştır.
                  </div>`
           },
           mapState: {
@@ -3251,17 +3197,15 @@ const learningData = {
             tr: "7. Ulusal Meclis'in Doğuşu ve Halk Ayaklanması"
           },
           text: {
-            en: `<p><strong>Why National Assembly? (Asserting Sovereignty):</strong> On June 17, 1789, the Third Estate declared itself the <em>National Assembly</em>, taking the Tennis Court Oath to frame a Constitution representing sovereign citizens.</p>
-                 <p><strong>What Did It Cause? (Bastille Storming & Feudal Abolition):</strong> On July 14, Paris crowds stormed the Bastille fortress. In August, peasant revolts forced the Assembly to formally abolish feudalism and seigneurial privileges.</p>
-                 <p><strong>Core Historical Thesis:</strong> Popular intervention saved the National Assembly and dismantled feudalism as France's organizing social principle.</p>
+            en: `<p><strong>Proclaiming National Sovereignty:</strong> On June 17, 1789, the Third Estate declared itself the *National Assembly*, taking the Tennis Court Oath to frame a Constitution representing sovereign citizens.</p>
+                 <p><strong>Bastille & Feudal Abolition:</strong> On July 14, Paris crowds stormed the Bastille fortress. In August, peasant revolts forced the Assembly to formally abolish feudalism and seigneurial privileges.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Popular armed intervention protected the National Assembly and destroyed feudal privilege.
+                   <strong>Key Insight:</strong> Popular armed intervention protected the National Assembly and destroyed feudal privilege.
                  </div>`,
-            tr: `<p><strong>Ulusal Meclis Neden Kuruldu? (Egemenlik İddiası):</strong> 17 Haziran 1789'da Üçüncü Katman kendisini egemen ulusun temsilcisi <em>Ulusal Meclis</em> ilan etti ve Tenis Kortu Yemini etti.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Bastille Baskını ve Feodalizmin Sonu):</strong> 14 Temmuz'da Paris halkı Bastille Kalesi'ni bastı. Ağustos'ta köylü isyanları Meclis'i feodal ayrıcalıkları feshetmeye zorladı.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Halkın silahlı müdahalesi Ulusal Meclis'i korumuş ve feodalizmi Fransa'nın toplumsal örgütlenme ilkesi olmaktan çıkarmıştır.</p>
+            tr: `<p><strong>Ulusal Egemenliğin İlanı:</strong> 17 Haziran 1789'da Üçüncü Katman kendisini egemen ulusun temsilcisi *Ulusal Meclis* ilan etti ve Tenis Kortu Yemini etti.</p>
+                 <p><strong>Bastille ve Feodalizmin Sonu:</strong> 14 Temmuz'da Paris halkı Bastille Kalesi'ni bastı. Ağustos'ta köylü isyanları Meclis'i feodal ayrıcalıkları feshetmeye zorladı.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Halkın sokak müdahalesi meclisi kurtarmış ve feodal soyluluk haklarını yok etmiştir.
+                   <strong>Ana Fikir:</strong> Halkın sokak müdahalesi meclisi kurtarmış ve feodal soyluluk haklarını yok etmiştir.
                  </div>`
           },
           mapState: {
@@ -3277,17 +3221,15 @@ const learningData = {
             tr: "8. İnsan Hakları Bildirisi ve Mülkiyet Temeli"
           },
           text: {
-            en: `<p><strong>Why Enact Rights Declaration? (Universal Ideal):</strong> On August 26, 1789, the Assembly proclaimed the <em>Declaration of the Rights of Man and of the Citizen</em>, asserting natural liberty, equality, and popular sovereignty.</p>
-                 <p><strong>What Did It Cause? (Bourgeois Social Order):</strong> Article 17 declared property an inviolable right, ensuring wealth and talent—not noble birth—became the bedrock of France's new social order.</p>
-                 <p><strong>Core Historical Thesis:</strong> The Declaration replaced noble birth with property ownership as the foundation of French citizenship and governance.</p>
+            en: `<p><strong>Universal Rights Proclamation:</strong> On August 26, 1789, the Assembly proclaimed the *Declaration of the Rights of Man and of the Citizen*, asserting natural liberty, equality, and popular sovereignty.</p>
+                 <p><strong>Bourgeois Property Foundations:</strong> Article 17 declared property an inviolable right, ensuring wealth and talent—not noble birth—became the bedrock of France's new post-feudal social order.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Article 17 enshrined property ownership as the core metric of the new post-feudal order.
+                   <strong>Key Insight:</strong> Article 17 enshrined property ownership as the core metric of the new post-feudal order.
                  </div>`,
-            tr: `<p><strong>Bildirge Neden İlan Edildi? (Evrensel İdeal):</strong> 26 Ağustos 1789'da Meclis; özgürlük, eşitlik ve halk egemenliğini ilan eden <em>İnsan ve Yurttaş Hakları Bildirisi</em>'ni kabul etti.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Burjuva Düzeni):</strong> Madde 17 mülkiyeti dokunulmaz klarak soyluluk kanı yerine servet ve yeteneği yeni Fransız düzeninin temeli yaptı.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Bildirge, soyluluk doğumunu kaldırıp mülkiyet sahipliğini Fransız yurttaşlığının ve yönetiminin ana ölçütü kılmıştır.</p>
+            tr: `<p><strong>Evrensel Haklar İlanı:</strong> 26 Ağustos 1789'da Meclis; özgürlük, eşitlik ve halk egemenliğini ilan eden *İnsan ve Yurttaş Hakları Bildirisi*'ni kabul etti.</p>
+                 <p><strong>Mülkiyet Düzeni:</strong> Madde 17 mülkiyeti dokunulmaz klarak soyluluk kanı yerine servet ve yeteneği yeni Fransız düzeninin temeli yaptı.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Madde 17, feodalizm sonrası yeni düzenin temeline mülkiyet güvencesini yerleştirmiştir.
+                   <strong>Ana Fikir:</strong> Madde 17, feodalizm sonrası yeni düzenin temeline mülkiyet güvencesini yerleştirmiştir.
                  </div>`
           },
           mapState: {
@@ -3303,17 +3245,15 @@ const learningData = {
             tr: "9. Meşruti Monarşi ve Sınıfsal Dışlanma"
           },
           text: {
-            en: `<p><strong>Why Active/Passive Citizens? (Class Preservation):</strong> The 1791 Constitution established a Constitutional Monarchy but restricted voting rights to property-owning "active citizens".</p>
-                 <p><strong>What Did It Cause? (Popular Discontent):</strong> Women, working-class *sans-culottes*, and non-property owners were excluded from voting, while labor unions were banned (*Le Chapelier Law*).</p>
-                 <p><strong>Core Historical Thesis:</strong> The moderate bourgeois stage of the Revolution created deep class tensions between property-owning elites and disenfranchised workers.</p>
+            en: `<p><strong>Property-Based Citizenship:</strong> The 1791 Constitution established a Constitutional Monarchy but restricted voting rights to property-owning "active citizens".</p>
+                 <p><strong>Worker Disenfranchisement:</strong> Women, working-class *sans-culottes*, and non-property owners were excluded from voting, while labor unions were banned (*Le Chapelier Law*), creating deep class tensions.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Property qualifications disenfranchised workers, triggering radical popular demands for universal suffrage.
+                   <strong>Key Insight:</strong> Property qualifications disenfranchised workers, triggering radical popular demands for universal suffrage.
                  </div>`,
-            tr: `<p><strong>Neden Aktif/Pasif Ayrımı Getirildi? (Sınıf Düzeni):</strong> 1791 Anayasası Meşruti Monarşi kurdu ancak oy hakkını sadece mülk sahibi "aktif yurttaşlara" verdi.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Halk Huzursuzluğu):</strong> Kadınlar, işçiler (*sans-culottes*) oy hakkından mahrum bırakıldı; işçi sendikaları yasaklandı (*Le Chapelier Yasası*).</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Devrimin ılımlı burjuva aşaması, mülk sahibi elitler ile oy hakkı gasp edilen işçiler arasında derin sınıf çatışmaları yaratmıştır.</p>
+            tr: `<p><strong>Mülkiyete Dayalı Yurttaşlık:</strong> 1791 Anayasası Meşruti Monarşi kurdu ancak oy hakkını sadece mülk sahibi "aktif yurttaşlara" verdi.</p>
+                 <p><strong>İşçilerin Dışlanması:</strong> Kadınlar, işçiler (*sans-culottes*) oy hakkından mahrum bırakıldı; işçi sendikaları yasaklandı (*Le Chapelier Yasası*), derin sınıf gerilimi doğdu.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Mülkiyet şartı işçileri dışlamış, radikal halk kesimlerini genel erkek oy hakkı için mücadeleye itmiştir.
+                   <strong>Ana Fikir:</strong> Mülkiyet şartı işçileri dışlamış, radikal halk kesimlerini genel erkek oy hakkı için mücadeleye itmiştir.
                  </div>`
           },
           mapState: {
@@ -3325,21 +3265,19 @@ const learningData = {
         },
         {
           title: {
-            en: "10. Radicalization, War & Proclamation of the Republic",
+            en: "10. Radicalization, War & Proclamation of Republic",
             tr: "10. Radikalleşme, Savaş ve Cumhuriyetin İlanı"
           },
           text: {
-            en: `<p><strong>Why Did Revolution Radicalize? (King's Betrayal & Foreign War):</strong> Louis XVI's 1791 flight to Varennes and war against Austria/Prussia destroyed faith in monarchy.</p>
-                 <p><strong>What Did It Cause? (Execution of King & Republic):</strong> Volunteer armies halted invaders at Valmy (1792). The National Convention declared France a Republic with universal male suffrage and executed Louis XVI in Jan 1793.</p>
-                 <p><strong>Core Historical Thesis:</strong> Foreign intervention and royal treason radicalized the Revolution, transforming a moderate constitutional monarchy into a democratic Republic.</p>
+            en: `<p><strong>Royal Treason & Foreign Invasion:</strong> Louis XVI's 1791 flight to Varennes and war against Austria/Prussia destroyed faith in monarchy.</p>
+                 <p><strong>Proclaiming the First Republic:</strong> Volunteer armies halted invaders at Valmy (1792). The National Convention declared France a Republic with universal male suffrage and executed Louis XVI in Jan 1793.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Counter-revolutionary treason and war radicalized France, leading to the Republic and trial of the King.
+                   <strong>Key Insight:</strong> Counter-revolutionary treason and war radicalized France, leading to the Republic and trial of the King.
                  </div>`,
-            tr: `<p><strong>Devrim Neden Radikalleşti? (Kralın İhaneti ve Dış Savaş):</strong> XVI. Louis'nin 1791 Varennes kaçış girişimi ve Avusturya savaşı krallığa olan son inancı da yıktı.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Cumhuriyet ve Kralın İdamı):</strong> Gönüllüler Valmy'de işgalcileri durdurdu (1792). Konvansiyon genel erkek oy hakkıyla Cumhuriyeti ilan etti ve XVI. Louis'yi 1793'te giyotine gönderdi.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Yabancı müdahalesi ve kraliyet ihaneti devrimi radikalleştirmiş; ılımlı monarşiyi demokratik bir Cumhuriyete dönüştürmüştür.</p>
+            tr: `<p><strong>Kraliyet İhaneti ve Dış Savaş:</strong> XVI. Louis'nin 1791 Varennes kaçış girişimi ve Avusturya savaşı krallığa olan son inancı da yıktı.</p>
+                 <p><strong>İlk Cumhuriyetin İlanı:</strong> Gönüllüler Valmy'de işgalcileri durdurdu (1792). Konvansiyon genel erkek oy hakkıyla Cumhuriyeti ilan etti ve XVI. Louis'yi 1793'te giyotine gönderdi.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Karşı-devrimci ihanet ve dış savaş Fransa'yı radikalleştirerek Cumhuriyet'e götürmüştür.
+                   <strong>Ana Fikir:</strong> Karşı-devrimci ihanet ve dış savaş Fransa'yı radikalleştirerek Cumhuriyet'e götürmüştür.
                  </div>`
           },
           mapState: {
@@ -4109,24 +4047,22 @@ const learningData = {
           "en": "The Haitian Revolution: The only successful slave revolt in history and the establishment of the first independent black republic."
         }
       },
-      "slides":  [
+      "slides":   [
         {
           title: {
             en: "1. Universal Rights & Colonial Contradictions",
             tr: "1. Evrensel Haklar ve Sömürge Çelişkileri"
           },
           text: {
-            en: `<p><strong>Why Colonial Collision? (Exporting Revolution):</strong> When the French Revolution declared universal Rights of Man, these principles collided directly with colonial slave societies like San Domingo (Saint-Domingue).</p>
-                 <p><strong>What Did It Cause? (Property vs Liberty Clash):</strong> A fundamental clash erupted: Article 17 protected property (slaves were legal property), while human liberty demanded universal emancipation.</p>
-                 <p><strong>Core Historical Thesis:</strong> Exporting revolutionary principles to San Domingo exposed the hypocrisy of bourgeois property rights in a slave-based empire.</p>
+            en: `<p><strong>Exporting Universal Rights to a Slave Society:</strong> When the French Revolution declared universal Rights of Man, these principles collided directly with colonial slave societies like San Domingo (Saint-Domingue).</p>
+                 <p><strong>Property vs Emancipation Clash:</strong> A fundamental clash erupted: Article 17 protected property (slaves were legal property), while human liberty demanded universal emancipation, exposing bourgeois property hypocrisy.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Bourgeois property protections directly clashed with enslaved humans demanding fundamental liberty.
+                   <strong>Key Insight:</strong> Bourgeois property protections directly clashed with enslaved humans demanding fundamental liberty.
                  </div>`,
-            tr: `<p><strong>Sömürgede Neden Çatışma Patladı? (Devrimin İhracı):</strong> Fransız Devrimi evrensel İnsan Hakları'nı ilan ettiğinde, bu ilkeler San Domingo köle toplumuyla doğrudan çarptı.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Mülkiyet vs. Özgürlük):</strong> Temel bir çatışma çıktı: Madde 17 mülkiyeti koruyordu (köleler kanunen mülktü); insani özgürlük ise köleliğin kalkmasını gerektiriyordu.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Devrimci ilkelerin sömürgeye ihracı, köle ekonomisinden beslenen burjuva mülkiyet haklarının çelişkilerini çıplak şekilde sergilemiştir.</p>
+            tr: `<p><strong>Evrensel Hakların Sömürgeye İhracı:</strong> Fransız Devrimi evrensel İnsan Hakları'nı ilan ettiğinde, bu ilkeler San Domingo köle toplumuyla doğrudan çarptı.</p>
+                 <p><strong>Mülkiyet ve Özgürlük Çatışması:</strong> Temel bir çatışma çıktı: Madde 17 mülkiyeti koruyordu (köleler kanunen mülktü); insani özgürlük ise köleliğin kalkmasını gerektiriyordu.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Burjuva mülkiyet güvencesi, insani özgürlük talep eden kölelerin mücadelesiyle uzlaşmaz şekilde çatışmıştır.
+                   <strong>Ana Fikir:</strong> Burjuva mülkiyet güvencesi, insani özgürlük talep eden kölelerin mücadelesiyle uzlaşmaz şekilde çatışmıştır.
                  </div>`
           },
           mapState: {
@@ -4142,17 +4078,15 @@ const learningData = {
             tr: "2. San Domingo Plantasyon Motoru ve Servet"
           },
           text: {
-            en: `<p><strong>Why World's Richest Colony? (Sugar & Coffee Monoculture):</strong> Seized by France (Treaty of Ryswick 1697), San Domingo became the world's most lucrative colony, generating 40% of Europe's sugar and 60% of its coffee.</p>
-                 <p><strong>What Did It Cause? (Enriching French Ports):</strong> Wealth from San Domingo built the fortunes of French maritime merchant cities (Bordeaux, Nantes), funding the very bourgeoisie that launched the French Revolution.</p>
-                 <p><strong>Core Historical Thesis:</strong> French revolutionary capitalism was financially bankrolled by the brutal exploitation of enslaved African labor in San Domingo.</p>
+            en: `<p><strong>The World's Richest Colony:</strong> Seized by France (Treaty of Ryswick 1697), San Domingo became the world's most lucrative colony, generating 40% of Europe's sugar and 60% of its coffee.</p>
+                 <p><strong>Financing French Bourgeoisie:</strong> Wealth from San Domingo built the fortunes of French maritime merchant cities (Bordeaux, Nantes), funding the very bourgeoisie that launched the French Revolution.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> French revolutionary merchant wealth was built directly on Saint-Domingue slave labor exports.
+                   <strong>Key Insight:</strong> French revolutionary merchant wealth was built directly on Saint-Domingue slave labor exports.
                  </div>`,
-            tr: `<p><strong>Neden Dünyanın En Zengin Sömürgesiydi? (Şeker ve Kahve Motoru):</strong> Fransa'nın ele geçirdiği San Domingo (1697 Ryswick Antlaşması), Avrupa şekerinin %40'ını, kahvesinin %60'ını üreten dev bir servet kapsülüydü.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Fransız Limanlarının Zenginleşmesi):</strong> San Domingo ticareti Bordeaux ve Nantes tüccarlarını zenginleştirdi; Fransız Devrimi'ni yapan burjuvazinin servetini yarattı.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Fransız devrimci kapitalizmi, San Domingo'daki Afrikalı kölelerin ağır sömürüsünden elde edilen servetle finanse edilmiştir.</p>
+            tr: `<p><strong>Dünyanın En Zengin Sömürgesi:</strong> Fransa'nın ele geçirdiği San Domingo (1697 Ryswick Antlaşması), Avrupa şekerinin %40'ını, kahvesinin %60'ını üreten dev bir servet kapsülüydü.</p>
+                 <p><strong>Fransız Burjuvazisini Finanse Etmek:</strong> San Domingo ticareti Bordeaux ve Nantes tüccarlarını zenginleştirdi; Fransız Devrimi'ni yapan burjuvazinin servetini yarattı.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Fransız tüccar serveti doğrudan Saint-Domingue köle plantasyonlarının ihracatıyla kurulmuştur.
+                   <strong>Ana Fikir:</strong> Fransız tüccar serveti doğrudan Saint-Domingue köle plantasyonlarının ihracatıyla kurulmuştur.
                  </div>`
           },
           mapState: {
@@ -4168,17 +4102,15 @@ const learningData = {
             tr: "3. Acımasız Kölelik ve Demografik Dengesizlik"
           },
           text: {
-            en: `<p><strong>Why Extreme Brutality? (12-to-1 Demographic Ratio):</strong> By 1789, 500,000 enslaved Africans worked under 40,000 whites. Terrified by their tiny numbers, planters ignored royal laws (*Code Noir*) and used systematic terror to suppress revolts.</p>
-                 <p><strong>What Did It Cause? (High Attrition & Continual Import):</strong> Massive slave mortality required importing 30,000 new African captives annually, keeping African-born cultural traditions exceptionally fresh and vibrant.</p>
-                 <p><strong>Core Historical Thesis:</strong> Demographic imbalance forced planters to rely on extreme violence, while continuous African imports preserved African military and cultural solidarity.</p>
+            en: `<p><strong>The 12-to-1 Demographic Imbalance:</strong> By 1789, 500,000 enslaved Africans worked under 40,000 whites. Terrified by their tiny numbers, planters ignored royal laws (*Code Noir*) and used systematic terror to suppress revolts.</p>
+                 <p><strong>Continuous Import & Cultural Freshness:</strong> Massive slave mortality required importing 30,000 new African captives annually, keeping African-born warrior traditions exceptionally fresh and vibrant.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Extreme demographic imbalance led planters to use terror, while fresh African arrivals kept warrior traditions alive.
+                   <strong>Key Insight:</strong> Extreme demographic imbalance led planters to use terror, while fresh African arrivals kept warrior traditions alive.
                  </div>`,
-            tr: `<p><strong>Şiddet Neden Acımasızdı? (12'ye 1 Demografik Oran):</strong> 1789'da 40.000 beyaza karşı 500.000 siyah köle vardı. Azınlıkta olmaktan korkan sahipler kanunları (*Code Noir*) çiğneyip terör uyguladı.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Yüksek Ölüm ve Sürekli İthalat):</strong> Yüksek ölüm oranları yılda 30.000 yeni Afrikalı köle ithalatını gerektirdi; bu da Afrika kültürünün taze kalmasını sağladı.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Demografik dengesizlik sahipleri şiddete zorlarken, sürekli Afrika'dan gelen yeni köleler savaşçı ve kültürel birliği diri tutmuştur.</p>
+            tr: `<p><strong>12'ye 1 Demografik Dengesizlik:</strong> 1789'da 40.000 beyaza karşı 500.000 siyah köle vardı. Azınlıkta olmaktan korkan sahipler kanunları (*Code Noir*) çiğneyip terör uyguladı.</p>
+                 <p><strong>Sürekli İthalat ve Kültürel Tazelik:</strong> Yüksek ölüm oranları yılda 30.000 yeni Afrikalı köle ithalatını gerektirdi; bu da Afrika kökenli savaşçı geleneklerin taze kalmasını sağladı.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Nüfus dengesizliği sahipleri teröre iterken, yeni gelen Afrikalılar savaşçı gelenekleri korumuştur.
+                   <strong>Ana Fikir:</strong> Nüfus dengesizliği sahipleri teröre iterken, yeni gelen Afrikalılar savaşçı gelenekleri korumuştur.
                  </div>`
           },
           mapState: {
@@ -4194,17 +4126,15 @@ const learningData = {
             tr: "4. Vodou, Maron Direnişi ve Mackandal"
           },
           text: {
-            en: `<p><strong>Why Vodou & Maroonage? (Autonomous Spaces):</strong> Enslaved people forged Haitian Creole and Vodou rituals away from masters' control. Escaped slaves formed mountain Maroon communities.</p>
-                 <p><strong>What Did It Cause? (Organized Insurrection Networks):</strong> Maroon leaders like François Mackandal created secret poison networks in the 1750s, proving that slaves could organize island-wide resistance.</p>
-                 <p><strong>Core Historical Thesis:</strong> Vodou and Maroon networks provided the organizational infrastructure and spiritual unity that made the 1791 revolution successful.</p>
+            en: `<p><strong>Autonomous Cultural Spaces:</strong> Enslaved people forged Haitian Creole and Vodou rituals away from masters' control. Escaped slaves formed mountain Maroon communities.</p>
+                 <p><strong>Poison Networks & Insurrection Infrastructure:</strong> Maroon leaders like François Mackandal created secret poison networks in the 1750s, providing the spiritual unity and organizational infrastructure for the 1791 revolution.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Vodou and Maroon networks forged the spiritual and tactical unity essential for revolution.
+                   <strong>Key Insight:</strong> Vodou and Maroon networks forged the spiritual and tactical unity essential for revolution.
                  </div>`,
-            tr: `<p><strong>Vodou ve Maronluk Neden Gelişti? (Bağımsız Alanlar):</strong> Köleler, efendilerin ulaşamadığı dağlarda Haitian Kreyol dilini, Vodou inancını ve Maron kaçak topluluklarını kurdular.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Örgütlü İsyan Ağları):</strong> François Mackandal 1750'lerde gizli zehirleme ağları kurarak kölelerin ada çapında direniş örgütleyebileceğini kanıtladı.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Vodou ve Maron ağları, 1791 büyük devrimini başarıya ulaştıracak örgütsel altyapıyı ve inanç birliğini sağlamıştır.</p>
+            tr: `<p><strong>Bağımsız Kültür Alanları:</strong> Köleler, efendilerin ulaşamadığı dağlarda Haitian Kreyol dilini, Vodou inancını ve Maron kaçak topluluklarını kurdular.</p>
+                 <p><strong>Zehir Ağları ve İsyan Altyapısı:</strong> François Mackandal 1750'lerde gizli zehirleme ağları kurarak 1791 devrimini başarıya ulaştıracak örgütsel altyapıyı ve inanç birliğini sağladı.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Vodou inancı ve Maron ağları devrimin taktik ve ruhsal birliğini döşemiştir.
+                   <strong>Ana Fikir:</strong> Vodou inancı ve Maron ağları devrimin taktik ve ruhsal birliğini döşemiştir.
                  </div>`
           },
           mapState: {
@@ -4220,17 +4150,15 @@ const learningData = {
             tr: "5. Irksal Hiyerarşi ve Dört Çatışan Sınıf"
           },
           text: {
-            en: `<p><strong>Why Explosive Class Conflict? (Racial Caste Laws):</strong> San Domingo was divided into 4 hostile groups: Grand Blancs (planters), Royal Bureaucrats, Petit Blancs (poor whites), and Free Mulattoes (*Gens de Couleur*).</p>
-                 <p><strong>What Did It Cause? (Multilateral Civil War):</strong> Rich mulattoes owned 1/3 of island land but faced 128 racist caste laws. When 1789 arrived, whites and mulattoes fought each other, opening the door for slave revolt.</p>
-                 <p><strong>Core Historical Thesis:</strong> Deep racial and class fractures among ruling elites fractured colonial defense, enabling enslaved workers to seize the initiative.</p>
+            en: `<p><strong>Four Hostile Factions:</strong> San Domingo was divided into 4 hostile groups: Grand Blancs (planters), Royal Bureaucrats, Petit Blancs (poor whites), and Free Mulattoes (*Gens de Couleur*).</p>
+                 <p><strong>Paralyzing Colonial Defense:</strong> Rich mulattoes owned 1/3 of island land but faced 128 racist caste laws. When 1789 arrived, whites and mulattoes fought each other, paralyzing colonial defense and enabling slave revolt.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Factional warfare between white planters and free mulattoes paralyzed colonial defense.
+                   <strong>Key Insight:</strong> Factional warfare between white planters and free mulattoes paralyzed colonial defense.
                  </div>`,
-            tr: `<p><strong>Sınıf Çatışması Neden Patladı? (Irkçı Kast Yasaları):</strong> San Domingo 4 düşman gruba ayrılmıştı: Büyük Beyazlar (sahipler), Bürokratlar, Küçük Beyazlar (yoksullar) ve Özgür Melezler (*Gens de Couleur*).</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Çok Taraflı İç Savaş):</strong> Zengin melezler toprakların 1/3'üne sahipken 128 ırkçı kanunla ezildi. 1789'da beyazlar ve melezler birbirine girince köle isyanı önü açıldı.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Yönetici elitler arasındaki derin ırk ve sınıf bölünmesi sömürge savunmasını felç etmiş, kölelerin inisiyatifi ele almasını sağlamıştır.</p>
+            tr: `<p><strong>Dört Düşman Sınıf:</strong> San Domingo 4 düşman gruba ayrılmıştı: Büyük Beyazlar (sahipler), Bürokratlar, Küçük Beyazlar (yoksullar) ve Özgür Melezler (*Gens de Couleur*).</p>
+                 <p><strong>Sömürge Savunmasının Kilitlenmesi:</strong> Zengin melezler toprakların 1/3'üne sahipken 128 ırkçı kanunla ezildi. 1789'da beyazlar ve melezler birbirine girince sömürge savunması kilitlendi ve köle isyanı önü açıldı.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Beyazlar ile melezler arasındaki çatışma sömürge savunmasını kilitlemiştir.
+                   <strong>Ana Fikir:</strong> Beyazlar ile melezler arasındaki çatışma sömürge savunmasını kilitlemiştir.
                  </div>`
           },
           mapState: {
@@ -4246,17 +4174,15 @@ const learningData = {
             tr: "6. Ağustos 1791 Büyük Köle Ayaklanması"
           },
           text: {
-            en: `<p><strong>Why Did Rebellion Erupt? (Bois Caïman Ceremony):</strong> On August 14, 1791, Vodou priest Dutty Boukman led a sacred ceremony at Bois Caïman, swearing an oath to destroy slavery.</p>
-                 <p><strong>What Did It Cause? (Destruction of Plantations):</strong> 100,000 enslaved Africans rose in coordinated revolt, burning 1,800 sugar plantations. Toussaint Louverture joined at age 45, providing military organization.</p>
-                 <p><strong>Core Historical Thesis:</strong> The 1791 uprising was the largest and most successful slave rebellion in human history, transforming captives into a revolutionary army.</p>
+            en: `<p><strong>The Bois Caïman Sacred Oath:</strong> On August 14, 1791, Vodou priest Dutty Boukman led a sacred ceremony at Bois Caïman, swearing an oath to destroy slavery.</p>
+                 <p><strong>Coordinated Slave Revolution:</strong> 100,000 enslaved Africans rose in coordinated revolt, burning 1,800 sugar plantations. Toussaint Louverture joined at age 45, providing military leadership that transformed plantation revolts into a disciplined revolutionary army.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Strategic leadership transformed plantation revolts into a disciplined revolutionary army.
+                   <strong>Key Insight:</strong> Strategic leadership transformed plantation revolts into a disciplined revolutionary army.
                  </div>`,
-            tr: `<p><strong>Ayaklanma Neden Patladı? (Bois Caïman Töreni):</strong> 14 Ağustos 1791'de Vodou rahibi Dutty Boukman Bois Caïman'da kutsal tören düzenleyerek köleliği yok etme yemini etti.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Plantasyonların Yok Edilmesi):</strong> 100.000 köle isyan edip 1.800 şeker tarlasını yaktı. 45 yaşındaki Toussaint Louverture katılarak askeri disiplin sağladı.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> 1791 ayaklanması insanlık tarihinin en büyük ve en başarılı köle isyanıdır; tarlalardaki köleleri devrimci bir orduya dönüştürmüştür.</p>
+            tr: `<p><strong>Bois Caïman Kutsal Yemini:</strong> 14 Ağustos 1791'de Vodou rahibi Dutty Boukman Bois Caïman'da kutsal tören düzenleyerek köleliği yok etme yemini etti.</p>
+                 <p><strong>Örgütlü Köle Devrimi:</strong> 100.000 köle isyan edip 1.800 şeker tarlasını yaktı. 45 yaşındaki Toussaint Louverture katılarak askeri disiplin sağladı ve köleleri örgütlü bir devrim ordusuna dönüştürdü.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Stratejik liderlik, plantasyon isyanlarını disiplinli bir devrim ordusuna evirmiştir.
+                   <strong>Ana Fikir:</strong> Stratejik liderlik, plantasyon isyanlarını disiplinli bir devrim ordusuna evirmiştir.
                  </div>`
           },
           mapState: {
@@ -4272,17 +4198,15 @@ const learningData = {
             tr: "7. Sonthonax ve 1794 Köleliği İptal Kararı"
           },
           text: {
-            en: `<p><strong>Why Did France Abolish Slavery? (War Crisis):</strong> Facing white royalist treason and British invasion, French Commissioner Sonthonax unilaterally abolished slavery in Aug 1793 to arm former slaves for the Republic.</p>
-                 <p><strong>What Did It Cause? (Historic Decree of 16 Pluviôse):</strong> On Feb 4, 1794, the Paris Convention officially abolished slavery across all French colonies. Hearing this, Toussaint joined the French Republic as Lieutenant-General.</p>
-                 <p><strong>Core Historical Thesis:</strong> Slaves forced emancipation from below; France was compelled to abolish slavery to prevent losing the colony to Britain.</p>
+            en: `<p><strong>Arming Slaves for the Republic:</strong> Facing white royalist treason and British invasion, French Commissioner Sonthonax unilaterally abolished slavery in Aug 1793 to arm former slaves for the Republic.</p>
+                 <p><strong>Legalizing Abolition in Paris:</strong> On Feb 4, 1794, the Paris Convention officially abolished slavery across all French colonies. Hearing this, Toussaint joined the French Republic as Lieutenant-General, proving slaves forced emancipation from below.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Enslaved people won freedom on the battlefield, forcing the Paris National Convention to legalize abolition.
+                   <strong>Key Insight:</strong> Enslaved people won freedom on the battlefield, forcing the Paris National Convention to legalize abolition.
                  </div>`,
-            tr: `<p><strong>Fransa Köleliği Neden Kaldırdı? (Savaş Krizi):</strong> Beyazların ihaneti ve İngiliz işgali karşısında Fransız Komiser Sonthonax, köleleri silahlandırmak için Ağustos 1793'te köleliği tek taraflı kaldırdı.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (4 Şubat 1794 Tarihi İptal Kararı):</strong> Paris Konvansiyonu tüm sömürgelerde köleliği resmen kaldırdı. Bunu duyan Toussaint Tümgeneral olarak Fransa'ya katıldı.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Köleler özgürlüklerini aşağıdan yukarıya zorla almış; Fransa adayı İngiltere'ye kaptırmamak için özgürlüğü onaylamak zorunda kalmıştır.</p>
+            tr: `<p><strong>Köleleri Cumhuriyet İçin Silahlandırmak:</strong> Beyazların ihaneti ve İngiliz işgali karşısında Fransız Komiser Sonthonax, köleleri silahlandırmak için Ağustos 1793'te köleliği tek taraflı kaldırdı.</p>
+                 <p><strong>Paris'te İptal Kararının Kabulü:</strong> 4 Şubat 1794'te Paris Konvansiyonu tüm sömürgelerde köleliği resmen kaldırdı. Bunu duyan Toussaint Tümgeneral olarak Fransa'ya katıldı; köleler özgürlüklerini aşağıdan yukarıya zorla aldılar.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Köleler özgürlüklerini savaş alanında kazanmış, Paris meclisini kaldırma kararını onaylamaya mecbur etmiştir.
+                   <strong>Ana Fikir:</strong> Köleler özgürlüklerini savaş alanında kazanmış, Paris meclisini kaldırma kararını onaylamaya mecbur etmiştir.
                  </div>`
           },
           mapState: {
@@ -4298,17 +4222,15 @@ const learningData = {
             tr: "8. Toussaint Yönetimi ve 1801 Anayasası"
           },
           text: {
-            en: `<p><strong>Why Draft 1801 Constitution? (Autonomy):</strong> Toussaint ousted rival generals, rebuilt agriculture, and promulgated an autonomous Constitution naming himself Governor-for-Life under nominal French ties.</p>
-                 <p><strong>What Did It Cause? (De Facto Statehood):</strong> San Domingo operated as a self-governing state with its own laws and army, threatening European imperial powers.</p>
-                 <p><strong>Core Historical Thesis:</strong> Toussaint's 1801 Constitution demonstrated that former slaves could build an autonomous constitutional government.</p>
+            en: `<p><strong>Creating an Autonomous State:</strong> Toussaint ousted rival generals, rebuilt agriculture, and promulgated an autonomous Constitution naming himself Governor-for-Life under nominal French ties.</p>
+                 <p><strong>De Facto Independence:</strong> San Domingo operated as a self-governing state with its own laws and army, demonstrating that former slaves could build an autonomous constitutional government.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Toussaint's 1801 Constitution created a self-governing state, provoking Napoleon's imperial intervention.
+                   <strong>Key Insight:</strong> Toussaint's 1801 Constitution created a self-governing state, provoking Napoleon's imperial intervention.
                  </div>`,
-            tr: `<p><strong>1801 Anayasası Neden Çıkarıldı? (Özerklik):</strong> Toussaint rakiplerini tasfiye etti, tarımı canlandırdı ve kendisini Ömür Boyu Vali ilan eden özerk bir anayasa çıkardı.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Fiili Devletleşme):</strong> San Domingo kendi kanunları ve ordusu olan fiili bağımsız bir devlete dönüştü; bu durum imparatorlukları tehdit etti.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Toussaint'in 1801 Anayasası, eski kölelerin özerk ve anayasal bir devlet yönetebileceğini dünyaya kanıtlamıştır.</p>
+            tr: `<p><strong>Özerk Bir Devlet Kurmak:</strong> Toussaint rakiplerini tasfiye etti, tarımı canlandırdı ve kendisini Ömür Boyu Vali ilan eden özerk bir anayasa çıkardı.</p>
+                 <p><strong>Fiili Bağımsızlık:</strong> San Domingo kendi kanunları ve ordusu olan fiili bağımsız bir devlete dönüştü; eski kölelerin anayasal bir devlet yönetebileceğini kanıtladı.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> 1801 Anayasası fiili özerk devleti kurmuş, Napolyon'un askeri müdahalesini tetiklemiştir.
+                   <strong>Ana Fikir:</strong> 1801 Anayasası fiili özerk devleti kurmuş, Napolyon'un askeri müdahalesini tetiklemiştir.
                  </div>`
           },
           mapState: {
@@ -4324,17 +4246,15 @@ const learningData = {
             tr: "9. Napolyon'un İhaneti ve Leclerc Seferi"
           },
           text: {
-            en: `<p><strong>Why Did Napoleon Invade? (Restoring Slavery & Profit):</strong> Pushed by French merchants seeking colonial profits, Napoleon sent 20,000 troops under General Leclerc in 1801 to crush Toussaint and restore slavery.</p>
-                 <p><strong>What Did It Cause? (Toussaint's Arrest & Total War):</strong> Toussaint was betrayed and shipped to die in a cold French prison (1803). When Napoleon restored slavery in Guadeloupe (May 1802), Haitians launched total anti-colonial war.</p>
-                 <p><strong>Core Historical Thesis:</strong> Napoleonic betrayal shattered all hopes of reconciliation within the French Empire, making total independence the only path to survival.</p>
+            en: `<p><strong>Imperial Re-conquest & Slavery Restoration:</strong> Pushed by French merchants seeking colonial profits, Napoleon sent 20,000 troops under General Leclerc in 1801 to crush Toussaint and restore slavery.</p>
+                 <p><strong>Toussaint's Arrest & Total Anti-Colonial War:</strong> Toussaint was betrayed and shipped to die in a cold French prison (1803). When Napoleon restored slavery in Guadeloupe (May 1802), Haitians launched total anti-colonial war for survival.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Napoleon's reinstatement of slavery destroyed all compromise, making total independence mandatory.
+                   <strong>Key Insight:</strong> Napoleon's reinstatement of slavery destroyed all compromise, making total independence mandatory.
                  </div>`,
-            tr: `<p><strong>Napolyon Neden İşgal Etti? (Kölelik ve Kâr):</strong> Sömürge kârlarını geri isteyen tüccarların baskısıyla Napolyon, 1801'de Toussaint'i ezmek ve köleliği geri getirmek için 20.000 kişilik ordu gönderdi.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (Toussaint'in Tutuklanması ve Topyekün Savaş):</strong> Toussaint tuzağa düşürülüp Fransa'da zindanda ölüme terk edildi (1803). Napolyon Mayıs 1802'de köleliği geri getirince Haitililer topyekün bağımsızlık savaşı başlattı.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Napolyon'un ihaneti Fransa çatısı altında yaşama ümitlerini yok etmiş; tam bağımsızlığı hayatta kalmanın tek yolu yapmıştır.</p>
+            tr: `<p><strong>Sömürgeci İşgal ve Köleliği Geri Getirme:</strong> Sömürge kârlarını geri isteyen tüccarların baskısıyla Napolyon, 1801'de Toussaint'i ezmek ve köleliği geri getirmek için 20.000 kişilik ordu gönderdi.</p>
+                 <p><strong>Toussaint'in Tutuklanması ve Topyekün Savaş:</strong> Toussaint tuzağa düşürülüp Fransa'da zindanda ölüme terk edildi (1803). Napolyon Mayıs 1802'de köleliği geri getirince Haitililer hayatta kalmak için topyekün bağımsızlık savaşı başlattı.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Napolyon'un köleliği geri getirme kararı tüm uzlaşmayı yıkmış, tam bağımsızlığı tek yol kılmıştır.
+                   <strong>Ana Fikir:</strong> Napolyon'un köleliği geri getirme kararı tüm uzlaşmayı yıkmış, tam bağımsızlığı tek yol kılmıştır.
                  </div>`
           },
           mapState: {
@@ -4350,17 +4270,15 @@ const learningData = {
             tr: "10. Zafer, Dessalines ve Haiti'nin İlanı (1804)"
           },
           text: {
-            en: `<p><strong>Why Did Haitians Prevail? (Yellow Fever & Scorched Earth):</strong> General Jean-Jacques Dessalines led relentless guerrilla warfare. Yellow fever and British naval blockades decimated French forces under Rochambeau.</p>
-                 <p><strong>What Did It Cause? (First Free Black Republic):</strong> Dessalines tore the white stripe from the French flag. On Jan 1, 1804, independence was proclaimed under the indigenous Taino name <em>Haiti</em> ("Land of High Mountains").</p>
-                 <p><strong>Core Historical Thesis:</strong> The Haitian Revolution was the most radical revolution of the modern era—creating the world's first free black republic and the only successful slave revolt in human history.</p>
+            en: `<p><strong>Guerrilla Warfare & French Defeat:</strong> General Jean-Jacques Dessalines led relentless guerrilla warfare. Yellow fever epidemics and British naval blockades decimated French forces under Rochambeau.</p>
+                 <p><strong>The First Free Black Republic:</strong> Dessalines tore the white stripe from the French tricolor. On Jan 1, 1804, independence was proclaimed under the indigenous Taino name *Haiti* ("Land of High Mountains"), creating the first free black republic and the only successful slave revolt in human history.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Historical Logic:</strong> Haiti proved that enslaved people could defeat European imperial armies and establish a sovereign free republic.
+                   <strong>Key Insight:</strong> Haiti proved that enslaved people could defeat European imperial armies and establish a sovereign free republic.
                  </div>`,
-            tr: `<p><strong>Haitililer Nasıl Kazandı? (Sarıhumma ve Gerilla Savaşı):</strong> General Jean-Jacques Dessalines tavizsiz gerilla savaşı yürüttü. Sarıhumma salgını ve İngiliz donanma ablukası Fransız ordusunu imha etti.</p>
-                 <p><strong>Ne Sonuç Doğurdu? (İlk Özgür Siyah Cumhuriyet):</strong> Dessalines Fransız bayrağındaki beyaz şeridi yırtıp attı. 1 Ocak 1804'te yerli Taino adı *Haiti* ("Yüksek Dağlar Ülkesi") ile bağımsızlık ilan edildi.</p>
-                 <p><strong>Dersin Ana Fikri:</strong> Haiti Devrimi modern çağın en radikal devrimidir; dünyanın ilk özgür siyah cumhuriyetini ve tarihin tek başarılı köle devrimini kurmuştur.</p>
+            tr: `<p><strong>Gerilla Savaşı ve Fransız Mağlubiyeti:</strong> General Jean-Jacques Dessalines tavizsiz gerilla savaşı yürüttü. Sarıhumma salgını ve İngiliz donanma ablukası Fransız ordusunu imha etti.</p>
+                 <p><strong>İlk Özgür Siyah Cumhuriyet:</strong> Dessalines Fransız bayrağındaki beyaz şeridi yırtıp attı. 1 Ocak 1804'te yerli Taino adı *Haiti* ("Yüksek Dağlar Ülkesi") ile bağımsızlık ilan edildi; insanlık tarihinin tek başarılı köle devrimi gerçekleşti.</p>
                  <div class="extra-info" style="margin-top: 1rem; border-top: 1px dashed var(--theme-accent); padding-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
-                   <strong>Tarihsel Mantık:</strong> Haiti, kölelerin imparatorluk ordularını yenerek bağımsız ve özgür bir cumhuriyet kurabileceğini kanıtlamıştır.
+                   <strong>Ana Fikir:</strong> Haiti, kölelerin imparatorluk ordularını yenerek bağımsız ve özgür bir cumhuriyet kurabileceğini kanıtlamıştır.
                  </div>`
           },
           mapState: {
