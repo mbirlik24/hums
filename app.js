@@ -3034,11 +3034,15 @@ function renderQuiz() {
     const ansIdx = state.quizAnswers[i];
     if (ansIdx !== undefined && ansIdx !== null) {
       const q = quizData[i];
-      if (q && q.options[ansIdx]) {
-        if (q.options[ansIdx].correct) {
+      if (q) {
+        if (q.type === 'essay') {
           correctCount++;
-        } else {
-          wrongCount++;
+        } else if (q.options && q.options[ansIdx]) {
+          if (q.options[ansIdx].correct) {
+            correctCount++;
+          } else {
+            wrongCount++;
+          }
         }
       }
     }
@@ -3055,86 +3059,152 @@ function renderQuiz() {
   
   // Render Question
   const currentQ = quizData[qIndex];
-  const questionDiv = document.createElement('div');
-  questionDiv.className = 'quiz-question fade-in';
-  questionDiv.innerText = `${qIndex + 1}. ${currentQ.question[state.language]}`;
-  body.appendChild(questionDiv);
   
-  // Render Options Container
-  const optionsDiv = document.createElement('div');
-  optionsDiv.className = 'quiz-options';
-  
-  currentQ.options.forEach((opt, oIdx) => {
-    // Use DIV instead of LABEL to prevent nested-click event anomalies in browsers
-    const optDiv = document.createElement('div');
-    optDiv.className = 'quiz-option fade-in';
-    optDiv.id = `opt-label-${oIdx}`;
-    
-    // Highlight options if already answered
-    if (state.quizSubmitted) {
-      const selectedIdx = state.quizAnswers[qIndex];
-      if (opt.correct) {
-        optDiv.classList.add('correct');
-      } else if (oIdx === selectedIdx) {
-        optDiv.classList.add('incorrect');
-      }
+  if (currentQ.type === 'essay') {
+    const essayBadge = document.createElement('div');
+    essayBadge.style.cssText = 'display:inline-block; padding: 0.25rem 0.6rem; border-radius: 4px; background: rgba(139, 92, 246, 0.15); color: #8b5cf6; font-size: 0.75rem; font-weight: 700; margin-bottom: 0.5rem;';
+    essayBadge.innerText = state.language === 'tr' ? '✍️ Açık Uçlu Analitik Essay Sorusu' : '✍️ Open-Ended Analytical Essay Question';
+    body.appendChild(essayBadge);
+
+    const questionDiv = document.createElement('div');
+    questionDiv.className = 'quiz-question fade-in';
+    questionDiv.innerText = `${qIndex + 1}. ${currentQ.question[state.language]}`;
+    body.appendChild(questionDiv);
+
+    const hintDiv = document.createElement('p');
+    hintDiv.style.cssText = 'font-size: 0.75rem; color: var(--text-secondary); margin-bottom: 0.75rem; line-height: 1.4;';
+    hintDiv.innerText = state.language === 'tr' 
+      ? 'Bu açık uçlu soru otomatik doğru/yanlış olarak puanlanmaz. Tarihsel mantık, amaç ve özgün düşüncelerinizi sınar. Yanıtınızı aşağıya yazıp model tarihsel analizi inceleyebilirsiniz.'
+      : 'This open-ended question is not auto-graded as right/wrong. It evaluates historical logic, purpose, and critical reflection. Type your answer below and review the model analysis.';
+    body.appendChild(hintDiv);
+
+    const textarea = document.createElement('textarea');
+    textarea.className = 'quiz-essay-textarea fade-in';
+    textarea.style.cssText = 'width: 100%; min-height: 120px; padding: 0.75rem; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-card); color: var(--text-primary); font-family: inherit; font-size: 0.85rem; line-height: 1.45; resize: vertical; margin-bottom: 0.75rem;';
+    textarea.placeholder = state.language === 'tr' ? 'Tarihsel analizinizi ve düşüncelerinizi buraya detaylıca yazınız...' : 'Type your detailed historical analysis and thoughts here...';
+    textarea.disabled = state.quizSubmitted;
+
+    if (state.quizAnswers[qIndex] && typeof state.quizAnswers[qIndex] === 'string') {
+      textarea.value = state.quizAnswers[qIndex];
     }
-    
-    // Hidden radio input
-    const radio = document.createElement('input');
-    radio.type = 'radio';
-    radio.name = 'quiz-choice';
-    radio.value = oIdx;
-    radio.disabled = state.quizSubmitted;
-    radio.style.display = 'none';
-    if (state.quizAnswers[qIndex] === oIdx) {
-      radio.checked = true;
-    }
-    
-    const indicator = document.createElement('div');
-    indicator.className = 'quiz-option-indicator';
-    
-    // Draw the dot/check mark style
-    if (state.quizSubmitted) {
-      indicator.style.borderColor = opt.correct ? 'var(--success)' : (oIdx === state.quizAnswers[qIndex] ? 'var(--error)' : 'var(--text-muted)');
-    } else if (radio.checked) {
-      indicator.style.borderColor = 'var(--theme-accent)';
-    }
-    
-    const textSpan = document.createElement('span');
-    textSpan.innerText = opt.text[state.language];
-    
-    optDiv.appendChild(radio);
-    optDiv.appendChild(indicator);
-    optDiv.appendChild(textSpan);
-    
-    // Answer immediately on option click
-    optDiv.onclick = () => {
-      if (!state.quizSubmitted) {
-        radio.checked = true;
-        selectAndSubmitAnswer(oIdx);
-      }
-    };
-    
-    optionsDiv.appendChild(optDiv);
-  });
-  body.appendChild(optionsDiv);
-  
-  // Render Explanation if submitted
-  if (state.quizSubmitted) {
-    const selectedIdx = state.quizAnswers[qIndex];
-    if (selectedIdx !== undefined && selectedIdx !== null && currentQ.options[selectedIdx]) {
-      const isCorrect = currentQ.options[selectedIdx].correct;
-      
+
+    body.appendChild(textarea);
+
+    if (!state.quizSubmitted) {
+      const submitBtn = document.createElement('button');
+      submitBtn.className = 'quiz-submit-btn fade-in';
+      submitBtn.style.cssText = 'padding: 0.5rem 1.2rem; font-size: 0.8rem; border-radius: 6px; background: var(--theme-accent); color: white; border: none; cursor: pointer; margin-top: 0.35rem;';
+      submitBtn.innerText = state.language === 'tr' ? 'Yanıtı Kaydet & Model Analizi Göster' : 'Save Answer & View Model Analysis';
+      submitBtn.onclick = () => {
+        const val = textarea.value.trim();
+        state.quizAnswers[qIndex] = val || (state.language === 'tr' ? '(Düşünce kaydı boş bırakıldı)' : '(No response typed)');
+        state.quizSubmitted = true;
+        renderQuiz();
+      };
+      body.appendChild(submitBtn);
+    } else {
+      const userAnsBox = document.createElement('div');
+      userAnsBox.style.cssText = 'margin: 0.75rem 0; padding: 0.75rem; border-left: 3px solid var(--theme-accent); background: rgba(255,255,255,0.03); border-radius: 0 6px 6px 0; font-size: 0.8rem;';
+      userAnsBox.innerHTML = `
+        <strong style="color: var(--theme-accent);">${state.language === 'tr' ? 'Sizin Yanıtınız / Düşünceniz:' : 'Your Response / Thought:'}</strong>
+        <p style="margin-top:0.35rem; color: var(--text-primary); white-space: pre-wrap;">${state.quizAnswers[qIndex]}</p>
+      `;
+      body.appendChild(userAnsBox);
+
       const explanationBox = document.createElement('div');
-      explanationBox.className = 'quiz-explanation-box';
+      explanationBox.className = 'quiz-explanation-box fade-in';
+      explanationBox.style.cssText = 'border-left: 3px solid #8b5cf6; background: rgba(139, 92, 246, 0.08); padding: 0.85rem; border-radius: 6px; margin-top: 0.75rem;';
       explanationBox.innerHTML = `
-        <div class="quiz-explanation-title" style="color: ${isCorrect ? 'var(--success)' : 'var(--error)'}">
-          ${isCorrect ? '✓ CORRECT / DOĞRU' : '✗ INCORRECT / YANLIŞ'} - ${trans.explanationTitle}
+        <div class="quiz-explanation-title" style="color: #8b5cf6; font-weight: 700; margin-bottom: 0.4rem; font-size: 0.85rem;">
+          📖 ${state.language === 'tr' ? 'Örnek Model Analiz & Tarihsel Değerlendirme' : 'Sample Model Analysis & Historical Rubric'}
         </div>
-        <p>${currentQ.explanation[state.language]}</p>
+        <p style="white-space: pre-line; font-size: 0.8rem; line-height: 1.45; color: var(--text-primary);">${currentQ.explanation[state.language]}</p>
       `;
       body.appendChild(explanationBox);
+    }
+  } else {
+    // Render Question
+    const questionDiv = document.createElement('div');
+    questionDiv.className = 'quiz-question fade-in';
+    questionDiv.innerText = `${qIndex + 1}. ${currentQ.question[state.language]}`;
+    body.appendChild(questionDiv);
+    
+    // Render Options Container
+    const optionsDiv = document.createElement('div');
+    optionsDiv.className = 'quiz-options';
+    
+    currentQ.options.forEach((opt, oIdx) => {
+      // Use DIV instead of LABEL to prevent nested-click event anomalies in browsers
+      const optDiv = document.createElement('div');
+      optDiv.className = 'quiz-option fade-in';
+      optDiv.id = `opt-label-${oIdx}`;
+      
+      // Highlight options if already answered
+      if (state.quizSubmitted) {
+        const selectedIdx = state.quizAnswers[qIndex];
+        if (opt.correct) {
+          optDiv.classList.add('correct');
+        } else if (oIdx === selectedIdx) {
+          optDiv.classList.add('incorrect');
+        }
+      }
+      
+      // Hidden radio input
+      const radio = document.createElement('input');
+      radio.type = 'radio';
+      radio.name = 'quiz-choice';
+      radio.value = oIdx;
+      radio.disabled = state.quizSubmitted;
+      radio.style.display = 'none';
+      if (state.quizAnswers[qIndex] === oIdx) {
+        radio.checked = true;
+      }
+      
+      const indicator = document.createElement('div');
+      indicator.className = 'quiz-option-indicator';
+      
+      // Draw the dot/check mark style
+      if (state.quizSubmitted) {
+        indicator.style.borderColor = opt.correct ? 'var(--success)' : (oIdx === state.quizAnswers[qIndex] ? 'var(--error)' : 'var(--text-muted)');
+      } else if (radio.checked) {
+        indicator.style.borderColor = 'var(--theme-accent)';
+      }
+      
+      const textSpan = document.createElement('span');
+      textSpan.innerText = opt.text[state.language];
+      
+      optDiv.appendChild(radio);
+      optDiv.appendChild(indicator);
+      optDiv.appendChild(textSpan);
+      
+      // Answer immediately on option click
+      optDiv.onclick = () => {
+        if (!state.quizSubmitted) {
+          radio.checked = true;
+          selectAndSubmitAnswer(oIdx);
+        }
+      };
+      
+      optionsDiv.appendChild(optDiv);
+    });
+    body.appendChild(optionsDiv);
+    
+    // Render Explanation if submitted
+    if (state.quizSubmitted) {
+      const selectedIdx = state.quizAnswers[qIndex];
+      if (selectedIdx !== undefined && selectedIdx !== null && currentQ.options[selectedIdx]) {
+        const isCorrect = currentQ.options[selectedIdx].correct;
+        
+        const explanationBox = document.createElement('div');
+        explanationBox.className = 'quiz-explanation-box';
+        explanationBox.innerHTML = `
+          <div class="quiz-explanation-title" style="color: ${isCorrect ? 'var(--success)' : 'var(--error)'}">
+            ${isCorrect ? '✓ CORRECT / DOĞRU' : '✗ INCORRECT / YANLIŞ'} - ${trans.explanationTitle}
+          </div>
+          <p>${currentQ.explanation[state.language]}</p>
+        `;
+        body.appendChild(explanationBox);
+      }
     }
   }
   
@@ -3160,7 +3230,9 @@ function renderQuiz() {
     };
   } else {
     btnNext.disabled = true;
-    btnNext.innerText = state.language === 'tr' ? 'Bir Şık Seçin' : 'Select an Option';
+    btnNext.innerText = currentQ.type === 'essay'
+      ? (state.language === 'tr' ? 'Yanıtı Kaydedin' : 'Save Your Answer')
+      : (state.language === 'tr' ? 'Bir Şık Seçin' : 'Select an Option');
     btnNext.onclick = null;
   }
 

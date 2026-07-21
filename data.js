@@ -507,21 +507,16 @@ const learningData = {
           }
         },
         {
-          question: {
-            en: "Which treaty signed in 1494 divided the newly discovered lands outside Europe between Spain and Portugal?",
-            tr: "1494 yılında imzalanan ve Avrupa dışındaki yeni keşfedilen toprakları İspanya ile Portekiz arasında bölen antlaşma hangisidir?"
-          },
-          options: [
-            { text: { en: "Treaty of Tordesillas", tr: "Tordesillas Antlaşması" }, correct: true },
-            { text: { en: "Treaty of Zaragoza", tr: "Zaragoza Antlaşması" }, correct: true },
-            { text: { en: "Treaty of Utrecht", tr: "Utrecht Antlaşması" }, correct: false },
-            { text: { en: "Treaty of Westphalia", tr: "Vestfalya Antlaşması" }, correct: false }
-          ],
-          explanation: {
-            en: "The Treaty of Tordesillas divided the hemispheres, establishing the line of demarcation.",
-            tr: "Tordesillas Antlaşması, yarımküreleri bölerek İspanyol ve Portekiz etki alanlarını belirlemiştir."
-          }
+        "type": "essay",
+        "question": {
+                "en": "Analytical Reflection: Evaluate how the ecological convergence of the Columbian Exchange transformed European economic power relative to Asian empires. What structural factors allowed Western Europe to leverage American resources into global hegemony?",
+                "tr": "Analitik Düşünce & Essay: Kolomb Değişimi'nin yarattığı ekolojik ve biyolojik birleşmenin, Asya imparatorlukları karşısında Avrupa'nın ekonomik gücünü nasıl dönüştürdüğünü değerlendiriniz. Avrupalıların Amerika kaynaklarını küresel bir hegemonyaya dönüştürmesini sağlayan yapısal faktörler nelerdir?"
         },
+        "explanation": {
+                "en": "Model Analysis & Key Themes:\n1. Sovereign Wealth Injection: Silver from Potosí and Zacatecas injected liquidity into European markets, facilitating trade with Asia.\n2. Primary Ecological Assets: American land bonanza provided high-value cash crops (sugar, tobacco, cotton, coffee), creating massive surplus value.\n3. The Great Divergence: As Pomeranz and Crosby note, access to American land and resources freed European land for industrialization, enabling Europe to surpass Asian economic powerhouses like Qing China and Mughal India.",
+                "tr": "Model Analiz & Temel Temalar:\n1. Sermaye ve Likidite Enjeksiyonu: Potosí ve Zacatecas gümüşü Avrupa ekonomilerine nakit akışı sağlayarak Doğu ticareti için likidite yaratmıştır.\n2. Ekolojik Alan Kazanımı: Amerika'nın bakir toprakları şeker, tütün, pamuk ve kahve üretimiyle devasa bir artı-değer oluşturmuştur.\n3. Büyük Ayrışma (Great Divergence): Pomeranz ve Crosby'ye göre Amerika'nın ekolojik kaynakları olmasaydı Avrupa, Çin ve Hindistan gibi üretim devlerinin önüne geçemezdi."
+        }
+},
         {
           question: {
             en: "What was the name of the Peruvian mountain that became the silver mining capital of the Spanish Empire?",
@@ -827,21 +822,16 @@ const learningData = {
           }
         },
         {
-          question: {
-            en: "Which animal introduced by Europeans dramatically altered the hunting practices of Great Plains Native Americans?",
-            tr: "Avrupalılar tarafından getirilen hangi hayvan, Amerika Büyük Ovalarındaki yerlilerin avcılık pratiklerini kökten değiştirmiştir?"
-          },
-          options: [
-            { text: { en: "Horse", tr: "At" }, correct: true },
-            { text: { en: "Cattle", tr: "Sığır" }, correct: false },
-            { text: { en: "Sheep", tr: "Koyun" }, correct: false },
-            { text: { en: "Pig", tr: "Domuz" }, correct: false }
-          ],
-          explanation: {
-            en: "The horse escaped and feral herds spread, allowing Plains tribes to hunt bison far more efficiently.",
-            tr: "Kaçan atların ovalarda yayılması, yerli kabilelerin bizon avını çok daha etkili yapmasını sağladı."
-          }
+        "type": "essay",
+        "question": {
+                "en": "Analytical Reflection: Analyze the relationship between the microbiological and demographic collapse of Native American populations and the biological asymmetry between the Old and New Worlds. How did this demographic crash impact European labor needs and the transatlantic slave trade?",
+                "tr": "Analitik Düşünce & Essay: Amerika'da yerli nüfusun mikrobiyolojik ve demografik yıkımının, Eski Dünya ile Yeni Dünya arasındaki biyolojik asimetri ile ilişkisini analiz ediniz. Bu demografik çöküş, Avrupalıların işgücü ihtiyacını ve transatlantik köle ticaretini nasıl etkilemiştir?"
         },
+        "explanation": {
+                "en": "Model Analysis & Key Themes:\n1. Biological Asymmetry: Eurasian populations developed immunity due to centuries of living with domesticated herd animals; Native Americans lacked exposure.\n2. Demographic Crash: Old World pathogens (smallpox, measles) wiped out 80-95% of the indigenous population within a century.\n3. Structural Shift to Slave Trade: The collapse of Native labor forced colonizers to seek an alternative workforce, directly accelerating the transatlantic African slave trade.",
+                "tr": "Model Analiz & Temel Temalar:\n1. Biyolojik Asimetri: Avrasya toplumları evcil hayvanlarla iç içe yaşadığı için bağışıklık kazanmıştı; Amerika yerlilerinde bu biyolojik kalkan yoktu.\n2. Demografik Kırılma: Suçiçeği ve kızamık gibi mikroplar yerli nüfusun %80-95'ini yok etti.\n3. Köle Ticaretine Yönelim: Yerli işgücünün çöküşü, sömürgecileri sürekli ve bağışıklı işgücü arayışıyla transatlantik köle ticaretine yöneltmiştir."
+        }
+},
         {
           question: {
             en: "Which country established the first global maritime trade network connecting silver to Asian luxury goods?",
@@ -1638,21 +1628,16 @@ const learningData = {
           }
         },
         {
-          question: {
-            en: "Which Maroon kingdom signed a official peace treaty recognizing its sovereignty with the Spanish Crown in 1599?",
-            tr: "1599 yılında İspanyol Krallığı ile resmi bir barış antlaşması imzalayarak bağımsızlığını tescil ettiren Maron Krallığı hangisidir?"
-          },
-          options: [
-            { text: { en: "Kingdom of Esmeraldas (Ecuador)", tr: "Esmeraldas Maron Krallığı (Ekvador/Kolombiya)" }, correct: true },
-            { text: { en: "Palmares", tr: "Palmares" }, correct: false },
-            { text: { en: "Blue Mountain Maroons", tr: "Mavi Dağ Maronları" }, correct: false },
-            { text: { en: "Suriname Maroons", tr: "Surinam Maronları" }, correct: false }
-          ],
-          explanation: {
-            en: "The Maroon leaders of Esmeraldas secured legal autonomy and sovereignty from Spain in 1599.",
-            tr: "Esmeraldas Maron liderleri, 1599 antlaşması ile İspanyol Krallığı'ndan yasal özerklik ve egemenlik almışlardır."
-          }
+        "type": "essay",
+        "question": {
+                "en": "Analytical Reflection: Discuss the historical causes behind the shift in social hierarchy in 17th-century Virginia from class/property to racial hereditary lifetime slavery following Bacon's Rebellion (1676). What was the primary purpose of planter elites in executing this legal transformation?",
+                "tr": "Analitik Düşünce & Essay: 17. yüzyıl Virginia'sında Bacon İsyanı (1676) sonrasında toplumsal hiyerarşinin mülkiyet ve sınıf temelinden ırksal ve irsi kölelik temeline kaymasını tartışınız. Elitlerin bu hukuki ve toplumsal dönüşümü gerçekleştirmesindeki temel amaç neydi?"
         },
+        "explanation": {
+                "en": "Model Analysis & Key Themes:\n1. Class Solidarity Threat: Bacon's Rebellion united landless white indentured servants and black workers against planter elites.\n2. Strategic Division: Terrified elites used race to destroy working-class solidarity by granting social privileges to poor whites.\n3. Codification of Racial Slavery: Virginia Slave Codes (1691-1708) permanently tied slavery to African race and maternal line, making it a hereditary condition.",
+                "tr": "Model Analiz & Temel Temalar:\n1. Sınıf Dayanışması Tehdidi: Bacon İsyanı topraksız beyaz sözleşmeli işçiler ile siyahları elitlere karşı birleştirmişti.\n2. Stratejik Bölünme: Dehşete düşen elitler, yoksul beyazlara irsi üstünlük vererek sınıf dayanışmasını ırksal hiyerarşiyle kırdılar.\n3. Irksal Yasalaşma: Virginia Köle Yasaları (1691-1708) köleliği Afrikalı ırkına ve anne soyuna bağlayarak kalıcı hale getirdi."
+        }
+},
         {
           question: {
             en: "Who was the Angolan-born enslaved man in early Virginia who gained freedom, acquired land, and owned servants of his own?",
@@ -1958,21 +1943,16 @@ const learningData = {
           }
         },
         {
-          question: {
-            en: "Which African kingdom's military force was famously augmented by elite female warriors (the Dahomey Amazons)?",
-            tr: "Hangi Afrika krallığının askeri gücü, kadın savaşçılardan oluşan elit birliklerle (Dahomey Amazonları) takviye ediliyordu?"
-          },
-          options: [
-            { text: { en: "Kingdom of Dahomey", tr: "Dahomey Krallığı" }, correct: true },
-            { text: { en: "Kingdom of Ndongo", tr: "Ndongo Krallığı" }, correct: false },
-            { text: { en: "Ashanti Empire", tr: "Aşanti İmparatorluğu" }, correct: false },
-            { text: { en: "Oyo Empire", tr: "Oyo İmparatorluğu" }, correct: false }
-          ],
-          explanation: {
-            en: "Dahomey's female regiments, or 'Mino', were highly disciplined and feared by rival African states.",
-            tr: "Dahomey'in kadın savaşçı birlikleri (Mino), son derece disiplinliydi ve komşu devletlerce korkuluyordu."
-          }
+        "type": "essay",
+        "question": {
+                "en": "Analytical Reflection: Evaluate the 'Gun-Slave Cycle' theory and the commercial relationship between African sovereign states and European merchants. What were the economic and political dynamics driving African kingdoms' participation in the slave trade?",
+                "tr": "Analitik Düşünce & Essay: Transatlantik köle ticaretinde 'Silah-Köle Döngüsü' teorisini ve Afrika devletleri ile Avrupalı tüccarlar arasındaki ticari ilişkiyi değerlendiriniz. Afrikalı krallıkların bu ticarete katılımındaki ekonomik ve siyasi dinamikler nelerdi?"
         },
+        "explanation": {
+                "en": "Model Analysis & Key Themes:\n1. Commercial Parity: Early trade was based on voluntary commercial agreements; Europeans lacked military capacity to conquer inland Africa.\n2. Gun-Slave Cycle: African states needed European firearms for self-defense against rivals, forcing them to capture prisoners of war to buy guns.\n3. Economic vs Political Motivation: Debate continues between historians (Thornton) on whether wars were waged for slave capture or state expansion.",
+                "tr": "Model Analiz & Temel Temalar:\n1. Ticari Eşitlik: Erken ticaret gönüllü anlaşmalara dayanıyordu; Avrupalıların iç bölgeleri işgal edecek askeri gücü yoktu.\n2. Silah-Köle Döngüsü: Afrika devletleri kendilerini korumak için ateşli silahlara muhtaçtı, silah almak için de savaş esirlerini köle olarak satmaya zorlandılar.\n3. Siyasi ve Ekonomik Dinamikler: Savaşların köle avı için mi (ekonomik) yoksa devlet genişlemesi için mi (siyasi) yapıldığı halen tartışılmaktadır."
+        }
+},
         {
           question: {
             en: "Approximately how many voyages are registered in the Transatlantic Slave Trade Database?",
@@ -2698,21 +2678,16 @@ const learningData = {
           }
         },
         {
-          question: {
-            en: "Which French naval commander blockaded the Chesapeake Bay, cutting off Cornwallis's escape at Yorktown in 1781?",
-            tr: "1781'de Yorktown'da İngiliz general Cornwallis'in denizden kaçış yolunu kapatarak ablukaya alan Fransız Amiral kimdir?"
-          },
-          options: [
-            { text: { en: "Admiral de Grasse", tr: "Amiral de Grasse" }, correct: true },
-            { text: { en: "Marquis de Lafayette", tr: "Marquis de Lafayette" }, correct: false },
-            { text: { en: "Comte de Rochambeau", tr: "Comte de Rochambeau" }, correct: false },
-            { text: { en: "Admiral Suffren", tr: "Amiral Suffren" }, correct: false }
-          ],
-          explanation: {
-            en: "Admiral de Grasse's fleet defeated British rescue ships, securing the joint victory at Yorktown.",
-            tr: "Amiral de Grasse, İngiliz destek filosunu yenerek Yorktown'da kuşatılan ordunun teslim olmasını sağladı."
-          }
+        "type": "essay",
+        "question": {
+                "en": "Analytical Reflection: Analyze the concept of British liberty and property rights underlying the slogan 'No taxation without representation' in the American colonies. Why was the colonists' tax opposition not merely a financial reaction, but a constitutional and philosophical resistance?",
+                "tr": "Analitik Düşünce & Essay: Amerikan kolonilerindeki 'Temsilsiz Vergilendirme Olmaz' (No taxation without representation) sloganının arkasındaki İngiliz özgürlük anlayışını ve mülkiyet ilişkisini çözümleyiniz. Kolonistlerin vergi itirazı neden sıradan bir mali tepki değil, anayasal ve felsefi bir direnişti?"
         },
+        "explanation": {
+                "en": "Model Analysis & Key Themes:\n1. Heritage of 1688: Colonists believed in English constitutional rights established during the Glorious Revolution.\n2. Property as Freedom: In Lockean political theory, personal freedom required security of property; unconsented taxation was viewed as confiscation of property.\n3. Constitutional Crisis: Taxing without elected representation was seen as reducing free English subjects to propertyless dependence.",
+                "tr": "Model Analiz & Temel Temalar:\n1. 1688 Mirası: Kolonistler Şanlı Devrim ile kurulan İngiliz anayasal haklarına sımsıkı bağlıydı.\n2. Mülkiyet ve Özgürlük: Locke'un düşüncesinde özgürlük mülkiyet güvencesine bağlıdır; rızasız vergi almak mülke el koymaktır.\n3. Anayasal Kriz: Temsilcilere dayanmayan vergi koymak, özgür insanları mülksüz köleler seviyesine indirmek olarak görülmüştür."
+        }
+},
         {
           question: {
             en: "Which treaty signed in 1783 formally recognized the independence of the United States?",
@@ -3018,21 +2993,16 @@ const learningData = {
           }
         },
         {
-          question: {
-            en: "Which battle fought in 1775 resulted in a pyrrhic British victory, proving the militia could fight regulars?",
-            tr: "1775'te yapılan ve İngilizlerin ağır kayıplarla kazandığı (pirro zaferi), milislerin savaşabileceğini gösteren çatışma hangisidir?"
-          },
-          options: [
-            { text: { en: "Battle of Bunker Hill", tr: "Bunker Hill Savaşı" }, correct: true },
-            { text: { en: "Battle of Long Island", tr: "Long Island Savaşı" }, correct: false },
-            { text: { en: "Battle of Princeton", tr: "Princeton Savaşı" }, correct: false },
-            { text: { en: "Battle of Brandywine", tr: "Brandywine Savaşı" }, correct: false }
-          ],
-          explanation: {
-            en: "Bunker Hill proved the raw American militia could inflict severe casualties on professional British infantry.",
-            tr: "Bunker Hill, eğitimsiz Amerikan milislerinin dahi profesyonel ordulara ağır kayıplar verdirebileceğini gösterdi."
-          }
+        "type": "essay",
+        "question": {
+                "en": "Analytical Reflection: Discuss the political purposes of the Founding Fathers and the long-term consequences for US national unity regarding the Great Compromise (Connecticut Compromise) and the temporary shelving of the slavery question during the 1787 Constitutional Convention.",
+                "tr": "Analitik Düşünce & Essay: 1787 ABD Anayasası hazırlanırken kabul edilen Büyük Uzlaşı (Connecticut Compromise) ve kölelik meselesinin ertelenmesinin kurucu babaların siyasi amaçları ve ABD'nin gelecekteki iç birliği açısından doğurduğu sonuçları tartışınız."
         },
+        "explanation": {
+                "en": "Model Analysis & Key Themes:\n1. Representation Balance: The Great Compromise balanced large vs small states (House by population, Senate by equal vote).\n2. Pragmatic Union: Shelving slavery avoided immediate Southern secession during constitution drafting.\n3. Structural Fuse: Failing to address slavery in 1787 laid the structural fuse that exploded into the American Civil War in 1861.",
+                "tr": "Model Analiz & Temel Temalar:\n1. Temsil Dengesi: Büyük Uzlaşı büyük ve küçük eyaletleri dengelemiştir (Temsilciler Meclisi nüfusa, Senato eşit oya dayalı).\n2. Pragmatik Birlik: Köleliğin ertelenmesi Güney'in anayasadan çekilmesini önlemiştir.\n3. Tarihsel Saatli Bomba: 1787'de köleliğin çözülmemesi, 1861 Amerikan İç Savaşı'nın patlamasına zemin hazırlamıştır."
+        }
+},
         {
           question: {
             en: "What percentage of the colonial population is estimated to have remained loyal to Britain (Loyalists/Tories)?",
@@ -3783,21 +3753,16 @@ const learningData = {
           }
         },
         {
-          question: {
-            en: "Which act of the National Assembly nationalized all lands of the Catholic Church in France in 1789?",
-            tr: "Ulusal Meclis'in 1789'da kabul ettiği ve Fransa'daki tüm Katolik Kilisesi topraklarını kamulaştıran karar hangisidir?"
-          },
-          options: [
-            { text: { en: "The Civil Constitution of the Clergy", tr: "Rahiplerin Medeni Anayasası (Civil Constitution of the Clergy)" }, correct: true },
-            { text: { en: "The Concordat", tr: "Konkordat" }, correct: false },
-            { text: { en: "The Decree on Feudalism", tr: "Feodalizm Kararnamesi" }, correct: false },
-            { text: { en: "The Declaration of Rights", tr: "Haklar Bildirgesi" }, correct: false }
-          ],
-          explanation: {
-            en: "The Civil Constitution of the Clergy nationalized church assets and made priests paid employees of the state.",
-            tr: "Medeni Anayasa ile kilise malları kamulaştırılmış, rahipler devlete bağlılık yemini etmek zorunda bırakılmıştır."
-          }
+        "type": "essay",
+        "question": {
+                "en": "Analytical Reflection: Evaluate the conflict between the rising economic power of the French merchant bourgeoisie (fueled by maritime colonial trade) and the political blockade of the Ancien Régime based on noble privilege. What role did Enlightenment ideas play in this confrontation?",
+                "tr": "Analitik Düşünce & Essay: 18. yüzyıl Fransız toplumunda burjuvazinin deniz sömürge ticaretiyle artan ekonomik gücü ile Ancien Régime'in soyluluk ayrıcalıklarına dayalı siyasi tıkanıklığı arasındaki çatışmayı değerlendiriniz. Aydınlanma fikirleri bu çatışmada nasıl bir rol oynamıştır?"
         },
+        "explanation": {
+                "en": "Model Analysis & Key Themes:\n1. Colonial Wealth: Merchant bourgeoisie in Bordeaux, Nantes, and Marseille grew wealthy from sugar and slave trade.\n2. Legal Blockade: Despite wealth, the bourgeoisie were excluded from high state offices reserved for titled nobility.\n3. Enlightenment Weapon: Enlightenment principles of reason and equality provided the intellectual framework to challenge noble privilege.",
+                "tr": "Model Analiz & Temel Temalar:\n1. Sömürge Serveti: Bordeaux, Nantes ve Marsilya tüccarları şeker ve köle ticaretiyle devasa servet edindi.\n2. Hukuki Engelleme: Zenginliğe rağmen devlet yetkileri soyluların ayrıcalığı olarak kilitli kaldı.\n3. Aydınlanma Silahı: Aydınlanma'nın akıl ve kanun önünde eşitlik fikirleri, soyluluk ayrıcalıklarını yıkan ideolojik meşruiyeti sağladı."
+        }
+},
         {
           question: {
             en: "Who wrote the highly influential pamphlet 'What is the Third Estate?' in January 1789?",
@@ -4103,21 +4068,16 @@ const learningData = {
           }
         },
         {
-          question: {
-            en: "What was the main purpose of the Brunswick Manifesto issued by Austro-Prussian forces in July 1792?",
-            tr: "Temmuz 1792'de Prusya-Avusturya ordusunun yayınladığı Brunswick Manifestosu'nun temel amacı neydi?"
-          },
-          options: [
-            { text: { en: "To threaten Paris with total destruction if the French royal family was harmed.", tr: "Kraliyet ailesine zarar verilmesi halinde Paris'i tamamen yerle bir etmekle tehdit etmek." }, correct: true },
-            { text: { en: "To declare war on Great Britain.", tr: "İngiltere'ye savaş ilan etmek." }, correct: false },
-            { text: { en: "To support the Jacobin republicans.", tr: "Jakoben cumhuriyetçileri desteklemek." }, correct: false },
-            { text: { en: "To annex Alsace-Lorraine.", tr: "Alsas-Loren bölgesini ilhak etmek." }, correct: false }
-          ],
-          explanation: {
-            en: "The manifesto intended to terrify Parisians, but backfired, driving them to storm the palace and depose the king.",
-            tr: "Manifesto halkı korkutmayı amaçlıyordu; ancak ters tepti ve halkın sarayı basıp krallığı yıkmasına yol açtı."
-          }
+        "type": "essay",
+        "question": {
+                "en": "Analytical Reflection: Analyze the historical purposes and contradictions between the universal equality proclaimed in the 1789 Declaration of the Rights of Man and the Citizen and the 'active/passive citizen' distinction codified in the French Constitution of 1791.",
+                "tr": "Analitik Düşünce & Essay: Fransız Devrimi sırasında 1789 İnsan ve Yurttaş Hakları Bildirisi'nin ilan ettiği evrensel eşitlik ilkesi ile 1791 Anayasası'nda getirilen 'aktif/pasif yurttaş' ayrımı arasındaki çelişkiyi tarihsel amaçları açısından analiz ediniz."
         },
+        "explanation": {
+                "en": "Model Analysis & Key Themes:\n1. Universal Ideals: The 1789 Declaration asserted natural rights to liberty and equality for all men.\n2. Bourgeois Order: The 1791 Constitution restricted voting to property-owning 'active citizens' to protect bourgeois stability.\n3. Social Exclusion: Women, working classes, and non-property owners were excluded, highlighting the gap between abstract human rights and class governance.",
+                "tr": "Model Analiz & Temel Temalar:\n1. Evrensel İdeal: 1789 Bildirisi tüm insanların özgür ve eşit doğduğunu ilan etti.\n2. Burjuva Düzeni: 1791 Anayasası oy hakkını sadece mülk sahibi 'aktif yurttaşlara' vererek düzeni korumayı amaçladı.\n3. Toplumsal Dışlanma: Kadınlar ve yoksul işçiler oy hakkından mahrum bırakılarak soyut insan hakları ile burjuva yönetimi arasındaki uçurum sergilendi."
+        }
+},
         {
           question: {
             en: "Which event on August 10, 1792, marked the effective fall of the French monarchy?",
@@ -4868,21 +4828,16 @@ const learningData = {
           }
         },
         {
-          question: {
-            en: "Which disease decimated Napoleon's veteran troops, killing General Leclerc himself in November 1802?",
-            tr: "Napolyon'un adaya gönderdiği orduyu kırıp geçiren ve Kasım 1802'de General Leclerc'i de öldüren salgın hastalık hangisidir?"
-          },
-          options: [
-            { text: { en: "Yellow Fever", tr: "Sarı Humma (Yellow Fever)" }, correct: true },
-            { text: { en: "Malaria", tr: "Sıtma" }, correct: false },
-            { text: { en: "Smallpox", tr: "Çiçek Hastalığı" }, correct: false },
-            { text: { en: "Dysentery", tr: "Dizanteri" }, correct: false }
-          ],
-          explanation: {
-            en: "Yellow fever wiped out over 80% of the French soldiers, who had no immunity to tropical pathogens.",
-            tr: "Sarı humma salgını, tropikal hastalıklara bağışıklığı olmayan Fransız ordusunun %80'ini yok etmiştir."
-          }
+        "type": "essay",
+        "question": {
+                "en": "Analytical Reflection: Discuss the fundamental contradictions that emerged when the French Revolution's universal 'Rights of Man' principles were exported to the colonial slave society of San Domingo (Haiti). How did the French bourgeoisie's property rights clash with the slaves' demand for human emancipation?",
+                "tr": "Analitik Düşünce & Essay: Fransız Devrimi'nin evrensel 'İnsan Hakları' ilkeleri San Domingo (Haiti) köle toplumuna ihraç edildiğinde ortaya çıkan temel çelişkileri tartışınız. Fransız burjuvazisinin mülkiyet hakları ile kölelerin insani özgürlük talebi nasıl çatışmıştır?"
         },
+        "explanation": {
+                "en": "Model Analysis & Key Themes:\n1. Property vs Liberty: Article 17 protected property rights, but slaves were legally defined as property, creating a direct clash with human liberty.\n2. Colonial Revenues: French ports relied on slave-produced sugar profits to fund the revolutionary state.\n3. Inevitable Explosion: The refusal to extend full rights to slaves and free mulattoes ignited the 1791 Haitian revolution under Boukman and Toussaint.",
+                "tr": "Model Analiz & Temel Temalar:\n1. Mülkiyet ve Özgürlük: Madde 17 mülkiyet hakkını korurken köleler kanunen mülk sayıldığı için insani özgürlük talebiyle çatıştı.\n2. Sömürge Gelirleri: Fransız limanları devleti finanse etmek için köle şekerine muhtaçtı.\n3. Kaçınılmaz Patlama: Kölelere ve melezlere tam hak verilmemesi, 1791 büyük köle ayaklanmasını ateşledi."
+        }
+},
         {
           question: {
             en: "Who succeeded Leclerc as commander of the French army, becoming notorious for extreme atrocities and torture?",
@@ -5188,21 +5143,16 @@ const learningData = {
           }
         },
         {
-          question: {
-            en: "Which crop did Saint-Domingue produce more than any other region, supplying 60% of European consumption?",
-            tr: "Saint-Domingue sömürgesi, Avrupa'da tüketilen miktarın %60'ını karşılayarak hangi üründe dünya lideri olmuştur?"
-          },
-          options: [
-            { text: { en: "Coffee", tr: "Kahve (Coffee)" }, correct: true },
-            { text: { en: "Sugar", tr: "Şeker" }, correct: false },
-            { text: { en: "Tobacco", tr: "Tütün" }, correct: false },
-            { text: { en: "Indigo", tr: "Çivit Otu" }, correct: false }
-          ],
-          explanation: {
-            en: "Saint-Domingue produced 60% of the coffee and 40% of the sugar consumed in Europe in the late 18th century.",
-            tr: "18. yüzyıl sonlarında sömürge, Avrupa kahve tüketiminin %60'ını, şeker tüketiminin %40'ını tek başına üretiyordu."
-          }
+        "type": "essay",
+        "question": {
+                "en": "Analytical Reflection: Evaluate the historical causes behind the transition from Toussaint Louverture's politics of autonomy and 1801 Constitution to Jean-Jacques Dessalines's campaign for total independence and anti-colonial race war. How did Napoleon Bonaparte's Leclerc expedition drive this transformation?",
+                "tr": "Analitik Düşünce & Essay: Toussaint Louverture'in özerklik ve 1801 Anayasası siyasetinden Jean-Jacques Dessalines'in tam bağımsızlık ve Fransız karşıtı ırk savaşına geçişindeki tarihsel nedenleri değerlendiriniz. Napolyon Bonapart'ın Leclerc seferi ve köleliği geri getirme kararı bu dönüşümü nasıl etkilemiştir?"
         },
+        "explanation": {
+                "en": "Model Analysis & Key Themes:\n1. Toussaint's Autonomy: Toussaint sought self-governance under nominal French sovereignty with his 1801 Constitution.\n2. Napoleonic Betrayal: Napoleon sent 20,000 troops in 1801 and reinstated slavery in May 1802, arresting Toussaint.\n3. Dessalines' Radical Turn: Seeing Napoleon's betrayal, Dessalines launched an uncompromising war of total independence, proclaiming Haiti in 1804.",
+                "tr": "Model Analiz & Temel Temalar:\n1. Toussaint'in Özerkliği: Toussaint 1801 Anayasası ile Fransa'ya kağıt üzerinde bağlı kalıp özerk yönetimi hedeflemişti.\n2. Napolyon'un İhaneti: Napolyon 1801'de ordular gönderip 1802'de köleliği geri getirdi ve Toussaint'i tutuklattı.\n3. Dessalines'in Radikal Dönüşü: İhaneti gören Dessalines, tavizsiz bir tam bağımsızlık savaşı vererek 1804'te Haiti Cumhuriyeti'ni ilan etti."
+        }
+},
         {
           question: {
             en: "What was the main legal argument Vincent Ogé used in Paris to demand voting rights for free men of color?",
