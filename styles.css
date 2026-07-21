@@ -1518,3 +1518,69 @@ header {
   box-shadow: 0 5px 15px rgba(var(--theme-accent-rgb), 0.3) !important;
 }
 
+
+/* Primary Source Quotes & Reader Styling */
+.primary-source-quote {
+  margin: 0.85rem 0;
+  padding: 0.75rem 1rem;
+  background: var(--bg-surface);
+  border-left: 4px solid var(--theme-accent);
+  border-radius: 0 8px 8px 0;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--text-primary);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.primary-source-quote .quote-header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--theme-accent);
+  margin-bottom: 0.4rem;
+}
+
+.primary-source-quote .quote-body {
+  font-style: italic;
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.ps-doc-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px dashed var(--border-color);
+  margin-bottom: 0.75rem;
+}
+
+.ps-doc-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  background: var(--theme-accent-light, rgba(16, 185, 129, 0.1));
+  color: var(--theme-accent);
+  width: fit-content;
+}
+
+.ps-doc-text {
+  font-family: monospace;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  background: var(--bg-surface);
+  padding: 0.85rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  max-height: 400px;
+  overflow-y: auto;
+}

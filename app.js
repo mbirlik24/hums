@@ -31,7 +31,9 @@ const uiTranslations = {
     scoreWord: "Skor",
     testWord: "Test",
     showOnMapBtn: "Haritada Göster",
-    tabVideo: "Video"
+    tabVideo: "Video",
+    tabSources: "Documents",
+    tabSources: "Belgeler"
   },
   en: {
     appTitle: "Historical Atlas",
@@ -62,7 +64,9 @@ const uiTranslations = {
     scoreWord: "Score",
     testWord: "Test",
     showOnMapBtn: "Show on Map",
-    tabVideo: "Video"
+    tabVideo: "Video",
+    tabSources: "Documents",
+    tabSources: "Belgeler"
   }
 };
 
@@ -823,11 +827,11 @@ function switchTab(tabId) {
     }
   }
   
-  const tabs = ['narrative', 'explorer', 'graphics', 'quiz', 'video'];
+  const tabs = ['narrative', 'explorer', 'graphics', 'quiz', 'video', 'sources'];
   tabs.forEach(t => {
     const btn = document.getElementById(`tab-btn-${t}`);
     if (btn) {
-      if (t === (tabId === 'map-explorer' ? 'explorer' : tabId)) {
+      if (t === (tabId === 'map-explorer' ? 'explorer' : (tabId === 'primary-sources' ? 'sources' : tabId))) {
         btn.classList.add('active');
       } else {
         btn.classList.remove('active');
@@ -840,6 +844,8 @@ function switchTab(tabId) {
   document.getElementById('card-graphics').style.display = 'none';
   document.getElementById('card-quiz').style.display = 'none';
   document.getElementById('card-video').style.display = 'none';
+  const cardSources = document.getElementById('card-primary-sources');
+  if (cardSources) cardSources.style.display = 'none';
   
   if (tabId === 'narrative') {
     document.getElementById('card-narrative').style.display = 'flex';
@@ -861,6 +867,9 @@ function switchTab(tabId) {
   } else if (tabId === 'video') {
     document.getElementById('card-video').style.display = 'flex';
     renderVideo();
+  } else if (tabId === 'primary-sources') {
+    if (cardSources) cardSources.style.display = 'flex';
+    populatePrimarySourceOptions();
   }
 }
 
@@ -4770,3 +4779,56 @@ window.addEventListener('keydown', (e) => {
   }
 });
 
+
+// Render Primary Source Documents in Reader Tab
+function populatePrimarySourceOptions() {
+  const selectEl = document.getElementById('primary-source-select');
+  if (!selectEl || !learningData.primarySources) return;
+  const lang = learningData.activeLanguage || 'tr';
+  
+  selectEl.innerHTML = learningData.primarySources.map(doc => {
+    const title = doc.title[lang] || doc.title['tr'];
+    return `<option value="${doc.id}">Week ${doc.week}: ${title}</option>`;
+  }).join('');
+  
+  if (learningData.primarySources.length > 0) {
+    renderSelectedPrimarySource(learningData.primarySources[0].id);
+  }
+}
+
+function renderSelectedPrimarySource(docId) {
+  const displayEl = document.getElementById('primary-source-display');
+  if (!displayEl || !learningData.primarySources) return;
+  const lang = learningData.activeLanguage || 'tr';
+  const doc = learningData.primarySources.find(d => d.id === docId) || learningData.primarySources[0];
+  if (!doc) return;
+  
+  const title = doc.title[lang] || doc.title['tr'];
+  const author = doc.author[lang] || doc.author['tr'];
+  const summary = doc.summary[lang] || doc.summary['tr'];
+  const quote = doc.quote[lang] || doc.quote['tr'];
+  
+  displayEl.innerHTML = `
+    <div class="ps-doc-meta">
+      <span class="ps-doc-badge">📜 Hafta ${doc.week} — Orijinal Tarihi Belge (${doc.date})</span>
+      <h3 style="margin: 0.3rem 0; font-size: 1.1rem; color: var(--text-primary);">${title}</h3>
+      <div style="font-size: 0.85rem; color: var(--theme-accent); font-weight: 600;">✍️ ${author}</div>
+      <p style="margin: 0.4rem 0 0 0; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.4;">${summary}</p>
+    </div>
+    
+    <div class="primary-source-quote" style="margin: 0;">
+      <div class="quote-header">📜 Vurucu Orijinal Alıntı / Key Quote (${doc.date}):</div>
+      <div class="quote-body">${quote}</div>
+    </div>
+    
+    <div style="font-weight: 700; font-size: 0.85rem; color: var(--text-primary); margin-top: 0.5rem;">📄 Belge Metni Excerpt / Document Text:</div>
+    <div class="ps-doc-text">${doc.fullText}</div>
+  `;
+}
+
+// Hook populatePrimarySourceOptions on init
+document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    populatePrimarySourceOptions();
+  }, 500);
+});
