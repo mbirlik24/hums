@@ -1,4 +1,4 @@
-// documents.js - Direct Document Redirect Portal
+// documents.js - Minimal Clean Direct Redirect Portal
 let activeDocLang = 'tr';
 let activeTopicFilter = 'all';
 let activeSearchQuery = '';
@@ -6,27 +6,23 @@ let activeSearchQuery = '';
 const i18n = {
   tr: {
     back: "Atlas'a Dön",
-    portalTitle: "Tarihi Birincil Belgeler Arşivi",
-    portalSubtitle: "Ders kapsamında incelenen tüm tarihi metinlerin orijinallerine, akademik arşivlerine ve kaynak kütüphanelerine doğrudan erişin.",
     searchPlaceholder: "Belgelerde veya Konularda Ara...",
     all: "Tüm Konular",
     authorLabel: "Müellif: ",
     dateLabel: "Tarih: ",
-    gotoSource: "🔗 Belgenin Orijinal Kaynağına Git ↗",
-    openTxt: "📄 Metin Dosyasını Aç (.txt)",
-    downloadDocx: "📥 Orijinal Dersi Veren Hoca Belgesi (.docx)"
+    gotoSource: "Kaynağa Git",
+    openTxt: "Metin Dosyası (.txt)",
+    downloadDocx: "Hoca Belgesi (.docx)"
   },
   en: {
     back: "Back to Atlas",
-    portalTitle: "Historical Primary Sources Archive",
-    portalSubtitle: "Directly access original manuscripts, academic repositories, and primary source archives studied in class.",
     searchPlaceholder: "Search Documents or Topics...",
     all: "All Topics",
     authorLabel: "Author: ",
     dateLabel: "Date: ",
-    gotoSource: "🔗 Open Original Source ↗",
-    openTxt: "📄 Open TXT File (.txt)",
-    downloadDocx: "📥 Download Original DOCX (.docx)"
+    gotoSource: "Go to Source",
+    openTxt: "TXT File (.txt)",
+    downloadDocx: "DOCX File (.docx)"
   }
 };
 
@@ -49,13 +45,9 @@ function toggleDocLanguage(lang) {
   const t = i18n[activeDocLang];
   const backEl = document.getElementById('txt-back');
   const searchEl = document.getElementById('doc-search-input');
-  const titleEl = document.getElementById('portal-title');
-  const subEl = document.getElementById('portal-subtitle');
 
   if (backEl) backEl.textContent = t.back;
   if (searchEl) searchEl.placeholder = t.searchPlaceholder;
-  if (titleEl) titleEl.textContent = t.portalTitle;
-  if (subEl) subEl.textContent = t.portalSubtitle;
 
   renderFilterPills();
   renderPortalGrid();
