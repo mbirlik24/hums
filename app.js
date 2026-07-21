@@ -32,7 +32,7 @@ const uiTranslations = {
     testWord: "Test",
     showOnMapBtn: "Haritada Göster",
     tabVideo: "Video",
-    tabSources: "Documents",
+    
     tabSources: "Belgeler"
   },
   en: {
@@ -65,7 +65,7 @@ const uiTranslations = {
     testWord: "Test",
     showOnMapBtn: "Show on Map",
     tabVideo: "Video",
-    tabSources: "Documents",
+    
     tabSources: "Belgeler"
   }
 };
