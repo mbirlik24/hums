@@ -59,6 +59,7 @@ function renderFilterPills() {
 
   const categories = [
     { key: 'all', label: { tr: 'Tüm Konular', en: 'All Topics' } },
+    { key: 'syllabus', label: { tr: 'Müfredat & Kaynaklar', en: 'Syllabus & Sources' } },
     { key: 'columbian', label: { tr: 'Kolomb Değişimi', en: 'Columbian Exchange' } },
     { key: 'trade_slave', label: { tr: 'Köle Ticareti', en: 'Slave Trade' } },
     { key: 'american_rev', label: { tr: 'Amerikan Devrimi', en: 'American Revolution' } },
@@ -93,6 +94,7 @@ function renderPortalGrid() {
   
   if (activeTopicFilter !== 'all') {
     docs = docs.filter(d => {
+      if (activeTopicFilter === 'syllabus') return d.week === 1;
       if (activeTopicFilter === 'columbian') return d.week === 2;
       if (activeTopicFilter === 'trade_slave') return d.week === 3;
       if (activeTopicFilter === 'american_rev') return d.week === 4;
