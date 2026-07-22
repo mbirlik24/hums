@@ -5540,21 +5540,36 @@ const learningData = {
             "tr": "Fransız Doğu Ordusu'nun (l'Armée d'Orient) Mısır Seferi için Toulon Limanı'ndan ayrıldığı tarih hangisidir?",
             "en": "On what date did Napoleon's French Army of the Orient depart Toulon for Egypt?"
           },
-          "options": {
-            "tr": [
-              "19 Mayıs 1798",
-              "14 Temmuz 1789",
-              "9 Kasım 1799",
-              "1 Ocak 1804"
-            ],
-            "en": [
-              "19 May 1798",
-              "14 July 1789",
-              "9 November 1799",
-              "1 January 1804"
-            ]
-          },
-          "answer": 0,
+          "options": [
+            {
+              "text": {
+                "tr": "19 Mayıs 1798",
+                "en": "19 May 1798"
+              },
+              "correct": true
+            },
+            {
+              "text": {
+                "tr": "14 Temmuz 1789",
+                "en": "14 July 1789"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "9 Kasım 1799",
+                "en": "9 November 1799"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "1 Ocak 1804",
+                "en": "1 January 1804"
+              },
+              "correct": false
+            }
+          ],
           "explanation": {
             "tr": "40.000 kişilik Fransız donanması 19 Mayıs 1798'de tam bir gizlilik içinde Toulon'dan hareket etmiştir.",
             "en": "The French fleet of 40,000 men set sail from Toulon on May 19, 1798 in complete secrecy."
@@ -5565,21 +5580,36 @@ const learningData = {
             "tr": "Fransa'nın Mısır'ı işgal etmesindeki temel askeri ve ticari hedef neydi?",
             "en": "What was the primary military and commercial objective of the French invasion of Egypt?"
           },
-          "options": {
-            "tr": [
-              "İngiltere'nin Hindistan ile olan ticaret yollarını kesmek ve Fransa için tahıl deposu elde etmek",
-              "İspanyol gümüş gemilerine el koymak",
-              "Amerika Birleşik Devletleri ile ittifak kurmak",
-              "Osmanlı Sultanını tahttan indirmek"
-            ],
-            "en": [
-              "To sever Britain's trade routes to India and secure a reliable grain source for France",
-              "To capture Spanish silver galleons",
-              "To form an alliance with the United States",
-              "To overthrow the Ottoman Sultan in Istanbul"
-            ]
-          },
-          "answer": 0,
+          "options": [
+            {
+              "text": {
+                "tr": "İngiltere'nin Hindistan ile olan ticaret yollarını kesmek ve Fransa için tahıl deposu elde etmek",
+                "en": "To sever Britain's trade routes to India and secure a reliable grain source for France"
+              },
+              "correct": true
+            },
+            {
+              "text": {
+                "tr": "İspanyol gümüş gemilerine el koymak",
+                "en": "To capture Spanish silver galleons"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Amerika Birleşik Devletleri ile ittifak kurmak",
+                "en": "To form an alliance with the United States"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Osmanlı Sultanını tahttan indirmek",
+                "en": "To overthrow the Ottoman Sultan in Istanbul"
+              },
+              "correct": false
+            }
+          ],
           "explanation": {
             "tr": "Napolyon, İngiltere'ye doğrudan adam işgali riski yerine Hindistan ticaret yolunu kesmeyi ve Fransa'ya tahıl sağlamayı hedeflemiştir.",
             "en": "Napoleon aimed to strike Britain's economic lifeline to India while acquiring Egypt as an agricultural colony."
@@ -5590,21 +5620,36 @@ const learningData = {
             "tr": "1 Ağustos 1798'de Ebu Kır Koyu'nda Fransız donanmasını imha ederek ordunun Mısır'da mahsur kalmasına yol açan İngiliz amiral kimdir?",
             "en": "Which British Admiral destroyed the French fleet at the Battle of the Nile (Aboukir Bay) on August 1, 1798?"
           },
-          "options": {
-            "tr": [
-              "Amiral Horatio Nelson",
-              "Amiral Thomas Cochrane",
-              "Dük Wellington",
-              "General Charles Leclerc"
-            ],
-            "en": [
-              "Admiral Horatio Nelson",
-              "Admiral Thomas Cochrane",
-              "Duke of Wellington",
-              "General Charles Leclerc"
-            ]
-          },
-          "answer": 0,
+          "options": [
+            {
+              "text": {
+                "tr": "Amiral Horatio Nelson",
+                "en": "Admiral Horatio Nelson"
+              },
+              "correct": true
+            },
+            {
+              "text": {
+                "tr": "Amiral Thomas Cochrane",
+                "en": "Admiral Thomas Cochrane"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Dük Wellington",
+                "en": "Duke of Wellington"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "General Charles Leclerc",
+                "en": "General Charles Leclerc"
+              },
+              "correct": false
+            }
+          ],
           "explanation": {
             "tr": "Amiral Nelson, Ebu Kır Muharebesi'nde Fransız filosunu yok ederek Fransız ordusunu Akdeniz'de mahsur bırakmıştır.",
             "en": "Admiral Nelson annihilated the French fleet at Aboukir, stranding Napoleon's expeditionary force in Egypt."
@@ -5615,21 +5660,36 @@ const learningData = {
             "tr": "Milletvekili Joseph Echasseriaux'un Mısır sömürgeleştirmesini 'medeniyetin beşiğini ihya etmek' olarak savunması hangi ideolojik dönüşümü gösterir?",
             "en": "What ideological shift is represented by legislator Joseph Echasseriaux framing the colonization of Egypt as 'regenerating the cradle of civilization'?"
           },
-          "options": {
-            "tr": [
-              "Sömürgeciliğin özgürleştirme ve uygarlık getirme söylemiyle meşrulaştırılması",
-              "Köleliğin derhal kaldırılması talebi",
-              "Osmanlı Devleti ile askeri savunma paktı kurulması",
-              "Fransa'nın tüm kolonilerinden çekilme kararı"
-            ],
-            "en": [
-              "The adoption of liberal and civilizing vocabulary to justify imperial colonization",
-              "The immediate unconditional abolition of all overseas colonies",
-              "A defensive military alliance with the Ottoman Empire",
-              "The total withdrawal of France from international diplomacy"
-            ]
-          },
-          "answer": 0,
+          "options": [
+            {
+              "text": {
+                "tr": "Sömürgeciliğin özgürleştirme ve uygarlık getirme söylemiyle meşrulaştırılması",
+                "en": "The adoption of liberal and civilizing vocabulary to justify imperial colonization"
+              },
+              "correct": true
+            },
+            {
+              "text": {
+                "tr": "Köleliğin derhal kaldırılması talebi",
+                "en": "The immediate unconditional abolition of all overseas colonies"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Osmanlı Devleti ile askeri savunma paktı kurulması",
+                "en": "A defensive military alliance with the Ottoman Empire"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Fransa'nın tüm kolonilerinden çekilme kararı",
+                "en": "The total withdrawal of France from international diplomacy"
+              },
+              "correct": false
+            }
+          ],
           "explanation": {
             "tr": "Mısır Seferi, sömürgeciliğin 'mazlum halklara uygarlık götürme' söylemi arkasına gizlendiği ilk modern örnektir.",
             "en": "The campaign marked the point where imperialism adopted democratic and civilizing rhetoric to justify occupation."
@@ -5640,21 +5700,36 @@ const learningData = {
             "tr": "Napolyon'un Mısır Seferi öncesinde fikirlerine başvurduğu ünlü Fransız Şarkiyatçı kimdir?",
             "en": "Which prominent French Orientalist scholar was consulted by Napoleon prior to preparing the Egyptian expedition?"
           },
-          "options": {
-            "tr": [
-              "Sylvestre de Sacy",
-              "Jean-François Champollion",
-              "Alexis de Tocqueville",
-              "Voltaire"
-            ],
-            "en": [
-              "Sylvestre de Sacy",
-              "Jean-François Champollion",
-              "Alexis de Tocqueville",
-              "Voltaire"
-            ]
-          },
-          "answer": 0,
+          "options": [
+            {
+              "text": {
+                "tr": "Sylvestre de Sacy",
+                "en": "Sylvestre de Sacy"
+              },
+              "correct": true
+            },
+            {
+              "text": {
+                "tr": "Jean-François Champollion",
+                "en": "Jean-François Champollion"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Alexis de Tocqueville",
+                "en": "Alexis de Tocqueville"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Voltaire",
+                "en": "Voltaire"
+              },
+              "correct": false
+            }
+          ],
           "explanation": {
             "tr": "Sylvestre de Sacy, Napolyon'a doğu dilleri ve kültürü hakkında danışmanlık yapmış; öğrencileri sefere katılmıştır.",
             "en": "Sylvestre de Sacy advised Napoleon on Eastern languages, and his students accompanied the expedition to Cairo."
@@ -5665,21 +5740,36 @@ const learningData = {
             "tr": "18. yüzyıl sonunda Mısır'da vergi toplayan, orduları yöneten ve halk üzerinde baskıcı bir derebeylik kuran yerel askeri elit sınıf hangisidir?",
             "en": "Which local military elite class ruled Egypt through competing households at the end of the 18th century?"
           },
-          "options": {
-            "tr": [
-              "Memlükler (Mamluks)",
-              "Yeniçeriler",
-              "Zulular",
-              "İspanyol Fatihler (Conquistadores)"
-            ],
-            "en": [
-              "Mamluks",
-              "Janissaries",
-              "Zulus",
-              "Spanish Conquistadores"
-            ]
-          },
-          "answer": 0,
+          "options": [
+            {
+              "text": {
+                "tr": "Memlükler (Mamluks)",
+                "en": "Mamluks"
+              },
+              "correct": true
+            },
+            {
+              "text": {
+                "tr": "Yeniçeriler",
+                "en": "Janissaries"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Zulular",
+                "en": "Zulus"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "İspanyol Fatihler (Conquistadores)",
+                "en": "Spanish Conquistadores"
+              },
+              "correct": false
+            }
+          ],
           "explanation": {
             "tr": "Çerkes ve Gürcü kökenli Memlük haneleri, Mısır'da Osmanlı merkez otoritesinden fiilen bağımsız, yozlaşmış bir idare kurmuşlardı.",
             "en": "The Mamluk households operated as a virtually autonomous, oppressive military oligarchy in Cairo."
@@ -5690,21 +5780,36 @@ const learningData = {
             "tr": "Napolyon'un Kahire'ye girdiğinde yayımladığı Arapça bildirideki temel iddia neydi?",
             "en": "What was the key claim in the Arabic proclamation disseminated by Napoleon upon entering Cairo?"
           },
-          "options": {
-            "tr": [
-              "Fransızların da gerçek Müslüman olduğu ve halkı zalim Memlüklerden kurtarmaya geldiği",
-              "Mısırlıların Hristiyanlığa geçmesi gerektiği",
-              "Mısır'ın Büyük Britanya'ya satıldığı",
-              "Fransa'nın Osmanlı Devleti'ne savaş ilan ettiği"
-            ],
-            "en": [
-              "That French soldiers were true Muslims coming to liberate Egyptians from oppressive Mamluks",
-              "That Egyptians must immediately convert to Roman Catholicism",
-              "That Egypt had been sold to Great Britain",
-              "That France had declared war on all Muslim nations"
-            ]
-          },
-          "answer": 0,
+          "options": [
+            {
+              "text": {
+                "tr": "Fransızların da gerçek Müslüman olduğu ve halkı zalim Memlüklerden kurtarmaya geldiği",
+                "en": "That French soldiers were true Muslims coming to liberate Egyptians from oppressive Mamluks"
+              },
+              "correct": true
+            },
+            {
+              "text": {
+                "tr": "Mısırlıların Hristiyanlığa geçmesi gerektiği",
+                "en": "That Egyptians must immediately convert to Roman Catholicism"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Mısır'ın Büyük Britanya'ya satıldığı",
+                "en": "That Egypt had been sold to Great Britain"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Fransa'nın Osmanlı Devleti'ne savaş ilan ettiği",
+                "en": "That France had declared war on all Muslim nations"
+              },
+              "correct": false
+            }
+          ],
           "explanation": {
             "tr": "Napolyon Papa'yı ve Malta Şövalyelerini yendiklerini belirterek kendilerini İslam dostu ve kurtarıcı olarak sunmuştur.",
             "en": "Napoleon claimed Frenchmen were allies of Islam who destroyed the Papacy and drove out the Knights of Malta."
@@ -5715,21 +5820,36 @@ const learningData = {
             "tr": "1799 yılında Reşid (Rosetta) yakınlarında Fransız subayları tarafından bulunan ve antik hiyerogliflerin çözülmesini sağlayan tarihi eser hangisidir?",
             "en": "Which historical artifact discovered near Rashid in 1799 enabled the decipherment of ancient Egyptian hieroglyphics?"
           },
-          "options": {
-            "tr": [
-              "Rosetta Taşı (Rosetta Stone)",
-              "Hammurabi Kanunları",
-              "Potosi Gümüş Tabletleri",
-              "Kuruş Silindiri"
-            ],
-            "en": [
-              "Rosetta Stone",
-              "Code of Hammurabi",
-              "Potosi Silver Tablets",
-              "Cyrus Cylinder"
-            ]
-          },
-          "answer": 0,
+          "options": [
+            {
+              "text": {
+                "tr": "Rosetta Taşı (Rosetta Stone)",
+                "en": "Rosetta Stone"
+              },
+              "correct": true
+            },
+            {
+              "text": {
+                "tr": "Hammurabi Kanunları",
+                "en": "Code of Hammurabi"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Potosi Gümüş Tabletleri",
+                "en": "Potosi Silver Tablets"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Kuruş Silindiri",
+                "en": "Cyrus Cylinder"
+              },
+              "correct": false
+            }
+          ],
           "explanation": {
             "tr": "Rosetta Taşı üzerindeki üç farklı yazı (Hiyeroglif, Demotik, Grekçe) sayesinde Champollion hiyeroglifleri çözmüştür.",
             "en": "The trilingual inscription on the Rosetta Stone allowed Champollion to unlock ancient Egyptian hieroglyphics."
@@ -5740,21 +5860,36 @@ const learningData = {
             "tr": "Napolyon'un Mısır'a götürdüğü 160 bilim insanının araştırmalarını derleyen 24 ciltlik devasa anıtsal eser hangisidir?",
             "en": "What is the title of the monumental 24-volume scientific work compiled by the savants of Napoleon's expedition?"
           },
-          "options": {
-            "tr": [
-              "Description de l'Égypte",
-              "Encyclopédie de Paris",
-              "L'Esprit des Lois",
-              "Wealth of Nations"
-            ],
-            "en": [
-              "Description de l'Égypte",
-              "Encyclopédie de Paris",
-              "The Spirit of the Laws",
-              "Wealth of Nations"
-            ]
-          },
-          "answer": 0,
+          "options": [
+            {
+              "text": {
+                "tr": "Description de l'Égypte",
+                "en": "Description de l'Égypte"
+              },
+              "correct": true
+            },
+            {
+              "text": {
+                "tr": "Encyclopédie de Paris",
+                "en": "Encyclopédie de Paris"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "L'Esprit des Lois",
+                "en": "The Spirit of the Laws"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Wealth of Nations",
+                "en": "Wealth of Nations"
+              },
+              "correct": false
+            }
+          ],
           "explanation": {
             "tr": "1809-1829 yılları arasında yayımlanan Description de l'Égypte, modern Mısırbilim'in temel arşivini oluşturmuştur.",
             "en": "Published between 1809 and 1829, Description de l'Égypte provided an exhaustive scientific inventory of Egypt."
@@ -5765,21 +5900,36 @@ const learningData = {
             "tr": "1978 yılında yayımladığı eserinde Napolyon'un Mısır Seferi'ni Şarkiyatçı bilgi-iktidar ortaklığının kurucu anı olarak eleştiren düşünür kimdir?",
             "en": "Which thinker published 'Orientalism' in 1978, critiquing Napoleon's expedition as the foundational moment of imperial knowledge-power overlap?"
           },
-          "options": {
-            "tr": [
-              "Edward Said",
-              "Michel Foucault",
-              "Frantz Fanon",
-              "Homi Bhabha"
-            ],
-            "en": [
-              "Edward Said",
-              "Michel Foucault",
-              "Frantz Fanon",
-              "Homi Bhabha"
-            ]
-          },
-          "answer": 0,
+          "options": [
+            {
+              "text": {
+                "tr": "Edward Said",
+                "en": "Edward Said"
+              },
+              "correct": true
+            },
+            {
+              "text": {
+                "tr": "Michel Foucault",
+                "en": "Michel Foucault"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Frantz Fanon",
+                "en": "Frantz Fanon"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Homi Bhabha",
+                "en": "Homi Bhabha"
+              },
+              "correct": false
+            }
+          ],
           "explanation": {
             "tr": "Edward Said, Şarkiyatçılık adlı eserinde Batı'nın Doğu hakkındaki akademik bilgisinin emperyalizmle ayrılmaz bağını ortaya koymuştur.",
             "en": "Edward Said analyzed how Western academic scholarship constructed 'the Orient' to facilitate colonial domination."
@@ -5790,21 +5940,36 @@ const learningData = {
             "tr": "1774 yılında imzalanan ve Osmanlı zayıflamasını hızlandırarak 'Doğu Sorunu'nu başlatan antlaşma hangisidir?",
             "en": "Which 1774 treaty marked the weakening of Ottoman authority and accelerated the European 'Eastern Question'?"
           },
-          "options": {
-            "tr": [
-              "Küçük Kaynarca Antlaşması",
-              "Kestane Antlaşması",
-              "Versay Antlaşması",
-              "Utrecht Antlaşması"
-            ],
-            "en": [
-              "Treaty of Küçük Kaynarca",
-              "Treaty of Westphalia",
-              "Treaty of Versailles",
-              "Treaty of Utrecht"
-            ]
-          },
-          "answer": 0,
+          "options": [
+            {
+              "text": {
+                "tr": "Küçük Kaynarca Antlaşması",
+                "en": "Treaty of Küçük Kaynarca"
+              },
+              "correct": true
+            },
+            {
+              "text": {
+                "tr": "Kestane Antlaşması",
+                "en": "Treaty of Westphalia"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Versay Antlaşması",
+                "en": "Treaty of Versailles"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Utrecht Antlaşması",
+                "en": "Treaty of Utrecht"
+              },
+              "correct": false
+            }
+          ],
           "explanation": {
             "tr": "1768-1774 Rus-Türk savaşı sonrası imzalanan Küçük Kaynarca, Osmanlı zayıflamasını ve Doğu Sorunu'nu derinleştirmiştir.",
             "en": "The Treaty of Küçük Kaynarca (1774) exposed Ottoman vulnerabilities, giving rise to the Eastern Question."
@@ -5815,21 +5980,36 @@ const learningData = {
             "tr": "Napolyon Kahire'de yerel temsilcilerden oluşan hangi idari kurulları kurmuştur?",
             "en": "What native advisory councils did Napoleon establish in Cairo to administer local governance?"
           },
-          "options": {
-            "tr": [
-              "Divanlar (Divans)",
-              "Senato",
-              "Kıtasal Kongre",
-              "Ulusal Meclis"
-            ],
-            "en": [
-              "Divans",
-              "Senate",
-              "Continental Congress",
-              "National Assembly"
-            ]
-          },
-          "answer": 0,
+          "options": [
+            {
+              "text": {
+                "tr": "Divanlar (Divans)",
+                "en": "Divans"
+              },
+              "correct": true
+            },
+            {
+              "text": {
+                "tr": "Senato",
+                "en": "Senate"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Kıtasal Kongre",
+                "en": "Continental Congress"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Ulusal Meclis",
+                "en": "National Assembly"
+              },
+              "correct": false
+            }
+          ],
           "explanation": {
             "tr": "Napolyon, ulema ve eşraftan oluşan yerel Divanlar kurarak kararları meşrulaştırmaya çalışmıştır.",
             "en": "Napoleon set up native councils (Divans) composed of local religious scholars and notables."
@@ -5840,21 +6020,36 @@ const learningData = {
             "tr": "Fransız işgal ordusunun Mısır'daki varlığı hangi gelişmeyle sona ermiştir?",
             "en": "How did the French occupation of Egypt come to an end in 1801?"
           },
-          "options": {
-            "tr": [
-              "İngiliz-Osmanlı ortak askeri harekatı ve tahliye antlaşması ile",
-              "Napolyon'un Mısır Kralı olarak taç giymesiyle",
-              "Süveyş Kanalı'nın açılmasıyla",
-              "Amerika Birleşik Devletleri'nin müdahalesiyle"
-            ],
-            "en": [
-              "Through a joint British-Ottoman expedition and negotiated evacuation",
-              "By Napoleon crowning himself King of Egypt",
-              "With the grand opening of the Suez Canal",
-              "Through direct military intervention by the United States"
-            ]
-          },
-          "answer": 0,
+          "options": [
+            {
+              "text": {
+                "tr": "İngiliz-Osmanlı ortak askeri harekatı ve tahliye antlaşması ile",
+                "en": "Through a joint British-Ottoman expedition and negotiated evacuation"
+              },
+              "correct": true
+            },
+            {
+              "text": {
+                "tr": "Napolyon'un Mısır Kralı olarak taç giymesiyle",
+                "en": "By Napoleon crowning himself King of Egypt"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Süveyş Kanalı'nın açılmasıyla",
+                "en": "With the grand opening of the Suez Canal"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Amerika Birleşik Devletleri'nin müdahalesiyle",
+                "en": "Through direct military intervention by the United States"
+              },
+              "correct": false
+            }
+          ],
           "explanation": {
             "tr": "1801'deki ortak İngiliz-Osmanlı harekatı Fransız birliklerinin Mısır'dan tahliye edilmesini sağlamıştır.",
             "en": "A combined British-Ottoman force landed in 1801 and arranged the complete evacuation of French troops."
@@ -5865,21 +6060,36 @@ const learningData = {
             "tr": "Napolyon sefere çıkarken kaç bilim insanı, mühendis ve sanatçıdan oluşan bir heyet götürmüştür?",
             "en": "How many savants, engineers, and scientists accompanied Napoleon's expedition to Egypt?"
           },
-          "options": {
-            "tr": [
-              "160",
-              "500",
-              "50",
-              "12"
-            ],
-            "en": [
-              "160",
-              "500",
-              "50",
-              "12"
-            ]
-          },
-          "answer": 0,
+          "options": [
+            {
+              "text": {
+                "tr": "160",
+                "en": "160"
+              },
+              "correct": true
+            },
+            {
+              "text": {
+                "tr": "500",
+                "en": "500"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "50",
+                "en": "50"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "12",
+                "en": "12"
+              },
+              "correct": false
+            }
+          ],
           "explanation": {
             "tr": "Aralarında matematikçiler, mühendisler ve doğabilimcilerin bulunduğu 160 bilim insanı sefere katılmıştır.",
             "en": "160 eminent scholars and engineers accompanied the Army of the Orient to study Egypt scientifically."
@@ -5890,21 +6100,36 @@ const learningData = {
             "tr": "Napolyon'un Mısır'da bastırdığı ilk gazetelerin adı nedir?",
             "en": "What were the titles of the official newspapers printed by the French in Cairo?"
           },
-          "options": {
-            "tr": [
-              "Courrier d'Égypte & La Décade Égyptienne",
-              "The Times & Le Figaro",
-              "Gazette de France & Le Moniteur",
-              "Journal de Saint-Domingue & Le Patriot"
-            ],
-            "en": [
-              "Courrier d'Égypte & La Décade Égyptienne",
-              "The Times & Le Figaro",
-              "Gazette de France & Le Moniteur",
-              "Journal de Saint-Domingue & Le Patriot"
-            ]
-          },
-          "answer": 0,
+          "options": [
+            {
+              "text": {
+                "tr": "Courrier d'Égypte & La Décade Égyptienne",
+                "en": "Courrier d'Égypte & La Décade Égyptienne"
+              },
+              "correct": true
+            },
+            {
+              "text": {
+                "tr": "The Times & Le Figaro",
+                "en": "The Times & Le Figaro"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Gazette de France & Le Moniteur",
+                "en": "Gazette de France & Le Moniteur"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Journal de Saint-Domingue & Le Patriot",
+                "en": "Journal de Saint-Domingue & Le Patriot"
+              },
+              "correct": false
+            }
+          ],
           "explanation": {
             "tr": "Fransızlar getirdikleri matbaayla Courrier d'Égypte ve La Décade Égyptienne gazetelerini yayımlamışlardır.",
             "en": "The French established printing presses in Cairo to publish Courrier d'Égypte and La Décade Égyptienne."
@@ -5915,21 +6140,36 @@ const learningData = {
             "tr": "Amiral Nelson'ın Akdeniz'deki hakimiyetini pekiştiren üsler hangileridir?",
             "en": "Which naval bases reinforced Britain's Mediterranean position following the French defeat in Egypt?"
           },
-          "options": {
-            "tr": [
-              "Cebelitarık, Malta ve İyon Adaları",
-              "Küba, Haiti ve Jamaika",
-              "Goa, Malakka ve Seylan",
-              "Kanarya Adaları ve Yeşil Burun"
-            ],
-            "en": [
-              "Gibraltar, Malta, and the Ionian Islands",
-              "Cuba, Haiti, and Jamaica",
-              "Goa, Malacca, and Ceylon",
-              "Canary Islands and Cape Verde"
-            ]
-          },
-          "answer": 0,
+          "options": [
+            {
+              "text": {
+                "tr": "Cebelitarık, Malta ve İyon Adaları",
+                "en": "Gibraltar, Malta, and the Ionian Islands"
+              },
+              "correct": true
+            },
+            {
+              "text": {
+                "tr": "Küba, Haiti ve Jamaika",
+                "en": "Cuba, Haiti, and Jamaica"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Goa, Malakka ve Seylan",
+                "en": "Goa, Malacca, and Ceylon"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Kanarya Adaları ve Yeşil Burun",
+                "en": "Canary Islands and Cape Verde"
+              },
+              "correct": false
+            }
+          ],
           "explanation": {
             "tr": "Fransız yenilgisi İngiltere'nin Cebelitarık, Malta ve İyon Adaları'ndaki deniz hakimiyetini pekiştirmiştir.",
             "en": "Britain's victory fortified its strategic naval strongholds at Gibraltar, Malta, and the Ionian Islands."
@@ -5940,21 +6180,36 @@ const learningData = {
             "tr": "Description de l'Égypte eserinin sunuş yazısını yazan ve 'barbarları eski ihtişamına kavuşturma' söylemini kullanan bilim insanı kimdir?",
             "en": "Which mathematician wrote the historical preface to 'Description de l'Égypte', framing conquest as 'restoring barbarians to former glory'?"
           },
-          "options": {
-            "tr": [
-              "Joseph Fourier",
-              "Jean-Baptiste Lamarck",
-              "Pierre-Simon Laplace",
-              "Antoine Lavoisier"
-            ],
-            "en": [
-              "Joseph Fourier",
-              "Jean-Baptiste Lamarck",
-              "Pierre-Simon Laplace",
-              "Antoine Lavoisier"
-            ]
-          },
-          "answer": 0,
+          "options": [
+            {
+              "text": {
+                "tr": "Joseph Fourier",
+                "en": "Joseph Fourier"
+              },
+              "correct": true
+            },
+            {
+              "text": {
+                "tr": "Jean-Baptiste Lamarck",
+                "en": "Jean-Baptiste Lamarck"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Pierre-Simon Laplace",
+                "en": "Pierre-Simon Laplace"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Antoine Lavoisier",
+                "en": "Antoine Lavoisier"
+              },
+              "correct": false
+            }
+          ],
           "explanation": {
             "tr": "Ünlü matematikçi Joseph Fourier, eserin önsözünde Fransız işgalini medeniyet götürme misyonu olarak sunmuştur.",
             "en": "Mathematician Joseph Fourier authored the preface, portraying occupation as an enlightening gift to Egypt."
@@ -5965,21 +6220,36 @@ const learningData = {
             "tr": "Napolyon'un Mısır'ı terk etmesinin ardından Fransız ordusunun başına geçen komutan kimdir?",
             "en": "Which French general took command of the Army of the Orient after Napoleon returned to France in 1799?"
           },
-          "options": {
-            "tr": [
-              "General Jean-Baptiste Kléber",
-              "General Charles Leclerc",
-              "General Rochambeau",
-              "Marshal Ney"
-            ],
-            "en": [
-              "General Jean-Baptiste Kléber",
-              "General Charles Leclerc",
-              "General Rochambeau",
-              "Marshal Ney"
-            ]
-          },
-          "answer": 0,
+          "options": [
+            {
+              "text": {
+                "tr": "General Jean-Baptiste Kléber",
+                "en": "General Jean-Baptiste Kléber"
+              },
+              "correct": true
+            },
+            {
+              "text": {
+                "tr": "General Charles Leclerc",
+                "en": "General Charles Leclerc"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "General Rochambeau",
+                "en": "General Rochambeau"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Marshal Ney",
+                "en": "Marshal Ney"
+              },
+              "correct": false
+            }
+          ],
           "explanation": {
             "tr": "Napolyon Paris'e döndükten sonra komutayı General Kléber'e devretmiştir.",
             "en": "General Kléber assumed command of the stranded French army after Napoleon departed for Paris."
@@ -5990,21 +6260,36 @@ const learningData = {
             "tr": "Fransız işgalinin ardından Mısır'da iktidarı ele geçiren ve modern Mısır'ın kurucusu kabul edilen vali kimdir?",
             "en": "Which governor seized power in Egypt following the French withdrawal, becoming the founder of modern Egypt?"
           },
-          "options": {
-            "tr": [
-              "Kavalalı Mehmet Ali Paşa (Muhammad Ali Pasha)",
-              "İbrahim Paşa",
-              "Hidiv İsmail Paşa",
-              "Murad Bey"
-            ],
-            "en": [
-              "Muhammad Ali Pasha",
-              "Ibrahim Pasha",
-              "Khedive Ismail",
-              "Murad Bey"
-            ]
-          },
-          "answer": 0,
+          "options": [
+            {
+              "text": {
+                "tr": "Kavalalı Mehmet Ali Paşa (Muhammad Ali Pasha)",
+                "en": "Muhammad Ali Pasha"
+              },
+              "correct": true
+            },
+            {
+              "text": {
+                "tr": "İbrahim Paşa",
+                "en": "Ibrahim Pasha"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Hidiv İsmail Paşa",
+                "en": "Khedive Ismail"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Murad Bey",
+                "en": "Murad Bey"
+              },
+              "correct": false
+            }
+          ],
           "explanation": {
             "tr": "Fransız tahliyesinin ardından Kavalalı Mehmet Ali Paşa Memlükleri tasfiye ederek Mısır'da modernleşme hamlesi başlatmıştır.",
             "en": "Muhammad Ali Pasha eliminated the remaining Mamluks and established modern state institutions in Egypt."
@@ -6015,21 +6300,36 @@ const learningData = {
             "tr": "Fransız Devrim savaşlarında 1798 seferinin çıkış limanı olan ve tersanesiyle tanınan Akdeniz kenti hangisidir?",
             "en": "Which Mediterranean port city served as the naval launchpad and weapons warehouse for the 1798 Egyptian Expedition?"
           },
-          "options": {
-            "tr": [
-              "Toulon",
-              "Marsilya",
-              "Bordo (Bordeaux)",
-              "Sevilla"
-            ],
-            "en": [
-              "Toulon",
-              "Marseille",
-              "Bordeaux",
-              "Seville"
-            ]
-          },
-          "answer": 0,
+          "options": [
+            {
+              "text": {
+                "tr": "Toulon",
+                "en": "Toulon"
+              },
+              "correct": true
+            },
+            {
+              "text": {
+                "tr": "Marsilya",
+                "en": "Marseille"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Bordo (Bordeaux)",
+                "en": "Bordeaux"
+              },
+              "correct": false
+            },
+            {
+              "text": {
+                "tr": "Sevilla",
+                "en": "Seville"
+              },
+              "correct": false
+            }
+          ],
           "explanation": {
             "tr": "Toulon Limanı, Fransız Donanmasının ve Doğu Seferi'nin ana mühimmat ve çıkış merkeziydi.",
             "en": "Toulon was the main naval arsenal and departure port for the French expedition to Egypt."
