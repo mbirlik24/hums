@@ -331,7 +331,8 @@ const mapViews = {
   3: { center: [15.0, -32.0], zoom: 2.8 }, // Atlantic Focus
   4: { center: [39.0, -78.0], zoom: 5 }, // North America Focus
   5: { center: [47.0, 3.0], zoom: 5 }, // Europe Focus
-  6: { center: [19.0, -74.0], zoom: 7.2 } // Hispaniola Focus
+  6: { center: [19.0, -74.0], zoom: 7.2 }, // Hispaniola Focus
+  7: { center: [30.0, 31.0], zoom: 4.5 } // Egypt & Mediterranean Focus
 };
 
 // Initialize Application on DOM Ready

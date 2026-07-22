@@ -64,7 +64,8 @@ function renderFilterPills() {
     { key: 'trade_slave', label: { tr: 'Köle Ticareti', en: 'Slave Trade' } },
     { key: 'american_rev', label: { tr: 'Amerikan Devrimi', en: 'American Revolution' } },
     { key: 'french_rev', label: { tr: 'Fransız Devrimi', en: 'French Revolution' } },
-    { key: 'haitian_rev', label: { tr: 'Haiti Devrimi', en: 'Haitian Revolution' } }
+    { key: 'haitian_rev', label: { tr: 'Haiti Devrimi', en: 'Haitian Revolution' } },
+    { key: 'imperialism', label: { tr: 'Avrupa Emperyalizmi', en: 'European Imperialism' } }
   ];
 
   container.innerHTML = categories.map(cat => {
@@ -100,6 +101,7 @@ function renderPortalGrid() {
       if (activeTopicFilter === 'american_rev') return d.week === 4;
       if (activeTopicFilter === 'french_rev') return d.week === 5;
       if (activeTopicFilter === 'haitian_rev') return d.week === 6;
+      if (activeTopicFilter === 'imperialism') return d.week === 7;
       return true;
     });
   }
@@ -136,8 +138,6 @@ function renderPortalGrid() {
           <a class="btn-redirect" href="${targetUrl}" target="_blank" rel="noopener noreferrer">
             ${t.gotoSource}
           </a>
-          ${doc.localTxt ? `<a class="btn-secondary" href="${doc.localTxt}" target="_blank" rel="noopener noreferrer">${t.openTxt}</a>` : ''}
-          ${doc.localDocx ? `<a class="btn-secondary" href="${doc.localDocx}" download>${t.downloadDocx}</a>` : ''}
         </div>
       </div>
     `;
