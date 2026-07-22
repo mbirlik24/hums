@@ -2943,7 +2943,7 @@ function renderInfographic() {
     activeSvgs = svgs;
     activeCards = cards;
     activeTabIdx = tab;
-  }  } else if (state.week === 7) {
+  } else if (state.week === 7) {
     const tabs = [
       { en: '🚢 Campaign Route', tr: '🚢 Mısır Seferi Rotası' },
       { en: '📜 Orientalism Matrix', tr: '📜 Şarkiyatçılık Matrisi' },
