@@ -1597,7 +1597,7 @@ function zoomMap(action) {
 // ─────────────────────────────────────────────────────────────────
 //  DIAGRAM TAB STATE  (persists per week, resets on week switch)
 // ─────────────────────────────────────────────────────────────────
-const diagramTabState = { 2: 0, 3: 0, 4: 0, 5: 0, 6: 0 };
+const diagramTabState = { 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0 };
 
 function switchDiagramTab(week, idx) {
   diagramTabState[week] = idx;
@@ -2943,6 +2943,133 @@ function renderInfographic() {
     activeSvgs = svgs;
     activeCards = cards;
     activeTabIdx = tab;
+  }  } else if (state.week === 7) {
+    const tabs = [
+      { en: '🚢 Campaign Route', tr: '🚢 Mısır Seferi Rotası' },
+      { en: '📜 Orientalism Matrix', tr: '📜 Şarkiyatçılık Matrisi' },
+      { en: '⚔️ Imperial Power Triangle', tr: '⚔️ Emperyal Güç Üçgeni' }
+    ];
+    const tab = diagramTabState[7] || 0;
+
+    // SVG 1: Campaign Route
+    const svg1 = `
+      <svg viewBox="0 0 500 340" class="infographic-svg">
+        <defs>
+          <linearGradient id="eg-g" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0d9488" stop-opacity="0.25"/>
+            <stop offset="100%" stop-color="#0d9488" stop-opacity="0.03"/>
+          </linearGradient>
+        </defs>
+        <text x="250" y="24" font-family="Outfit" font-size="13" font-weight="800" fill="#0d9488" text-anchor="middle" letter-spacing="0.04em">
+          ${T('FRENCH EXPEDITION TO EGYPT & MEDITERRANEAN ROUTE (1798-1801)','FRANSIZ MISIR SEFERİ VE SEFİR ROTASI (1798-1801)')}
+        </text>
+        <rect x="25" y="45" width="450" height="260" rx="12" fill="url(#eg-g)" stroke="#0d9488" stroke-width="1.5"/>
+        
+        <!-- Interactive Nodes -->
+        <g transform="translate(75, 90)" style="cursor:pointer" onclick="showDiagramDetailPopup('w7_toulon_detail')">
+          <circle cx="0" cy="0" r="22" fill="#0d9488" opacity="0.9"/>
+          <text x="0" y="4" font-family="Outfit" font-size="9" font-weight="800" fill="#ffffff" text-anchor="middle">Toulon</text>
+          <text x="0" y="34" font-family="Inter" font-size="7.5" font-weight="700" fill="var(--text-primary)" text-anchor="middle">19 Mayıs 1798</text>
+        </g>
+        <g transform="translate(195, 145)" style="cursor:pointer" onclick="showDiagramDetailPopup('w7_malta_detail')">
+          <circle cx="0" cy="0" r="18" fill="#3b82f6" opacity="0.9"/>
+          <text x="0" y="4" font-family="Outfit" font-size="8.5" font-weight="800" fill="#ffffff" text-anchor="middle">Malta</text>
+          <text x="0" y="30" font-family="Inter" font-size="7.5" font-weight="700" fill="var(--text-primary)" text-anchor="middle">Haziran 1798</text>
+        </g>
+        <g transform="translate(315, 205)" style="cursor:pointer" onclick="showDiagramDetailPopup('w7_alex_detail')">
+          <circle cx="0" cy="0" r="22" fill="#0d9488" opacity="0.9"/>
+          <text x="0" y="4" font-family="Outfit" font-size="9" font-weight="800" fill="#ffffff" text-anchor="middle">İskenderiye</text>
+          <text x="0" y="34" font-family="Inter" font-size="7.5" font-weight="700" fill="var(--text-primary)" text-anchor="middle">Temmuz 1798</text>
+        </g>
+        <g transform="translate(415, 260)" style="cursor:pointer" onclick="showDiagramDetailPopup('w7_cairo_detail')">
+          <circle cx="0" cy="0" r="24" fill="#d97706" opacity="0.9"/>
+          <text x="0" y="4" font-family="Outfit" font-size="9" font-weight="800" fill="#ffffff" text-anchor="middle">Kahire</text>
+          <text x="0" y="36" font-family="Inter" font-size="7.5" font-weight="700" fill="var(--text-primary)" text-anchor="middle">Piramitler Muharebesi</text>
+        </g>
+
+        <!-- Route Lines -->
+        <path d="M 75,90 L 195,145 L 315,205 L 415,260" stroke="#0d9488" stroke-width="2.5" stroke-dasharray="6,4" fill="none"/>
+      </svg>`;
+
+    // SVG 2: Orientalism Matrix
+    const svg2 = `
+      <svg viewBox="0 0 500 340" class="infographic-svg">
+        <text x="250" y="24" font-family="Outfit" font-size="13" font-weight="800" fill="#0d9488" text-anchor="middle">
+          ${T('ORIENTALISM & KNOWLEDGE-POWER MATRIX','ŞARKIYATÇILIK VE BİLGİ-İKTİDAR MATRİSİ')}
+        </text>
+        <rect x="30" y="45" width="440" height="260" rx="10" fill="var(--bg-surface)" stroke="var(--border-color)"/>
+        
+        <g transform="translate(50, 70)" style="cursor:pointer" onclick="showDiagramDetailPopup('w7_rosetta_detail')">
+          <rect x="0" y="0" width="180" height="95" rx="8" fill="rgba(13,148,136,0.12)" stroke="#0d9488" stroke-width="1.5"/>
+          <text x="90" y="25" font-family="Outfit" font-size="11" font-weight="800" fill="#0d9488" text-anchor="middle">${T('Institut d\'Égypte','Mısır Enstitüsü (1798)')}</text>
+          <text x="90" y="48" font-family="Inter" font-size="8.5" fill="var(--text-primary)" text-anchor="middle">160 Bilim İnsanı & Mühendis</text>
+          <text x="90" y="66" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">Süveyş Kanalı Projeleri & Haritalama</text>
+        </g>
+
+        <g transform="translate(270, 70)" style="cursor:pointer" onclick="showDiagramDetailPopup('w7_rosetta_detail')">
+          <rect x="0" y="0" width="180" height="95" rx="8" fill="rgba(59,130,246,0.12)" stroke="#3b82f6" stroke-width="1.5"/>
+          <text x="90" y="25" font-family="Outfit" font-size="11" font-weight="800" fill="#3b82f6" text-anchor="middle">${T('Rosetta Stone','Rosetta Taşı (1799)')}</text>
+          <text x="90" y="48" font-family="Inter" font-size="8.5" fill="var(--text-primary)" text-anchor="middle">Champollion & Hiyeroglifler</text>
+          <text x="90" y="66" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">Modern Mısırbilim'in Doğuşu</text>
+        </g>
+
+        <g transform="translate(50, 185)" style="cursor:pointer" onclick="showDiagramDetailPopup('w7_aboukir_detail')">
+          <rect x="0" y="0" width="400" height="100" rx="8" fill="rgba(217,119,6,0.12)" stroke="#d97706" stroke-width="1.5"/>
+          <text x="200" y="28" font-family="Outfit" font-size="12" font-weight="800" fill="#d97706" text-anchor="middle">${T('Description de l\'Égypte (1809-1829)','Description de l\'Égypte (24 Cilt)')}</text>
+          <text x="200" y="52" font-family="Inter" font-size="9" font-weight="700" fill="var(--text-primary)" text-anchor="middle">Edward Said: "Batı'nın Doğu Üzerindeki Emperyalist Söylem İnşası"</text>
+          <text x="200" y="72" font-family="Inter" font-size="8" fill="var(--text-secondary)" text-anchor="middle">İşgali 'Mazlum Halkları Özgürleştirme' Maskesiyle Sunma</text>
+        </g>
+      </svg>`;
+
+    // SVG 3: Power Triangle
+    const svg3 = `
+      <svg viewBox="0 0 500 340" class="infographic-svg">
+        <text x="250" y="24" font-family="Outfit" font-size="13" font-weight="800" fill="#0d9488" text-anchor="middle">
+          ${T('MEDITERRANEAN POWER TRIANGLE (1798-1801)','AKDENİZ GÜÇ ÜÇGENİ (1798-1801)')}
+        </text>
+        <polygon points="250,65 90,265 410,265" fill="none" stroke="#0d9488" stroke-width="2" stroke-dasharray="5,5"/>
+        
+        <g transform="translate(250, 65)">
+          <circle cx="0" cy="0" r="28" fill="#0d9488"/>
+          <text x="0" y="4" font-family="Outfit" font-size="10" font-weight="800" fill="#ffffff" text-anchor="middle">Fransa</text>
+          <text x="0" y="-36" font-family="Inter" font-size="8" font-weight="700" fill="#0d9488" text-anchor="middle">Napolyon & Doğu Ordusu</text>
+        </g>
+        <g transform="translate(90, 265)">
+          <circle cx="0" cy="0" r="28" fill="#d97706"/>
+          <text x="0" y="4" font-family="Outfit" font-size="9.5" font-weight="800" fill="#ffffff" text-anchor="middle">Osmanlı/Memlük</text>
+          <text x="0" y="40" font-family="Inter" font-size="8" font-weight="700" fill="#d97706" text-anchor="middle">Egemenlik & Yerel Cihad</text>
+        </g>
+        <g transform="translate(410, 265)">
+          <circle cx="0" cy="0" r="28" fill="#3b82f6"/>
+          <text x="0" y="4" font-family="Outfit" font-size="10" font-weight="800" fill="#ffffff" text-anchor="middle">İngiltere</text>
+          <text x="0" y="40" font-family="Inter" font-size="8" font-weight="700" fill="#3b82f6" text-anchor="middle">Amiral Nelson & Abluka</text>
+        </g>
+      </svg>`;
+
+    const svgs = [svg1, svg2, svg3];
+
+    const cards = [
+      commodityCard('w7_rosetta_detail', T('Rosetta Stone (1799)','Rosetta Taşı (1799)'), `
+        <rect x="25" y="20" width="50" height="60" rx="4" fill="#374151" stroke="#6b7280"/>
+        <line x1="30" y1="30" x2="70" y2="30" stroke="#9ca3af" stroke-width="1"/>
+        <line x1="30" y1="40" x2="70" y2="40" stroke="#9ca3af" stroke-width="1"/>
+        <line x1="30" y1="50" x2="70" y2="50" stroke="#9ca3af" stroke-width="1"/>
+        <line x1="30" y1="60" x2="70" y2="60" stroke="#9ca3af" stroke-width="1"/>`, '#374151'),
+      commodityCard('w7_toulon_detail', T('Toulon Fleet (1798)','Toulon Donanması'), `
+        <path d="M 20,55 C 30,30 70,30 80,55 C 65,48 35,48 20,55 Z" fill="#0d9488" stroke="#0f766e" stroke-width="1.5"/>
+        <circle cx="50" cy="45" r="4" fill="#f59e0b"/>`, '#0d9488'),
+      commodityCard('w7_aboukir_detail', T('Battle of the Nile','Ebu Kır Deniz Savaşı'), `
+        <path d="M 22,26 L 78,74 M 78,26 L 22,74" stroke="#dc2626" stroke-width="4" stroke-linecap="round"/>`, '#dc2626'),
+      commodityCard('w7_alex_detail', T('Description de l\'Égypte','Description de l\'Égypte'), `
+        <rect x="30" y="22" width="40" height="56" rx="3" fill="#d97706" stroke="#b45309"/>
+        <line x1="34" y1="22" x2="34" y2="78" stroke="#fef08a" stroke-width="2"/>
+        <text x="50" y="50" font-family="Outfit" font-size="7" font-weight="800" fill="#ffffff" text-anchor="middle">ÉGYPTE</text>`, '#d97706')
+    ];
+
+    activeTabs = tabs;
+    activeSvgs = svgs;
+    activeCards = cards;
+    activeTabIdx = tab;
   }
 
   // Unified render block
@@ -3938,6 +4065,48 @@ function getDetailedAcademicNotes(weekNum, lang) {
 // ----------------------------------------------------
 
 const diagramNodeDetails = {
+  w7_toulon_detail: {
+    title: { tr: "Toulon Limanı & Donanma Çıkışı", en: "Toulon Arsenal & Expedition Departure" },
+    body: {
+      tr: "<h4>Fransız Donanmasının Gizli Seferi:</h4><p>19 Mayıs 1798'de Toulon'dan hareket eden 40.000 kişilik Fransız Doğu Ordusu, İngiliz donanmasının takibinden kaçarak gizlice Doğu Akdeniz'e seyretmiştir.</p>",
+      en: "<h4>Secret Departure of the Armée d'Orient:</h4><p>On May 19, 1798, 40,000 French troops set sail from Toulon under total secrecy, evading British naval patrols in the Mediterranean.</p>"
+    }
+  },
+  w7_malta_detail: {
+    title: { tr: "Malta'nın İşgali (Haziran 1798)", en: "Capture of Malta (June 1798)" },
+    body: {
+      tr: "<h4>Malta Şövalyelerinin Sonu:</h4><p>Napolyon Mısır yolunda Malta'yı işgal ederek yüzyıllardır süren Hristiyan askeri tarikatına son vermiş ve adayı Fransız üssü yapmıştır.</p>",
+      en: "<h4>Fall of the Knights Hospitaller:</h4><p>Napoleon captured Malta en route to Alexandria, dismantling the centuries-old Crusader Order of Saint John and securing a key naval stronghold.</p>"
+    }
+  },
+  w7_alex_detail: {
+    title: { tr: "İskenderiye Çıkarması (Temmuz 1798)", en: "Alexandria Landing (July 1798)" },
+    body: {
+      tr: "<h4>Doğu'da İlk Adım:</h4><p>Fransız birlikleri 1 Temmuz 1798'de İskenderiye'ye ayak basmış, Napolyon ilk ünlü Arapça beyannamesini burada dağıtmıştır.</p>",
+      en: "<h4>First Footprint in Egypt:</h4><p>French forces landed at Alexandria on July 1, 1798, where Napoleon distributed his famous Arabic proclamation to native Egyptians.</p>"
+    }
+  },
+  w7_cairo_detail: {
+    title: { tr: "Kahire & Piramitler Muharebesi", en: "Cairo & Battle of the Pyramids" },
+    body: {
+      tr: "<h4>Memlük Süvarilerinin Bozgunu:</h4><p>Napolyon kare düzeni kuran piyadeleriyle Memlük süvari saldırılarını püskürtmüş ve 21 Temmuz 1798'de Kahire'ye girmiştir.</p>",
+      en: "<h4>Rout of the Mamluk Cavalry:</h4><p>Forming disciplined infantry squares, Napoleon shattered the Mamluk cavalry forces on July 21, 1798, securing control of Cairo.</p>"
+    }
+  },
+  w7_aboukir_detail: {
+    title: { tr: "Ebu Kır Deniz Savaşı & Abluka", en: "Battle of the Nile & Aboukir Bay" },
+    body: {
+      tr: "<h4>Amiral Nelson'ın Zaferi:</h4><p>1 Ağustos 1798'de Amiral Nelson Fransız donanmasını imha etmiş, Napolyon'un ordusunu Mısır'da tamamen mahsur bırakmıştır.</p>",
+      en: "<h4>Nelson's Decisive Naval Victory:</h4><p>On August 1, 1798, Admiral Horatio Nelson destroyed the French fleet at Aboukir Bay, completely cutting off the French army from Europe.</p>"
+    }
+  },
+  w7_rosetta_detail: {
+    title: { tr: "Rosetta Taşı & Mısırbilim", en: "Rosetta Stone & Birth of Egyptology" },
+    body: {
+      tr: "<h4>Hiyerogliflerin Çözülmesi:</h4><p>1799'da bulunan Rosetta Taşı, Champollion'un hiyeroglifleri deşifre etmesini sağlamış ve modern Mısırbilim'i başlatmıştır.</p>",
+      en: "<h4>Unlocking Ancient History:</h4><p>Discovered in 1799 near Rashid, the Rosetta Stone enabled Champollion to decipher hieroglyphics and found the field of modern Egyptology.</p>"
+    }
+  },
   w2_pop_detail: {
     title: {
       tr: "Nüfus ve Patates Etkisi",
@@ -4552,6 +4721,88 @@ function showDetailedSlideAnalysis() {
 
 function getDetailedSlideAnalysisText(week, slideIndex, lang) {
   const data = {
+    7: { // Week 7: European Imperialism
+      0: {
+        tr: `<h4>Akdeniz'e Açılan Fransız Seferi ve İtalya Başarıları</h4>
+             <p>Fransız Devrim savaşları, Napolyon Bonapart'ın 1797-1798 İtalya seferlerindeki göz alıcı zaferleriyle Akdeniz havzasına genişlemiştir. Venedik Cumhuriyeti'nin bin yıllık varlığına son verilmiş, Nice, Savoy ve İyon Adaları Fransa kontrolüne geçmiştir.</p>
+             <p>Bu gelişmeler, İngiltere ile Fransa arasındaki emperyal rekabeti Akdeniz jeopolitiğinin merkezine yerleştirmiş ve Mısır Seferi'nin askeri zeminini hazırlamıştır.</p>`,
+        en: `<h4>French Mediterranean Expansion & Italian Victories</h4>
+             <p>The French Revolutionary Wars expanded into the Mediterranean basin following Napoleon's military victories in Northern Italy (1797-1798). The thousand-year-old Venetian Republic was dismantled, and France acquired strategic naval footholds in Nice, Savoy, and the Ionian Islands.</p>
+             <p>These victories shifted Anglo-French imperial rivalry directly into the Mediterranean, laying the strategic groundwork for the invasion of Egypt.</p>`
+      },
+      1: {
+        tr: `<h4>Toulon Tersanesi ve Çifte Emperyalist Hedef</h4>
+             <p>Toulon Limanı, Fransız Cumhuriyet ordusunun Akdeniz'deki devasa silah ve donanma deposu haline gelmiştir. 19 Mayıs 1798'de 40.000 askerden oluşan Doğu Ordusu gizlilik içinde denize açılmıştır.</p>
+             <p>Seferin çifte amacı vardı: 1) İngiltere'nin Hindistan ile olan hayati ticari iletişim hatlarını keserek rakibini felç etmek. 2) Mısır'ı Fransa için güvenilir bir tarımsal tahıl sömürgesi yapmak.</p>`,
+        en: `<h4>Toulon Arsenal & Dual Imperial Objectives</h4>
+             <p>Toulon served as the chief naval arsenal for the French Republic. On May 19, 1798, a fleet carrying 40,000 troops set sail under total secrecy.</p>
+             <p>The expedition pursued dual strategic goals: 1) Sever Britain's trade routes to India to weaken its global economy. 2) Establish Egypt as a dependable agricultural grain colony for France.</p>`
+      },
+      2: {
+        tr: `<h4>Sömürgeciliğin Özgürleştirme Söylemiyle Maskelenmesi</h4>
+             <p>Jakobenlerin sömürgecilik karşıtı çizgisi kırılmış, yerini Fransa'nın refahı için yeni sömürgeler edinilmesi gerektiği düşüncesine bırakmıştır. Böylece 'uydu cumhuriyetler' konsepti doğmuştur.</p>
+             <p>Milletvekili Joseph Echasseriaux, medeniyetin beşiği Mısır'ı ihya etmenin Fransız devrimci görevi olduğunu savunarak modern emperyalizmin uygarlık götürme (civilizing mission) rhetoric'ini kurmuştur.</p>`,
+        en: `<h4>The Ideology of Liberalizing Colonization</h4>
+             <p>Early Jacobin anti-colonialism gave way to conservative arguments demanding colonial acquisition for French prosperity, spawning the concept of 'satellite republics'.</p>
+             <p>Legislator Joseph Echasseriaux framed colonizing Egypt as a noble task to 'regenerate the cradle of civilization', pioneering the modern rhetoric of the 'civilizing mission'.</p>`
+      },
+      3: {
+        tr: `<h4>Şark Hayali ve Şarkiyatçı Bilginin Askeri Kullanımı</h4>
+             <p>Napolyon, Büyük İskender'in izinden giderek Doğu'da büyük bir imparatorluk kurma hayaline sahipti. Sefer öncesinde Sylvestre de Sacy gibi önde gelen Şarkiyatçılardan danışmanlık alınmıştır.</p>
+             <p>Tarihte ilk kez Doğu dilleri ve kültürü hakkındaki akademik Şarkiyatçı bilgi, doğrudan bir askeri işgal ve sömürgeleştirme projesine hizmet etmek üzere sahaya sürülmüştür.</p>`,
+        en: `<h4>Dream of the Orient & Mobilization of Orientalist Scholarship</h4>
+             <p>Napoleon harbored romantic ambitions of creating an empire in the East, following the footsteps of Alexander the Great. He consulted leading Orientalist scholars like Sylvestre de Sacy before embarking.</p>
+             <p>For the first time in history, academic Orientalist expertise was directly mobilized as an instrument of military conquest and colonial administration.</p>`
+      },
+      4: {
+        tr: `<h4>Osmanlı Zayıflaması, Doğu Sorunu ve Memlük Düzeni</h4>
+             <p>1774 Küçük Kaynarca Antlaşması sonrası Osmanlı merkez otoritesinin zayıflaması Avrupa diplomasisinde 'Doğu Sorunu'nu başlatmıştır. Mısır bu süreçte rakip Memlük hanelerinin (Murad Bey ve İbrahim Bey) kontrolüne geçmiştir.</p>
+             <p>Baskıcı ve yozlaşmış Memlük derebeyliği, halk nezdinde meşruiyetini yitirmiş ve Mısır'ı dış müdahalelere karşı savunmasız bırakmıştır.</p>`,
+        en: `<h4>Ottoman Decline, The Eastern Question & Mamluk Household Rule</h4>
+             <p>Following the 1774 Treaty of Küçük Kaynarca, Ottoman decline gave rise to the 'Eastern Question' in European diplomacy. Egypt operated under virtually autonomous Mamluk military households.</p>
+             <p>The oppressive and fragmented Mamluk regime lacked popular legitimacy, leaving Egypt vulnerable to foreign military intervention.</p>`
+      },
+      5: {
+        tr: `<h4>İskenderiye Çıkarması, Piramitler Zaferi ve Halk Cihadı</h4>
+             <p>Temmuz 1798'de İskenderiye'ye çıkan Napolyon, kendilerini İslam dostu gösteren Arapça bildiriler yayımlamış ve Piramitler Muharebesi'nde Memlük süvarilerini imha etmiştir.</p>
+             <p>Ancak Osmanlı fermanları üzerine Kahire halkı işgale karşı cihad ilan etmiş, Fransız ordusu halk ayaklanmalarıyla karşılaşmıştır.</p>`,
+        en: `<h4>Alexandria Landing, Battle of the Pyramids & Popular Resistance</h4>
+             <p>Landing in July 1798, Napoleon issued Arabic proclamations claiming French alliance with Islam, then shattered Mamluk forces at the Battle of the Pyramids.</p>
+             <p>However, Ottoman firmans sparked a popular jihad, leading Cairo's lower classes to launch fierce anti-colonial uprisings against French forces.</p>`
+      },
+      6: {
+        tr: `<h4>Fransız İşgalinin Kurumsal ve İdari Reformları</h4>
+             <p>Napolyon Mısır'ı model bir sömürgeye dönüştürmek amacıyla yerel Divanlar (meclisler), arazi ve vergi reformları, hastaneler ve posta teşkilatı kurmuştur.</p>
+             <p>Mısır'a getirilen matbaalarla ilk resmi gazeteler yayımlanmış, Kahire'de modern bürokratik idare mekanizmaları denenmiştir.</p>`,
+        en: `<h4>French Institutional & Administrative Reforms</h4>
+             <p>Napoleon sought to establish Egypt as a model Enlightenment colony, introducing native administrative councils (Divans), land reforms, hospitals, and postal services.</p>
+             <p>Imported printing presses published the first official newspapers in Cairo, experimenting with modern bureaucratic governance.</p>`
+      },
+      7: {
+        tr: `<h4>Ebu Kır Deniz Muharebesi ve Amiral Nelson Ablukası</h4>
+             <p>1 Ağustos 1798'de Amiral Horatio Nelson, Ebu Kır Koyu'nda Fransız donanmasını yakalayarak tamamen imha etmiştir.</p>
+             <p>Deniz bağlantısı kesilen Fransız Doğu Ordusu Mısır'da mahsur kalmış; Napolyon 1799'da gizlice Paris'e kaçarken ordusunu General Kléber'e bırakmıştır.</p>`,
+        en: `<h4>Battle of the Nile & British Naval Supremacy</h4>
+             <p>On August 1, 1798, British Admiral Horatio Nelson destroyed the French fleet at Aboukir Bay during the Battle of the Nile.</p>
+             <p>Cut off from Europe, the French army became stranded in Egypt. Napoleon departed secretly for Paris in 1799, leaving General Kléber in command.</p>`
+      },
+      8: {
+        tr: `<h4>Mısır Enstitüsü, Rosetta Taşı ve Mısırbilim'in Doğuşu</h4>
+             <p>Fransız ordusuyla gelen 160 bilim insanı Kahire'de Mısır Enstitüsü'nü kurmuş, ülkenin doğal ve tarihi zenginliklerini haritalandırmıştır.</p>
+             <p>1799'da bulunan Rosetta Taşı, Champollion'un hiyeroglifleri deşifre etmesini sağlamış ve 24 ciltlik Description de l'Égypte ile Mısırbilim doğmuştur.</p>`,
+        en: `<h4>Institut d'Égypte, Rosetta Stone & Birth of Egyptology</h4>
+             <p>160 savants accompanied the expedition, founding the Institut d'Égypte in Cairo to study engineering, archaeology, and natural history.</p>
+             <p>The discovery of the Rosetta Stone in 1799 enabled Champollion to decipher hieroglyphics, culminating in the monumental 24-volume Description de l'Égypte.</p>`
+      },
+      9: {
+        tr: `<h4>Emperyalist Miras ve Edward Said'in Eleştirisi</h4>
+             <p>1801'deki İngiliz-Osmanlı tahliyesi sonrası Mısır'da Kavalalı Mehmet Ali Paşa dönemi başlamış ve İngiltere'nin Akdeniz üstünlüğü pekişmiştir.</p>
+             <p>Edward Said, Şarkiyatçılık eserinde Mısır Seferi'nin Batı'nın Doğu üzerindeki söylemsel ve siyasi tahakkümünün ana prototipi olduğunu kanıtlamıştır.</p>`,
+        en: `<h4>Imperial Legacy & Edward Said's Critique</h4>
+             <p>The 1801 British-Ottoman evacuation ended French occupation, leading to the rise of Muhammad Ali Pasha and consolidating British naval dominance.</p>
+             <p>Edward Said demonstrated in Orientalism that the campaign established the foundational template for Western imperial discourse over the Orient.</p>`
+      }
+    },
     2: { // Week 2: Columbian Exchange
       0: {
         tr: `<h4>Büyük Düşüş ve Avrupa’nın Sermaye Birikimi</h4>
