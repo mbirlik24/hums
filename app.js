@@ -3101,69 +3101,7 @@ function renderInfographic() {
   applyDiagramTransform();
 }
 
-// RENDER INTERACTIVE ASSESSMENT QUIZ
-function resetQuizState() {
-  state.quizAnswers = [];
-  state.quizSubmitted = false;
-  state.quizState = {
-    currentQuestionIndex: 0,
-    score: 0,
-    completed: false
-  };
-}
 
-function renderQuiz() {
-  const body = document.getElementById('quiz-body');
-  const hud = document.getElementById('quiz-hud');
-  const hudLeft = document.getElementById('quiz-hud-left');
-  const hudCorrect = document.getElementById('quiz-hud-correct');
-  const hudWrong = document.getElementById('quiz-hud-wrong');
-  const hudLblCorrect = document.getElementById('quiz-hud-lbl-correct');
-  const hudLblWrong = document.getElementById('quiz-hud-lbl-wrong');
-  const nav = document.getElementById('quiz-nav');
-  const btnBack = document.getElementById('quiz-btn-back');
-  const btnNext = document.getElementById('quiz-btn-next');
-  
-  body.innerHTML = '';
-  
-  const trans = uiTranslations[state.language];
-  const weekData = learningData.weeks[state.week];
-  const quizData = weekData.quiz;
-  const qIndex = state.quizState.currentQuestionIndex;
-  
-  if (state.quizState.completed) {
-    // Hide HUD and Nav Bar for results
-    hud.style.display = 'none';
-    nav.style.display = 'none';
-    
-    const passed = state.quizState.score >= Math.ceil(quizData.length * 0.8);
-    if (passed) {
-      state.completedWeeks[state.week] = true;
-    }
-    state.weekScores[state.week] = state.quizState.score;
-    saveProgress();
-    updateSidebarScoreDisplay(state.week);
-    updateGlobalProgressBar();
-    
-    body.innerHTML = `
-      <div class="quiz-results-summary fade-in" style="padding: 1.0rem 0;">
-        <h3 class="modal-title" style="font-size: 1.0rem; margin-bottom: 0.35rem;">${trans.quizCompletedTitle}</h3>
-        <div class="quiz-results-score" style="font-size: 1.8rem; margin-bottom: 0.35rem;">${state.quizState.score} / ${quizData.length}</div>
-        <p style="color: var(--text-secondary); max-width: 300px; font-size: 0.7rem; line-height: 1.35; margin: 0 auto 0.6rem;">
-          ${trans.quizScoreText} <strong>${Math.round((state.quizState.score / quizData.length) * 100)}%</strong>. 
-          ${trans.quizMinScoreText}
-        </p>
-        <div style="margin: 0.6rem 0; font-size: 0.75rem; font-weight: 700; color: ${passed ? 'var(--success)' : 'var(--error)'}">
-          ${passed ? trans.quizPassText : trans.quizFailText}
-        </div>
-        <button class="quiz-submit-btn" style="padding: 0.35rem 1.0rem; font-size: 0.7rem; border-radius: 5px; margin-top: 0.35rem;" onclick="restartQuiz()">${trans.restartQuizBtn}</button>
-      </div>
-    `;
-    return;
-
-  // ══════════════════════════════════════════════════════════════
-  //  WEEK 8  –  The Eastern Question & Greek Revolution
-  // ══════════════════════════════════════════════════════════════
   if (state.week === 8) {
     const tabs = [
       { en: '📉 Naval Balance (Navarino 1827)', tr: '📉 Navarin Donanma Dengesi (1827)' },
@@ -3469,8 +3407,82 @@ function renderQuiz() {
     return;
   }
 
-  }
+  const cardsSection = document.getElementById('graphics-cards-section');
+  const cardsGrid = document.getElementById('graphics-cards-grid');
   
+  if (cardsSection && cardsGrid) {
+    if (activeCards && activeCards.length > 0) {
+      cardsSection.style.display = 'block';
+      cardsGrid.innerHTML = activeCards.join('');
+    } else {
+      cardsSection.style.display = 'none';
+    }
+  }
+
+  // Re-apply the zoom scale after rendering
+  applyDiagramTransform();
+
+// RENDER INTERACTIVE ASSESSMENT QUIZ
+function resetQuizState() {
+  state.quizAnswers = [];
+  state.quizSubmitted = false;
+  state.quizState = {
+    currentQuestionIndex: 0,
+    score: 0,
+    completed: false
+  };
+}
+
+function renderQuiz() {
+  const body = document.getElementById('quiz-body');
+  const hud = document.getElementById('quiz-hud');
+  const hudLeft = document.getElementById('quiz-hud-left');
+  const hudCorrect = document.getElementById('quiz-hud-correct');
+  const hudWrong = document.getElementById('quiz-hud-wrong');
+  const hudLblCorrect = document.getElementById('quiz-hud-lbl-correct');
+  const hudLblWrong = document.getElementById('quiz-hud-lbl-wrong');
+  const nav = document.getElementById('quiz-nav');
+  const btnBack = document.getElementById('quiz-btn-back');
+  const btnNext = document.getElementById('quiz-btn-next');
+  
+  body.innerHTML = '';
+  
+  const trans = uiTranslations[state.language];
+  const weekData = learningData.weeks[state.week];
+  const quizData = weekData.quiz;
+  const qIndex = state.quizState.currentQuestionIndex;
+  
+  if (state.quizState.completed) {
+    // Hide HUD and Nav Bar for results
+    hud.style.display = 'none';
+    nav.style.display = 'none';
+    
+    const passed = state.quizState.score >= Math.ceil(quizData.length * 0.8);
+    if (passed) {
+      state.completedWeeks[state.week] = true;
+    }
+    state.weekScores[state.week] = state.quizState.score;
+    saveProgress();
+    updateSidebarScoreDisplay(state.week);
+    updateGlobalProgressBar();
+    
+    body.innerHTML = `
+      <div class="quiz-results-summary fade-in" style="padding: 1.0rem 0;">
+        <h3 class="modal-title" style="font-size: 1.0rem; margin-bottom: 0.35rem;">${trans.quizCompletedTitle}</h3>
+        <div class="quiz-results-score" style="font-size: 1.8rem; margin-bottom: 0.35rem;">${state.quizState.score} / ${quizData.length}</div>
+        <p style="color: var(--text-secondary); max-width: 300px; font-size: 0.7rem; line-height: 1.35; margin: 0 auto 0.6rem;">
+          ${trans.quizScoreText} <strong>${Math.round((state.quizState.score / quizData.length) * 100)}%</strong>. 
+          ${trans.quizMinScoreText}
+        </p>
+        <div style="margin: 0.6rem 0; font-size: 0.75rem; font-weight: 700; color: ${passed ? 'var(--success)' : 'var(--error)'}">
+          ${passed ? trans.quizPassText : trans.quizFailText}
+        </div>
+        <button class="quiz-submit-btn" style="padding: 0.35rem 1.0rem; font-size: 0.7rem; border-radius: 5px; margin-top: 0.35rem;" onclick="restartQuiz()">${trans.restartQuizBtn}</button>
+      </div>
+    `;
+    return;
+  }
+
   // Make sure HUD and Nav Bar are shown
   hud.style.display = 'flex';
   nav.style.display = 'flex';
