@@ -3167,48 +3167,73 @@ function renderQuiz() {
   if (state.week === 8) {
     const tabs = [
       { en: '📉 Naval Balance (Navarino 1827)', tr: '📉 Navarin Donanma Dengesi (1827)' },
-      { en: '🌐 Great Power Interests',          tr: '🌐 Büyük Güçlerin Çıkar Dengesi' }
+      { en: '🌐 Great Power Interests Matrix',  tr: '🌐 Doğu Sorununda Güçler Matrisi' }
     ];
     activeTabIdx = diagramTabState[8] || 0;
     const tabBarHtml = buildDiagramTabBar(8, tabs, L);
 
     if (activeTabIdx === 0) {
       container.innerHTML = tabBarHtml + `
-        <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:12px; padding:1rem;">
-          <h4 style="font-family:'Outfit',sans-serif; font-size:0.95rem; font-weight:800; color:var(--text-primary); margin-bottom:0.75rem;">
-            ${T('Battle of Navarino Naval Forces (October 20, 1827)', 'Navarin Deniz Savaşı Donanma Güç Karşılaştırması (20 Ekim 1827)')}
+        <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:12px; padding:1.25rem;">
+          <h4 style="font-family:'Outfit',sans-serif; font-size:1rem; font-weight:800; color:#0284c7; margin-bottom:0.75rem; text-align:center;">
+            ${T('Navarino Naval Battle Fleet Comparison (20 Oct 1827)', 'Navarin Deniz Muharebesi Güç Dengesi (20 Ekim 1827)')}
           </h4>
-          <svg viewBox="0 0 500 200" style="width:100%; height:auto;">
-            <!-- Allied Fleet -->
-            <rect x="50" y="30" width="180" height="35" rx="6" fill="#2563eb" opacity="0.85"/>
-            <text x="60" y="52" fill="#fff" font-size="11" font-weight="700">${T('Allied Fleet (UK/FR/RU): 27 Ships', 'Müttefik Donanması (İNG/FR/RUS): 27 Gemi')}</text>
-            <rect x="50" y="70" width="38" height="25" rx="4" fill="#1d4ed8"/>
-            <text x="60" y="87" fill="#fff" font-size="10" font-weight="700">10 B</text>
+          <svg viewBox="0 0 500 220" class="infographic-svg" style="width:100%; height:auto;">
+            <defs>
+              <linearGradient id="allied-g" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#0284c7"/>
+                <stop offset="100%" stop-color="#2563eb"/>
+              </linearGradient>
+              <linearGradient id="ott-g" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#dc2626"/>
+                <stop offset="100%" stop-color="#ea580c"/>
+              </linearGradient>
+            </defs>
+            <!-- Allied Fleet Bar -->
+            <text x="20" y="40" font-family="Outfit" font-size="11" font-weight="800" fill="#0284c7">
+              🇬🇧🇫🇷🇷🇺 ${T('Allied Fleet (Britain, France, Russia)', 'Müttefik Donanması (İngiltere, Fransa, Rusya)')}
+            </text>
+            <rect x="20" y="50" width="230" height="34" rx="6" fill="url(#allied-g)"/>
+            <text x="240" y="72" font-family="Inter" font-size="11" font-weight="800" fill="#fff" text-anchor="end">27 Ships / Gemiler</text>
+            <text x="30" y="72" font-family="Inter" font-size="10" font-weight="700" fill="#fff">1,270 Cannons / Top</text>
 
-            <!-- Ottoman-Egyptian Fleet -->
-            <rect x="50" y="110" width="380" height="35" rx="6" fill="#dc2626" opacity="0.85"/>
-            <text x="60" y="132" fill="#fff" font-size="11" font-weight="700">${T('Ottoman-Egyptian Fleet: 89 Ships', 'Osmanlı-Mısır Donanması: 89 Gemi')}</text>
-            <rect x="50" y="150" width="360" height="25" rx="4" fill="#991b1b"/>
-            <text x="60" y="167" fill="#fff" font-size="10" font-weight="700">${T('Destruction: 60 Ships Sunk / 6000 Losses', 'Zayiat: 60 Gemi Batırıldı / 6.000 Şehit')}</text>
+            <!-- Ottoman-Egyptian Fleet Bar -->
+            <text x="20" y="115" font-family="Outfit" font-size="11" font-weight="800" fill="#dc2626">
+              🇹🇷🇪🇬 ${T('Ottoman-Egyptian Armada', 'Osmanlı-Mısır Donanması')}
+            </text>
+            <rect x="20" y="125" width="450" height="34" rx="6" fill="url(#ott-g)"/>
+            <text x="460" y="147" font-family="Inter" font-size="11" font-weight="800" fill="#fff" text-anchor="end">89 Ships / Gemiler</text>
+            <text x="30" y="147" font-family="Inter" font-size="10" font-weight="700" fill="#fff">2,240 Cannons / Top</text>
+
+            <!-- Losses Outcome -->
+            <line x1="20" y1="180" x2="480" y2="180" stroke="var(--border-color)" stroke-width="1" stroke-dasharray="4,4"/>
+            <text x="250" y="202" font-family="Inter" font-size="10" fill="#dc2626" font-weight="800" text-anchor="middle">
+              💥 ${T('Outcome: 60+ Ottoman ships destroyed, 4,000+ casualties. 0 Allied ships lost.', 'Sonuç: 60+ Osmanlı gemisi batırıldı, 4.000+ kayıp. Müttefiklerden 0 gemi battı.')}
+            </text>
           </svg>
-          <p style="font-size:0.78rem; color:var(--text-secondary); margin-top:0.5rem; line-height:1.4;">
-            ${T('Although numerically smaller, Allied heavy firepower destroyed the Ottoman-Egyptian fleet in 3 hours.', 'Müttefik donanması sayıca az olmasına rağmen ağır ateş gücüyle 3 saatte Osmanlı donanmasını imha etmiştir.')}
-          </p>
         </div>`;
     } else {
       container.innerHTML = tabBarHtml + `
-        <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:12px; padding:1rem;">
-          <h4 style="font-family:'Outfit',sans-serif; font-size:0.95rem; font-weight:800; color:var(--text-primary); margin-bottom:0.75rem;">
+        <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:12px; padding:1.25rem;">
+          <h4 style="font-family:'Outfit',sans-serif; font-size:1rem; font-weight:800; color:var(--text-primary); margin-bottom:0.75rem; text-align:center;">
             ${T('Eastern Question Great Power Geopolitical Axes', 'Doğu Sorununda Avrupalı Güçlerin Stratejileri')}
           </h4>
-          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:0.75rem;">
-            <div style="background:var(--bg-card); border:1px solid #2563eb; border-radius:8px; padding:0.75rem;">
-              <strong style="color:#2563eb; font-size:0.85rem;">🇷🇺 ${T('Russian Empire', 'Rus İmparatorluğu')}</strong>
-              <p style="font-size:0.75rem; color:var(--text-secondary); margin-top:0.3rem;">${T('Protect Orthodox population & gain Black Sea Straits access.', 'Ortodoksları koruma bahanesiyle Boğazlar ve Akdeniz’e inme amacı.')}</p>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:0.75rem;">
+            <div style="background:var(--bg-card); border:1.5px solid #2563eb; border-radius:8px; padding:0.85rem;">
+              <strong style="color:#2563eb; font-size:0.9rem;">🇷🇺 ${T('Russian Empire', 'Rus İmparatorluğu')}</strong>
+              <p style="font-size:0.78rem; color:var(--text-secondary); margin-top:0.4rem; line-height:1.4;">${T('Protect Orthodox population & gain Black Sea Straits access.', 'Ortodoksları koruma bahanesiyle Boğazlar ve Akdeniz\'e inme amacı.')}</p>
             </div>
-            <div style="background:var(--bg-card); border:1px solid #059669; border-radius:8px; padding:0.75rem;">
-              <strong style="color:#059669; font-size:0.85rem;">🇬🇧 ${T('British Empire', 'İngiliz İmparatorluğu')}</strong>
-              <p style="font-size:0.75rem; color:var(--text-secondary); margin-top:0.3rem;">${T('Preserve Ottoman integrity to block Russian Mediterranean route.', 'Hindistan yolunu güvenceye almak için Rusya\'yı Akdeniz\'de engelleme.')}</p>
+            <div style="background:var(--bg-card); border:1.5px solid #059669; border-radius:8px; padding:0.85rem;">
+              <strong style="color:#059669; font-size:0.9rem;">🇬🇧 ${T('British Empire', 'İngiliz İmparatorluğu')}</strong>
+              <p style="font-size:0.78rem; color:var(--text-secondary); margin-top:0.4rem; line-height:1.4;">${T('Preserve Ottoman integrity to block Russian Mediterranean route.', 'Hindistan yolunu güvenceye almak için Rusya\'yı Akdeniz\'de engelleme.')}</p>
+            </div>
+            <div style="background:var(--bg-card); border:1.5px solid #d97706; border-radius:8px; padding:0.85rem;">
+              <strong style="color:#d97706; font-size:0.9rem;">🇦TST ${T('Austrian Empire', 'Avusturya İmparatorluğu')}</strong>
+              <p style="font-size:0.78rem; color:var(--text-secondary); margin-top:0.4rem; line-height:1.4;">${T('Fear Balkan nationalism spreading to multi-ethnic empire.', 'Balkan milliyetçiliğinin kendi imparatorluğuna sıçramasından korkma.')}</p>
+            </div>
+            <div style="background:var(--bg-card); border:1.5px solid #7e22ce; border-radius:8px; padding:0.85rem;">
+              <strong style="color:#7e22ce; font-size:0.9rem;">🇫🇷 ${T('French Kingdom', 'Fransa Krallığı')}</strong>
+              <p style="font-size:0.78rem; color:var(--text-secondary); margin-top:0.4rem; line-height:1.4;">${T('Re-establish Levant prestige & philhellenic public support.', 'Doğu Akdeniz nüfuzunu ve Filhelenik prestijini yeniden kazanma.')}</p>
             </div>
           </div>
         </div>`;
@@ -3229,41 +3254,48 @@ function renderQuiz() {
 
     if (activeTabIdx === 0) {
       container.innerHTML = tabBarHtml + `
-        <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:12px; padding:1rem;">
-          <h4 style="font-family:'Outfit',sans-serif; font-size:0.95rem; font-weight:800; color:var(--text-primary); margin-bottom:0.75rem;">
+        <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:12px; padding:1.25rem;">
+          <h4 style="font-family:'Outfit',sans-serif; font-size:1rem; font-weight:800; color:var(--text-primary); margin-bottom:0.75rem; text-align:center;">
             ${T('European Population & Rail Network Growth (1800-1900)', 'Avrupa Nüfusu ve Demiryolu Ağı Büyümesi (1800-1900)')}
           </h4>
-          <svg viewBox="0 0 500 180" style="width:100%; height:auto;">
-            <!-- Axis -->
-            <line x1="40" y1="150" x2="480" y2="150" stroke="var(--border-color)" stroke-width="2"/>
-            <text x="50" y="165" font-size="10" fill="var(--text-secondary)">1800 (187M)</text>
-            <text x="240" y="165" font-size="10" fill="var(--text-secondary)">1850 (266M)</text>
-            <text x="430" y="165" font-size="10" fill="var(--text-secondary)">1900 (435M)</text>
+          <svg viewBox="0 0 500 190" class="infographic-svg" style="width:100%; height:auto;">
+            <line x1="40" y1="150" x2="470" y2="150" stroke="var(--border-color)" stroke-width="2"/>
+            <text x="50" y="170" font-size="10" fill="var(--text-secondary)" text-anchor="middle">1800 (187M)</text>
+            <text x="250" y="170" font-size="10" fill="var(--text-secondary)" text-anchor="middle">1850 (266M)</text>
+            <text x="450" y="170" font-size="10" fill="var(--text-secondary)" text-anchor="middle">1900 (435M)</text>
             
-            <!-- Rail line -->
-            <path d="M 50 140 Q 240 100 450 30" fill="none" stroke="#0284c7" stroke-width="3"/>
-            <circle cx="450" cy="30" r="5" fill="#0284c7"/>
-            <text x="320" y="45" font-size="11" fill="#0284c7" font-weight="700">${T('Rail Mileage: 50,000+ km', 'Demiryolu Ağı: 50.000+ km')}</text>
+            <path d="M 50 135 Q 250 100 450 30" fill="none" stroke="#10b981" stroke-width="3"/>
+            <circle cx="450" cy="30" r="5" fill="#10b981"/>
+            <text x="350" y="24" font-size="10" fill="#10b981" font-weight="800">Population: 435 Million</text>
+
+            <path d="M 50 145 Q 250 120 450 65" fill="none" stroke="#0284c7" stroke-width="3" stroke-dasharray="5,5"/>
+            <circle cx="450" cy="65" r="5" fill="#0284c7"/>
+            <text x="350" y="78" font-size="10" fill="#0284c7" font-weight="800">Rail: 50,000+ km</text>
           </svg>
         </div>`;
     } else {
       container.innerHTML = tabBarHtml + `
-        <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:12px; padding:1rem;">
+        <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:12px; padding:1.25rem;">
+          <h4 style="font-family:'Outfit',sans-serif; font-size:1rem; font-weight:800; color:var(--text-primary); margin-bottom:0.75rem; text-align:center;">
+            ${T('1st vs 2nd Industrial Revolution Comparison', 'I. vs II. Sanayi Devrimi Karşılaştırma Matrisi')}
+          </h4>
           <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
-            <div style="background:var(--bg-card); border:1px solid var(--border-color); border-radius:8px; padding:0.75rem;">
-              <h5 style="color:#0284c7; font-weight:800;">I. Sanayi Devrimi (1780-1850)</h5>
-              <ul style="font-size:0.78rem; color:var(--text-secondary); margin-top:0.4rem; padding-left:1.2rem;">
-                <li>Kömür & Buhar Gücü</li>
-                <li>Tekstil & Dokuma Fabrikaları</li>
-                <li>İngiltere Merkezli</li>
+            <div style="background:var(--bg-card); border:1.5px solid #0284c7; border-radius:10px; padding:1rem;">
+              <h5 style="color:#0284c7; font-weight:800; font-size:0.9rem; margin-bottom:0.5rem;">⚙️ I. Sanayi Devrimi (1780-1850)</h5>
+              <ul style="font-size:0.8rem; color:var(--text-secondary); padding-left:1.2rem; line-height:1.6;">
+                <li><strong>Enerji Kaynağı:</strong> Kömür ve Buhar Gücü</li>
+                <li><strong>Ana Sektör:</strong> Tekstil & Dokuma Fabrikaları</li>
+                <li><strong>Lider Ülke:</strong> İngiltere ("Dünyanın Atölyesi")</li>
+                <li><strong>Ulaşım:</strong> Buharlı Tren ve Kanallar</li>
               </ul>
             </div>
-            <div style="background:var(--bg-card); border:1px solid var(--border-color); border-radius:8px; padding:0.75rem;">
-              <h5 style="color:#ea580c; font-weight:800;">II. Sanayi Devrimi (1850-1914)</h5>
-              <ul style="font-size:0.78rem; color:var(--text-secondary); margin-top:0.4rem; padding-left:1.2rem;">
-                <li>Bessemer Çeliği & Elektrik</li>
-                <li>Otomotiv, Kimya & Telgraf</li>
-                <li>Almanya & ABD Liderliği</li>
+            <div style="background:var(--bg-card); border:1.5px solid #ea580c; border-radius:10px; padding:1rem;">
+              <h5 style="color:#ea580c; font-weight:800; font-size:0.9rem; margin-bottom:0.5rem;">⚡ II. Sanayi Devrimi (1850-1914)</h5>
+              <ul style="font-size:0.8rem; color:var(--text-secondary); padding-left:1.2rem; line-height:1.6;">
+                <li><strong>Enerji Kaynağı:</strong> Elektrik ve Petrol</li>
+                <li><strong>Ana Sektör:</strong> Bessemer Çeliği, Kimya, Otomotiv</li>
+                <li><strong>Lider Ülkeler:</strong> Almanya & ABD</li>
+                <li><strong>İletişim:</strong> Telgraf, Telefon ve Montaj Hattı</li>
               </ul>
             </div>
           </div>
@@ -3285,35 +3317,45 @@ function renderQuiz() {
 
     if (activeTabIdx === 0) {
       container.innerHTML = tabBarHtml + `
-        <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:12px; padding:1rem;">
-          <h4 style="font-family:'Outfit',sans-serif; font-size:0.95rem; font-weight:800; color:#dc2626; margin-bottom:0.75rem;">
-            ${T('Radikal Social Reforms of the Paris Commune (1871)', 'Paris Komünü Radikal Sosyal Reformları (1871)')}
+        <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:12px; padding:1.25rem;">
+          <h4 style="font-family:'Outfit',sans-serif; font-size:1rem; font-weight:800; color:#dc2626; margin-bottom:0.75rem; text-align:center;">
+            ${T('Radical Social Reform Decrees of the Paris Commune (1871)', 'Paris Komünü Radikal Sosyal Reform Kararları (1871)')}
           </h4>
-          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(140px, 1fr)); gap:0.6rem;">
-            <div style="background:var(--bg-card); border-left:3px solid #dc2626; padding:0.5rem; font-size:0.75rem;">
-              <strong>Ordu Reformu:</strong> Sürekli ordu lağvedildi, halk milisi kuruldu.
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:0.75rem;">
+            <div style="background:var(--bg-card); border-left:4px solid #dc2626; padding:0.75rem; border-radius:6px;">
+              <strong style="color:#dc2626; font-size:0.85rem;">🛡️ Ordu Reformu</strong>
+              <p style="font-size:0.75rem; color:var(--text-secondary); margin-top:0.3rem;">Sürekli profesyonel ordu kaldırıldı, tüm halk Ulusal Muhafız olarak silahlandırıldı.</p>
             </div>
-            <div style="background:var(--bg-card); border-left:3px solid #dc2626; padding:0.5rem; font-size:0.75rem;">
-              <strong>Laiklik:</strong> Din ve devlet işleri ayrıldı, kilise malları kamulaştırıldı.
+            <div style="background:var(--bg-card); border-left:4px solid #dc2626; padding:0.75rem; border-radius:6px;">
+              <strong style="color:#dc2626; font-size:0.85rem;">⛪ Laiklik ve Din Ayrımı</strong>
+              <p style="font-size:0.75rem; color:var(--text-secondary); margin-top:0.3rem;">Din ve devlet işleri tamamen ayrıldı, kilise malları kamuya aktarıldı.</p>
             </div>
-            <div style="background:var(--bg-card); border-left:3px solid #dc2626; padding:0.5rem; font-size:0.75rem;">
-              <strong>İşçi Kooperatifi:</strong> Sahipsiz fabrikalar işçilere devredildi.
+            <div style="background:var(--bg-card); border-left:4px solid #dc2626; padding:0.75rem; border-radius:6px;">
+              <strong style="color:#dc2626; font-size:0.85rem;">🏭 İşçi Kooperatifleri</strong>
+              <p style="font-size:0.75rem; color:var(--text-secondary); margin-top:0.3rem;">Sahipsiz bırakılan tüm fabrikalar işçi öz-yönetim kooperatiflerine devredildi.</p>
             </div>
-            <div style="background:var(--bg-card); border-left:3px solid #dc2626; padding:0.5rem; font-size:0.75rem;">
-              <strong>Kadın Hakları:</strong> Parasız seküler kız eğitimi ve Kadınlar Birliği.
+            <div style="background:var(--bg-card); border-left:4px solid #dc2626; padding:0.75rem; border-radius:6px;">
+              <strong style="color:#dc2626; font-size:0.85rem;">♀️ Kadın Hakları ve Eğitim</strong>
+              <p style="font-size:0.75rem; color:var(--text-secondary); margin-top:0.3rem;">Parasız seküler kız eğitimi başlatıldı, fırınlarda gece çalışması yasaklandı.</p>
             </div>
           </div>
         </div>`;
     } else {
       container.innerHTML = tabBarHtml + `
-        <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:12px; padding:1rem;">
-          <h4 style="font-family:'Outfit',sans-serif; font-size:0.95rem; font-weight:800; color:var(--text-primary); margin-bottom:0.75rem;">
-            ${T('19th Century Industrial Class Structure', '19. Yüzyıl Sanayi Toplumu Sınıf Yapısı')}
+        <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:12px; padding:1.25rem;">
+          <h4 style="font-family:'Outfit',sans-serif; font-size:1rem; font-weight:800; color:var(--text-primary); margin-bottom:0.75rem; text-align:center;">
+            ${T('19th Century Industrial Social Hierarchy', '19. Yüzyıl Sanayi Toplumu Sınıf Piramidi')}
           </h4>
-          <div style="display:flex; flex-direction:column; align-items:center; gap:0.4rem;">
-            <div style="width:40%; background:#d97706; color:#fff; text-align:center; padding:0.4rem; border-radius:6px; font-weight:700; font-size:0.75rem;">Burjuvazi & Fabrika Sahipleri (%5)</div>
-            <div style="width:65%; background:#0284c7; color:#fff; text-align:center; padding:0.4rem; border-radius:6px; font-weight:700; font-size:0.75rem;">Küçük Burjuvazi & Bürokrasi (%15)</div>
-            <div style="width:90%; background:#dc2626; color:#fff; text-align:center; padding:0.4rem; border-radius:6px; font-weight:700; font-size:0.75rem;">Sanayi Proletaryası & Emekçiler (%80)</div>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:0.5rem; max-width:480px; margin:0 auto;">
+            <div style="width:45%; background:#d97706; color:#fff; text-align:center; padding:0.6rem; border-radius:8px; font-weight:800; font-size:0.8rem; box-shadow:var(--shadow-sm);">
+              👑 Burjuvazi & Fabrika Sahipleri (%5)
+            </div>
+            <div style="width:70%; background:#0284c7; color:#fff; text-align:center; padding:0.6rem; border-radius:8px; font-weight:800; font-size:0.8rem; box-shadow:var(--shadow-sm);">
+              👔 Küçük Burjuvazi, Tüccarlar & Bürokrasi (%15)
+            </div>
+            <div style="width:95%; background:#dc2626; color:#fff; text-align:center; padding:0.6rem; border-radius:8px; font-weight:800; font-size:0.8rem; box-shadow:var(--shadow-sm);">
+              🛠️ Sanayi Proletaryası, İşçiler & Köylüler (%80)
+            </div>
           </div>
         </div>`;
     }
@@ -3333,35 +3375,43 @@ function renderQuiz() {
 
     if (activeTabIdx === 0) {
       container.innerHTML = tabBarHtml + `
-        <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:12px; padding:1rem;">
-          <h4 style="font-family:'Outfit',sans-serif; font-size:0.95rem; font-weight:800; color:#059669; margin-bottom:0.75rem;">
+        <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:12px; padding:1.25rem;">
+          <h4 style="font-family:'Outfit',sans-serif; font-size:1rem; font-weight:800; color:#059669; margin-bottom:0.75rem; text-align:center;">
             ${T('Egyptian Conscript Army Expansion (1805-1835)', 'Mısır Düzenli Ordusu ve Asker Sayısı Artışı (1805-1835)')}
           </h4>
-          <svg viewBox="0 0 500 150" style="width:100%; height:auto;">
-            <rect x="50" y="100" width="80" height="30" rx="4" fill="#059669" opacity="0.4"/>
-            <text x="90" y="120" fill="#fff" font-size="10" font-weight="700" text-anchor="middle">15.000</text>
-            <text x="90" y="145" fill="var(--text-secondary)" font-size="9" text-anchor="middle">1811</text>
+          <svg viewBox="0 0 500 160" class="infographic-svg" style="width:100%; height:auto;">
+            <rect x="50" y="100" width="90" height="35" rx="6" fill="#059669" opacity="0.4"/>
+            <text x="95" y="122" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">15.000</text>
+            <text x="95" y="150" fill="var(--text-secondary)" font-size="10" font-weight="700" text-anchor="middle">1811 (Kale Katliamı)</text>
 
-            <rect x="180" y="60" width="80" height="70" rx="4" fill="#059669" opacity="0.7"/>
-            <text x="220" y="100" fill="#fff" font-size="10" font-weight="700" text-anchor="middle">80.000</text>
-            <text x="220" y="145" fill="var(--text-secondary)" font-size="9" text-anchor="middle">1825</text>
+            <rect x="195" y="55" width="90" height="80" rx="6" fill="#059669" opacity="0.7"/>
+            <text x="240" y="98" fill="#fff" font-size="11" font-weight="800" text-anchor="middle">80.000</text>
+            <text x="240" y="150" fill="var(--text-secondary)" font-size="10" font-weight="700" text-anchor="middle">1825 (Mora Seferi)</text>
 
-            <rect x="310" y="20" width="80" height="110" rx="4" fill="#059669"/>
-            <text x="350" y="70" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">130.000</text>
-            <text x="350" y="145" fill="var(--text-secondary)" font-size="9" text-anchor="middle">1835</text>
+            <rect x="340" y="15" width="90" height="120" rx="6" fill="#059669"/>
+            <text x="385" y="70" fill="#fff" font-size="12" font-weight="900" text-anchor="middle">130.000</text>
+            <text x="385" y="150" fill="var(--text-secondary)" font-size="10" font-weight="700" text-anchor="middle">1835 (Suriye Seferi)</text>
           </svg>
         </div>`;
     } else {
       container.innerHTML = tabBarHtml + `
-        <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:12px; padding:1rem;">
-          <h4 style="font-family:'Outfit',sans-serif; font-size:0.95rem; font-weight:800; color:var(--text-primary); margin-bottom:0.75rem;">
+        <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:12px; padding:1.25rem;">
+          <h4 style="font-family:'Outfit',sans-serif; font-size:1rem; font-weight:800; color:var(--text-primary); margin-bottom:0.75rem; text-align:center;">
             ${T('Chronology of Modernization & Colonization', 'Mısır Modernleşmesi ve İşgal Süreci')}
           </h4>
-          <div style="display:flex; flex-direction:column; gap:0.4rem; font-size:0.75rem;">
-            <div style="background:var(--bg-card); padding:0.4rem 0.6rem; border-left:3px solid #059669;"><strong>1805:</strong> Mehmet Ali Paşa'nın vali olması ve ordu reformu.</div>
-            <div style="background:var(--bg-card); padding:0.4rem 0.6rem; border-left:3px solid #0284c7;"><strong>1869:</strong> Süveyş Kanalı'nın açılması ve dış borç krizi.</div>
-            <div style="background:var(--bg-card); padding:0.4rem 0.6rem; border-left:3px solid #d97706;"><strong>1876:</strong> İngiliz-Fransız Çifte Kontrol borç idaresi.</div>
-            <div style="background:var(--bg-card); padding:0.4rem 0.6rem; border-left:3px solid #dc2626;"><strong>1882:</strong> Ahmed Urabi İsyanı ve İngiltere’nin Mısır’ı fiilen işgali.</div>
+          <div style="display:flex; flex-direction:column; gap:0.5rem; font-size:0.78rem;">
+            <div style="background:var(--bg-card); padding:0.6rem 0.8rem; border-left:4px solid #059669; border-radius:4px;">
+              <strong>1805:</strong> Mehmet Ali Paşa'nın vali olması, zorunlu askerlik ve Pamuk tekelinin kurulması.
+            </div>
+            <div style="background:var(--bg-card); padding:0.6rem 0.8rem; border-left:4px solid #0284c7; border-radius:4px;">
+              <strong>1869:</strong> Süveyş Kanalı'nın açılması ve dış borç krizinin tırmanması.
+            </div>
+            <div style="background:var(--bg-card); padding:0.6rem 0.8rem; border-left:4px solid #d97706; border-radius:4px;">
+              <strong>1876:</strong> İngiliz-Fransız Çifte Kontrol (Dual Control) mali idaresinin Mısır bütçesine el koyması.
+            </div>
+            <div style="background:var(--bg-card); padding:0.6rem 0.8rem; border-left:4px solid #dc2626; border-radius:4px;">
+              <strong>1882:</strong> Ahmed Urabi Paşa ulusal isyanı ve İngiltere'nin Mısır'ı fiilen işgali.
+            </div>
           </div>
         </div>`;
     }
@@ -3381,36 +3431,37 @@ function renderQuiz() {
 
     if (activeTabIdx === 0) {
       container.innerHTML = tabBarHtml + `
-        <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:12px; padding:1rem;">
-          <h4 style="font-family:'Outfit',sans-serif; font-size:0.95rem; font-weight:800; color:#7e22ce; margin-bottom:0.75rem;">
+        <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:12px; padding:1.25rem;">
+          <h4 style="font-family:'Outfit',sans-serif; font-size:1rem; font-weight:800; color:#7e22ce; margin-bottom:0.75rem; text-align:center;">
             ${T('Scramble for Africa Partition by 1914', 'Afrika Kıtasının Avrupalı Güçlerce Paylaşımı (1914)')}
           </h4>
-          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(120px, 1fr)); gap:0.5rem; text-align:center;">
-            <div style="background:#1e3a8a; color:#fff; padding:0.5rem; border-radius:6px; font-weight:700; font-size:0.75rem;">🇬🇧 İngiltere %30</div>
-            <div style="background:#1e40af; color:#fff; padding:0.5rem; border-radius:6px; font-weight:700; font-size:0.75rem;">🇫🇷 Fransa %15</div>
-            <div style="background:#854d0e; color:#fff; padding:0.5rem; border-radius:6px; font-weight:700; font-size:0.75rem;">🇧🇪 Belçika %8</div>
-            <div style="background:#3f6212; color:#fff; padding:0.5rem; border-radius:6px; font-weight:700; font-size:0.75rem;">🇩🇪 Almanya %8</div>
-            <div style="background:#991b1b; color:#fff; padding:0.5rem; border-radius:6px; font-weight:700; font-size:0.75rem;">Bağımsız %10</div>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(130px, 1fr)); gap:0.6rem; text-align:center;">
+            <div style="background:#1e3a8a; color:#fff; padding:0.6rem; border-radius:8px; font-weight:800; font-size:0.8rem;">🇬🇧 İngiltere %30</div>
+            <div style="background:#1e40af; color:#fff; padding:0.6rem; border-radius:8px; font-weight:800; font-size:0.8rem;">🇫🇷 Fransa %15</div>
+            <div style="background:#d97706; color:#fff; padding:0.6rem; border-radius:8px; font-weight:800; font-size:0.8rem;">🇧🇪 Belçika (Kongo) %10</div>
+            <div style="background:#059669; color:#fff; padding:0.6rem; border-radius:8px; font-weight:800; font-size:0.8rem;">🇩🇪 Almanya %9</div>
+            <div style="background:#dc2626; color:#fff; padding:0.6rem; border-radius:8px; font-weight:800; font-size:0.8rem;">🇵🇹 Portekiz & Diğer %26</div>
+            <div style="background:#4b5563; color:#fff; padding:0.6rem; border-radius:8px; font-weight:800; font-size:0.8rem;">🇪🇹 Bağımsız (Etiyopya) %10</div>
           </div>
         </div>`;
     } else {
       container.innerHTML = tabBarHtml + `
-        <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:12px; padding:1rem;">
-          <h4 style="font-family:'Outfit',sans-serif; font-size:0.95rem; font-weight:800; color:var(--text-primary); margin-bottom:0.75rem;">
-            ${T('The 3 Gs Driving Imperial Expansion', 'Yeni Emperyalizmin Üç Temel İtici Gücü (3G)')}
+        <div style="background:var(--bg-surface); border:1px solid var(--border-color); border-radius:12px; padding:1.25rem;">
+          <h4 style="font-family:'Outfit',sans-serif; font-size:1rem; font-weight:800; color:var(--text-primary); margin-bottom:0.75rem; text-align:center;">
+            ${T('The 3G Motives of New Imperialism', 'Yeni Emperyalizmin 3G İtici Güçleri')}
           </h4>
-          <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:0.5rem; text-align:center;">
-            <div style="background:var(--bg-card); border:1px solid #d97706; padding:0.5rem; border-radius:8px;">
-              <strong style="color:#d97706; font-size:0.8rem;">GOLD (Altın)</strong>
-              <p style="font-size:0.7rem; color:var(--text-secondary); margin-top:0.3rem;">Kauçuk, Bakır, Petrol & Pazar Arayışı</p>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:0.75rem;">
+            <div style="background:var(--bg-card); border:1.5px solid #d97706; border-radius:8px; padding:0.85rem;">
+              <strong style="color:#d97706; font-size:0.9rem;">✝️ GOD (Tanrı)</strong>
+              <p style="font-size:0.75rem; color:var(--text-secondary); margin-top:0.3rem; line-height:1.4;">Misyonerlik faaliyetleri ve Hristiyanlaştırma hamlesi; 'Medenileştirme Misyonu' söylemi.</p>
             </div>
-            <div style="background:var(--bg-card); border:1px solid #2563eb; padding:0.5rem; border-radius:8px;">
-              <strong style="color:#2563eb; font-size:0.8rem;">GLORY (Şan)</strong>
-              <p style="font-size:0.7rem; color:var(--text-secondary); margin-top:0.3rem;">Büyük Güç Prestij & Donanma Yarışı</p>
+            <div style="background:var(--bg-card); border:1.5px solid #059669; border-radius:8px; padding:0.85rem;">
+              <strong style="color:#059669; font-size:0.9rem;">💰 GOLD (Altın & Hammadde)</strong>
+              <p style="font-size:0.75rem; color:var(--text-secondary); margin-top:0.3rem; line-height:1.4;">Sanayi üretimi için Kauçuk, Bakır, Pamuk ve Elmas madenlerini ele geçirme arzusu.</p>
             </div>
-            <div style="background:var(--bg-card); border:1px solid #059669; padding:0.5rem; border-radius:8px;">
-              <strong style="color:#059669; font-size:0.8rem;">GOD (Tanrı)</strong>
-              <p style="font-size:0.7rem; color:var(--text-secondary); margin-top:0.3rem;">Medenileştirme Misyonu & Misyonerlik</p>
+            <div style="background:var(--bg-card); border:1.5px solid #2563eb; border-radius:8px; padding:0.85rem;">
+              <strong style="color:#2563eb; font-size:0.9rem;">👑 GLORY (Şan & Prestij)</strong>
+              <p style="font-size:0.75rem; color:var(--text-secondary); margin-top:0.3rem; line-height:1.4;">Avrupa büyük güçleri arasında küresel nüfuz, askeri haritalama ve bayrak gösterme yarışı.</p>
             </div>
           </div>
         </div>`;
