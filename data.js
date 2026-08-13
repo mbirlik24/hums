@@ -7600,10 +7600,10 @@ var learningData = window.learningData = {
         "en": "The Industrial Revolutions & Social Transformation"
       },
       "video": {
-        "src": "https://drive.google.com/file/d/1y9JMjselukGWTnJiIqU-swfdMP06Y6Cr/view?usp=sharing",
+        "src": "https://drive.google.com/file/d/1swA2UeastZEdytsKyySBAt9zz-G4-OJP/view?usp=drive_link",
         "desc": {
-          "tr": "I. ve II. Sanayi Devrimleri, demiryolları, kentleşme ve sınıf yapısı.",
-          "en": "The First & Second Industrial Revolutions, railways, urbanization, and class dynamics."
+          "tr": "Avrupa'da Sanayi Devrimleri, Fabrika Sistemi ve Sosyal Dönüşüm Video Anlatımı.",
+          "en": "The Industrial Revolutions in Europe, Factory System & Social Transformation Video Summary."
         }
       },
       "slides": [

@@ -97,7 +97,7 @@ const markerDetails = {
     title: { en: "Bristol, England", tr: "Bristol, İngiltere" },
     desc: {
       en: "During the peak of the transatlantic slave trade in the 18th century, Bristol was one of Britain's premier slaving ports. Merchant syndicates financed hundreds of voyages, shipping guns, brassware, and textiles to West Africa and returning with sugar, tobacco, and rum produced by enslaved labor, driving Bristol's rapid industrialization and urban expansion.",
-      tr: "18. yüzyılda transatlantik köle ticaretinin zirvesinde olduğu dönemde Bristol, İngiltere'nin önde gelen köle limanlarından biriydi. Tüccar sendikaları, Batı Afrika'ya silah, pirinç eşyalar ve tekstil ürünleri gönderip köleleştirilmiş emekle üretilen şeker, tütün ve romla dönen yüzlerce seferi finanse ederek Bristol'ün hızlı sanayileşmesini ve kentsel büyümesini sağladı."
+      tr: "18. yüzyılda transatlantik köle ticaretinin zirvesinde olduğu dönemde Bristol, İngiltere’nin önde gelen köle limanlarından biriydi. Tüccar sendikaları, Batı Afrika'ya silah, pirinç eşyalar ve tekstil ürünleri gönderip köleleştirilmiş emekle üretilen şeker, tütün ve romla dönen yüzlerce seferi finanse ederek Bristol'ün hızlı sanayileşmesini ve kentsel büyümesini sağladı."
     }
   },
   liverpool: {
@@ -146,7 +146,7 @@ const markerDetails = {
     title: { en: "Varennes, France", tr: "Varennes, Fransa" },
     desc: {
       en: "The small town near the border where King Louis XVI and Queen Marie Antoinette were captured during their attempted flight from revolutionary Paris in June 1791 (the 'Flight to Varennes'). Their arrest shattered the illusion of a loyal constitutional monarch, exposing their treasonous contacts with foreign powers and paving the way for the abolition of the monarchy.",
-      tr: "Haziran 1791'de Kral XVI. Louis ve Kraliçe Marie Antoinette'in devrimci Paris'ten kaçmaya çalışırken yakalandıkları sınıra yakın küçük kasaba ('Varennes Kaçışı'). Yakalanmaları, sadık bir anayasal hükümdar illüzyonunu yıkarak yabancı güçlerle olan ihanet bağlantılarını ortaya çıkardı ve monarşinin kaldırılmasının yolunu açtı."
+      tr: "Haziran 1791'de Kral XVI. Louis ve Kraliçe Marie Antoinette'in devrimci Paris’ten kaçmaya çalışırken yakalandıkları sınıra yakın küçük kasaba ('Varennes Kaçışı'). Yakalanmaları, sadık bir anayasal hükümdar illüzyonunu yıkarak yabancı güçlerle olan ihanet bağlantılarını ortaya çıkardı ve monarşinin kaldırılmasının yolunu açtı."
     }
   },
   versailles: {
@@ -167,7 +167,7 @@ const markerDetails = {
     title: { en: "Boston, USA", tr: "Boston, ABD" },
     desc: {
       en: "The hotbed of the American Revolution. In response to British taxes like the Stamp Act and the Tea Act, local organizations like the Sons of Liberty (led by Samuel Adams) organized riots. In December 1773, they dumped British tea cargo into the harbor (the Boston Tea Party), prompting Britain to occupy the city and dissolve the Massachusetts legislature, leading to war.",
-      tr: "Amerikan Devrimi'nin sıcak yuvası. Damga Yasası ve Çay Yasası gibi İngiliz vergilerine yanıt olarak, Samuel Adams liderliğindeki Sons of Liberty (Özgürlük Evlatları) gibi yerel örgütler isyanlar düzenledi. Aralık 1773'te İngiliz çay kargosunu limana döktüler (Boston Çay Partisi); bu durum İngiltere'nin şehri işgal etmesine ve Massachusetts meclisini feshederek savaşı başlatmasına neden oldu."
+      tr: "Amerikan Devrimi'nin sıcak yuvası. Damga Yasası ve Çay Yasası gibi İngiliz vergilerine yanıt olarak, Samuel Adams liderliğindeki Sons of Liberty (Özgürlük Evlatları) gibi yerel örgütler isyanlar düzenledi. Aralık 1773'te İngiliz çay kargosunu limana döktüler (Boston Çay Partisi); bu durum İngiltere’nin şehri işgal etmesine ve Massachusetts meclisini feshederek savaşı başlatmasına neden oldu."
     }
   },
   philadelphia: {
@@ -202,7 +202,7 @@ const markerDetails = {
     title: { en: "Cap-Français, Saint-Domingue", tr: "Cap-Français, Saint-Domingue" },
     desc: {
       en: "The wealthy northern capital of Saint-Domingue, known as the 'Paris of the Antilles.' In August 1791, the massive slave uprising organized by Dutty Boukman began in the surrounding northern plain, burning plantations and marching on the city. Later, Toussaint L'Ouverture governed from here, and it became a primary target during Leclerc's French invasion, where Haitians burned the city to the ground in a scorched-earth strategy.",
-      tr: "Saint-Domingue'in kuzeydeki zengin başkenti, 'Antiller'in Paris'i' olarak bilinirdi. Ağustos 1791'de Dutty Boukman tarafından organize edilen devasa köle ayaklanması çevreleyen kuzey ovalarında plantasyonları yakarak başladı ve şehre doğru ilerledi. Daha sonra Toussaint L'Ouverture burayı yönetti; Leclerc'in Fransız işgali sırasında ise Haitililerin yakıp yıkma stratejisiyle şehri tamamen yakması üzerine ana hedeflerden biri oldu."
+      tr: "Saint-Domingue'in kuzeydeki zengin başkenti, 'Antiller'in Paris’i' olarak bilinirdi. Ağustos 1791'de Dutty Boukman tarafından organize edilen devasa köle ayaklanması çevreleyen kuzey ovalarında plantasyonları yakarak başladı ve şehre doğru ilerledi. Daha sonra Toussaint L'Ouverture burayı yönetti; Leclerc'in Fransız işgali sırasında ise Haitililerin yakıp yıkma stratejisiyle şehri tamamen yakması üzerine ana hedeflerden biri oldu."
     }
   },
   port_au_prince: {
@@ -258,7 +258,7 @@ const markerDetails = {
     title: { en: "Luanda, Angola", tr: "Luanda, Angola" },
     desc: {
       en: "The capital of Portuguese Angola, established in 1576. It was the single most active slaving port in Africa, supplying millions of captives specifically for the sugar plantations and mines of Portuguese Brazil. Portuguese merchants engaged directly in interior slave-raiding wars and made alliances with regional leaders to ensure constant supplies.",
-      tr: "1576'da kurulan Portekiz Angolası'nın başkenti. Afrika'daki en aktif köle limanıydı ve özellikle Portekiz Brezilyası'nın şeker plantasyonları ve madenleri için milyonlarca esir sağladı. Portekizli tüccarlar, sürekli ikmal sağlamak amacıyla doğrudan iç bölgelerdeki köle akınlarına katıldılar ve bölgesel liderlerle ittifaklar kurdular."
+      tr: "1576'da kurulan Portekiz Angolası'nın başkenti. Afrika’daki en aktif köle limanıydı ve özellikle Portekiz Brezilyası'nın şeker plantasyonları ve madenleri için milyonlarca esir sağladı. Portekizli tüccarlar, sürekli ikmal sağlamak amacıyla doğrudan iç bölgelerdeki köle akınlarına katıldılar ve bölgesel liderlerle ittifaklar kurdular."
     }
   },
   congo: {
@@ -286,7 +286,7 @@ const markerDetails = {
     title: { en: "Jura, France (Fort de Joux)", tr: "Jura, Fransa (Fort de Joux)" },
     desc: {
       en: "The mountainous department in eastern France housing Fort de Joux. Following his arrest by General Leclerc's forces in Saint-Domingue, Haitian revolutionary leader Toussaint L'Ouverture was imprisoned here in a cold cell without trial, where he died of pneumonia in April 1803, months before Haiti's final victory.",
-      tr: "Doğu Fransa'daki dağlık Jura bölgesinde yer alan Fort de Joux kalesi. Saint-Domingue'de General Leclerc'in güçleri tarafından tutuklanmasının ardından, Haiti devriminin lideri Toussaint L'Ouverture burada dondurucu bir hücrede yargılanmadan hapsedildi ve Haiti'nin bağımsızlık zaferinden aylar önce, Nisan 1803'te zatürreden hayatını kaybetti."
+      tr: "Doğu Fransa’daki dağlık Jura bölgesinde yer alan Fort de Joux kalesi. Saint-Domingue'de General Leclerc'in güçleri tarafından tutuklanmasının ardından, Haiti devriminin lideri Toussaint L'Ouverture burada dondurucu bir hücrede yargılanmadan hapsedildi ve Haiti'nin bağımsızlık zaferinden aylar önce, Nisan 1803'te zatürreden hayatını kaybetti."
     }
   },
   kingston: {
@@ -1793,9 +1793,9 @@ function renderInfographic() {
         <path d="M 147,120 Q 180,145 190,255" stroke="#ef4444" stroke-width="2" stroke-dasharray="4,3" fill="none" marker-end="url(#arr-r)"/>
         <!-- Legend -->
         <rect x="390" y="80" width="10" height="10" fill="url(#bar-before)" rx="2"/>
-        <text x="405" y="89" font-family="Inter" font-size="8" fill="var(--text-secondary)">${T('Before Contact','Temas Öncesi')}</text>
+        <text x="405" y="89" font-family="Inter" font-size="8" fill="var(--text-secondary)">${T('Before Contact', 'Temas Öncesi')}</text>
         <rect x="390" y="98" width="10" height="10" fill="url(#bar-after)" rx="2"/>
-        <text x="405" y="107" font-family="Inter" font-size="8" fill="var(--text-secondary)">${T('After 1 Century','1 Yüzyıl Sonra')}</text>
+        <text x="405" y="107" font-family="Inter" font-size="8" fill="var(--text-secondary)">${T('After 1 Century', '1 Yüzyıl Sonra')}</text>
         <!-- 90% label -->
         <text x="250" y="320" font-family="Outfit" font-size="11" font-weight="800" fill="#ef4444" text-anchor="middle">
           ${T('⚠ Up to 90% population decline due to epidemic disease', '⚠ Salgın hastalıklar nedeniyle %90\'a kadar nüfus kaybı')}
@@ -1827,35 +1827,35 @@ function renderInfographic() {
         <g style="cursor:pointer" onclick="showDiagramDetailPopup('w2_trade_europe')">
           <rect x="185" y="48" width="130" height="48" rx="10" fill="var(--bg-surface)" stroke="#1d4ed8" stroke-width="2" filter="url(#sh3)"/>
           <text x="250" y="70" font-family="Outfit" font-size="11" font-weight="800" fill="#1d4ed8" text-anchor="middle">${T('EUROPE', 'AVRUPA')}</text>
-          <text x="250" y="86" font-family="Inter" font-size="8" fill="var(--text-secondary)" text-anchor="middle">${T('Textiles · Guns · Rum','Tekstil · Silah · Ром')}</text>
+          <text x="250" y="86" font-family="Inter" font-size="8" fill="var(--text-secondary)" text-anchor="middle">${T('Textiles · Guns · Rum', 'Tekstil · Silah · Ром')}</text>
         </g>
         <!-- Node: WEST AFRICA -->
         <g style="cursor:pointer" onclick="showDiagramDetailPopup('w2_trade_africa')">
           <rect x="30" y="220" width="140" height="48" rx="10" fill="var(--bg-surface)" stroke="#f59e0b" stroke-width="2" filter="url(#sh3)"/>
           <text x="100" y="242" font-family="Outfit" font-size="11" font-weight="800" fill="#d97706" text-anchor="middle">WEST AFRICA</text>
-          <text x="100" y="258" font-family="Inter" font-size="8" fill="var(--text-secondary)" text-anchor="middle">${T('Enslaved People','Köleleştirilen İnsanlar')}</text>
+          <text x="100" y="258" font-family="Inter" font-size="8" fill="var(--text-secondary)" text-anchor="middle">${T('Enslaved People', 'Köleleştirilen İnsanlar')}</text>
         </g>
         <!-- Node: AMERICAS -->
         <g style="cursor:pointer" onclick="showDiagramDetailPopup('w2_trade_americas')">
           <rect x="330" y="220" width="140" height="48" rx="10" fill="var(--bg-surface)" stroke="#10b981" stroke-width="2" filter="url(#sh3)"/>
           <text x="400" y="242" font-family="Outfit" font-size="11" font-weight="800" fill="#047857" text-anchor="middle">${T('AMERICAS', 'AMERİKA')}</text>
-          <text x="400" y="258" font-family="Inter" font-size="8" fill="var(--text-secondary)" text-anchor="middle">${T('Sugar · Tobacco · Silver','Şeker · Tütün · Gümüş')}</text>
+          <text x="400" y="258" font-family="Inter" font-size="8" fill="var(--text-secondary)" text-anchor="middle">${T('Sugar · Tobacco · Silver', 'Şeker · Tütün · Gümüş')}</text>
         </g>
         <!-- Arrow Europe → Africa (Manufactured Goods) -->
         <path d="M 200,96 Q 90,155 100,220" stroke="#f59e0b" stroke-width="2.5" fill="none" marker-end="url(#arr-gold)"/>
-        <text x="108" y="158" font-family="Inter" font-size="8" font-weight="700" fill="#d97706" text-anchor="middle" transform="rotate(-60,108,158)">${T('Manuf. Goods','İmalat Ürünleri')}</text>
+        <text x="108" y="158" font-family="Inter" font-size="8" font-weight="700" fill="#d97706" text-anchor="middle" transform="rotate(-60,108,158)">${T('Manuf. Goods', 'İmalat Ürünleri')}</text>
         <!-- Arrow Africa → Americas (Enslaved People) -->
         <path d="M 170,250 L 330,250" stroke="#ef4444" stroke-width="2.5" fill="none" marker-end="url(#arr-red2)"/>
-        <text x="250" y="242" font-family="Inter" font-size="8" font-weight="700" fill="#b91c1c" text-anchor="middle">${T('Middle Passage – Enslaved People','Orta Geçit – Köleleştirilen İnsanlar')}</text>
+        <text x="250" y="242" font-family="Inter" font-size="8" font-weight="700" fill="#b91c1c" text-anchor="middle">${T('Middle Passage – Enslaved People', 'Orta Geçit – Köleleştirilen İnsanlar')}</text>
         <!-- Arrow Americas → Europe (Raw Goods) -->
         <path d="M 400,220 Q 380,155 300,96" stroke="#10b981" stroke-width="2.5" fill="none" marker-end="url(#arr-grn2)"/>
-        <text x="385" y="155" font-family="Inter" font-size="8" font-weight="700" fill="#047857" text-anchor="middle" transform="rotate(60,385,155)">${T('Raw Materials','Hammadde')}</text>
+        <text x="385" y="155" font-family="Inter" font-size="8" font-weight="700" fill="#047857" text-anchor="middle" transform="rotate(60,385,155)">${T('Raw Materials', 'Hammadde')}</text>
         <!-- Center label -->
         <text x="250" y="175" font-family="Outfit" font-size="10" font-weight="800" fill="var(--text-secondary)" text-anchor="middle" opacity="0.5">ATLANTIC</text>
         <text x="250" y="190" font-family="Outfit" font-size="10" font-weight="800" fill="var(--text-secondary)" text-anchor="middle" opacity="0.5">OCEAN</text>
         <!-- profit note -->
         <text x="250" y="318" font-family="Inter" font-size="8" fill="var(--text-secondary)" text-anchor="middle">
-          ${T('Each leg generated profit for European merchants — funded by enslaved labor','Her bacak Avrupalı tüccarlara kâr sağladı — köle emeğiyle finanse edildi')}
+          ${T('Each leg generated profit for European merchants — funded by enslaved labor', 'Her bacak Avrupalı tüccarlara kâr sağladı — köle emeğiyle finanse edildi')}
         </text>
       </svg>`;
 
@@ -1868,10 +1868,10 @@ function renderInfographic() {
           </linearGradient>
         </defs>
         <text x="250" y="26" font-family="Outfit" font-size="12" font-weight="800" fill="#10b981" text-anchor="middle" letter-spacing="0.04em">
-          ${T('EUROPEAN POPULATION BOOM (1700-1900)','AVRUPA NÜFUS PATLAMASI (1700-1900)')}
+          ${T('EUROPEAN POPULATION BOOM (1700-1900)', 'AVRUPA NÜFUS PATLAMASI (1700-1900)')}
         </text>
         <text x="250" y="42" font-family="Inter" font-size="8" font-weight="500" fill="var(--text-secondary)" text-anchor="middle">
-          ${T('Driven by New World staple crops (Potato & Maize)','Yeni Dünya mahsullerinin (Patates ve Mısır) etkisiyle')}
+          ${T('Driven by New World staple crops (Potato & Maize)', 'Yeni Dünya mahsullerinin (Patates ve Mısır) etkisiyle')}
         </text>
         <line x1="60" y1="80" x2="60" y2="280" stroke="var(--border-color)" stroke-width="1.5"/>
         <line x1="60" y1="280" x2="450" y2="280" stroke="var(--border-color)" stroke-width="1.5"/>
@@ -1896,8 +1896,8 @@ function renderInfographic() {
         
         <g transform="translate(140, 110)" style="cursor:pointer" onclick="showDiagramDetailPopup('w2_pop_detail')">
           <rect x="0" y="0" width="160" height="42" rx="4" fill="var(--bg-surface)" stroke="#10b981" stroke-width="1"/>
-          <text x="80" y="15" font-family="Outfit" font-size="7.5" font-weight="700" fill="#047857" text-anchor="middle">${T('THE POTATO EFFECT','PATATES ETKİSİ')}</text>
-          <text x="80" y="26" font-family="Inter" font-size="6.5" fill="var(--text-secondary)" text-anchor="middle">${T('Provided cheap, dense calories','Ucuz ve yoğun kalori sağladı,')}</text>
+          <text x="80" y="15" font-family="Outfit" font-size="7.5" font-weight="700" fill="#047857" text-anchor="middle">${T('THE POTATO EFFECT', 'PATATES ETKİSİ')}</text>
+          <text x="80" y="26" font-family="Inter" font-size="6.5" fill="var(--text-secondary)" text-anchor="middle">${T('Provided cheap, dense calories', 'Ucuz ve yoğun kalori sağladı,')}</text>
           <text x="80" y="34" font-family="Inter" font-size="6.5" fill="var(--text-secondary)" text-anchor="middle">${T('fueling the Industrial Revolution','Endüstri Devrimi\'ni besledi')}</text>
         </g>
       </svg>`;
@@ -1905,7 +1905,7 @@ function renderInfographic() {
 
     // 3D Commodity cards (6 cards)
     const cards = [
-      commodityCard('commodity_corn', T('Maize / Corn','Mısır'), `
+      commodityCard('commodity_corn', T('Maize / Corn', 'Mısır'), `
         <defs>
           <linearGradient id="cl1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#10b981"/><stop offset="100%" stop-color="#047857"/></linearGradient>
           <linearGradient id="cc1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#fef08a"/><stop offset="100%" stop-color="#eab308"/></linearGradient>
@@ -1919,13 +1919,13 @@ function renderInfographic() {
         <circle cx="50" cy="43" r="2" fill="#f59e0b"/><circle cx="56" cy="43" r="2" fill="#fde68a"/>
         <circle cx="44" cy="53" r="2" fill="#f59e0b"/><circle cx="50" cy="53" r="2" fill="#fde68a"/>
         <circle cx="56" cy="53" r="2" fill="#f59e0b"/>`, '#10b981'),
-      commodityCard('commodity_tobacco', T('Tobacco','Tütün'), `
+      commodityCard('commodity_tobacco', T('Tobacco', 'Tütün'), `
         <defs><linearGradient id="tl1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#a16207"/><stop offset="100%" stop-color="#713f12"/></linearGradient></defs>
         <path d="M 50,90 C 25,60 25,25 50,10 C 75,25 75,60 50,90 Z" fill="url(#tl1)"/>
         <path d="M 50,10 L 50,90" stroke="#fef08a" stroke-width="1.5" opacity="0.4"/>
         <path d="M 50,30 L 35,45 M 50,45 L 32,60 M 50,60 L 38,75" stroke="#fef08a" stroke-width="1" opacity="0.3"/>
         <path d="M 50,30 L 65,45 M 50,45 L 68,60 M 50,60 L 62,75" stroke="#fef08a" stroke-width="1" opacity="0.3"/>`, '#d97706'),
-      commodityCard('commodity_sugar', T('Sugar Cane','Şeker Kamışı'), `
+      commodityCard('commodity_sugar', T('Sugar Cane', 'Şeker Kamışı'), `
         <defs><linearGradient id="sg1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#84cc16"/><stop offset="100%" stop-color="#4d7c0f"/></linearGradient></defs>
         <rect x="42" y="15" width="8" height="70" rx="3" fill="url(#sg1)"/>
         <rect x="53" y="25" width="6" height="55" rx="2" fill="url(#sg1)" opacity="0.7"/>
@@ -1933,7 +1933,7 @@ function renderInfographic() {
         <line x1="42" y1="55" x2="50" y2="55" stroke="#ecfdf5" stroke-width="1.5" opacity="0.6"/>
         <line x1="42" y1="70" x2="50" y2="70" stroke="#ecfdf5" stroke-width="1.5" opacity="0.6"/>
         <path d="M 45,35 C 20,25 15,45 35,50" stroke="#84cc16" stroke-width="2.5" fill="none" stroke-linecap="round"/>`, '#84cc16'),
-      commodityCard('commodity_potato', T('Potato','Patates'), `
+      commodityCard('commodity_potato', T('Potato', 'Patates'), `
         <defs><radialGradient id="pg1" cx="40%" cy="35%" r="60%"><stop offset="0%" stop-color="#d97706"/><stop offset="100%" stop-color="#92400e"/></radialGradient></defs>
         <ellipse cx="42" cy="50" rx="18" ry="22" fill="url(#pg1)"/>
         <ellipse cx="62" cy="55" rx="15" ry="18" fill="url(#pg1)" opacity="0.9"/>
@@ -1941,14 +1941,14 @@ function renderInfographic() {
         <circle cx="58" cy="48" r="2" fill="#78350f" opacity="0.6"/>
         <circle cx="48" cy="62" r="2" fill="#78350f" opacity="0.5"/>
         <path d="M 42,28 Q 46,20 50,15 Q 52,10 54,15" stroke="#84cc16" stroke-width="2" fill="none" stroke-linecap="round"/>`, '#d97706'),
-      commodityCard('commodity_tomato', T('Tomato','Domates'), `
+      commodityCard('commodity_tomato', T('Tomato', 'Domates'), `
         <defs><radialGradient id="tg1" cx="35%" cy="30%" r="65%"><stop offset="0%" stop-color="#f87171"/><stop offset="100%" stop-color="#dc2626"/></radialGradient></defs>
         <circle cx="50" cy="55" r="28" fill="url(#tg1)"/>
         <path d="M 50,27 C 46,20 50,14 50,27" stroke="#16a34a" stroke-width="2.5" fill="none"/>
         <path d="M 50,27 C 40,18 36,14 40,22" stroke="#16a34a" stroke-width="2" fill="none"/>
         <path d="M 50,27 C 60,18 64,14 60,22" stroke="#16a34a" stroke-width="2" fill="none"/>
         <path d="M 28,50 Q 50,45 72,50" stroke="#f9a8d4" stroke-width="1.5" opacity="0.4" fill="none"/>`, '#dc2626'),
-      commodityCard('commodity_cacao', T('Cacao','Kakao'), `
+      commodityCard('commodity_cacao', T('Cacao', 'Kakao'), `
         <defs><linearGradient id="cg1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#92400e"/><stop offset="100%" stop-color="#451a03"/></linearGradient></defs>
         <ellipse cx="50" cy="60" rx="22" ry="28" fill="url(#cg1)"/>
         <path d="M 35,40 L 50,32 L 65,40" stroke="#a16207" stroke-width="2" fill="none"/>
@@ -1984,18 +1984,18 @@ function renderInfographic() {
           </marker>
         </defs>
         <text x="250" y="26" font-family="Outfit" font-size="13" font-weight="800" fill="${accentW3}" text-anchor="middle" letter-spacing="0.04em">
-          ${T('TRANSITION TO RACIAL SLAVERY','IRKSAL KÖLELİĞE GEÇİŞ')}
+          ${T('TRANSITION TO RACIAL SLAVERY', 'IRKSAL KÖLELİĞE GEÇİŞ')}
         </text>
         <g transform="translate(45,48)" filter="url(#sh3d)" style="cursor:pointer" onclick="showDiagramDetailPopup('w3_step1')">
           <rect x="0" y="4" width="410" height="30" rx="6" fill="#b45309"/>
           <rect x="0" y="0" width="410" height="30" rx="6" fill="var(--bg-surface)" stroke="var(--border-color)" stroke-width="1"/>
-          <text x="205" y="19" font-family="Outfit" font-size="9.5" font-weight="700" fill="var(--text-primary)" text-anchor="middle">1. ${T('LAND CONSOLIDATION — Tobacco prices fall, planters squeeze indentured servants','TOPRAK TEKELLEŞMESİ — Tütün fiyatları düşer, toprak sahipleri işçileri ezer')}</text>
+          <text x="205" y="19" font-family="Outfit" font-size="9.5" font-weight="700" fill="var(--text-primary)" text-anchor="middle">1. ${T('LAND CONSOLIDATION — Tobacco prices fall, planters squeeze indentured servants', 'TOPRAK TEKELLEŞMESİ — Tütün fiyatları düşer, toprak sahipleri işçileri ezer')}</text>
         </g>
         <path d="M 250,82 L 250,97" stroke="${accentW3}" stroke-width="1.5" fill="none" marker-end="url(#arr-a)"/>
         <g transform="translate(45,100)" filter="url(#sh3d)" style="cursor:pointer" onclick="showDiagramDetailPopup('w3_step2')">
           <rect x="0" y="4" width="410" height="30" rx="6" fill="#b45309"/>
           <rect x="0" y="0" width="410" height="30" rx="6" fill="var(--bg-surface)" stroke="var(--border-color)" stroke-width="1"/>
-          <text x="205" y="19" font-family="Outfit" font-size="9.5" font-weight="700" fill="var(--text-primary)" text-anchor="middle">2. ${T('DISCONTENTED SERVANTS — Indentured servants free but landless','MEMNUNSUZ İŞÇİLER — Sözleşmeli işçiler özgür ama topraksız')}</text>
+          <text x="205" y="19" font-family="Outfit" font-size="9.5" font-weight="700" fill="var(--text-primary)" text-anchor="middle">2. ${T('DISCONTENTED SERVANTS — Indentured servants free but landless', 'MEMNUNSUZ İŞÇİLER — Sözleşmeli işçiler özgür ama topraksız')}</text>
         </g>
         <path d="M 250,134 L 250,149" stroke="${accentW3}" stroke-width="1.5" fill="none" marker-end="url(#arr-a)"/>
         <g transform="translate(45,152)" filter="url(#sh3d)" style="cursor:pointer" onclick="showDiagramDetailPopup('w3_step3')">
@@ -2007,14 +2007,14 @@ function renderInfographic() {
         <g transform="translate(45,204)" filter="url(#sh3d)" style="cursor:pointer" onclick="showDiagramDetailPopup('w3_step4')">
           <rect x="0" y="4" width="410" height="30" rx="6" fill="#b45309"/>
           <rect x="0" y="0" width="410" height="30" rx="6" fill="var(--bg-surface)" stroke="var(--border-color)" stroke-width="1"/>
-          <text x="205" y="19" font-family="Outfit" font-size="9.5" font-weight="700" fill="var(--text-primary)" text-anchor="middle">4. ${T('ELITE RESPONSE — Divide & Rule: racial laws separate black/white labor','ELİT YANITI — Böl-Yönet: ırksal yasalar siyah/beyaz emeği ayırır')}</text>
+          <text x="205" y="19" font-family="Outfit" font-size="9.5" font-weight="700" fill="var(--text-primary)" text-anchor="middle">4. ${T('ELITE RESPONSE — Divide & Rule: racial laws separate black/white labor', 'ELİT YANITI — Böl-Yönet: ırksal yasalar siyah/beyaz emeği ayırır')}</text>
         </g>
         <path d="M 250,238 L 250,253" stroke="${accentW3}" stroke-width="1.5" fill="none" marker-end="url(#arr-a)"/>
         <g transform="translate(45,256)" filter="url(#sh3d)" style="cursor:pointer" onclick="showDiagramDetailPopup('w3_step5')">
           <rect x="0" y="4" width="410" height="38" rx="6" fill="#dc2626"/>
           <rect x="0" y="0" width="410" height="38" rx="6" fill="rgba(239,68,68,0.05)" stroke="#ef4444" stroke-width="1.5"/>
-          <text x="205" y="17" font-family="Outfit" font-size="10" font-weight="800" fill="#b91c1c" text-anchor="middle">5. ${T('HEREDITARY RACIAL SLAVERY — Lifetime chattel slavery codified by law','ÖMÜR BOYU IRKSAL KÖLELİK — Hukuki kölelik kalıcı hale getirildi')}</text>
-          <text x="205" y="30" font-family="Inter" font-size="7.5" font-weight="600" fill="var(--text-secondary)" text-anchor="middle">${T('Race-based labor replaced class conflict as the tool of social control','Sınıf çatışması yerine ırk temelli emek sosyal kontrolün aracı haline geldi')}</text>
+          <text x="205" y="17" font-family="Outfit" font-size="10" font-weight="800" fill="#b91c1c" text-anchor="middle">5. ${T('HEREDITARY RACIAL SLAVERY — Lifetime chattel slavery codified by law', 'ÖMÜR BOYU IRKSAL KÖLELİK — Hukuki kölelik kalıcı hale getirildi')}</text>
+          <text x="205" y="30" font-family="Inter" font-size="7.5" font-weight="600" fill="var(--text-secondary)" text-anchor="middle">${T('Race-based labor replaced class conflict as the tool of social control', 'Sınıf çatışması yerine ırk temelli emek sosyal kontrolün aracı haline geldi')}</text>
         </g>
       </svg>`;
 
@@ -2034,42 +2034,42 @@ function renderInfographic() {
           <filter id="sh-sl"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000" flood-opacity="0.07"/></filter>
         </defs>
         <text x="250" y="26" font-family="Outfit" font-size="13" font-weight="800" fill="#ef4444" text-anchor="middle" letter-spacing="0.04em">
-          ${T('TRANSATLANTIC SLAVE TRADE (1500–1808)','TRANSATLANTİK KÖLE TİCARETİ (1500–1808)')}
+          ${T('TRANSATLANTIC SLAVE TRADE (1500–1808)', 'TRANSATLANTİK KÖLE TİCARETİ (1500–1808)')}
         </text>
         <!-- EUROPE node -->
         <g style="cursor:pointer" onclick="showDiagramDetailPopup('w3_europe')">
           <rect x="180" y="46" width="140" height="52" rx="10" fill="var(--bg-surface)" stroke="#1d4ed8" stroke-width="2" filter="url(#sh-sl)"/>
           <text x="250" y="66" font-family="Outfit" font-size="10.5" font-weight="800" fill="#1d4ed8" text-anchor="middle">${T('EUROPE', 'AVRUPA')}</text>
-          <text x="250" y="80" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('Ships · Guns · Rum · Textiles','Gemi · Silah · Rom · Tekstil')}</text>
-          <text x="250" y="92" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('Britain · Portugal · France · Netherlands','İngiltere · Portekiz · Fransa')}</text>
+          <text x="250" y="80" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('Ships · Guns · Rum · Textiles', 'Gemi · Silah · Rom · Tekstil')}</text>
+          <text x="250" y="92" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('Britain · Portugal · France · Netherlands', 'İngiltere · Portekiz · Fransa')}</text>
         </g>
         <!-- AFRICA node -->
         <g style="cursor:pointer" onclick="showDiagramDetailPopup('w3_africa')">
           <rect x="25" y="230" width="145" height="52" rx="10" fill="var(--bg-surface)" stroke="#f59e0b" stroke-width="2" filter="url(#sh-sl)"/>
           <text x="97" y="250" font-family="Outfit" font-size="10.5" font-weight="800" fill="#d97706" text-anchor="middle">WEST AFRICA</text>
-          <text x="97" y="264" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('12.5M enslaved people deported','12.5 Milyon insan kaçırıldı')}</text>
+          <text x="97" y="264" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('12.5M enslaved people deported', '12.5 Milyon insan kaçırıldı')}</text>
           <text x="97" y="276" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">Senegambia · Gold Coast · Congo</text>
         </g>
         <!-- AMERICAS node -->
         <g style="cursor:pointer" onclick="showDiagramDetailPopup('w3_americas')">
           <rect x="330" y="230" width="145" height="52" rx="10" fill="var(--bg-surface)" stroke="#10b981" stroke-width="2" filter="url(#sh-sl)"/>
           <text x="402" y="250" font-family="Outfit" font-size="10.5" font-weight="800" fill="#047857" text-anchor="middle">AMERICAS</text>
-          <text x="402" y="264" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('Plantations: Sugar · Cotton · Coffee','Plantasyon: Şeker · Pamuk · Kahve')}</text>
+          <text x="402" y="264" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('Plantations: Sugar · Cotton · Coffee', 'Plantasyon: Şeker · Pamuk · Kahve')}</text>
           <text x="402" y="276" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">Brazil · Caribbean · Virginia</text>
         </g>
         <!-- LEG 1: Europe → Africa -->
         <path d="M 210,98 Q 100,155 100,230" stroke="#f59e0b" stroke-width="2.5" fill="none" marker-end="url(#arr-sl2)"/>
-        <text x="112" y="165" font-family="Inter" font-size="8" font-weight="700" fill="#d97706" transform="rotate(-70,112,165)" text-anchor="middle">${T('Manufactured Goods','İmalat Ürünleri')}</text>
+        <text x="112" y="165" font-family="Inter" font-size="8" font-weight="700" fill="#d97706" transform="rotate(-70,112,165)" text-anchor="middle">${T('Manufactured Goods', 'İmalat Ürünleri')}</text>
         <!-- LEG 2: Africa → Americas (Middle Passage) -->
         <path d="M 170,262 L 330,262" stroke="#ef4444" stroke-width="3" fill="none" marker-end="url(#arr-sl1)"/>
-        <text x="250" y="252" font-family="Outfit" font-size="9.5" font-weight="800" fill="#b91c1c" text-anchor="middle">${T('MIDDLE PASSAGE','ORTA GEÇİT')}</text>
-        <text x="250" y="278" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('~2M died en route · 6–8 week voyage','~2M kişi yolda hayatını kaybetti · 6-8 hafta yolculuk')}</text>
+        <text x="250" y="252" font-family="Outfit" font-size="9.5" font-weight="800" fill="#b91c1c" text-anchor="middle">${T('MIDDLE PASSAGE', 'ORTA GEÇİT')}</text>
+        <text x="250" y="278" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('~2M died en route · 6–8 week voyage', '~2M kişi yolda hayatını kaybetti · 6-8 hafta yolculuk')}</text>
         <!-- LEG 3: Americas → Europe -->
         <path d="M 400,230 Q 400,155 300,98" stroke="#10b981" stroke-width="2.5" fill="none" marker-end="url(#arr-sl3)"/>
-        <text x="395" y="162" font-family="Inter" font-size="8" font-weight="700" fill="#047857" transform="rotate(70,395,162)" text-anchor="middle">${T('Raw Materials + Profit','Hammadde + Kâr')}</text>
+        <text x="395" y="162" font-family="Inter" font-size="8" font-weight="700" fill="#047857" transform="rotate(70,395,162)" text-anchor="middle">${T('Raw Materials + Profit', 'Hammadde + Kâr')}</text>
         <!-- Stats -->
         <text x="250" y="315" font-family="Outfit" font-size="9.5" font-weight="800" fill="var(--text-secondary)" text-anchor="middle">
-          ${T('12.5M deported · 2M dead at sea · £3B+ wealth generated for Europe','12.5M sürgün · 2M denizde hayatını kaybetti · 3 milyar+ İngiliz sterlini')}
+          ${T('12.5M deported · 2M dead at sea · £3B+ wealth generated for Europe', '12.5M sürgün · 2M denizde hayatını kaybetti · 3 milyar+ İngiliz sterlini')}
         </text>
       </svg>`;
 
@@ -2077,7 +2077,7 @@ function renderInfographic() {
     const svg3 = `
       <svg viewBox="0 0 500 340" class="infographic-svg">
         <text x="250" y="26" font-family="Outfit" font-size="13" font-weight="800" fill="#b91c1c" text-anchor="middle" letter-spacing="0.04em">
-          ${T('ENSLAVED POPULATION IN BRITISH COLONIES (1650–1790)','İNGİLİZ KOLONİLERİNDE KÖLE NÜFUSU (1650–1790)')}
+          ${T('ENSLAVED POPULATION IN BRITISH COLONIES (1650–1790)', 'İNGİLİZ KOLONİLERİNDE KÖLE NÜFUSU (1650–1790)')}
         </text>
         <!-- axes -->
         <line x1="70" y1="55" x2="70" y2="270" stroke="var(--border-color)" stroke-width="1.2"/>
@@ -2121,7 +2121,7 @@ function renderInfographic() {
         <!-- Bacon's Rebellion vertical marker -->
         <line x1="148" y1="55" x2="148" y2="270" stroke="#d97706" stroke-width="1.5" stroke-dasharray="4,3"/>
         <text x="152" y="72" font-family="Outfit" font-size="7.5" font-weight="700" fill="#d97706">${T('Bacon\'s','Bacon')}</text>
-        <text x="152" y="82" font-family="Outfit" font-size="7.5" font-weight="700" fill="#d97706">${T('Rebellion 1676','İsyanı 1676')}</text>
+        <text x="152" y="82" font-family="Outfit" font-size="7.5" font-weight="700" fill="#d97706">${T('Rebellion 1676', 'İsyanı 1676')}</text>
         <!-- value labels -->
         <text x="125" y="262" font-family="Inter" font-size="7" fill="#ef4444">800</text>
         <text x="200" y="258" font-family="Inter" font-size="7" fill="#ef4444">7k</text>
@@ -2139,10 +2139,10 @@ function renderInfographic() {
           </linearGradient>
         </defs>
         <text x="250" y="26" font-family="Outfit" font-size="12" font-weight="800" fill="#10b981" text-anchor="middle" letter-spacing="0.04em">
-          ${T('EUROPEAN POPULATION BOOM (1700-1900)','AVRUPA NÜFUS PATLAMASI (1700-1900)')}
+          ${T('EUROPEAN POPULATION BOOM (1700-1900)', 'AVRUPA NÜFUS PATLAMASI (1700-1900)')}
         </text>
         <text x="250" y="42" font-family="Inter" font-size="8" font-weight="500" fill="var(--text-secondary)" text-anchor="middle">
-          ${T('Driven by New World staple crops (Potato & Maize)','Yeni Dünya mahsullerinin (Patates ve Mısır) etkisiyle')}
+          ${T('Driven by New World staple crops (Potato & Maize)', 'Yeni Dünya mahsullerinin (Patates ve Mısır) etkisiyle')}
         </text>
         <line x1="60" y1="80" x2="60" y2="280" stroke="var(--border-color)" stroke-width="1.5"/>
         <line x1="60" y1="280" x2="450" y2="280" stroke="var(--border-color)" stroke-width="1.5"/>
@@ -2167,8 +2167,8 @@ function renderInfographic() {
         
         <g transform="translate(140, 110)" style="cursor:pointer" onclick="showDiagramDetailPopup('w2_pop_detail')">
           <rect x="0" y="0" width="160" height="42" rx="4" fill="var(--bg-surface)" stroke="#10b981" stroke-width="1"/>
-          <text x="80" y="15" font-family="Outfit" font-size="7.5" font-weight="700" fill="#047857" text-anchor="middle">${T('THE POTATO EFFECT','PATATES ETKİSİ')}</text>
-          <text x="80" y="26" font-family="Inter" font-size="6.5" fill="var(--text-secondary)" text-anchor="middle">${T('Provided cheap, dense calories','Ucuz ve yoğun kalori sağladı,')}</text>
+          <text x="80" y="15" font-family="Outfit" font-size="7.5" font-weight="700" fill="#047857" text-anchor="middle">${T('THE POTATO EFFECT', 'PATATES ETKİSİ')}</text>
+          <text x="80" y="26" font-family="Inter" font-size="6.5" fill="var(--text-secondary)" text-anchor="middle">${T('Provided cheap, dense calories', 'Ucuz ve yoğun kalori sağladı,')}</text>
           <text x="80" y="34" font-family="Inter" font-size="6.5" fill="var(--text-secondary)" text-anchor="middle">${T('fueling the Industrial Revolution','Endüstri Devrimi\'ni besledi')}</text>
         </g>
       </svg>`;
@@ -2176,7 +2176,7 @@ function renderInfographic() {
 
     // 3D cards (6)
     const cards = [
-      commodityCard('commodity_cotton', T('Cotton','Pamuk'), `
+      commodityCard('commodity_cotton', T('Cotton', 'Pamuk'), `
         <defs><radialGradient id="cot1" cx="50%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff"/><stop offset="100%" stop-color="#e5e7eb"/></radialGradient></defs>
         <path d="M 50,85 L 50,65" stroke="#78350f" stroke-width="3" stroke-linecap="round"/>
         <path d="M 32,65 C 38,75 58,75 64,65 C 57,63 41,63 32,65 Z" fill="#78350f"/>
@@ -2185,7 +2185,7 @@ function renderInfographic() {
         <circle cx="38" cy="44" r="13" fill="url(#cot1)"/>
         <circle cx="58" cy="44" r="13" fill="url(#cot1)"/>
         <circle cx="48" cy="34" r="15" fill="url(#cot1)"/>`, '#d97706'),
-      commodityCard('commodity_cotton_gin', T('Cotton Gin','Çırçır Makinesi'), `
+      commodityCard('commodity_cotton_gin', T('Cotton Gin', 'Çırçır Makinesi'), `
         <defs>
           <linearGradient id="wd1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#b45309"/><stop offset="100%" stop-color="#78350f"/></linearGradient>
           <linearGradient id="wd2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#78350f"/><stop offset="100%" stop-color="#451a03"/></linearGradient>
@@ -2195,26 +2195,26 @@ function renderInfographic() {
         <polygon points="50,47 75,34 75,62 50,75" fill="#92400e"/>
         <path d="M 75,48 L 84,53 L 84,66 L 75,61 Z" fill="#9ca3af"/>
         <ellipse cx="50" cy="34" rx="10" ry="5" fill="#1f2937" opacity="0.8"/>`, '#b45309'),
-      commodityCard('commodity_shackles', T('Iron Shackles','Demir Bukağı'), `
+      commodityCard('commodity_shackles', T('Iron Shackles', 'Demir Bukağı'), `
         <circle cx="36" cy="50" r="14" fill="none" stroke="#6b7280" stroke-width="6"/>
         <circle cx="64" cy="50" r="14" fill="none" stroke="#6b7280" stroke-width="6"/>
         <line x1="50" y1="50" x2="50" y2="50" stroke="#6b7280" stroke-width="4"/>
         <path d="M 42,50 L 58,50" stroke="#4b5563" stroke-width="4" stroke-linecap="round"/>
         <circle cx="36" cy="50" r="4" fill="#374151"/>
         <circle cx="64" cy="50" r="4" fill="#374151"/>`, '#6b7280'),
-      commodityCard('commodity_weapons', T('Weapons','Silahlar'), `
+      commodityCard('commodity_weapons', T('Weapons', 'Silahlar'), `
         <defs><linearGradient id="ibl" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#4b5563"/><stop offset="100%" stop-color="#1f2937"/></linearGradient></defs>
         <rect x="25" y="44" width="50" height="6" rx="1" fill="url(#ibl)" transform="rotate(-15,50,47)"/>
         <rect x="20" y="47" width="16" height="10" rx="2" fill="#78350f" transform="rotate(-15,50,47)"/>
         <circle cx="70" cy="40" r="1.5" fill="#f59e0b"/>`, '#4b5563'),
-      commodityCard('commodity_slave_ship', T('Slave Ship','Köle Gemisi'), `
+      commodityCard('commodity_slave_ship', T('Slave Ship', 'Köle Gemisi'), `
         <defs><linearGradient id="wtr" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#1d4ed8" stop-opacity="0.6"/><stop offset="100%" stop-color="#1e3a8a" stop-opacity="0.9"/></linearGradient></defs>
         <ellipse cx="50" cy="68" rx="35" ry="10" fill="url(#wtr)"/>
         <path d="M 20,68 C 20,58 80,58 80,68 L 75,78 C 75,83 25,83 25,78 Z" fill="#78350f"/>
         <line x1="50" y1="30" x2="50" y2="64" stroke="#92400e" stroke-width="3"/>
         <path d="M 50,30 C 30,40 50,55 50,55 Z" fill="#f3f4f6" opacity="0.9"/>
         <path d="M 50,30 C 70,40 50,55 50,55 Z" fill="#e5e7eb" opacity="0.7"/>`, '#1d4ed8'),
-      commodityCard('commodity_tobacco_barrel', T('Tobacco Barrel','Tütün Fıçısı'), `
+      commodityCard('commodity_tobacco_barrel', T('Tobacco Barrel', 'Tütün Fıçısı'), `
         <defs><linearGradient id="br1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#92400e"/><stop offset="100%" stop-color="#451a03"/></linearGradient></defs>
         <ellipse cx="50" cy="32" rx="22" ry="10" fill="#b45309"/>
         <rect x="28" y="32" width="44" height="44" fill="url(#br1)"/>
@@ -2249,7 +2249,7 @@ function renderInfographic() {
           <linearGradient id="col-g" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#f8fafc"/><stop offset="50%" stop-color="#f1f5f9"/><stop offset="100%" stop-color="#e2e8f0"/></linearGradient>
         </defs>
         <text x="250" y="26" font-family="Outfit" font-size="13" font-weight="800" fill="#1d4ed8" text-anchor="middle" letter-spacing="0.04em">
-          ${T('TEMPLE OF U.S. LEGISLATURE (1787)','KONGRE YAPISI (1787)')}
+          ${T('TEMPLE OF U.S. LEGISLATURE (1787)', 'KONGRE YAPISI (1787)')}
         </text>
         <!-- Pediment -->
         <polygon points="250,55 95,98 405,98" fill="url(#tp-rf)" stroke="#1e40af" stroke-width="1" style="cursor:pointer" onclick="showDiagramDetailPopup('w4_congress')"/>
@@ -2285,7 +2285,7 @@ function renderInfographic() {
         <polygon points="420,246 420,268 435,260 435,238" fill="#7f8c8d"/>
         <polygon points="78,246 420,246 435,238 93,238" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="0.5"/>
         <text x="250" y="260" font-family="Outfit" font-size="9.5" font-weight="800" fill="var(--text-primary)" text-anchor="middle">
-          ${T('CONNECTICUT COMPROMISE / THE GREAT COMPROMISE (1787)','CONNECTICUT UZLAŞMASI — ANAYASAL DENGE (1787)')}
+          ${T('CONNECTICUT COMPROMISE / THE GREAT COMPROMISE (1787)', 'CONNECTICUT UZLAŞMASI — ANAYASAL DENGE (1787)')}
         </text>
       </svg>`;
 
@@ -2296,7 +2296,7 @@ function renderInfographic() {
           <filter id="sh4"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000" flood-opacity="0.07"/></filter>
         </defs>
         <text x="250" y="26" font-family="Outfit" font-size="13" font-weight="800" fill="#1d4ed8" text-anchor="middle" letter-spacing="0.04em">
-          ${T('SEPARATION OF POWERS (MONTESQUIEU)','GÜÇLERİN AYRILMASI (MONTESQUİEU)')}
+          ${T('SEPARATION OF POWERS (MONTESQUIEU)', 'GÜÇLERİN AYRILMASI (MONTESQUİEU)')}
         </text>
         <!-- Center circle -->
         <circle cx="250" cy="178" r="38" fill="var(--bg-surface)" stroke="#1d4ed8" stroke-width="2" filter="url(#sh4)"/>
@@ -2307,25 +2307,25 @@ function renderInfographic() {
           <path d="M 250,178 L 100,80" stroke="#1d4ed8" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
           <rect x="25" y="42" width="150" height="62" rx="10" fill="var(--bg-surface)" stroke="#1d4ed8" stroke-width="2" filter="url(#sh4)"/>
           <text x="100" y="64" font-family="Outfit" font-size="10" font-weight="800" fill="#1d4ed8" text-anchor="middle">LEGISLATIVE</text>
-          <text x="100" y="77" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('Congress: Senate + House','Kongre: Senato + Meclis')}</text>
-          <text x="100" y="89" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('Makes Laws / Yasa Yapar','Yasa Yapar')}</text>
-          <text x="100" y="101" font-family="Inter" font-size="7" fill="#1d4ed8" text-anchor="middle">${T('Can override Presidential veto','Cumhurbaşkanı vetosunu ezer')}</text>
+          <text x="100" y="77" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('Congress: Senate + House', 'Kongre: Senato + Meclis')}</text>
+          <text x="100" y="89" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('Makes Laws / Yasa Yapar', 'Yasa Yapar')}</text>
+          <text x="100" y="101" font-family="Inter" font-size="7" fill="#1d4ed8" text-anchor="middle">${T('Can override Presidential veto', 'Cumhurbaşkanı vetosunu ezer')}</text>
         </g>
         <!-- EXECUTIVE: top right -->
         <g style="cursor:pointer" onclick="showDiagramDetailPopup('w4_executive')">
           <path d="M 250,178 L 400,80" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
           <rect x="325" y="42" width="150" height="62" rx="10" fill="var(--bg-surface)" stroke="#dc2626" stroke-width="2" filter="url(#sh4)"/>
           <text x="400" y="64" font-family="Outfit" font-size="10" font-weight="800" fill="#dc2626" text-anchor="middle">EXECUTIVE</text>
-          <text x="400" y="77" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('President + Cabinet','Başkan + Kabine')}</text>
-          <text x="400" y="89" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('Enforces Laws / Yasa Uygular','Yasa Uygular')}</text>
-          <text x="400" y="101" font-family="Inter" font-size="7" fill="#dc2626" text-anchor="middle">${T('Can veto legislation','Yasaları veto edebilir')}</text>
+          <text x="400" y="77" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('President + Cabinet', 'Başkan + Kabine')}</text>
+          <text x="400" y="89" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('Enforces Laws / Yasa Uygular', 'Yasa Uygular')}</text>
+          <text x="400" y="101" font-family="Inter" font-size="7" fill="#dc2626" text-anchor="middle">${T('Can veto legislation', 'Yasaları veto edebilir')}</text>
         </g>
         <!-- JUDICIAL: bottom center -->
         <g style="cursor:pointer" onclick="showDiagramDetailPopup('w4_judicial')">
           <path d="M 250,178 L 250,285" stroke="#059669" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6"/>
           <rect x="175" y="285" width="150" height="44" rx="10" fill="var(--bg-surface)" stroke="#059669" stroke-width="2" filter="url(#sh4)"/>
           <text x="250" y="304" font-family="Outfit" font-size="10" font-weight="800" fill="#059669" text-anchor="middle">JUDICIAL</text>
-          <text x="250" y="317" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('Supreme Court — Interprets Laws / Yüksek Mahkeme','Yüksek Mahkeme — Yasaları Yorumlar')}</text>
+          <text x="250" y="317" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('Supreme Court — Interprets Laws / Yüksek Mahkeme', 'Yüksek Mahkeme — Yasaları Yorumlar')}</text>
         </g>
         <!-- Check arrows between branches -->
         <path d="M 175,73 C 200,73 215,140 235,145" stroke="#475569" stroke-width="1.2" fill="none" stroke-dasharray="2,2" marker-end="url(#arr-tri2)"/>
@@ -2343,7 +2343,7 @@ function renderInfographic() {
     const svg3 = `
       <svg viewBox="0 0 500 340" class="infographic-svg">
         <text x="250" y="24" font-family="Outfit" font-size="13" font-weight="800" fill="#2563eb" text-anchor="middle" letter-spacing="0.04em">
-          ${T('ROAD TO REVOLUTION (1763–1783)','DEVRİME GİDEN YOL (1763–1783)')}
+          ${T('ROAD TO REVOLUTION (1763–1783)', 'DEVRİME GİDEN YOL (1763–1783)')}
         </text>
         <!-- Spine line -->
         <line x1="250" y1="42" x2="250" y2="312" stroke="#2563eb" stroke-width="2.5" opacity="0.25"/>
@@ -2357,33 +2357,33 @@ function renderInfographic() {
         <circle cx="250" cy="95" r="6" fill="#1d4ed8" style="cursor:pointer" onclick="showDiagramDetailPopup('w4_ev1765')"/>
         <line x1="256" y1="95" x2="310" y2="95" stroke="#1d4ed8" stroke-width="1.2" opacity="0.5"/>
         <text x="314" y="91" font-family="Outfit" font-size="8.5" font-weight="800" fill="#1d4ed8">1765</text>
-        <text x="314" y="102" font-family="Inter" font-size="7.5" fill="var(--text-secondary)">${T('Stamp Act — "No taxation without','Damga Vergisi — "Temsil yoksa')}</text>
-        <text x="314" y="112" font-family="Inter" font-size="7.5" fill="var(--text-secondary)">${T('representation"','vergi de yok"')}</text>
+        <text x="314" y="102" font-family="Inter" font-size="7.5" fill="var(--text-secondary)">${T('Stamp Act — "No taxation without', 'Damga Vergisi — "Temsil yoksa')}</text>
+        <text x="314" y="112" font-family="Inter" font-size="7.5" fill="var(--text-secondary)">${T('representation"', 'vergi de yok"')}</text>
         <!-- 1770 -->
         <circle cx="250" cy="143" r="6" fill="#ef4444" style="cursor:pointer" onclick="showDiagramDetailPopup('w4_ev1770')"/>
         <line x1="244" y1="143" x2="190" y2="143" stroke="#ef4444" stroke-width="1.2" opacity="0.5"/>
         <text x="186" y="139" font-family="Outfit" font-size="8.5" font-weight="800" fill="#ef4444" text-anchor="end">1770</text>
-        <text x="186" y="150" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="end">${T('Boston Massacre — 5 killed','Boston Katliamı — 5 ölü')}</text>
+        <text x="186" y="150" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="end">${T('Boston Massacre — 5 killed', 'Boston Katliamı — 5 ölü')}</text>
         <!-- 1773 -->
         <circle cx="250" cy="183" r="6" fill="#d97706" style="cursor:pointer" onclick="showDiagramDetailPopup('w4_ev1773')"/>
         <line x1="256" y1="183" x2="310" y2="183" stroke="#d97706" stroke-width="1.2" opacity="0.5"/>
         <text x="314" y="179" font-family="Outfit" font-size="8.5" font-weight="800" fill="#d97706">1773</text>
-        <text x="314" y="190" font-family="Inter" font-size="7.5" fill="var(--text-secondary)">${T('Boston Tea Party — 342 chests','Boston Çay Partisi — 342 sandık')}</text>
+        <text x="314" y="190" font-family="Inter" font-size="7.5" fill="var(--text-secondary)">${T('Boston Tea Party — 342 chests', 'Boston Çay Partisi — 342 sandık')}</text>
         <!-- 1775 -->
         <circle cx="250" cy="225" r="7" fill="#dc2626" style="cursor:pointer" onclick="showDiagramDetailPopup('w4_ev1775')"/>
         <line x1="244" y1="225" x2="190" y2="225" stroke="#dc2626" stroke-width="1.2" opacity="0.5"/>
         <text x="186" y="221" font-family="Outfit" font-size="8.5" font-weight="800" fill="#dc2626" text-anchor="end">1775</text>
-        <text x="186" y="232" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="end">${T('Lexington &amp; Concord — First shots','Lexington &amp; Concord — İlk ateş')}</text>
+        <text x="186" y="232" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="end">${T('Lexington &amp; Concord — First shots', 'Lexington &amp; Concord — İlk ateş')}</text>
         <!-- 1776 -->
         <circle cx="250" cy="262" r="8" fill="#1d4ed8" style="cursor:pointer" onclick="showDiagramDetailPopup('w4_ev1776')"/>
         <line x1="256" y1="262" x2="310" y2="262" stroke="#1d4ed8" stroke-width="1.2" opacity="0.5"/>
         <text x="314" y="258" font-family="Outfit" font-size="8.5" font-weight="800" fill="#1d4ed8">1776</text>
-        <text x="314" y="269" font-family="Inter" font-size="7.5" fill="var(--text-secondary)">${T('Declaration of Independence — July 4','Bağımsızlık Bildirisi — 4 Temmuz')}</text>
+        <text x="314" y="269" font-family="Inter" font-size="7.5" fill="var(--text-secondary)">${T('Declaration of Independence — July 4', 'Bağımsızlık Bildirisi — 4 Temmuz')}</text>
         <!-- 1783 -->
         <circle cx="250" cy="300" r="9" fill="#059669" style="cursor:pointer" onclick="showDiagramDetailPopup('w4_ev1783')"/>
         <line x1="244" y1="300" x2="190" y2="300" stroke="#059669" stroke-width="1.2" opacity="0.5"/>
         <text x="186" y="296" font-family="Outfit" font-size="8.5" font-weight="800" fill="#059669" text-anchor="end">1783</text>
-        <text x="186" y="307" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="end">${T('Treaty of Paris — Independence recognized','Paris Antlaşması — Bağımsızlık tanındı')}</text>
+        <text x="186" y="307" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="end">${T('Treaty of Paris — Independence recognized', 'Paris Antlaşması — Bağımsızlık tanındı')}</text>
       </svg>`;
 
         const svg4 = `
@@ -2395,10 +2395,10 @@ function renderInfographic() {
           </linearGradient>
         </defs>
         <text x="250" y="26" font-family="Outfit" font-size="12" font-weight="800" fill="#10b981" text-anchor="middle" letter-spacing="0.04em">
-          ${T('EUROPEAN POPULATION BOOM (1700-1900)','AVRUPA NÜFUS PATLAMASI (1700-1900)')}
+          ${T('EUROPEAN POPULATION BOOM (1700-1900)', 'AVRUPA NÜFUS PATLAMASI (1700-1900)')}
         </text>
         <text x="250" y="42" font-family="Inter" font-size="8" font-weight="500" fill="var(--text-secondary)" text-anchor="middle">
-          ${T('Driven by New World staple crops (Potato & Maize)','Yeni Dünya mahsullerinin (Patates ve Mısır) etkisiyle')}
+          ${T('Driven by New World staple crops (Potato & Maize)', 'Yeni Dünya mahsullerinin (Patates ve Mısır) etkisiyle')}
         </text>
         <line x1="60" y1="80" x2="60" y2="280" stroke="var(--border-color)" stroke-width="1.5"/>
         <line x1="60" y1="280" x2="450" y2="280" stroke="var(--border-color)" stroke-width="1.5"/>
@@ -2423,15 +2423,15 @@ function renderInfographic() {
         
         <g transform="translate(140, 110)" style="cursor:pointer" onclick="showDiagramDetailPopup('w2_pop_detail')">
           <rect x="0" y="0" width="160" height="42" rx="4" fill="var(--bg-surface)" stroke="#10b981" stroke-width="1"/>
-          <text x="80" y="15" font-family="Outfit" font-size="7.5" font-weight="700" fill="#047857" text-anchor="middle">${T('THE POTATO EFFECT','PATATES ETKİSİ')}</text>
-          <text x="80" y="26" font-family="Inter" font-size="6.5" fill="var(--text-secondary)" text-anchor="middle">${T('Provided cheap, dense calories','Ucuz ve yoğun kalori sağladı,')}</text>
+          <text x="80" y="15" font-family="Outfit" font-size="7.5" font-weight="700" fill="#047857" text-anchor="middle">${T('THE POTATO EFFECT', 'PATATES ETKİSİ')}</text>
+          <text x="80" y="26" font-family="Inter" font-size="6.5" fill="var(--text-secondary)" text-anchor="middle">${T('Provided cheap, dense calories', 'Ucuz ve yoğun kalori sağladı,')}</text>
           <text x="80" y="34" font-family="Inter" font-size="6.5" fill="var(--text-secondary)" text-anchor="middle">${T('fueling the Industrial Revolution','Endüstri Devrimi\'ni besledi')}</text>
         </g>
       </svg>`;
     const svgs = [svg1, svg2, svg3, svg4];
 
     const cards = [
-      commodityCard('commodity_tea_crate', T('Tea Crate','Çay Sandığı'), `
+      commodityCard('commodity_tea_crate', T('Tea Crate', 'Çay Sandığı'), `
         <defs>
           <linearGradient id="wtt" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#b45309"/><stop offset="100%" stop-color="#92400e"/></linearGradient>
           <linearGradient id="wtl" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#78350f"/><stop offset="100%" stop-color="#451a03"/></linearGradient>
@@ -2440,16 +2440,16 @@ function renderInfographic() {
         <polygon points="25,34 50,47 50,75 25,62" fill="url(#wtl)"/>
         <polygon points="50,47 75,34 75,62 50,75" fill="#78350f"/>
         <text x="50" y="62" font-family="Outfit" font-size="9" font-weight="900" fill="#fff" opacity="0.3" text-anchor="middle" transform="skewY(25)">TEA</text>`, '#b45309'),
-      commodityCard('commodity_stamp', T('Stamp Act Seal','Vergi Damgası'), `
+      commodityCard('commodity_stamp', T('Stamp Act Seal', 'Vergi Damgası'), `
         <circle cx="50" cy="50" r="28" fill="#dc2626"/>
         <circle cx="50" cy="50" r="24" fill="none" stroke="#fecaca" stroke-width="1.5" stroke-dasharray="3,3"/>
         <text x="50" y="46" font-family="Outfit" font-size="9" font-weight="900" fill="#fff" text-anchor="middle">NO</text>
         <text x="50" y="58" font-family="Outfit" font-size="7" font-weight="700" fill="#fecaca" text-anchor="middle">TAXATION</text>`, '#dc2626'),
-      commodityCard('commodity_musket', T('Flintlock Musket','Misket Tüfeği'), `
+      commodityCard('commodity_musket', T('Flintlock Musket', 'Misket Tüfeği'), `
         <rect x="20" y="46" width="60" height="4" rx="1" fill="#4b5563" transform="rotate(-25,50,48)"/>
         <rect x="15" y="47" width="18" height="8" rx="2" fill="#92400e" transform="rotate(-25,50,48)"/>
         <circle cx="75" cy="35" r="1.5" fill="#9ca3af"/>`, '#4b5563'),
-      commodityCard('commodity_declaration', T('Declaration','Bağımsızlık Bildirisi'), `
+      commodityCard('commodity_declaration', T('Declaration', 'Bağımsızlık Bildirisi'), `
         <rect x="28" y="18" width="44" height="62" rx="3" fill="#fef9c3" stroke="#d97706" stroke-width="1.5"/>
         <line x1="34" y1="30" x2="66" y2="30" stroke="#92400e" stroke-width="1.2" opacity="0.5"/>
         <line x1="34" y1="38" x2="66" y2="38" stroke="#92400e" stroke-width="0.8" opacity="0.4"/>
@@ -2457,7 +2457,7 @@ function renderInfographic() {
         <line x1="34" y1="54" x2="66" y2="54" stroke="#92400e" stroke-width="0.8" opacity="0.4"/>
         <line x1="34" y1="62" x2="58" y2="62" stroke="#92400e" stroke-width="0.8" opacity="0.4"/>
         <path d="M 40,72 Q 42,78 46,74 Q 48,80 52,76" stroke="#1d4ed8" stroke-width="1.5" fill="none"/>`, '#d97706'),
-      commodityCard('commodity_cannon', T('Cannon','Top'), `
+      commodityCard('commodity_cannon', T('Cannon', 'Top'), `
         <defs><linearGradient id="can1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#374151"/><stop offset="100%" stop-color="#111827"/></linearGradient></defs>
         <ellipse cx="52" cy="52" rx="24" ry="10" fill="url(#can1)" transform="rotate(-20,52,52)"/>
         <circle cx="32" cy="65" r="5" fill="#1f2937"/>
@@ -2465,7 +2465,7 @@ function renderInfographic() {
         <rect x="22" y="68" width="56" height="8" rx="2" fill="#78350f"/>
         <circle cx="25" cy="72" r="6" fill="#4b5563"/>
         <circle cx="75" cy="72" r="6" fill="#4b5563"/>`, '#374151'),
-      commodityCard('commodity_flag', T('Colonial Flag','Koloni Bayrağı'), `
+      commodityCard('commodity_flag', T('Colonial Flag', 'Koloni Bayrağı'), `
         <rect x="28" y="20" width="58" height="38" fill="#dc2626"/>
         <rect x="28" y="20" width="58" height="12" fill="#f9fafb"/>
         <rect x="28" y="32" width="58" height="14" fill="#dc2626"/>
@@ -2495,7 +2495,7 @@ function renderInfographic() {
     const svg1 = `
       <svg viewBox="0 0 500 340" class="infographic-svg">
         <text x="250" y="24" font-family="Outfit" font-size="13" font-weight="800" fill="#dc2626" text-anchor="middle" letter-spacing="0.04em">
-          ${T('3D ESTATES PYRAMID (1789)','ÜÇ ZÜMRE 3D PİRAMİDİ (1789)')}
+          ${T('3D ESTATES PYRAMID (1789)', 'ÜÇ ZÜMRE 3D PİRAMİDİ (1789)')}
         </text>
         <!-- CLERGY top block -->
         <polygon points="250,55 198,107 250,126" fill="#f9fafb" stroke="#e5e7eb" stroke-width="0.5" style="cursor:pointer" onclick="showDiagramDetailPopup('w5_clergy')"/>
@@ -2522,7 +2522,7 @@ function renderInfographic() {
     const svg2 = `
       <svg viewBox="0 0 500 340" class="infographic-svg">
         <text x="250" y="24" font-family="Outfit" font-size="13" font-weight="800" fill="#7c3aed" text-anchor="middle" letter-spacing="0.04em">
-          ${T('FRENCH REVOLUTION TIMELINE (1789–1794)','FRANSIZ DEVRİMİ TAKVİMİ (1789–1794)')}
+          ${T('FRENCH REVOLUTION TIMELINE (1789–1794)', 'FRANSIZ DEVRİMİ TAKVİMİ (1789–1794)')}
         </text>
         <!-- Spine -->
         <line x1="250" y1="40" x2="250" y2="316" stroke="#7c3aed" stroke-width="2.5" opacity="0.22"/>
@@ -2530,22 +2530,22 @@ function renderInfographic() {
         <circle cx="250" cy="52" r="6" fill="#7c3aed" style="cursor:pointer" onclick="showDiagramDetailPopup('w5_ev1789a')"/>
         <line x1="256" y1="52" x2="310" y2="52" stroke="#7c3aed" stroke-width="1.2" opacity="0.5"/>
         <text x="314" y="48" font-family="Outfit" font-size="8" font-weight="800" fill="#7c3aed">Mai 1789</text>
-        <text x="314" y="59" font-family="Inter" font-size="7.5" fill="var(--text-secondary)">${T('Estates General convenes — Voting deadlock','Estates General toplandı — Oy krizi')}</text>
+        <text x="314" y="59" font-family="Inter" font-size="7.5" fill="var(--text-secondary)">${T('Estates General convenes — Voting deadlock', 'Estates General toplandı — Oy krizi')}</text>
         <!-- Jun 1789 -->
         <circle cx="250" cy="92" r="6" fill="#6d28d9" style="cursor:pointer" onclick="showDiagramDetailPopup('w5_ev1789b')"/>
         <line x1="244" y1="92" x2="190" y2="92" stroke="#6d28d9" stroke-width="1.2" opacity="0.5"/>
         <text x="186" y="88" font-family="Outfit" font-size="8" font-weight="800" fill="#6d28d9" text-anchor="end">Haz 1789</text>
-        <text x="186" y="99" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="end">${T('Tennis Court Oath — National Assembly','Tenis Kortu Yemini — Ulusal Meclis')}</text>
+        <text x="186" y="99" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="end">${T('Tennis Court Oath — National Assembly', 'Tenis Kortu Yemini — Ulusal Meclis')}</text>
         <!-- Jul 1789 -->
         <circle cx="250" cy="132" r="7" fill="#dc2626" style="cursor:pointer" onclick="showDiagramDetailPopup('w5_ev1789c')"/>
         <line x1="256" y1="132" x2="310" y2="132" stroke="#dc2626" stroke-width="1.2" opacity="0.5"/>
         <text x="314" y="128" font-family="Outfit" font-size="8" font-weight="800" fill="#dc2626">14 Tem 1789</text>
-        <text x="314" y="139" font-family="Inter" font-size="7.5" fill="var(--text-secondary)">${T('Storming of the Bastille','Bastille Baskını — Devrim Başlıyor')}</text>
+        <text x="314" y="139" font-family="Inter" font-size="7.5" fill="var(--text-secondary)">${T('Storming of the Bastille', 'Bastille Baskını — Devrim Başlıyor')}</text>
         <!-- Aug 1789 -->
         <circle cx="250" cy="172" r="6" fill="#1d4ed8" style="cursor:pointer" onclick="showDiagramDetailPopup('w5_ev1789d')"/>
         <line x1="244" y1="172" x2="190" y2="172" stroke="#1d4ed8" stroke-width="1.2" opacity="0.5"/>
         <text x="186" y="168" font-family="Outfit" font-size="8" font-weight="800" fill="#1d4ed8" text-anchor="end">Ağu 1789</text>
-        <text x="186" y="179" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="end">${T('Declaration of Rights of Man','İnsan Hakları Bildirisi')}</text>
+        <text x="186" y="179" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="end">${T('Declaration of Rights of Man', 'İnsan Hakları Bildirisi')}</text>
         <!-- Jun 1791 -->
         <circle cx="250" cy="212" r="6" fill="#d97706" style="cursor:pointer" onclick="showDiagramDetailPopup('w5_ev1791')"/>
         <line x1="256" y1="212" x2="310" y2="212" stroke="#d97706" stroke-width="1.2" opacity="0.5"/>
@@ -2555,12 +2555,12 @@ function renderInfographic() {
         <circle cx="250" cy="252" r="6" fill="#059669" style="cursor:pointer" onclick="showDiagramDetailPopup('w5_ev1792')"/>
         <line x1="244" y1="252" x2="190" y2="252" stroke="#059669" stroke-width="1.2" opacity="0.5"/>
         <text x="186" y="248" font-family="Outfit" font-size="8" font-weight="800" fill="#059669" text-anchor="end">Eyl 1792</text>
-        <text x="186" y="259" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="end">${T('Battle of Valmy — Republic declared','Valmy Savaşı — Cumhuriyet ilan edildi')}</text>
+        <text x="186" y="259" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="end">${T('Battle of Valmy — Republic declared', 'Valmy Savaşı — Cumhuriyet ilan edildi')}</text>
         <!-- Jan 1793 -->
         <circle cx="250" cy="294" r="8" fill="#b91c1c" style="cursor:pointer" onclick="showDiagramDetailPopup('w5_ev1793')"/>
         <line x1="256" y1="294" x2="310" y2="294" stroke="#b91c1c" stroke-width="1.2" opacity="0.5"/>
         <text x="314" y="290" font-family="Outfit" font-size="8" font-weight="800" fill="#b91c1c">Oca 1793</text>
-        <text x="314" y="301" font-family="Inter" font-size="7.5" fill="var(--text-secondary)">${T('Execution of Louis XVI — Reign of Terror begins','XVI. Louis idam edildi — Terör başladı')}</text>
+        <text x="314" y="301" font-family="Inter" font-size="7.5" fill="var(--text-secondary)">${T('Execution of Louis XVI — Reign of Terror begins', 'XVI. Louis idam edildi — Terör başladı')}</text>
       </svg>`;
 
     // ── Diagram 3: Voting Power donut-like chart ──
@@ -2570,10 +2570,10 @@ function renderInfographic() {
           <filter id="sh5"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.07"/></filter>
         </defs>
         <text x="250" y="24" font-family="Outfit" font-size="13" font-weight="800" fill="#dc2626" text-anchor="middle" letter-spacing="0.04em">
-          ${T('VOTING POWER vs POPULATION (1789)','OY GÜCÜ vs NÜFUS — ESTATES GENERAL (1789)')}
+          ${T('VOTING POWER vs POPULATION (1789)', 'OY GÜCÜ vs NÜFUS — ESTATES GENERAL (1789)')}
         </text>
         <!-- Population pie left -->
-        <text x="130" y="58" font-family="Outfit" font-size="10" font-weight="800" fill="var(--text-secondary)" text-anchor="middle">${T('POPULATION','NÜFUS')}</text>
+        <text x="130" y="58" font-family="Outfit" font-size="10" font-weight="800" fill="var(--text-secondary)" text-anchor="middle">${T('POPULATION', 'NÜFUS')}</text>
         <!-- 98% arc for Third Estate -->
         <path d="M 130,90 L 130,180 A 90,90 0 1 1 129.9,180 Z" fill="rgba(220,38,38,0.15)" stroke="#dc2626" stroke-width="1.5" style="cursor:pointer" onclick="showDiagramDetailPopup('w5_pop_third')"/>
         <!-- 1.5% arc Nobility -->
@@ -2581,9 +2581,9 @@ function renderInfographic() {
         <!-- 0.5% arc Clergy -->
         <path d="M 130,90 L 184,88 A 90,90 0 0 0 183,84 L 130,90 Z" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" style="cursor:pointer" onclick="showDiagramDetailPopup('w5_pop_clergy')"/>
         <text x="130" y="95" font-family="Outfit" font-size="22" font-weight="900" fill="#dc2626" text-anchor="middle">98%</text>
-        <text x="130" y="115" font-family="Inter" font-size="9" fill="var(--text-secondary)" text-anchor="middle">${T('Third Estate','3. Zümre')}</text>
+        <text x="130" y="115" font-family="Inter" font-size="9" fill="var(--text-secondary)" text-anchor="middle">${T('Third Estate', '3. Zümre')}</text>
         <!-- Voting power pie right -->
-        <text x="370" y="58" font-family="Outfit" font-size="10" font-weight="800" fill="var(--text-secondary)" text-anchor="middle">${T('VOTING POWER','OY GÜCÜ')}
+        <text x="370" y="58" font-family="Outfit" font-size="10" font-weight="800" fill="var(--text-secondary)" text-anchor="middle">${T('VOTING POWER', 'OY GÜCÜ')}
         </text>
         <!-- 1/3 Third Estate arc -->
         <path d="M 370,90 L 370,180 A 90,90 0 0 1 282,136 Z" fill="rgba(220,38,38,0.15)" stroke="#dc2626" stroke-width="1.5" style="cursor:pointer" onclick="showDiagramDetailPopup('w5_vote_third')"/>
@@ -2592,10 +2592,10 @@ function renderInfographic() {
         <!-- 1/3 Nobility arc -->
         <path d="M 370,90 L 414,204 A 90,90 0 0 1 282,136 Z" fill="#d1d5db" stroke="#9ca3af" stroke-width="1.5" style="cursor:pointer" onclick="showDiagramDetailPopup('w5_vote_nobility')"/>
         <text x="370" y="95" font-family="Outfit" font-size="22" font-weight="900" fill="#dc2626" text-anchor="middle">1/3</text>
-        <text x="370" y="115" font-family="Inter" font-size="9" fill="var(--text-secondary)" text-anchor="middle">${T('vs 2/3 for 2% of pop.','2% nüfusa 2/3 oy gücü')}</text>
+        <text x="370" y="115" font-family="Inter" font-size="9" fill="var(--text-secondary)" text-anchor="middle">${T('vs 2/3 for 2% of pop.', '2% nüfusa 2/3 oy gücü')}</text>
         <!-- Labels -->
-        <text x="310" y="200" font-family="Inter" font-size="7.5" fill="#9ca3af" text-anchor="middle">${T('Clergy 0.5%','Ruhb. %0.5')}</text>
-        <text x="432" y="205" font-family="Inter" font-size="7.5" fill="#6b7280" text-anchor="middle">${T('Nobility 1.5%','Soy. %1.5')}</text>
+        <text x="310" y="200" font-family="Inter" font-size="7.5" fill="#9ca3af" text-anchor="middle">${T('Clergy 0.5%', 'Ruhb. %0.5')}</text>
+        <text x="432" y="205" font-family="Inter" font-size="7.5" fill="#6b7280" text-anchor="middle">${T('Nobility 1.5%', 'Soy. %1.5')}</text>
         <!-- VS label -->
         <text x="250" y="155" font-family="Outfit" font-size="18" font-weight="900" fill="var(--text-secondary)" text-anchor="middle" opacity="0.35">VS</text>
         <!-- Explanation -->
@@ -2607,11 +2607,11 @@ function renderInfographic() {
         </text>
         <!-- Legend -->
         <rect x="120" y="278" width="10" height="10" fill="rgba(220,38,38,0.2)" stroke="#dc2626" stroke-width="1" rx="2"/>
-        <text x="135" y="287" font-family="Inter" font-size="8" fill="var(--text-secondary)">${T('Third Estate / 3. Zümre','3. Zümre')}</text>
+        <text x="135" y="287" font-family="Inter" font-size="8" fill="var(--text-secondary)">${T('Third Estate / 3. Zümre', '3. Zümre')}</text>
         <rect x="215" y="278" width="10" height="10" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" rx="2"/>
-        <text x="230" y="287" font-family="Inter" font-size="8" fill="var(--text-secondary)">${T('Clergy','Ruhbanlar')}</text>
+        <text x="230" y="287" font-family="Inter" font-size="8" fill="var(--text-secondary)">${T('Clergy', 'Ruhbanlar')}</text>
         <rect x="280" y="278" width="10" height="10" fill="#d1d5db" stroke="#9ca3af" stroke-width="1" rx="2"/>
-        <text x="295" y="287" font-family="Inter" font-size="8" fill="var(--text-secondary)">${T('Nobility','Soylular')}</text>
+        <text x="295" y="287" font-family="Inter" font-size="8" fill="var(--text-secondary)">${T('Nobility', 'Soylular')}</text>
       </svg>`;
 
         const svg4 = `
@@ -2623,10 +2623,10 @@ function renderInfographic() {
           </linearGradient>
         </defs>
         <text x="250" y="26" font-family="Outfit" font-size="12" font-weight="800" fill="#10b981" text-anchor="middle" letter-spacing="0.04em">
-          ${T('EUROPEAN POPULATION BOOM (1700-1900)','AVRUPA NÜFUS PATLAMASI (1700-1900)')}
+          ${T('EUROPEAN POPULATION BOOM (1700-1900)', 'AVRUPA NÜFUS PATLAMASI (1700-1900)')}
         </text>
         <text x="250" y="42" font-family="Inter" font-size="8" font-weight="500" fill="var(--text-secondary)" text-anchor="middle">
-          ${T('Driven by New World staple crops (Potato & Maize)','Yeni Dünya mahsullerinin (Patates ve Mısır) etkisiyle')}
+          ${T('Driven by New World staple crops (Potato & Maize)', 'Yeni Dünya mahsullerinin (Patates ve Mısır) etkisiyle')}
         </text>
         <line x1="60" y1="80" x2="60" y2="280" stroke="var(--border-color)" stroke-width="1.5"/>
         <line x1="60" y1="280" x2="450" y2="280" stroke="var(--border-color)" stroke-width="1.5"/>
@@ -2651,33 +2651,33 @@ function renderInfographic() {
         
         <g transform="translate(140, 110)" style="cursor:pointer" onclick="showDiagramDetailPopup('w2_pop_detail')">
           <rect x="0" y="0" width="160" height="42" rx="4" fill="var(--bg-surface)" stroke="#10b981" stroke-width="1"/>
-          <text x="80" y="15" font-family="Outfit" font-size="7.5" font-weight="700" fill="#047857" text-anchor="middle">${T('THE POTATO EFFECT','PATATES ETKİSİ')}</text>
-          <text x="80" y="26" font-family="Inter" font-size="6.5" fill="var(--text-secondary)" text-anchor="middle">${T('Provided cheap, dense calories','Ucuz ve yoğun kalori sağladı,')}</text>
+          <text x="80" y="15" font-family="Outfit" font-size="7.5" font-weight="700" fill="#047857" text-anchor="middle">${T('THE POTATO EFFECT', 'PATATES ETKİSİ')}</text>
+          <text x="80" y="26" font-family="Inter" font-size="6.5" fill="var(--text-secondary)" text-anchor="middle">${T('Provided cheap, dense calories', 'Ucuz ve yoğun kalori sağladı,')}</text>
           <text x="80" y="34" font-family="Inter" font-size="6.5" fill="var(--text-secondary)" text-anchor="middle">${T('fueling the Industrial Revolution','Endüstri Devrimi\'ni besledi')}</text>
         </g>
       </svg>`;
     const svgs = [svg1, svg2, svg3, svg4];
 
     const cards = [
-      commodityCard('commodity_guillotine', T('Guillotine','Giyotin'), `
+      commodityCard('commodity_guillotine', T('Guillotine', 'Giyotin'), `
         <rect x="36" y="15" width="4" height="65" fill="#78350f"/>
         <rect x="60" y="15" width="4" height="65" fill="#78350f"/>
         <rect x="32" y="15" width="36" height="4" fill="#78350f"/>
         <polygon points="40,30 60,40 60,44 40,34" fill="#9ca3af" stroke="#4b5563" stroke-width="0.5"/>
         <rect x="30" y="75" width="40" height="8" rx="2" fill="#92400e"/>`, '#dc2626'),
-      commodityCard('commodity_bastille', T('Bastille Fortress','Bastille Kalesi'), `
+      commodityCard('commodity_bastille', T('Bastille Fortress', 'Bastille Kalesi'), `
         <defs><linearGradient id="st1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#9ca3af"/><stop offset="100%" stop-color="#4b5563"/></linearGradient></defs>
         <rect x="32" y="25" width="36" height="55" rx="3" fill="url(#st1)"/>
         <rect x="28" y="20" width="44" height="8" rx="1" fill="#4b5563"/>
         <polygon points="32,20 36,15 42,15 46,20" fill="#374151"/>
         <polygon points="54,20 58,15 64,15 68,20" fill="#374151"/>
         <path d="M 44,80 L 44,68 C 44,65 56,65 56,68 L 56,80 Z" fill="#1f2937"/>`, '#4b5563'),
-      commodityCard('commodity_cockade', T('Tricolor Cockade','Devrim Kokartı'), `
+      commodityCard('commodity_cockade', T('Tricolor Cockade', 'Devrim Kokartı'), `
         <circle cx="50" cy="50" r="28" fill="#dc2626"/>
         <path d="M 50,50 L 50,22 M 50,50 L 22,50 M 50,50 L 50,78 M 50,50 L 78,50 M 50,50 L 30,30 M 50,50 L 70,30 M 50,50 L 30,70 M 50,50 L 70,70" stroke="#b91c1c" stroke-width="1.5"/>
         <circle cx="50" cy="50" r="18" fill="#f9fafb"/>
         <circle cx="50" cy="50" r="9" fill="#1d4ed8"/>`, '#dc2626'),
-      commodityCard('commodity_scroll', T('Declaration Scroll','Bildirge Tomarı'), `
+      commodityCard('commodity_scroll', T('Declaration Scroll', 'Bildirge Tomarı'), `
         <defs><linearGradient id="sc1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#fef9c3"/><stop offset="100%" stop-color="#fde68a"/></linearGradient></defs>
         <path d="M 32,22 Q 30,50 32,78 L 68,78 Q 70,50 68,22 Z" fill="url(#sc1)" stroke="#d97706" stroke-width="1"/>
         <ellipse cx="50" cy="22" rx="18" ry="5" fill="#fbbf24"/>
@@ -2686,12 +2686,12 @@ function renderInfographic() {
         <line x1="38" y1="44" x2="62" y2="44" stroke="#92400e" stroke-width="0.8" opacity="0.4"/>
         <line x1="38" y1="52" x2="62" y2="52" stroke="#92400e" stroke-width="0.8" opacity="0.4"/>
         <line x1="38" y1="60" x2="55" y2="60" stroke="#92400e" stroke-width="0.8" opacity="0.4"/>`, '#d97706'),
-      commodityCard('commodity_tricolor', T('French Tricolor','Fransız Bayrağı'), `
+      commodityCard('commodity_tricolor', T('French Tricolor', 'Fransız Bayrağı'), `
         <rect x="22" y="24" width="20" height="50" fill="#1d4ed8" rx="1"/>
         <rect x="42" y="24" width="20" height="50" fill="#f9fafb" rx="1"/>
         <rect x="62" y="24" width="20" height="50" fill="#dc2626" rx="1"/>
         <line x1="22" y1="24" x2="22" y2="80" stroke="#78350f" stroke-width="3"/>`, '#1d4ed8'),
-      commodityCard('commodity_phrygian', T('Liberty Cap','Özgürlük Kasketi'), `
+      commodityCard('commodity_phrygian', T('Liberty Cap', 'Özgürlük Kasketi'), `
         <defs><radialGradient id="ph1" cx="40%" cy="30%" r="70%"><stop offset="0%" stop-color="#ef4444"/><stop offset="100%" stop-color="#b91c1c"/></radialGradient></defs>
         <path d="M 50,20 C 38,20 32,30 32,45 L 32,65 C 32,70 68,70 68,65 L 68,45 C 68,30 62,20 50,20 Z" fill="url(#ph1)"/>
         <path d="M 50,20 C 46,10 42,8 44,18" stroke="#b91c1c" stroke-width="2" fill="none" stroke-linecap="round"/>
@@ -2725,17 +2725,17 @@ function renderInfographic() {
           <filter id="sh6"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000" flood-opacity="0.07"/></filter>
         </defs>
         <text x="250" y="24" font-family="Outfit" font-size="13" font-weight="800" fill="#0d9488" text-anchor="middle" letter-spacing="0.04em">
-          ${T('SOCIODEMOGRAPHIC CONFLICT PRISM (SAINT-DOMINGUE)','ÇATIŞMA DİNAMİKLERİ PRİZMASI — SAINT-DOMINGUE')}
+          ${T('SOCIODEMOGRAPHIC CONFLICT PRISM (SAINT-DOMINGUE)', 'ÇATIŞMA DİNAMİKLERİ PRİZMASI — SAINT-DOMINGUE')}
         </text>
         <!-- Prism fill -->
         <polygon points="120,115 380,115 250,235" fill="url(#gw-g)"/>
         <!-- Edges -->
         <path d="M 120,115 L 380,115" stroke="#d97706" stroke-width="1.8" stroke-dasharray="4,4"/>
-        <text x="250" y="108" font-family="Inter" font-size="8" font-weight="700" fill="#b45309" text-anchor="middle">${T('Allied by Property Rights (Fragile Tension)','Mülkiyet Hakları Birliği (Kırılgan Gerilim)')}</text>
+        <text x="250" y="108" font-family="Inter" font-size="8" font-weight="700" fill="#b45309" text-anchor="middle">${T('Allied by Property Rights (Fragile Tension)', 'Mülkiyet Hakları Birliği (Kırılgan Gerilim)')}</text>
         <path d="M 120,115 L 250,235" stroke="#ef4444" stroke-width="2.2"/>
-        <text x="150" y="185" font-family="Inter" font-size="7.5" font-weight="700" fill="#b91c1c" text-anchor="middle" transform="rotate(42,150,185)">${T('Extreme Violence / Aşırı Şiddet','Kölelik Baskısı')}</text>
+        <text x="150" y="185" font-family="Inter" font-size="7.5" font-weight="700" fill="#b91c1c" text-anchor="middle" transform="rotate(42,150,185)">${T('Extreme Violence / Aşırı Şiddet', 'Kölelik Baskısı')}</text>
         <path d="M 380,115 L 250,235" stroke="#0d9488" stroke-width="2.2"/>
-        <text x="352" y="185" font-family="Inter" font-size="7.5" font-weight="700" fill="#0f766e" text-anchor="middle" transform="rotate(-42,352,185)">${T('1791 Rebellion Alliance','1791 İsyan İttifakı')}</text>
+        <text x="352" y="185" font-family="Inter" font-size="7.5" font-weight="700" fill="#0f766e" text-anchor="middle" transform="rotate(-42,352,185)">${T('1791 Rebellion Alliance', '1791 İsyan İttifakı')}</text>
         <!-- BIG WHITES node -->
         <g transform="translate(120,115)" style="cursor:pointer" onclick="showDiagramDetailPopup('w6_whites')">
           <circle r="26" fill="var(--bg-surface)" stroke="var(--border-color)" stroke-width="1.5" filter="url(#sh6)"/>
@@ -2763,24 +2763,24 @@ function renderInfographic() {
     const svg2 = `
       <svg viewBox="0 0 500 340" class="infographic-svg">
         <text x="250" y="24" font-family="Outfit" font-size="13" font-weight="800" fill="#0d9488" text-anchor="middle" letter-spacing="0.04em">
-          ${T('HAITIAN REVOLUTION PHASES (1791–1804)','HAİTİ DEVRİMİNİN AŞAMALARI (1791–1804)')}
+          ${T('HAITIAN REVOLUTION PHASES (1791–1804)', 'HAİTİ DEVRİMİNİN AŞAMALARI (1791–1804)')}
         </text>
         <line x1="250" y1="42" x2="250" y2="318" stroke="#0d9488" stroke-width="2.5" opacity="0.22"/>
         <!-- Aug 1791 -->
         <circle cx="250" cy="55" r="7" fill="#0d9488" style="cursor:pointer" onclick="showDiagramDetailPopup('w6_ev1791')"/>
         <line x1="256" y1="55" x2="310" y2="55" stroke="#0d9488" stroke-width="1.2" opacity="0.5"/>
         <text x="314" y="51" font-family="Outfit" font-size="8" font-weight="800" fill="#0d9488">Ağu 1791</text>
-        <text x="314" y="62" font-family="Inter" font-size="7.5" fill="var(--text-secondary)">${T('Bois Caïman Ceremony — Toussaint rises','Bois Caïman Töreni — Toussaint örgütleniyor')}</text>
+        <text x="314" y="62" font-family="Inter" font-size="7.5" fill="var(--text-secondary)">${T('Bois Caïman Ceremony — Toussaint rises', 'Bois Caïman Töreni — Toussaint örgütleniyor')}</text>
         <!-- 1793 -->
         <circle cx="250" cy="103" r="6" fill="#1d4ed8" style="cursor:pointer" onclick="showDiagramDetailPopup('w6_ev1793')"/>
         <line x1="244" y1="103" x2="190" y2="103" stroke="#1d4ed8" stroke-width="1.2" opacity="0.5"/>
         <text x="186" y="99" font-family="Outfit" font-size="8" font-weight="800" fill="#1d4ed8" text-anchor="end">1793</text>
-        <text x="186" y="110" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="end">${T('France abolishes slavery to gain rebel support','Fransa isyancıların desteğini kazanmak için köleliği kaldırdı')}</text>
+        <text x="186" y="110" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="end">${T('France abolishes slavery to gain rebel support', 'Fransa isyancıların desteğini kazanmak için köleliği kaldırdı')}</text>
         <!-- 1798 -->
         <circle cx="250" cy="151" r="6" fill="#d97706" style="cursor:pointer" onclick="showDiagramDetailPopup('w6_ev1798')"/>
         <line x1="256" y1="151" x2="310" y2="151" stroke="#d97706" stroke-width="1.2" opacity="0.5"/>
         <text x="314" y="147" font-family="Outfit" font-size="8" font-weight="800" fill="#d97706">1798</text>
-        <text x="314" y="158" font-family="Inter" font-size="7.5" fill="var(--text-secondary)">${T('British forces expelled — Toussaint controls island','İngiliz kuvvetleri kovuldu — Toussaint adayı kontrol ediyor')}</text>
+        <text x="314" y="158" font-family="Inter" font-size="7.5" fill="var(--text-secondary)">${T('British forces expelled — Toussaint controls island', 'İngiliz kuvvetleri kovuldu — Toussaint adayı kontrol ediyor')}</text>
         <!-- 1801 -->
         <circle cx="250" cy="199" r="6" fill="#7c3aed" style="cursor:pointer" onclick="showDiagramDetailPopup('w6_ev1801')"/>
         <line x1="244" y1="199" x2="190" y2="199" stroke="#7c3aed" stroke-width="1.2" opacity="0.5"/>
@@ -2795,7 +2795,7 @@ function renderInfographic() {
         <circle cx="250" cy="300" r="9" fill="#b91c1c" style="cursor:pointer" onclick="showDiagramDetailPopup('w6_ev1804')"/>
         <line x1="244" y1="300" x2="190" y2="300" stroke="#b91c1c" stroke-width="1.2" opacity="0.5"/>
         <text x="186" y="296" font-family="Outfit" font-size="8" font-weight="800" fill="#b91c1c" text-anchor="end">1 Oca 1804</text>
-        <text x="186" y="307" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="end">${T('Independence declared — Haiti: 1st Black Republic','Bağımsızlık ilan edildi — Haiti: İlk Siyah Cumhuriyeti')}</text>
+        <text x="186" y="307" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="end">${T('Independence declared — Haiti: 1st Black Republic', 'Bağımsızlık ilan edildi — Haiti: İlk Siyah Cumhuriyeti')}</text>
       </svg>`;
 
     // ── Diagram 3: Plantation hierarchy org-chart ──
@@ -2808,25 +2808,25 @@ function renderInfographic() {
           </marker>
         </defs>
         <text x="250" y="24" font-family="Outfit" font-size="13" font-weight="800" fill="#0d9488" text-anchor="middle" letter-spacing="0.04em">
-          ${T('PLANTATION ECONOMY HIERARCHY','PLANTASYON EKONOMİSİ HİYERARŞİSİ')}
+          ${T('PLANTATION ECONOMY HIERARCHY', 'PLANTASYON EKONOMİSİ HİYERARŞİSİ')}
         </text>
         <!-- Level 1: France -->
         <g style="cursor:pointer" onclick="showDiagramDetailPopup('w6_france')">
           <rect x="170" y="42" width="160" height="38" rx="8" fill="var(--bg-surface)" stroke="#1d4ed8" stroke-width="2" filter="url(#sh7)"/>
           <text x="250" y="60" font-family="Outfit" font-size="10" font-weight="800" fill="#1d4ed8" text-anchor="middle">${T('FRANCE', 'FRANSA')}</text>
-          <text x="250" y="73" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('Colonial Power — Monopoly Trade','Sömürge Gücü — Ticaret Tekeli')}</text>
+          <text x="250" y="73" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('Colonial Power — Monopoly Trade', 'Sömürge Gücü — Ticaret Tekeli')}</text>
         </g>
         <!-- connector -->
         <line x1="250" y1="80" x2="250" y2="98" stroke="var(--border-color)" stroke-width="1.5" marker-end="url(#arr-h)"/>
         <!-- Level 2: Big Whites / Royal Gov -->
         <g style="cursor:pointer" onclick="showDiagramDetailPopup('w6_bigwhites')">
           <rect x="80" y="100" width="155" height="38" rx="8" fill="var(--bg-surface)" stroke="var(--border-color)" stroke-width="1.5" filter="url(#sh7)"/>
-          <text x="157" y="117" font-family="Outfit" font-size="9" font-weight="800" fill="var(--text-primary)" text-anchor="middle">${T('BIG WHITES','BÜYÜK BEYAZLAR')}</text>
-          <text x="157" y="130" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('Plantation Owners · ~30k','Plantasyon Sahipleri · ~30k')}</text>
+          <text x="157" y="117" font-family="Outfit" font-size="9" font-weight="800" fill="var(--text-primary)" text-anchor="middle">${T('BIG WHITES', 'BÜYÜK BEYAZLAR')}</text>
+          <text x="157" y="130" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('Plantation Owners · ~30k', 'Plantasyon Sahipleri · ~30k')}</text>
         </g>
         <g style="cursor:pointer" onclick="showDiagramDetailPopup('w6_royalgov')">
           <rect x="265" y="100" width="155" height="38" rx="8" fill="var(--bg-surface)" stroke="var(--border-color)" stroke-width="1.5" filter="url(#sh7)"/>
-          <text x="342" y="117" font-family="Outfit" font-size="9" font-weight="800" fill="var(--text-primary)" text-anchor="middle">${T('ROYAL GOVERNOR','KRALİYET VALİSİ')}</text>
+          <text x="342" y="117" font-family="Outfit" font-size="9" font-weight="800" fill="var(--text-primary)" text-anchor="middle">${T('ROYAL GOVERNOR', 'KRALİYET VALİSİ')}</text>
           <text x="342" y="130" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('Sent from France · Administrator','Fransa\'dan atandı')}</text>
         </g>
         <line x1="210" y1="100" x2="250" y2="80" stroke="var(--border-color)" stroke-width="1" opacity="0.5"/>
@@ -2837,13 +2837,13 @@ function renderInfographic() {
         <!-- Level 3 -->
         <g style="cursor:pointer" onclick="showDiagramDetailPopup('w6_smallwhites')">
           <rect x="60" y="157" width="195" height="36" rx="8" fill="var(--bg-surface)" stroke="var(--border-color)" stroke-width="1.5" filter="url(#sh7)"/>
-          <text x="157" y="173" font-family="Outfit" font-size="9" font-weight="700" fill="var(--text-primary)" text-anchor="middle">${T('SMALL WHITES + MULATTOES','KÜÇÜK BEYAZLAR + MELEZLER')}</text>
-          <text x="157" y="185" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('Artisans · Merchants · Free Colored','Esnaf · Tüccar · Özgür Melezler')}</text>
+          <text x="157" y="173" font-family="Outfit" font-size="9" font-weight="700" fill="var(--text-primary)" text-anchor="middle">${T('SMALL WHITES + MULATTOES', 'KÜÇÜK BEYAZLAR + MELEZLER')}</text>
+          <text x="157" y="185" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('Artisans · Merchants · Free Colored', 'Esnaf · Tüccar · Özgür Melezler')}</text>
         </g>
         <g style="cursor:pointer" onclick="showDiagramDetailPopup('w6_overseers')">
           <rect x="265" y="157" width="155" height="36" rx="8" fill="var(--bg-surface)" stroke="var(--border-color)" stroke-width="1.5" filter="url(#sh7)"/>
-          <text x="342" y="173" font-family="Outfit" font-size="9" font-weight="700" fill="var(--text-primary)" text-anchor="middle">${T('OVERSEERS','GÖZETÇİLER')}</text>
-          <text x="342" y="185" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('Plantation supervisors','Plantasyon denetçileri')}</text>
+          <text x="342" y="173" font-family="Outfit" font-size="9" font-weight="700" fill="var(--text-primary)" text-anchor="middle">${T('OVERSEERS', 'GÖZETÇİLER')}</text>
+          <text x="342" y="185" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('Plantation supervisors', 'Plantasyon denetçileri')}</text>
         </g>
         <!-- connector -->
         <line x1="250" y1="193" x2="250" y2="213" stroke="var(--border-color)" stroke-width="1.5" marker-end="url(#arr-h)"/>
@@ -2852,7 +2852,7 @@ function renderInfographic() {
         <!-- Level 4: Enslaved -->
         <g style="cursor:pointer" onclick="showDiagramDetailPopup('w6_enslaved')">
           <rect x="105" y="215" width="290" height="48" rx="8" fill="rgba(239,68,68,0.06)" stroke="#ef4444" stroke-width="2" filter="url(#sh7)"/>
-          <text x="250" y="235" font-family="Outfit" font-size="11" font-weight="800" fill="#b91c1c" text-anchor="middle">${T('ENSLAVED BLACK POPULATION','KÖLELEŞTİRİLMİŞ SİYAH NÜFUS')}</text>
+          <text x="250" y="235" font-family="Outfit" font-size="11" font-weight="800" fill="#b91c1c" text-anchor="middle">${T('ENSLAVED BLACK POPULATION', 'KÖLELEŞTİRİLMİŞ SİYAH NÜFUS')}</text>
           <text x="250" y="249" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">${T('500,000 people — 90% of population — Generated all plantation wealth','500.000 kişi — Nüfusun %90\'ı — Tüm servetin kaynağı')}</text>
         </g>
         <!-- Economic output -->
@@ -2872,10 +2872,10 @@ function renderInfographic() {
           </linearGradient>
         </defs>
         <text x="250" y="26" font-family="Outfit" font-size="12" font-weight="800" fill="#10b981" text-anchor="middle" letter-spacing="0.04em">
-          ${T('EUROPEAN POPULATION BOOM (1700-1900)','AVRUPA NÜFUS PATLAMASI (1700-1900)')}
+          ${T('EUROPEAN POPULATION BOOM (1700-1900)', 'AVRUPA NÜFUS PATLAMASI (1700-1900)')}
         </text>
         <text x="250" y="42" font-family="Inter" font-size="8" font-weight="500" fill="var(--text-secondary)" text-anchor="middle">
-          ${T('Driven by New World staple crops (Potato & Maize)','Yeni Dünya mahsullerinin (Patates ve Mısır) etkisiyle')}
+          ${T('Driven by New World staple crops (Potato & Maize)', 'Yeni Dünya mahsullerinin (Patates ve Mısır) etkisiyle')}
         </text>
         <line x1="60" y1="80" x2="60" y2="280" stroke="var(--border-color)" stroke-width="1.5"/>
         <line x1="60" y1="280" x2="450" y2="280" stroke="var(--border-color)" stroke-width="1.5"/>
@@ -2900,43 +2900,43 @@ function renderInfographic() {
         
         <g transform="translate(140, 110)" style="cursor:pointer" onclick="showDiagramDetailPopup('w2_pop_detail')">
           <rect x="0" y="0" width="160" height="42" rx="4" fill="var(--bg-surface)" stroke="#10b981" stroke-width="1"/>
-          <text x="80" y="15" font-family="Outfit" font-size="7.5" font-weight="700" fill="#047857" text-anchor="middle">${T('THE POTATO EFFECT','PATATES ETKİSİ')}</text>
-          <text x="80" y="26" font-family="Inter" font-size="6.5" fill="var(--text-secondary)" text-anchor="middle">${T('Provided cheap, dense calories','Ucuz ve yoğun kalori sağladı,')}</text>
+          <text x="80" y="15" font-family="Outfit" font-size="7.5" font-weight="700" fill="#047857" text-anchor="middle">${T('THE POTATO EFFECT', 'PATATES ETKİSİ')}</text>
+          <text x="80" y="26" font-family="Inter" font-size="6.5" fill="var(--text-secondary)" text-anchor="middle">${T('Provided cheap, dense calories', 'Ucuz ve yoğun kalori sağladı,')}</text>
           <text x="80" y="34" font-family="Inter" font-size="6.5" fill="var(--text-secondary)" text-anchor="middle">${T('fueling the Industrial Revolution','Endüstri Devrimi\'ni besledi')}</text>
         </g>
       </svg>`;
     const svgs = [svg1, svg2, svg3, svg4];
 
     const cards = [
-      commodityCard('commodity_sugar_vat', T('Sugar Boiling Vat','Şeker Kazanı'), `
+      commodityCard('commodity_sugar_vat', T('Sugar Boiling Vat', 'Şeker Kazanı'), `
         <defs><linearGradient id="cop1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#b45309"/><stop offset="100%" stop-color="#7c2d12"/></linearGradient></defs>
         <ellipse cx="50" cy="35" rx="20" ry="8" fill="#ea580c"/>
         <path d="M 30,35 L 34,70 C 34,78 66,78 66,70 L 70,35 Z" fill="url(#cop1)"/>
         <circle cx="42" cy="33" r="2.5" fill="#fdba74"/>
         <circle cx="50" cy="31" r="3" fill="#ffedd5"/>
         <circle cx="57" cy="34" r="2" fill="#fdba74"/>`, '#b45309'),
-      commodityCard('commodity_machete', T('Sugar Machete','Pala'), `
+      commodityCard('commodity_machete', T('Sugar Machete', 'Pala'), `
         <path d="M 25,65 L 68,22 C 72,18 78,22 75,26 L 35,75 Z" fill="#9ca3af" stroke="#4b5563" stroke-width="0.5"/>
         <rect x="20" y="65" width="8" height="12" rx="1" fill="#78350f" transform="rotate(45,24,71)"/>`, '#9ca3af'),
-      commodityCard('commodity_voodoo_drum', T('Voodoo Drum','Voodoo Davulu'), `
+      commodityCard('commodity_voodoo_drum', T('Voodoo Drum', 'Voodoo Davulu'), `
         <defs><linearGradient id="vd1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#78350f"/><stop offset="100%" stop-color="#451a03"/></linearGradient></defs>
         <ellipse cx="50" cy="30" rx="16" ry="6" fill="#fed7aa"/>
         <path d="M 34,30 L 38,72 C 38,78 62,78 62,72 L 66,30 Z" fill="url(#vd1)"/>
         <path d="M 34,30 L 50,75 L 66,30 M 42,30 L 50,75 L 58,30" stroke="#f59e0b" stroke-width="1" fill="none" opacity="0.6"/>`, '#d97706'),
-      commodityCard('commodity_haiti_flag', T('Haiti Flag (1803)','Haiti Bayrağı (1803)'), `
+      commodityCard('commodity_haiti_flag', T('Haiti Flag (1803)', 'Haiti Bayrağı (1803)'), `
         <rect x="22" y="26" width="56" height="24" fill="#1d4ed8"/>
         <rect x="22" y="50" width="56" height="24" fill="#dc2626"/>
         <line x1="22" y1="26" x2="22" y2="74" stroke="#78350f" stroke-width="3"/>
         <!-- Torn center -->
         <rect x="40" y="34" width="20" height="16" fill="#1f2937" opacity="0.6"/>
         <text x="50" y="46" font-family="Outfit" font-size="8" font-weight="900" fill="#fbbf24" text-anchor="middle">L'U</text>`, '#1d4ed8'),
-      commodityCard('commodity_torch', T('Freedom Torch','Özgürlük Meşalesi'), `
+      commodityCard('commodity_torch', T('Freedom Torch', 'Özgürlük Meşalesi'), `
         <defs><radialGradient id="fr1" cx="50%" cy="30%" r="60%"><stop offset="0%" stop-color="#fef08a"/><stop offset="100%" stop-color="#f97316"/></radialGradient></defs>
         <path d="M 50,18 C 38,25 30,40 38,55 C 44,48 56,48 62,55 C 70,40 62,25 50,18 Z" fill="url(#fr1)"/>
         <ellipse cx="50" cy="54" rx="12" ry="6" fill="#f97316" opacity="0.8"/>
         <rect x="46" y="58" width="8" height="26" rx="2" fill="#4b5563"/>
         <rect x="40" y="82" width="20" height="4" rx="1" fill="#374151"/>`, '#f97316'),
-      commodityCard('commodity_broken_chain', T('Broken Chain','Kırık Zincir'), `
+      commodityCard('commodity_broken_chain', T('Broken Chain', 'Kırık Zincir'), `
         <circle cx="36" cy="50" r="12" fill="none" stroke="#6b7280" stroke-width="5"/>
         <circle cx="64" cy="50" r="12" fill="none" stroke="#6b7280" stroke-width="5"/>
         <!-- Break in center -->
@@ -2966,7 +2966,7 @@ function renderInfographic() {
           </linearGradient>
         </defs>
         <text x="250" y="24" font-family="Outfit" font-size="13" font-weight="800" fill="#0d9488" text-anchor="middle" letter-spacing="0.04em">
-          ${T('FRENCH EXPEDITION TO EGYPT & MEDITERRANEAN ROUTE (1798-1801)','FRANSIZ MISIR SEFERİ VE SEFİR ROTASI (1798-1801)')}
+          ${T('FRENCH EXPEDITION TO EGYPT & MEDITERRANEAN ROUTE (1798-1801)', 'FRANSIZ MISIR SEFERİ VE SEFİR ROTASI (1798-1801)')}
         </text>
         <rect x="25" y="45" width="450" height="260" rx="12" fill="url(#eg-g)" stroke="#0d9488" stroke-width="1.5"/>
         
@@ -3000,7 +3000,7 @@ function renderInfographic() {
     const svg2 = `
       <svg viewBox="0 0 500 340" class="infographic-svg">
         <text x="250" y="24" font-family="Outfit" font-size="13" font-weight="800" fill="#0d9488" text-anchor="middle">
-          ${T('ORIENTALISM & KNOWLEDGE-POWER MATRIX','ŞARKIYATÇILIK VE BİLGİ-İKTİDAR MATRİSİ')}
+          ${T('ORIENTALISM & KNOWLEDGE-POWER MATRIX', 'ŞARKIYATÇILIK VE BİLGİ-İKTİDAR MATRİSİ')}
         </text>
         <rect x="30" y="45" width="440" height="260" rx="10" fill="var(--bg-surface)" stroke="var(--border-color)"/>
         
@@ -3013,7 +3013,7 @@ function renderInfographic() {
 
         <g transform="translate(270, 70)" style="cursor:pointer" onclick="showDiagramDetailPopup('w7_rosetta_detail')">
           <rect x="0" y="0" width="180" height="95" rx="8" fill="rgba(59,130,246,0.12)" stroke="#3b82f6" stroke-width="1.5"/>
-          <text x="90" y="25" font-family="Outfit" font-size="11" font-weight="800" fill="#3b82f6" text-anchor="middle">${T('Rosetta Stone','Rosetta Taşı (1799)')}</text>
+          <text x="90" y="25" font-family="Outfit" font-size="11" font-weight="800" fill="#3b82f6" text-anchor="middle">${T('Rosetta Stone', 'Rosetta Taşı (1799)')}</text>
           <text x="90" y="48" font-family="Inter" font-size="8.5" fill="var(--text-primary)" text-anchor="middle">Champollion & Hiyeroglifler</text>
           <text x="90" y="66" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">Modern Mısırbilim'in Doğuşu</text>
         </g>
@@ -3030,7 +3030,7 @@ function renderInfographic() {
     const svg3 = `
       <svg viewBox="0 0 500 340" class="infographic-svg">
         <text x="250" y="24" font-family="Outfit" font-size="13" font-weight="800" fill="#0d9488" text-anchor="middle">
-          ${T('MEDITERRANEAN POWER TRIANGLE (1798-1801)','AKDENİZ GÜÇ ÜÇGENİ (1798-1801)')}
+          ${T('MEDITERRANEAN POWER TRIANGLE (1798-1801)', 'AKDENİZ GÜÇ ÜÇGENİ (1798-1801)')}
         </text>
         <polygon points="250,65 90,265 410,265" fill="none" stroke="#0d9488" stroke-width="2" stroke-dasharray="5,5"/>
         
@@ -3054,16 +3054,16 @@ function renderInfographic() {
     const svgs = [svg1, svg2, svg3];
 
     const cards = [
-      commodityCard('w7_rosetta_detail', T('Rosetta Stone (1799)','Rosetta Taşı (1799)'), `
+      commodityCard('w7_rosetta_detail', T('Rosetta Stone (1799)', 'Rosetta Taşı (1799)'), `
         <rect x="25" y="20" width="50" height="60" rx="4" fill="#374151" stroke="#6b7280"/>
         <line x1="30" y1="30" x2="70" y2="30" stroke="#9ca3af" stroke-width="1"/>
         <line x1="30" y1="40" x2="70" y2="40" stroke="#9ca3af" stroke-width="1"/>
         <line x1="30" y1="50" x2="70" y2="50" stroke="#9ca3af" stroke-width="1"/>
         <line x1="30" y1="60" x2="70" y2="60" stroke="#9ca3af" stroke-width="1"/>`, '#374151'),
-      commodityCard('w7_toulon_detail', T('Toulon Fleet (1798)','Toulon Donanması'), `
+      commodityCard('w7_toulon_detail', T('Toulon Fleet (1798)', 'Toulon Donanması'), `
         <path d="M 20,55 C 30,30 70,30 80,55 C 65,48 35,48 20,55 Z" fill="#0d9488" stroke="#0f766e" stroke-width="1.5"/>
         <circle cx="50" cy="45" r="4" fill="#f59e0b"/>`, '#0d9488'),
-      commodityCard('w7_aboukir_detail', T('Battle of the Nile','Ebu Kır Deniz Savaşı'), `
+      commodityCard('w7_aboukir_detail', T('Battle of the Nile', 'Ebu Kır Deniz Savaşı'), `
         <path d="M 22,26 L 78,74 M 78,26 L 22,74" stroke="#dc2626" stroke-width="4" stroke-linecap="round"/>`, '#dc2626'),
       commodityCard('w7_alex_detail', T('Description de l\'Égypte','Description de l\'Égypte'), `
         <rect x="30" y="22" width="40" height="56" rx="3" fill="#d97706" stroke="#b45309"/>
@@ -3204,11 +3204,11 @@ function renderQuiz() {
           <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:0.75rem;">
             <div style="background:var(--bg-card); border:1px solid #2563eb; border-radius:8px; padding:0.75rem;">
               <strong style="color:#2563eb; font-size:0.85rem;">🇷🇺 ${T('Russian Empire', 'Rus İmparatorluğu')}</strong>
-              <p style="font-size:0.75rem; color:var(--text-secondary); margin-top:0.3rem;">${T('Protect Orthodox population & gain Black Sea Straits access.', 'Ortodoksları koruma bahanesiyle Boğazlar ve Akdeniz'e inme amacı.')}</p>
+              <p style="font-size:0.75rem; color:var(--text-secondary); margin-top:0.3rem;">${T('Protect Orthodox population & gain Black Sea Straits access.', 'Ortodoksları koruma bahanesiyle Boğazlar ve Akdeniz’e inme amacı.')}</p>
             </div>
             <div style="background:var(--bg-card); border:1px solid #059669; border-radius:8px; padding:0.75rem;">
               <strong style="color:#059669; font-size:0.85rem;">🇬🇧 ${T('British Empire', 'İngiliz İmparatorluğu')}</strong>
-              <p style="font-size:0.75rem; color:var(--text-secondary); margin-top:0.3rem;">${T('Preserve Ottoman integrity to block Russian Mediterranean route.', 'Hindistan yolunu güvenceye almak için Rusya'yı Akdeniz'de engelleme.')}</p>
+              <p style="font-size:0.75rem; color:var(--text-secondary); margin-top:0.3rem;">${T('Preserve Ottoman integrity to block Russian Mediterranean route.', 'Hindistan yolunu güvenceye almak için Rusya\'yı Akdeniz\'de engelleme.')}</p>
             </div>
           </div>
         </div>`;
@@ -3361,7 +3361,7 @@ function renderQuiz() {
             <div style="background:var(--bg-card); padding:0.4rem 0.6rem; border-left:3px solid #059669;"><strong>1805:</strong> Mehmet Ali Paşa'nın vali olması ve ordu reformu.</div>
             <div style="background:var(--bg-card); padding:0.4rem 0.6rem; border-left:3px solid #0284c7;"><strong>1869:</strong> Süveyş Kanalı'nın açılması ve dış borç krizi.</div>
             <div style="background:var(--bg-card); padding:0.4rem 0.6rem; border-left:3px solid #d97706;"><strong>1876:</strong> İngiliz-Fransız Çifte Kontrol borç idaresi.</div>
-            <div style="background:var(--bg-card); padding:0.4rem 0.6rem; border-left:3px solid #dc2626;"><strong>1882:</strong> Ahmed Urabi İsyanı ve İngiltere'nin Mısır'ı fiilen işgali.</div>
+            <div style="background:var(--bg-card); padding:0.4rem 0.6rem; border-left:3px solid #dc2626;"><strong>1882:</strong> Ahmed Urabi İsyanı ve İngiltere’nin Mısır’ı fiilen işgali.</div>
           </div>
         </div>`;
     }
@@ -4203,7 +4203,7 @@ function getDetailedAcademicNotes(weekNum, lang) {
       <h3>Temel Konular:</h3>
       <ul>
         <li><strong>Köleliğin Karakteri:</strong> Roma veya Osmanlı'daki geçici köleliğin aksine, transatlantik köleliği ırksal, kalıtsal ve ömür boyu süren kalıcı bir niteliğe sahipti.</li>
-        <li><strong>Yerli Emeğinden Afrika Emeğine Geçiş:</strong> Yerli nüfusun salgınlarla kırılması ve Valladolid Tartışması (1550) gibi tartışmalarla yerli köleliğine sınırlama getirilmesi, plantasyon sahiplerini Batı Afrika'daki (Wolof, Fula) binicilik ve hayvancılık uzmanlığı olan iş gücüne yöneltti.</li>
+        <li><strong>Yerli Emeğinden Afrika Emeğine Geçiş:</strong> Yerli nüfusun salgınlarla kırılması ve Valladolid Tartışması (1550) gibi tartışmalarla yerli köleliğine sınırlama getirilmesi, plantasyon sahiplerini Batı Afrika’daki (Wolof, Fula) binicilik ve hayvancılık uzmanlığı olan iş gücüne yöneltti.</li>
         <li><strong>Şeker Kamışı Motoru:</strong> Amerika'ya getirilen kölelerin %90'ı şeker plantasyonlarında (Brezilya ve Saint-Domingue) çalıştırılmak üzere taşındı.</li>
         <li><strong>Silah-Köle Sarmalı:</strong> Afrikalı krallıklar, kendilerini komşu devletlere karşı korumak için Avrupalılardan ateşli silah satın almak zorunda kaldılar ve bunun karşılığında esir ticareti yaptılar.</li>
       </ul>
@@ -4299,7 +4299,7 @@ function getDetailedAcademicNotes(weekNum, lang) {
       <h3>Temel Konular:</h3>
       <ul>
         <li><strong>Dutty Boukman Ayaklanması:</strong> Ağustos 1791'de voodoo töreniyle başlayan isyan, kuzey ovalarındaki plantasyonları yakarak sömürge genelinde büyük bir köle savaşı başlattı.</li>
-        <li><strong>Toussaint Louverture:</strong> Eski bir köle olan Toussaint, disiplinli bir ordu kurdu; İspanyol ve İngiliz işgallerine karşı savaşı yönetti. Ancak 1802'de Napolyon'un gönderdiği Leclerc ordu düzeniyle tutuklanarak Fransa'da (Fort de Joux) dondurucu bir hücrede ölüme terk edildi.</li>
+        <li><strong>Toussaint Louverture:</strong> Eski bir köle olan Toussaint, disiplinli bir ordu kurdu; İspanyol ve İngiliz işgallerine karşı savaşı yönetti. Ancak 1802'de Napolyon'un gönderdiği Leclerc ordu düzeniyle tutuklanarak Fransa’da (Fort de Joux) dondurucu bir hücrede ölüme terk edildi.</li>
         <li><strong>Bağımsızlık İlanı:</strong> Toussaint'ın ölümünün ardından Jean-Jacques Dessalines liderliğindeki güçler Fransız ordusunu tamamen yendi. 31 Aralık 1803'te Gonaives'te bağımsızlık ilan edildi ve ülkeye yerli adı olan 'Haiti' verildi.</li>
         <li><strong>Devrimin Küresel Etkisi:</strong> Haiti, köleliğin tamamen kaldırıldığı ilk ülke oldu. Bu durum tüm Atlantik dünyasında köle sahiplerini dehşete düşürdü ve köle isyanı korkusunu körükledi.</li>
       </ul>
@@ -4331,7 +4331,7 @@ const diagramNodeDetails = {
   w7_toulon_detail: {
     title: { tr: "Toulon Limanı & Donanma Çıkışı", en: "Toulon Arsenal & Expedition Departure" },
     body: {
-      tr: "<h4>Fransız Donanmasının Gizli Seferi:</h4><p>19 Mayıs 1798'de Toulon'dan hareket eden 40.000 kişilik Fransız Doğu Ordusu, İngiliz donanmasının takibinden kaçarak gizlice Doğu Akdeniz'e seyretmiştir.</p>",
+      tr: "<h4>Fransız Donanmasının Gizli Seferi:</h4><p>19 Mayıs 1798'de Toulon'dan hareket eden 40.000 kişilik Fransız Doğu Ordusu, İngiliz donanmasının takibinden kaçarak gizlice Doğu Akdeniz’e seyretmiştir.</p>",
       en: "<h4>Secret Departure of the Armée d'Orient:</h4><p>On May 19, 1798, 40,000 French troops set sail from Toulon under total secrecy, evading British naval patrols in the Mediterranean.</p>"
     }
   },
@@ -4359,7 +4359,7 @@ const diagramNodeDetails = {
   w7_aboukir_detail: {
     title: { tr: "Ebu Kır Deniz Savaşı & Abluka", en: "Battle of the Nile & Aboukir Bay" },
     body: {
-      tr: "<h4>Amiral Nelson'ın Zaferi:</h4><p>1 Ağustos 1798'de Amiral Nelson Fransız donanmasını imha etmiş, Napolyon'un ordusunu Mısır'da tamamen mahsur bırakmıştır.</p>",
+      tr: "<h4>Amiral Nelson'ın Zaferi:</h4><p>1 Ağustos 1798'de Amiral Nelson Fransız donanmasını imha etmiş, Napolyon'un ordusunu Mısır’da tamamen mahsur bırakmıştır.</p>",
       en: "<h4>Nelson's Decisive Naval Victory:</h4><p>On August 1, 1798, Admiral Horatio Nelson destroyed the French fleet at Aboukir Bay, completely cutting off the French army from Europe.</p>"
     }
   },
@@ -4478,10 +4478,10 @@ const diagramNodeDetails = {
     body: {
       tr: `<h4>Yeni Dünya Ekolojik Devrimi:</h4>
            <ul>
-             <li><strong>Patates:</strong> İrlanda'dan Rusya'ya kadar Kuzey ve Doğu Avrupa köylü sınıfının kalori kaynağı oldu. Yer altında yetiştiği için talancı ordulardan saklanabildi ve savaş dönemlerinde nüfusu korudu.</li>
+             <li><strong>Patates:</strong> İrlanda'dan Rusya’ya kadar Kuzey ve Doğu Avrupa köylü sınıfının kalori kaynağı oldu. Yer altında yetiştiği için talancı ordulardan saklanabildi ve savaş dönemlerinde nüfusu korudu.</li>
              <li><strong>Mısır:</strong> Çok az iş gücü gerektirmesi ve dayanıklılığı sayesinde hızla Çin'e yayılarak büyük bir nüfus artışını tetikledi.</li>
              <li><strong>Tütün:</strong> John Rolfe tarafından Virginia sömürgesine getirilmesiyle buranın tek mahsullü (monokültür) zenginlik kaynağı haline geldi.</li>
-             <li><strong>Kinin (Sıtma İlacı):</strong> And Dağları'ndaki kınakına ağacının kabuğundan elde edildi. Avrupalıların sıtmaya karşı hayatta kalmasını sağlayarak Afrika'nın sömürgeleştirilmesinde hayati bir imparatorluk aracı oldu.</li>
+             <li><strong>Kinin (Sıtma İlacı):</strong> And Dağları'ndaki kınakına ağacının kabuğundan elde edildi. Avrupalıların sıtmaya karşı hayatta kalmasını sağlayarak Afrika’nın sömürgeleştirilmesinde hayati bir imparatorluk aracı oldu.</li>
              <li><strong>Frengi (Syphilis):</strong> Kolomb'un mürettebatı tarafından Amerika'dan Avrupa'ya (Napoli salgınıyla) taşınan ve Avrupa'da büyük bir demografik etki yapan tek büyük hastalıktır.</li>
            </ul>`,
       en: `<h4>New World Ecological Revolution:</h4>
@@ -4633,7 +4633,7 @@ const diagramNodeDetails = {
     },
     body: {
       tr: `<h4>Katolik Kilisesi ve Ruhban Sınıfı:</h4>
-           <p>Devrim öncesi Fransa'da (Eski Rejim) Katolik Kilisesi mensupları nüfusun yalnızca %0.5'ini oluşturuyordu. Ancak ülke topraklarının yaklaşık %10'unu elinde bulunduruyor ve köylülerden her yıl 'öşür' (tithe - onda bir vergi) topluyorlardı. Kilise, devlet vergilerinden tamamen muaf kılınmıştı; sadece krala belirli dönemlerde sembolik bir bağış (don gratuit) yapardı. Bu ayrıcalıklı konum, halkın büyük tepkisini çekiyordu.</p>`,
+           <p>Devrim öncesi Fransa’da (Eski Rejim) Katolik Kilisesi mensupları nüfusun yalnızca %0.5'ini oluşturuyordu. Ancak ülke topraklarının yaklaşık %10'unu elinde bulunduruyor ve köylülerden her yıl 'öşür' (tithe - onda bir vergi) topluyorlardı. Kilise, devlet vergilerinden tamamen muaf kılınmıştı; sadece krala belirli dönemlerde sembolik bir bağış (don gratuit) yapardı. Bu ayrıcalıklı konum, halkın büyük tepkisini çekiyordu.</p>`,
       en: `<h4>The Privileged First Estate:</h4>
            <p>Representing only 0.5% of the population, the clergy owned roughly 10% of French land and extracted annual tithes (10% agricultural tax) from the peasantry. The Church paid no direct taxes, contributing only a periodic voluntary gift (don gratuit) to the Crown, fueling widespread resentment.</p>`
     }
@@ -4669,7 +4669,7 @@ const diagramNodeDetails = {
     },
     body: {
       tr: `<h4>Saint-Domingue Plantasyon Sahipleri:</h4>
-           <p>Saint-Domingue (Haiti) sömürgesinin en üst tabakasını oluşturan Fransız plantasyon sahipleri, zengin tüccarlar ve sömürge bürokratlarıdır. Köle emeğine dayalı şeker ve kahve plantasyonlarının sahipleriydiler. Fransız Devrimi başladığında, insan hakları ilkelerine karşı çıktılar; köleliğin aynen devam etmesini ve sömürgede Fransa'dan bağımsız bir özerklik kurulmasını talep ettiler.</p>`,
+           <p>Saint-Domingue (Haiti) sömürgesinin en üst tabakasını oluşturan Fransız plantasyon sahipleri, zengin tüccarlar ve sömürge bürokratlarıdır. Köle emeğine dayalı şeker ve kahve plantasyonlarının sahipleriydiler. Fransız Devrimi başladığında, insan hakları ilkelerine karşı çıktılar; köleliğin aynen devam etmesini ve sömürgede Fransa’dan bağımsız bir özerklik kurulmasını talep ettiler.</p>`,
       en: `<h4>Colonial Ruling Class:</h4>
            <p>The wealthy white elite (planters and royal officials) who owned the sugar and coffee plantations. Upon the start of the French Revolution, they opposed the Declaration of the Rights of Man for slaves, demanding colonial autonomy to protect slavery from Parisian legislation.</p>`
     }
@@ -4729,7 +4729,7 @@ const diagramNodeDetails = {
     },
     body: {
       tr: `<h4>Beyaz Altın ve Transatlantik Köle Ticareti:</h4>
-           <p>Asya kökenli olan şeker kamışı, Akdeniz üzerinden Amerika'ya getirildi. Karayipler ve Brezilya'da kurulan şeker plantasyonları ("şeker fabrikaları"), tarihin en karlı ve en vahşi tarım rejimini oluşturdu. Şeker üretimi aşırı iş gücü gerektirdiğinden ve ömür beklentisini düşürdüğünden, Afrika'dan milyonlarca insanın zorla kaçırılarak köleleştirilmesinin temel motoru oldu.</p>`,
+           <p>Asya kökenli olan şeker kamışı, Akdeniz üzerinden Amerika'ya getirildi. Karayipler ve Brezilya'da kurulan şeker plantasyonları ("şeker fabrikaları"), tarihin en karlı ve en vahşi tarım rejimini oluşturdu. Şeker üretimi aşırı iş gücü gerektirdiğinden ve ömür beklentisini düşürdüğünden, Afrika’dan milyonlarca insanın zorla kaçırılarak köleleştirilmesinin temel motoru oldu.</p>`,
       en: `<h4>White Gold & The Slave Trade:</h4>
            <p>Originally from Asia, sugarcane flourished in Brazil and the Caribbean, generating immense wealth for European empires. The brutal, labor-intensive cultivation and processing of sugar directly powered the transatlantic slave trade, driving millions of captive Africans to plantations where lifespans were notoriously short.</p>`
     }
@@ -4765,7 +4765,7 @@ const diagramNodeDetails = {
     },
     body: {
       tr: `<h4>Silah-Köle Sarmalı (Gun-Slave Cycle):</h4>
-           <p>Avrupalı tüccarlar, Batı Afrika kıyılarındaki krallıklara barut ve tüfek satarak karşılığında köle talep ettiler. Silah alan krallıklar, komşu topluluklara karşı askeri üstünlük kurup daha fazla savaş esiri (köle) ele geçirdiler. Bu döngü, Batı Afrika'da militarizasyonu artırdı, sömürgeci güçlere bağımlılık yarattı ve tüm kıtada büyük bir yıkıma neden oldu.</p>`,
+           <p>Avrupalı tüccarlar, Batı Afrika kıyılarındaki krallıklara barut ve tüfek satarak karşılığında köle talep ettiler. Silah alan krallıklar, komşu topluluklara karşı askeri üstünlük kurup daha fazla savaş esiri (köle) ele geçirdiler. Bu döngü, Batı Afrika’da militarizasyonu artırdı, sömürgeci güçlere bağımlılık yarattı ve tüm kıtada büyük bir yıkıma neden oldu.</p>`,
       en: `<h4>The Gun-Slave Cycle:</h4>
            <p>European traders bartered muskets and gunpowder with West African coastal states in exchange for captives. Access to firearms granted these kingdoms military dominance over their neighbors, encouraging more raids to capture slaves. This cycle destabilized West African societies and reinforced reliance on European military imports.</p>`
     }
@@ -4837,7 +4837,7 @@ const diagramNodeDetails = {
     },
     body: {
       tr: `<h4>Eşitlik ve Özgürlüğün Simgesi:</h4>
-           <p>Paris'in renkleri olan mavi ve kırmızı ile kraliyet rengi olan beyazın birleşmesiyle oluşan üç renkli (tricolor) rozet, devrimci vatanseverliğin temel simgesiydi. Kokart taşımak, cumhuriyete sadakatin zorunlu bir işareti haline gelmişti.</p>`,
+           <p>Paris’in renkleri olan mavi ve kırmızı ile kraliyet rengi olan beyazın birleşmesiyle oluşan üç renkli (tricolor) rozet, devrimci vatanseverliğin temel simgesiydi. Kokart taşımak, cumhuriyete sadakatin zorunlu bir işareti haline gelmişti.</p>`,
       en: `<h4>Badge of the Republic:</h4>
            <p>Blending the royal white with the Parisian red and blue, the tricolor cockade became the ubiquitous symbol of French revolutionary patriotism and civic loyalty.</p>`
     }
@@ -4986,7 +4986,7 @@ function getDetailedSlideAnalysisText(week, slideIndex, lang) {
   const data = {
     7: { // Week 7: European Imperialism
       0: {
-        tr: `<h4>Akdeniz'e Açılan Fransız Seferi ve İtalya Başarıları</h4>
+        tr: `<h4>Akdeniz’e Açılan Fransız Seferi ve İtalya Başarıları</h4>
              <p>Fransız Devrim savaşları, Napolyon Bonapart'ın 1797-1798 İtalya seferlerindeki göz alıcı zaferleriyle Akdeniz havzasına genişlemiştir. Venedik Cumhuriyeti'nin bin yıllık varlığına son verilmiş, Nice, Savoy ve İyon Adaları Fransa kontrolüne geçmiştir.</p>
              <p>Bu gelişmeler, İngiltere ile Fransa arasındaki emperyal rekabeti Akdeniz jeopolitiğinin merkezine yerleştirmiş ve Mısır Seferi'nin askeri zeminini hazırlamıştır.</p>`,
         en: `<h4>French Mediterranean Expansion & Italian Victories</h4>
@@ -4996,7 +4996,7 @@ function getDetailedSlideAnalysisText(week, slideIndex, lang) {
       1: {
         tr: `<h4>Toulon Tersanesi ve Çifte Emperyalist Hedef</h4>
              <p>Toulon Limanı, Fransız Cumhuriyet ordusunun Akdeniz'deki devasa silah ve donanma deposu haline gelmiştir. 19 Mayıs 1798'de 40.000 askerden oluşan Doğu Ordusu gizlilik içinde denize açılmıştır.</p>
-             <p>Seferin çifte amacı vardı: 1) İngiltere'nin Hindistan ile olan hayati ticari iletişim hatlarını keserek rakibini felç etmek. 2) Mısır'ı Fransa için güvenilir bir tarımsal tahıl sömürgesi yapmak.</p>`,
+             <p>Seferin çifte amacı vardı: 1) İngiltere’nin Hindistan ile olan hayati ticari iletişim hatlarını keserek rakibini felç etmek. 2) Mısır’ı Fransa için güvenilir bir tarımsal tahıl sömürgesi yapmak.</p>`,
         en: `<h4>Toulon Arsenal & Dual Imperial Objectives</h4>
              <p>Toulon served as the chief naval arsenal for the French Republic. On May 19, 1798, a fleet carrying 40,000 troops set sail under total secrecy.</p>
              <p>The expedition pursued dual strategic goals: 1) Sever Britain's trade routes to India to weaken its global economy. 2) Establish Egypt as a dependable agricultural grain colony for France.</p>`
@@ -5004,7 +5004,7 @@ function getDetailedSlideAnalysisText(week, slideIndex, lang) {
       2: {
         tr: `<h4>Sömürgeciliğin Özgürleştirme Söylemiyle Maskelenmesi</h4>
              <p>Jakobenlerin sömürgecilik karşıtı çizgisi kırılmış, yerini Fransa'nın refahı için yeni sömürgeler edinilmesi gerektiği düşüncesine bırakmıştır. Böylece 'uydu cumhuriyetler' konsepti doğmuştur.</p>
-             <p>Milletvekili Joseph Echasseriaux, medeniyetin beşiği Mısır'ı ihya etmenin Fransız devrimci görevi olduğunu savunarak modern emperyalizmin uygarlık götürme (civilizing mission) rhetoric'ini kurmuştur.</p>`,
+             <p>Milletvekili Joseph Echasseriaux, medeniyetin beşiği Mısır’ı ihya etmenin Fransız devrimci görevi olduğunu savunarak modern emperyalizmin uygarlık götürme (civilizing mission) rhetoric'ini kurmuştur.</p>`,
         en: `<h4>The Ideology of Liberalizing Colonization</h4>
              <p>Early Jacobin anti-colonialism gave way to conservative arguments demanding colonial acquisition for French prosperity, spawning the concept of 'satellite republics'.</p>
              <p>Legislator Joseph Echasseriaux framed colonizing Egypt as a noble task to 'regenerate the cradle of civilization', pioneering the modern rhetoric of the 'civilizing mission'.</p>`
@@ -5020,7 +5020,7 @@ function getDetailedSlideAnalysisText(week, slideIndex, lang) {
       4: {
         tr: `<h4>Osmanlı Zayıflaması, Doğu Sorunu ve Memlük Düzeni</h4>
              <p>1774 Küçük Kaynarca Antlaşması sonrası Osmanlı merkez otoritesinin zayıflaması Avrupa diplomasisinde 'Doğu Sorunu'nu başlatmıştır. Mısır bu süreçte rakip Memlük hanelerinin (Murad Bey ve İbrahim Bey) kontrolüne geçmiştir.</p>
-             <p>Baskıcı ve yozlaşmış Memlük derebeyliği, halk nezdinde meşruiyetini yitirmiş ve Mısır'ı dış müdahalelere karşı savunmasız bırakmıştır.</p>`,
+             <p>Baskıcı ve yozlaşmış Memlük derebeyliği, halk nezdinde meşruiyetini yitirmiş ve Mısır’ı dış müdahalelere karşı savunmasız bırakmıştır.</p>`,
         en: `<h4>Ottoman Decline, The Eastern Question & Mamluk Household Rule</h4>
              <p>Following the 1774 Treaty of Küçük Kaynarca, Ottoman decline gave rise to the 'Eastern Question' in European diplomacy. Egypt operated under virtually autonomous Mamluk military households.</p>
              <p>The oppressive and fragmented Mamluk regime lacked popular legitimacy, leaving Egypt vulnerable to foreign military intervention.</p>`
@@ -5035,7 +5035,7 @@ function getDetailedSlideAnalysisText(week, slideIndex, lang) {
       },
       6: {
         tr: `<h4>Fransız İşgalinin Kurumsal ve İdari Reformları</h4>
-             <p>Napolyon Mısır'ı model bir sömürgeye dönüştürmek amacıyla yerel Divanlar (meclisler), arazi ve vergi reformları, hastaneler ve posta teşkilatı kurmuştur.</p>
+             <p>Napolyon Mısır’ı model bir sömürgeye dönüştürmek amacıyla yerel Divanlar (meclisler), arazi ve vergi reformları, hastaneler ve posta teşkilatı kurmuştur.</p>
              <p>Mısır'a getirilen matbaalarla ilk resmi gazeteler yayımlanmış, Kahire'de modern bürokratik idare mekanizmaları denenmiştir.</p>`,
         en: `<h4>French Institutional & Administrative Reforms</h4>
              <p>Napoleon sought to establish Egypt as a model Enlightenment colony, introducing native administrative councils (Divans), land reforms, hospitals, and postal services.</p>
@@ -5044,7 +5044,7 @@ function getDetailedSlideAnalysisText(week, slideIndex, lang) {
       7: {
         tr: `<h4>Ebu Kır Deniz Muharebesi ve Amiral Nelson Ablukası</h4>
              <p>1 Ağustos 1798'de Amiral Horatio Nelson, Ebu Kır Koyu'nda Fransız donanmasını yakalayarak tamamen imha etmiştir.</p>
-             <p>Deniz bağlantısı kesilen Fransız Doğu Ordusu Mısır'da mahsur kalmış; Napolyon 1799'da gizlice Paris'e kaçarken ordusunu General Kléber'e bırakmıştır.</p>`,
+             <p>Deniz bağlantısı kesilen Fransız Doğu Ordusu Mısır’da mahsur kalmış; Napolyon 1799'da gizlice Paris’e kaçarken ordusunu General Kléber'e bırakmıştır.</p>`,
         en: `<h4>Battle of the Nile & British Naval Supremacy</h4>
              <p>On August 1, 1798, British Admiral Horatio Nelson destroyed the French fleet at Aboukir Bay during the Battle of the Nile.</p>
              <p>Cut off from Europe, the French army became stranded in Egypt. Napoleon departed secretly for Paris in 1799, leaving General Kléber in command.</p>`
@@ -5059,7 +5059,7 @@ function getDetailedSlideAnalysisText(week, slideIndex, lang) {
       },
       9: {
         tr: `<h4>Emperyalist Miras ve Edward Said'in Eleştirisi</h4>
-             <p>1801'deki İngiliz-Osmanlı tahliyesi sonrası Mısır'da Kavalalı Mehmet Ali Paşa dönemi başlamış ve İngiltere'nin Akdeniz üstünlüğü pekişmiştir.</p>
+             <p>1801'deki İngiliz-Osmanlı tahliyesi sonrası Mısır’da Kavalalı Mehmet Ali Paşa dönemi başlamış ve İngiltere’nin Akdeniz üstünlüğü pekişmiştir.</p>
              <p>Edward Said, Şarkiyatçılık eserinde Mısır Seferi'nin Batı'nın Doğu üzerindeki söylemsel ve siyasi tahakkümünün ana prototipi olduğunu kanıtlamıştır.</p>`,
         en: `<h4>Imperial Legacy & Edward Said's Critique</h4>
              <p>The 1801 British-Ottoman evacuation ended French occupation, leading to the rise of Muhammad Ali Pasha and consolidating British naval dominance.</p>
@@ -5086,7 +5086,7 @@ function getDetailedSlideAnalysisText(week, slideIndex, lang) {
       2: {
         tr: `<h4>Yeni Dünya Gıdaları ve Avrupa Demografik Devrimi</h4>
              <p>Yeni Dünya'dan getirilen mahsuller, özellikle patates ve mısır, Avrasya ve Afrika nüfuslarının beslenmesinde devrim yapmıştır. Patates, birim alanda buğdaya göre dört kat daha fazla kalori sağlamaktadır. Ayrıca yer altında büyüdüğü için askeri talanlardan ve vergilerden saklanabilmiştir.</p>
-             <p>Patates tarımının yaygınlaşması, İrlanda'dan Rusya'ya kadar uzanan coğrafyada kıtlıkları azaltmış, çocuk ölüm oranlarını düşürmüş ve endüstri devrimini besleyen kentli işçi sınıfının oluşmasına olanak tanıyan bir nüfus patlamasına yol açmıştır. Çin'de ise mısır ve tatlı patates, tarıma elverişsiz yamaçların ekilmesini sağlayarak Qing Hanedanlığı döneminde nüfusun ikiye katlanmasını sağlamıştır.</p>`,
+             <p>Patates tarımının yaygınlaşması, İrlanda'dan Rusya’ya kadar uzanan coğrafyada kıtlıkları azaltmış, çocuk ölüm oranlarını düşürmüş ve endüstri devrimini besleyen kentli işçi sınıfının oluşmasına olanak tanıyan bir nüfus patlamasına yol açmıştır. Çin'de ise mısır ve tatlı patates, tarıma elverişsiz yamaçların ekilmesini sağlayarak Qing Hanedanlığı döneminde nüfusun ikiye katlanmasını sağlamıştır.</p>`,
         en: `<h4>New World Food Crops & The European Demographic Revolution</h4>
              <p>Crops imported from the Americas, particularly the potato and maize, revolutionized the nutritional landscape of Eurasia and Africa. The potato yields four times the calories per acre compared to wheat and grows underground, protecting it from raiding armies and tax collectors.</p>
              <p>The expansion of potato cultivation mitigated famines from Ireland to Russia, lowered infant mortality, and drove a massive population boom that supplied the urban labor force required for the Industrial Revolution. In China, sweet potatoes and maize allowed the cultivation of marginal lands, doubling the population during the Qing Dynasty.</p>`
@@ -5128,7 +5128,7 @@ function getDetailedSlideAnalysisText(week, slideIndex, lang) {
       2: {
         tr: `<h4>Plantasyon Emek Rejimi ve Demografik Açık</h4>
              <p>Amerika'ya ulaşabilen Afrikalılar, şeker kamışı, kahve, tütün ve daha sonra pamuk plantasyonlarında ölümcül koşullar altında çalıştırılmıştır. Karayipler ve Brezilya'daki şeker plantasyonları, aşırı sıcak, salgın hastalıklar ve ağır iş yükü nedeniyle ortalama bir kölenin hayatta kalma süresinin sadece 5-7 yıl olduğu birer ölüm kampı niteliğindeydi.</p>
-             <p>Bu yüksek ölüm oranı ve düşük doğum oranları, plantasyonlarda kalıcı bir <i>"Demografik Açık"</i> yaratmıştır. Sömürgeciler sistemi sürdürebilmek için sürekli olarak Afrika'dan yeni köleler ithal etmek zorunda kalmışlardır. Brezilya ve Karayipler bu nedenle transatlantik köle ticaretinin %85'inden fazlasını emmiştir.</p>`,
+             <p>Bu yüksek ölüm oranı ve düşük doğum oranları, plantasyonlarda kalıcı bir <i>"Demografik Açık"</i> yaratmıştır. Sömürgeciler sistemi sürdürebilmek için sürekli olarak Afrika’dan yeni köleler ithal etmek zorunda kalmışlardır. Brezilya ve Karayipler bu nedenle transatlantik köle ticaretinin %85'inden fazlasını emmiştir.</p>`,
         en: `<h4>The Plantation Labor Regime & Demographic Deficit</h4>
              <p>Enslaved Africans who survived the voyage were put to work under brutal, mechanized regimes on sugar, coffee, tobacco, and later cotton plantations. Sugarcane estates in Brazil and the Caribbean were notoriously deadly; the life expectancy of a newly arrived slave was only 5 to 7 years due to tropical diseases and grueling labor.</p>
              <p>This high mortality rate, combined with low birth rates, generated a persistent <i>"Demographic Deficit"</i>. Planters maintained production levels not by natural population growth, but by importing new waves of captives from Africa. Consequently, Brazil and the Caribbean absorbed over 85% of all trans-Atlantic slave voyages.</p>`
@@ -5153,7 +5153,7 @@ function getDetailedSlideAnalysisText(week, slideIndex, lang) {
     4: { // Week 4: American Revolution
       0: {
         tr: `<h4>Yedi Yıl Savaşları (1756-1763) ve Mali Bunalım</h4>
-             <p>Amerikan Devrimi'nin kökleri, İngiltere ile Fransa arasında küresel hegemonya için yapılan Yedi Yıl Savaşları'na dayanır. Savaş İngiltere'nin zaferiyle sonuçlanmış ve Fransa Kuzey Amerika'dan çekilmiştir.</p>
+             <p>Amerikan Devrimi'nin kökleri, İngiltere ile Fransa arasında küresel hegemonya için yapılan Yedi Yıl Savaşları'na dayanır. Savaş İngiltere’nin zaferiyle sonuçlanmış ve Fransa Kuzey Amerika'dan çekilmiştir.</p>
              <p>Ancak bu askeri zafer, İngiltere'ye devasa bir ulusal borç yükü (yaklaşık 130 milyon sterlin) getirmiştir. İngiliz hükümeti, savaşı sömürgeleri korumak için yaptığını savunarak, borç yükünü hafifletmek amacıyla kolonileri doğrudan vergilendirme kararı almıştır. Bu durum, yüzyılı aşkın süredir kendi kendilerini yöneten Amerikan kolonileriyle Londra arasında büyük bir siyasi krizi tetiklemiştir.</p>`,
         en: `<h4>The Seven Years' War (1756–1763) & Fiscal Crisis</h4>
              <p>The structural roots of the American Revolution lie in the global conflict of the Seven Years' War between Britain and France. Although Britain won, expelling France from North America, the military victory left the British Empire with a staggering national debt of £130 million.</p>
@@ -5162,7 +5162,7 @@ function getDetailedSlideAnalysisText(week, slideIndex, lang) {
       1: {
         tr: `<h4>Temsiliyetsiz Vergilendirme ve Sivil İtaatsizlik</h4>
              <p>İngiliz Parlamentosu'nun 1765'te çıkardığı Pul Kanunu (Stamp Act) ve ardından gelen vergiler sömürgecilerin sert tepkisine yol açmıştır. Kolonistler, İngiltere Parlamentosu'nda kendilerini temsil eden hiçbir milletvekili olmadığı için bu vergilerin yasadışı olduğunu savunmuşlardır.</p>
-             <p>Bu direnç, <i>"Temsiliyetsiz vergilendirme olamaz!" (No taxation without representation)</i> sloganıyla kavramsallaştırılmıştır. Boston Çay Partisi (1773) gibi eylemlerle sömürgeciler, Doğu Hindistan Şirketi'ne ait çay sandıklarını denize dökerek sivil itaatsizlik göstermişlerdir. İngiltere'nin bu eylemlere askeri baskıyla yanıt vermesi, devrimin fitilini ateşlemiştir.</p>`,
+             <p>Bu direnç, <i>"Temsiliyetsiz vergilendirme olamaz!" (No taxation without representation)</i> sloganıyla kavramsallaştırılmıştır. Boston Çay Partisi (1773) gibi eylemlerle sömürgeciler, Doğu Hindistan Şirketi'ne ait çay sandıklarını denize dökerek sivil itaatsizlik göstermişlerdir. İngiltere’nin bu eylemlere askeri baskıyla yanıt vermesi, devrimin fitilini ateşlemiştir.</p>`,
         en: `<h4>Taxation Without Representation & Civil Disobedience</h4>
              <p>The passage of the Stamp Act in 1765 and subsequent duties triggered resistance in the colonies. The colonists argued that because they had no elected representatives in the British Parliament in London, Parliament had no constitutional right to levy direct taxes on them.</p>
              <p>This principle was popularized as <i>"No taxation without representation"</i>. Tensions escalated into acts of civil disobedience, culminating in the Boston Tea Party of 1773, where colonists threw British tea into the harbor. London's heavy-handed military reaction closed Boston's port, making war inevitable.</p>`
@@ -5246,7 +5246,7 @@ function getDetailedSlideAnalysisText(week, slideIndex, lang) {
       1: {
         tr: `<h4>Bois Caïman Töreni ve Köle İsyanının Başlaması</h4>
              <p>Ağustos 1791'de sömürgedeki köle önderleri, Bois Caïman adlı ormanlık alanda voodoo rahibi Dutty Boukman liderliğinde gizli bir dini tören düzenlemiştir. Bu törende, sömürgeci beyazlara karşı topyekun bir kurtuluş savaşı başlatılacağına dair ant içilmiştir.</p>
-             <p>Voodoo inancı, Afrika'nın farklı kabilelerinden getirilen ve ortak bir dilleri olmayan köleler arasında birleştirici bir bağ ve manevi güç sağlamıştır. Törenin ardından başlayan koordineli isyanla köleler, şeker plantasyonlarını ateşe vermiş, plantasyon sahiplerini cezalandırmış ve sömürge ordusunu felç etmiştir. Bu olay, tarihteki en büyük ve tek başarılı köle isyanının fiili başlangıcıdır.</p>`,
+             <p>Voodoo inancı, Afrika’nın farklı kabilelerinden getirilen ve ortak bir dilleri olmayan köleler arasında birleştirici bir bağ ve manevi güç sağlamıştır. Törenin ardından başlayan koordineli isyanla köleler, şeker plantasyonlarını ateşe vermiş, plantasyon sahiplerini cezalandırmış ve sömürge ordusunu felç etmiştir. Bu olay, tarihteki en büyük ve tek başarılı köle isyanının fiili başlangıcıdır.</p>`,
         en: `<h4>The Bois Caïman Ceremony & Outbreak of Rebellion</h4>
              <p>In August 1791, enslaved leaders convened a secret spiritual gathering at Bois Caïman, led by Voodoo priest Dutty Boukman. They swore an oath to rise against their masters and fight to the death for freedom.</p>
              <p>Voodoo served as a crucial cultural, linguistic, and spiritual bond that united diverse African ethnic groups who lacked a common language. Days later, a massive, coordinated insurrection broke out, with enslaved laborers burning sugarcane plantations to the ground, paralyzing French colonial forces and initiating the Haitian Revolution.</p>`
@@ -5254,15 +5254,15 @@ function getDetailedSlideAnalysisText(week, slideIndex, lang) {
       2: {
         tr: `<h4>Toussaint Louverture ve Askeri-Diplomatik Deha</h4>
              <p>İsyanın içinden çıkan en önemli lider, okuma yazma bilen ve eski bir köle olan Toussaint Louverture'dir. Louverture, disiplinsiz köle kitlelerini organize ederek kısa sürede disiplinli, taktiksel savaşabilen profesyonel bir ordu inşa etmiştir.</p>
-             <p>Fransa, İngiltere ve İspanya'nın Saint-Domingue'i ele geçirmek için savaştığı bu dönemde Louverture, dahi bir diplomat gibi bu üç imparatorluğu birbirine karşı kullanmıştır. 1794'te Fransa'daki Jakoben hükümetinin köleliği tamamen kaldırması üzerine Fransız ordusuna katılarak İspanyol ve İngiliz işgalcileri adadan atmıştır. 1801'de adanın kontrolünü ele geçirip köleliği yasaklayan ilk anayasayı hazırlamıştır.</p>`,
+             <p>Fransa, İngiltere ve İspanya'nın Saint-Domingue'i ele geçirmek için savaştığı bu dönemde Louverture, dahi bir diplomat gibi bu üç imparatorluğu birbirine karşı kullanmıştır. 1794'te Fransa’daki Jakoben hükümetinin köleliği tamamen kaldırması üzerine Fransız ordusuna katılarak İspanyol ve İngiliz işgalcileri adadan atmıştır. 1801'de adanın kontrolünü ele geçirip köleliği yasaklayan ilk anayasayı hazırlamıştır.</p>`,
         en: `<h4>Toussaint Louverture: The Military Genius</h4>
              <p>The defining figure of the revolution was Toussaint Louverture, a literate former slave. Louverture reorganized the disparate rebel bands into a disciplined, highly effective guerrilla and conventional army.</p>
              <p>Operating during the global conflict between France, Spain, and Britain, Louverture masterfully played the three empires against one another. When the French National Convention abolished slavery in 1794, Louverture allied with France to defeat invading British and Spanish forces. By 1801, he controlled the entire island and drafted an autonomous constitution prohibiting slavery.</p>`
       },
       3: {
         tr: `<h4>Napolyon’un Leclerc Seferi ve Köleliğin İadesi Tehdidi</h4>
-             <p>1802 yılında Fransa'da iktidarı ele geçiren Napolyon Bonapart, Saint-Domingue üzerindeki Fransız kontrolünü yeniden kurmak ve kölelik rejimini geri getirmek amacıyla kayınbiraderi General Leclerc komutasında 20.000 kişilik devasa bir ordu göndermiştir.</p>
-             <p>Louverture, barış görüşmeleri sırasında İspanyollarla iş birliği yapan Fransızlar tarafından haince esir alınmış ve Fransa'da soğuk bir zindanda ölüme terk edilmiştir. Ancak Napolyon'un komşu kolonilerde köleliği yeniden kurduğunu öğrenen Saint-Domingue siyahları ve melezleri, Louverture'in generalleri Jean-Jacques Dessalines liderliğinde birleşerek Fransızlara karşı topyekun bir imha savaşı başlatmışlardır.</p>`,
+             <p>1802 yılında Fransa’da iktidarı ele geçiren Napolyon Bonapart, Saint-Domingue üzerindeki Fransız kontrolünü yeniden kurmak ve kölelik rejimini geri getirmek amacıyla kayınbiraderi General Leclerc komutasında 20.000 kişilik devasa bir ordu göndermiştir.</p>
+             <p>Louverture, barış görüşmeleri sırasında İspanyollarla iş birliği yapan Fransızlar tarafından haince esir alınmış ve Fransa’da soğuk bir zindanda ölüme terk edilmiştir. Ancak Napolyon'un komşu kolonilerde köleliği yeniden kurduğunu öğrenen Saint-Domingue siyahları ve melezleri, Louverture'in generalleri Jean-Jacques Dessalines liderliğinde birleşerek Fransızlara karşı topyekun bir imha savaşı başlatmışlardır.</p>`,
         en: `<h4>Napoleon's Leclerc Expedition & Louverture's Betrayal</h4>
              <p>In 1802, Napoleon Bonaparte sought to restore direct French rule and reintroduce slavery. He dispatched a massive expeditionary force of 20,000 veterans led by his brother-in-law, General Charles Leclerc.</p>
              <p>Louverture was captured through treachery during peace negotiations and shipped to France, where he died in a cold prison cell in the Jura Mountains. However, when news arrived that Napoleon had restored slavery in neighboring colonies, black and mulatto forces united under Jean-Jacques Dessalines, launching a war of total extermination against the French.</p>`
