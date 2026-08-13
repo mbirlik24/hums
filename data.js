@@ -6528,10 +6528,10 @@ var learningData = window.learningData = {
         "en": "The Eastern Question & Greek National Liberation"
       },
       "video": {
-        "src": "https://drive.google.com/file/d/1y9JMjselukGWTnJiIqU-swfdMP06Y6Cr/view?usp=sharing",
+        "src": "https://drive.google.com/file/d/1EC-ABxhEtPY6hdeWPoXU9iPJ-mXZQG0D/view?usp=sharing",
         "desc": {
-          "tr": "Doğu Sorunu, Küçük Kaynarca Antlaşması ve 1821 Yunan Devrimi.",
-          "en": "The Eastern Question, Treaty of Küçük Kaynarca, and the 1821 Greek Revolution."
+          "tr": "Doğu Sorunu, Küçük Kaynarca Antlaşması ve 1821 Yunan Devrimi Video Anlatımı.",
+          "en": "The Eastern Question, Treaty of Küçük Kaynarca & 1821 Greek Revolution Video Summary."
         }
       },
       "slides": [
