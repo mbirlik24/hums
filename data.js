@@ -9724,10 +9724,10 @@ var learningData = window.learningData = {
         "en": "Egypt's Path to Modernization & British Occupation (1801-1882)"
       },
       "video": {
-        "src": "https://drive.google.com/file/d/1y9JMjselukGWTnJiIqU-swfdMP06Y6Cr/view?usp=sharing",
+        "src": "https://drive.google.com/file/d/1Ok9Pp_1QQhUp29ky_5QOg-LEJ1nU7C94/view?usp=sharing",
         "desc": {
-          "tr": "Mehmet Ali Paşa reformları, Süveyş Kanalı, Urabi İsyanı ve 1882 İngiliz İşgali.",
-          "en": "Muhammad Ali Pasha's reforms, Suez Canal, Urabi Revolt, and the 1882 British Invasion."
+          "tr": "Modern Mısır'ın Paradoksu, Mehmet Ali Paşa Reformları ve İngiliz İşgali Video Anlatımı.",
+          "en": "The Paradox of Modern Egypt, Mehmed Ali Reforms & British Occupation Video Summary."
         }
       },
       "slides": [
