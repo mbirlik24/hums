@@ -65,7 +65,12 @@ function renderFilterPills() {
     { key: 'american_rev', label: { tr: 'Amerikan Devrimi', en: 'American Revolution' } },
     { key: 'french_rev', label: { tr: 'Fransız Devrimi', en: 'French Revolution' } },
     { key: 'haitian_rev', label: { tr: 'Haiti Devrimi', en: 'Haitian Revolution' } },
-    { key: 'imperialism', label: { tr: 'Avrupa Emperyalizmi', en: 'European Imperialism' } }
+    { key: 'imperialism', label: { tr: 'Avrupa Emperyalizmi', en: 'European Imperialism' } },
+    { key: 'balkans', label: { tr: 'Balkanlar & Doğu Sorunu', en: 'Balkans & Eastern Question' } },
+    { key: 'industrialization', label: { tr: 'Sanayi Devrimi', en: 'Industrial Revolution' } },
+    { key: 'labor_commune', label: { tr: 'İşçi Hareketi & Komün', en: 'Labor & Paris Commune' } },
+    { key: 'egypt', label: { tr: 'Mısır Modernleşmesi', en: 'Egypt Modernization' } },
+    { key: 'new_imperialism', label: { tr: 'Yeni Emperyalizm', en: 'New Imperialism' } }
   ];
 
   container.innerHTML = categories.map(cat => {
@@ -102,6 +107,11 @@ function renderPortalGrid() {
       if (activeTopicFilter === 'french_rev') return d.week === 5;
       if (activeTopicFilter === 'haitian_rev') return d.week === 6;
       if (activeTopicFilter === 'imperialism') return d.week === 7;
+      if (activeTopicFilter === 'balkans') return d.week === 8;
+      if (activeTopicFilter === 'industrialization') return d.week === 9;
+      if (activeTopicFilter === 'labor_commune') return d.week === 10;
+      if (activeTopicFilter === 'egypt') return d.week === 11;
+      if (activeTopicFilter === 'new_imperialism') return d.week === 12;
       return true;
     });
   }

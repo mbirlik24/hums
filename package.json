@@ -1,0 +1,14 @@
+{
+  "name": "hums-131-atlas",
+  "version": "1.0.0",
+  "description": "HUMS 131 Tarih Atlası - Kolomb Değişimi ve Devrimler Çağı",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "npx serve ."
+  },
+  "devDependencies": {
+    "vite": "^5.4.11"
+  }
+}
