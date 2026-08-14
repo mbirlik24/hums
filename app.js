@@ -3015,10 +3015,6 @@ function renderInfographic() {
           <rect x="0" y="0" width="180" height="95" rx="8" fill="rgba(59,130,246,0.12)" stroke="#3b82f6" stroke-width="1.5"/>
           <text x="90" y="25" font-family="Outfit" font-size="11" font-weight="800" fill="#3b82f6" text-anchor="middle">${T('Rosetta Stone', 'Rosetta Taşı (1799)')}</text>
           <text x="90" y="48" font-family="Inter" font-size="8.5" fill="var(--text-primary)" text-anchor="middle">Champollion & Hiyeroglifler</text>
-          <text x="90" y="66" font-family="Inter" font-size="7.5" fill="var(--text-secondary)" text-anchor="middle">Modern Mısırbilim'in Doğuşu</text>
-        </g>
-
-        <g transform="translate(50, 185)" style="cursor:pointer" onclick="showDiagramDetailPopup('w7_aboukir_detail')">
           <rect x="0" y="0" width="400" height="100" rx="8" fill="rgba(217,119,6,0.12)" stroke="#d97706" stroke-width="1.5"/>
           <text x="200" y="28" font-family="Outfit" font-size="12" font-weight="800" fill="#d97706" text-anchor="middle">${T('Description de l\'Égypte (1809-1829)','Description de l\'Égypte (24 Cilt)')}</text>
           <text x="200" y="52" font-family="Inter" font-size="9" font-weight="700" fill="var(--text-primary)" text-anchor="middle">Edward Said: "Batı'nın Doğu Üzerindeki Emperyalist Söylem İnşası"</text>
@@ -3076,31 +3072,6 @@ function renderInfographic() {
     activeCards = cards;
     activeTabIdx = tab;
   }
-
-  // Unified render block
-  const tabsBar = document.getElementById('graphics-tabs-bar');
-  const cardsSection = document.getElementById('graphics-cards-section');
-  const cardsGrid = document.getElementById('graphics-cards-grid');
-  
-  if (tabsBar) {
-    tabsBar.innerHTML = buildDiagramTabBar(state.week, activeTabs, L);
-  }
-  
-  container.innerHTML = activeSvgs[activeTabIdx] || '';
-  
-  if (cardsSection && cardsGrid) {
-    if (activeCards && activeCards.length > 0) {
-      cardsSection.style.display = 'block';
-      cardsGrid.innerHTML = activeCards.join('');
-    } else {
-      cardsSection.style.display = 'none';
-    }
-  }
-
-  // Re-apply the zoom scale after rendering
-  applyDiagramTransform();
-}
-
 
   if (state.week === 8) {
     const tabs = [
@@ -3163,7 +3134,7 @@ function renderInfographic() {
             </div>
             <div style="background:var(--bg-card); border:1.5px solid #059669; border-radius:8px; padding:0.85rem;">
               <strong style="color:#059669; font-size:0.9rem;">🇬🇧 ${T('British Empire', 'İngiliz İmparatorluğu')}</strong>
-              <p style="font-size:0.78rem; color:var(--text-secondary); margin-top:0.4rem; line-height:1.4;">${T('Preserve Ottoman integrity to block Russian Mediterranean route.', 'Hindistan yolunu güvenceye almak için Rusya\'yı Akdeniz\'de engelleme.')}</p>
+              <p style="font-size:0.78rem; color:var(--text-secondary); margin-top:0.4rem; line-height:1.4;">${T('Preserve Ottoman integrity to block Russian Mediterranean route.', 'Hindistan yolunu güvenceye almak için Rusya\'yı Akdeniz\'e engelleme.')}</p>
             </div>
             <div style="background:var(--bg-card); border:1.5px solid #d97706; border-radius:8px; padding:0.85rem;">
               <strong style="color:#d97706; font-size:0.9rem;">🇦TST ${T('Austrian Empire', 'Avusturya İmparatorluğu')}</strong>
@@ -3179,9 +3150,6 @@ function renderInfographic() {
     return;
   }
 
-  // ══════════════════════════════════════════════════════════════
-  //  WEEK 9  –  Industrial Revolutions
-  // ══════════════════════════════════════════════════════════════
   if (state.week === 9) {
     const tabs = [
       { en: '📈 Industrial & Demographics Growth', tr: '📈 Sanayi ve Nüfus Artış Grafiği' },
@@ -3406,9 +3374,16 @@ function renderInfographic() {
     }
     return;
   }
-
+  // Unified render block
+  const tabsBar = document.getElementById('graphics-tabs-bar');
   const cardsSection = document.getElementById('graphics-cards-section');
   const cardsGrid = document.getElementById('graphics-cards-grid');
+  
+  if (tabsBar) {
+    tabsBar.innerHTML = buildDiagramTabBar(state.week, activeTabs, L);
+  }
+  
+  container.innerHTML = activeSvgs[activeTabIdx] || '';
   
   if (cardsSection && cardsGrid) {
     if (activeCards && activeCards.length > 0) {
@@ -3421,6 +3396,8 @@ function renderInfographic() {
 
   // Re-apply the zoom scale after rendering
   applyDiagramTransform();
+
+}
 
 // RENDER INTERACTIVE ASSESSMENT QUIZ
 function resetQuizState() {
@@ -4101,51 +4078,69 @@ function getWeekDiagramsForPrint(weekNum, lang) {
   // Set current week temporarily so renderInfographic generates the correct data
   state.week = weekNum;
   
-  // Loop through all 3 tabs (0, 1, 2)
-  for (let idx = 0; idx < 3; idx++) {
+  const weekTabsMap = {
+    2: [
+      { en: 'Exchange Flow', tr: 'Değişim Akışı' },
+      { en: 'Population Collapse', tr: 'Nüfus Çöküşü' },
+      { en: 'Trade Triangle', tr: 'Ticaret Üçgeni' }
+    ],
+    3: [
+      { en: 'Path to Slavery', tr: 'Köleliğe Giden Yol' },
+      { en: 'Atlantic Trade', tr: 'Atlantik Köle Ticareti' },
+      { en: 'Slave Population', tr: 'Köle Nüfusu' }
+    ],
+    4: [
+      { en: 'Congress Structure', tr: 'Kongre Yapısı' },
+      { en: 'Separation of Powers', tr: 'Güçler Ayrılığı' },
+      { en: 'Road to Revolution', tr: 'Devrime Giden Yol' }
+    ],
+    5: [
+      { en: 'Estates Pyramid', tr: '3 Zümre Piramidi' },
+      { en: 'Revolution Timeline', tr: 'Devrim Takvimi' },
+      { en: 'Voting Power', tr: 'Oy Gücü' }
+    ],
+    6: [
+      { en: 'Social Conflict Prism', tr: 'Çatışma Prismi' },
+      { en: 'Revolution Phases', tr: 'Devrim Aşamaları' },
+      { en: 'Plantation Hierarchy', tr: 'Plantasyon Hiyerarşisi' }
+    ],
+    7: [
+      { en: 'Expedition Geopolitics & Strategy', tr: 'Seferin Jeopolitiği ve Stratejisi' },
+      { en: 'Orientalism & Scientific Commission', tr: 'Oryantalizm ve Bilim Heyeti' },
+      { en: 'Aboukir Bay Naval Clash', tr: 'Ebu Kır Deniz Savaşı' }
+    ],
+    8: [
+      { en: 'Naval Balance (Navarino 1827)', tr: 'Navarin Donanma Dengesi (1827)' },
+      { en: 'Great Power Interests Matrix', tr: 'Doğu Sorununda Güçler Matrisi' }
+    ],
+    9: [
+      { en: 'Industrial & Demographics Growth', tr: 'Sanayi ve Nüfus Artış Grafiği' },
+      { en: '1st vs 2nd Rev Comparison', tr: 'I. vs II. Sanayi Devrimi Karşılaştırması' }
+    ],
+    10: [
+      { en: 'Paris Commune 72 Days Timeline', tr: 'Paris Komünü 72 Günlük Takvim' },
+      { en: 'Socialism vs Anarchism Matrix', tr: 'Sosyalizm vs Anarşizm Ayrımı' }
+    ],
+    11: [
+      { en: 'Mehmet Ali Modernization Matrix', tr: 'Kavalalı Modernleşme Reformları' },
+      { en: 'Egypt Debt & British Occupation Flow', tr: 'Mısır Borç Sarmalı ve 1882 İşgali' }
+    ],
+    12: [
+      { en: 'Scramble for Africa Division', tr: 'Afrika Talanı Güç Dengesi' },
+      { en: 'Gold, God, Glory Pillars', tr: 'Yeni Emperyalizmin 3 Temel Direği' }
+    ]
+  };
+
+  const currentWeekTabs = weekTabsMap[weekNum] || [];
+  
+  for (let idx = 0; idx < currentWeekTabs.length; idx++) {
     diagramTabState[weekNum] = idx;
     renderInfographic();
     
-    // Get the generated content inside 'graphics-diagram-box'
     const container = document.getElementById('graphics-diagram-box');
     if (container) {
-      let title = "";
-      if (weekNum === 2) {
-        const tabs = [
-          { en: 'Exchange Flow',      tr: 'Değişim Akışı' },
-          { en: 'Population Collapse', tr: 'Nüfus Çöküşü' },
-          { en: 'Trade Triangle',      tr: 'Ticaret Üçgeni' }
-        ];
-        title = lang === 'tr' ? tabs[idx].tr : tabs[idx].en;
-      } else if (weekNum === 3) {
-        const tabs = [
-          { en: 'Path to Slavery',    tr: 'Köleliğe Giden Yol' },
-          { en: 'Atlantic Trade',      tr: 'Atlantik Köle Ticareti' },
-          { en: 'Slave Population',   tr: 'Köle Nüfusu' }
-        ];
-        title = lang === 'tr' ? tabs[idx].tr : tabs[idx].en;
-      } else if (weekNum === 4) {
-        const tabs = [
-          { en: 'Congress Structure',   tr: 'Kongre Yapısı' },
-          { en: 'Separation of Powers', tr: 'Güçler Ayrılığı' },
-          { en: 'Road to Revolution',   tr: 'Devrime Giden Yol' }
-        ];
-        title = lang === 'tr' ? tabs[idx].tr : tabs[idx].en;
-      } else if (weekNum === 5) {
-        const tabs = [
-          { en: 'Estates Pyramid',    tr: '3 Zümre Piramidi' },
-          { en: 'Revolution Timeline', tr: 'Devrim Takvimi' },
-          { en: 'Voting Power',        tr: 'Oy Gücü' }
-        ];
-        title = lang === 'tr' ? tabs[idx].tr : tabs[idx].en;
-      } else if (weekNum === 6) {
-        const tabs = [
-          { en: 'Social Conflict Prism', tr: 'Çatışma Prismi' },
-          { en: 'Revolution Phases',     tr: 'Devrim Aşamaları' },
-          { en: 'Plantation Hierarchy',  tr: 'Plantasyon Hiyerarşisi' }
-        ];
-        title = lang === 'tr' ? tabs[idx].tr : tabs[idx].en;
-      }
+      const tabMeta = currentWeekTabs[idx];
+      const title = lang === 'tr' ? (tabMeta.tr || tabMeta.en) : (tabMeta.en || tabMeta.tr);
       
       diagrams.push({
         title: title,

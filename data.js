@@ -325,7 +325,8 @@ var learningData = window.learningData = {
         "tr": "Balkanlar & Doğu Sorunu",
         "en": "Balkans & Eastern Question"
       },
-      "localTxt": "week8_declaration.txt"
+      "localTxt": "week8_declaration.txt",
+      "localDocx": "Week 8 .docx"
     },
     {
       "id": "mazower_balkans",
@@ -351,7 +352,8 @@ var learningData = window.learningData = {
       "topic": {
         "tr": "Balkanlar & Doğu Sorunu",
         "en": "Balkans & Eastern Question"
-      }
+      },
+      "localDocx": "Week 8 .docx"
     },
     {
       "id": "kennedy_rise_fall_1987",
@@ -377,7 +379,8 @@ var learningData = window.learningData = {
       "topic": {
         "tr": "Sanayi Devrimi & İktisat",
         "en": "Industrial Revolution & Economy"
-      }
+      },
+      "localDocx": "Week 9.docx"
     },
     {
       "id": "engels_condition_working_class_1845",
@@ -403,7 +406,8 @@ var learningData = window.learningData = {
       "topic": {
         "tr": "İşçi Hareketi & Komün",
         "en": "Labor Movement & Commune"
-      }
+      },
+      "localDocx": "Week 10 Labor Organization.docx"
     },
     {
       "id": "fahmy_pashas_men_1997",
@@ -429,7 +433,8 @@ var learningData = window.learningData = {
       "topic": {
         "tr": "Mısır Modernleşmesi",
         "en": "Egypt Modernization"
-      }
+      },
+      "localDocx": "Week 11 Egypt Modernization.docx"
     },
     {
       "id": "jules_ferry_1884",
@@ -455,7 +460,8 @@ var learningData = window.learningData = {
       "topic": {
         "tr": "Yeni Emperyalizm",
         "en": "New Imperialism"
-      }
+      },
+      "localDocx": "Week 12 .docx"
     },
     {
       "id": "berlin_conference_1885",
@@ -481,7 +487,8 @@ var learningData = window.learningData = {
       "topic": {
         "tr": "Yeni Emperyalizm",
         "en": "New Imperialism"
-      }
+      },
+      "localDocx": "Week 12 .docx"
     }
   ],
   "activeLanguage": "tr",
