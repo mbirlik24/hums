@@ -4,7 +4,7 @@
   "description": "HUMS 131 Tarih Atlası - Kolomb Değişimi ve Devrimler Çağı",
   "scripts": {
     "dev": "vite",
-    "build": "echo Static build ready",
+    "build": "node build.js",
     "preview": "vite preview",
     "serve": "npx serve ."
   },
