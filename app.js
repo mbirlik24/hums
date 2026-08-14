@@ -976,15 +976,6 @@ function renderVideo() {
       
       if (fileId) {
         videoContainer.innerHTML = `
-          <!-- Floating Action Overlay inside Video -->
-          <div class="video-floating-overlay">
-            <button class="video-glass-badge" onclick="toggleVideoFullscreen()" title="Tam Ekran Yap (⛶)">
-              ⛶ <span>${state.language === 'tr' ? 'Tam Ekran' : 'Fullscreen'}</span>
-            </button>
-            <a class="video-glass-badge" href="${src}" target="_blank" title="Drive'da Oynat & İndir">
-              ↗ <span>Drive</span>
-            </a>
-          </div>
           <iframe id="module-video-iframe" src="https://drive.google.com/file/d/${fileId}/preview" style="width: 100%; height: 100%; border: none; border-radius: 12px;" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="true"></iframe>
         `;
       } else {

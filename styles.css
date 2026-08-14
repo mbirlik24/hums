@@ -1694,49 +1694,6 @@ header {
   box-shadow: 0 1px 4px var(--theme-accent-glow);
 }
 
-/* Video Floating In-Player Action Bar */
-.video-floating-overlay {
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  z-index: 100;
-  opacity: 0.85;
-  transition: opacity 0.25s ease, transform 0.25s ease;
-  pointer-events: auto;
-}
-
-.video-container:hover .video-floating-overlay {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.video-glass-badge {
-  background: rgba(15, 23, 42, 0.75);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: #ffffff;
-  padding: 0.3rem 0.6rem;
-  border-radius: 6px;
-  font-size: 0.72rem;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.video-glass-badge:hover {
-  background: rgba(15, 23, 42, 0.95);
-  border-color: var(--theme-accent);
-  transform: scale(1.04);
-}
-
 /* Video Theater Mode Layout Expansion */
 .dashboard.video-theater-mode {
   grid-template-columns: 1fr !important;
