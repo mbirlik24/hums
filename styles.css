@@ -1665,3 +1665,101 @@ header {
   transform: translateY(-2px);
   filter: brightness(1.1);
 }
+
+/* ==========================================================
+   ENHANCED VIDEO CONTROLS & THEATER MODE STYLING
+   ========================================================== */
+.video-ctrl-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.45rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  line-height: 1;
+}
+
+.video-ctrl-btn:hover {
+  color: var(--text-primary);
+  background: var(--bg-surface);
+}
+
+.video-ctrl-btn.active {
+  background: var(--theme-accent);
+  color: #ffffff;
+  box-shadow: 0 1px 4px var(--theme-accent-glow);
+}
+
+/* Video Floating In-Player Action Bar */
+.video-floating-overlay {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  z-index: 100;
+  opacity: 0.85;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: auto;
+}
+
+.video-container:hover .video-floating-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.video-glass-badge {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.video-glass-badge:hover {
+  background: rgba(15, 23, 42, 0.95);
+  border-color: var(--theme-accent);
+  transform: scale(1.04);
+}
+
+/* Video Theater Mode Layout Expansion */
+.dashboard.video-theater-mode {
+  grid-template-columns: 1fr !important;
+}
+
+.dashboard.video-theater-mode .map-panel {
+  display: none !important;
+}
+
+.dashboard.video-theater-mode #drag-resizer {
+  display: none !important;
+}
+
+.dashboard.video-theater-mode .left-panel {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.dashboard.video-theater-mode #card-video {
+  min-height: 80vh !important;
+}
+
+.dashboard.video-theater-mode .video-container {
+  min-height: 550px !important;
+}
+

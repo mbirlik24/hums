@@ -880,10 +880,72 @@ function switchTab(tabId) {
 }
 
 // Render dynamic video contents (supports both local files and Google Drive embedded players)
+let currentVideoPlaybackRate = 1;
+
+function setVideoSpeed(rate, btn) {
+  currentVideoPlaybackRate = rate;
+  
+  // Update button active state
+  const buttons = document.querySelectorAll('.video-ctrl-btn');
+  buttons.forEach(b => b.classList.remove('active'));
+  if (btn) {
+    btn.classList.add('active');
+  }
+  
+  // Update speed label badge
+  const speedLabel = document.getElementById('video-current-speed-label');
+  if (speedLabel) {
+    speedLabel.innerText = `${rate}x`;
+  }
+  
+  // If native HTML5 video player is present
+  const player = document.getElementById('module-video-player');
+  if (player) {
+    player.playbackRate = rate;
+  }
+}
+
+function toggleVideoFullscreen() {
+  const container = document.getElementById('main-video-container') || document.querySelector('.video-container');
+  if (!container) return;
+
+  if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+    if (container.requestFullscreen) {
+      container.requestFullscreen();
+    } else if (container.webkitRequestFullscreen) {
+      container.webkitRequestFullscreen();
+    } else if (container.msRequestFullscreen) {
+      container.msRequestFullscreen();
+    }
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) {
+      document.webkitExitFullscreen();
+    }
+  }
+}
+
+function toggleVideoTheaterMode() {
+  const dashboard = document.querySelector('.dashboard');
+  const btn = document.getElementById('btn-video-theater');
+  if (!dashboard) return;
+  
+  dashboard.classList.toggle('video-theater-mode');
+  const isTheater = dashboard.classList.contains('video-theater-mode');
+  
+  if (btn) {
+    btn.style.background = isTheater ? 'var(--theme-accent)' : '';
+    btn.style.color = isTheater ? '#ffffff' : '';
+    btn.title = isTheater ? (state.language === 'tr' ? 'Normal Mod' : 'Normal Mode') : (state.language === 'tr' ? 'Sinema Modu' : 'Theater Mode');
+  }
+}
+
 function renderVideo() {
   const weekData = learningData.weeks[state.week];
-  const videoContainer = document.querySelector('.video-container');
+  const videoContainer = document.getElementById('main-video-container') || document.querySelector('.video-container');
   const videoDesc = document.getElementById('video-desc');
+  const btnExternal = document.getElementById('btn-video-external');
   
   if (!weekData || !weekData.video) {
     if (videoContainer) {
@@ -894,14 +956,18 @@ function renderVideo() {
     if (videoDesc) {
       videoDesc.innerText = state.language === 'tr' ? 'Bu modül için video bulunmamaktadır.' : 'No video is available for this module.';
     }
+    if (btnExternal) btnExternal.style.display = 'none';
     return;
   }
   
   const src = weekData.video.src;
+  if (btnExternal) {
+    btnExternal.style.display = 'flex';
+    btnExternal.href = src;
+  }
   
   if (videoContainer) {
     if (src.includes('drive.google.com')) {
-      // Extract File ID from Google Drive share link
       let fileId = '';
       const match = src.match(/\/d\/([a-zA-Z0-9_-]+)/);
       if (match) {
@@ -909,9 +975,17 @@ function renderVideo() {
       }
       
       if (fileId) {
-        // Embed Google Drive Video Player inside iframe
         videoContainer.innerHTML = `
-          <iframe id="module-video-iframe" src="https://drive.google.com/file/d/${fileId}/preview" style="width: 100%; height: 100%; border: none; border-radius: 12px;" allow="autoplay" allowfullscreen></iframe>
+          <!-- Floating Action Overlay inside Video -->
+          <div class="video-floating-overlay">
+            <button class="video-glass-badge" onclick="toggleVideoFullscreen()" title="Tam Ekran Yap (⛶)">
+              ⛶ <span>${state.language === 'tr' ? 'Tam Ekran' : 'Fullscreen'}</span>
+            </button>
+            <a class="video-glass-badge" href="${src}" target="_blank" title="Drive'da Oynat & İndir">
+              ↗ <span>Drive</span>
+            </a>
+          </div>
+          <iframe id="module-video-iframe" src="https://drive.google.com/file/d/${fileId}/preview" style="width: 100%; height: 100%; border: none; border-radius: 12px;" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="true"></iframe>
         `;
       } else {
         videoContainer.innerHTML = `
@@ -919,7 +993,6 @@ function renderVideo() {
         `;
       }
     } else {
-      // Render standard local HTML5 video player
       videoContainer.innerHTML = `
         <video id="module-video-player" controls style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
           <source id="module-video-source" src="${src}" type="video/mp4">
@@ -928,6 +1001,7 @@ function renderVideo() {
       `;
       const player = document.getElementById('module-video-player');
       if (player) {
+        player.playbackRate = currentVideoPlaybackRate;
         player.load();
       }
     }
